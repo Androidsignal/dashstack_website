@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashstack - Home</title>
+    <link rel="icon" href="./images/favicon.png" type="image/png" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Enhanced Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#home">DASHSTACK</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto me-4">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonial">Testimonial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <button
+            class="btn btn-consultation"
+            data-bs-toggle="modal"
+            data-bs-target="#consultationModal"
+          >
+            Free Consultation
+            <img src="./images/black_arrow.svg" alt="Arrow Right" />
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Enhanced Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div class="hero-content text-left">
+              <h1 class="hero-title">
+                Powering digital journeys with scalable solutions for startups,
+                SMEs, and enterprises worldwide
+              </h1>
+              <p class="hero-description fs-5 mb-4">
+                Dashstack is a Flutter mobile app development startup
+                specializing in high-level technology solutions for client-based
+                projects. We partner with businesses worldwide to build
+                scalable, cross-platform applications with clean architecture,
+                advanced integrations, and cutting-edge performance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero-img-section">
+      <div class="container text-center position-relative">
+        <div class="row">
+          <div class="col-12">
+            <img
+              src="./images/hero_img.png"
+              alt="Hero Image"
+              class="hero-image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enhanced Stats Section -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="row g-4">
+          <ul id="counter">
+            <li>
+              <img src="./images/rating.png" alt="ratings" />
+            </li>
+            <li>
+              <span class="count percent" data-count="150"> 0</span>
+              <span>+</span>
+              <div>Mobile Apps</div>
+            </li>
+            <li>
+              <span class="count percent" data-count="20"> 0</span>
+              <span>+</span>
+              <div>IoT Integrations</div>
+            </li>
+            <li>
+              <span class="count percent" data-count="100"> 0</span>
+              <span>%</span>
+              <div>Client Satisfaction</div>
+            </li>
+            <li>
+              <span class="count percent" data-count="7"> 0</span>
+              <span>+</span>
+              <div>Years of Experience</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Schedule Meeting Section -->
+    <section class="schedule-section">
+      <div class="container">
+        <div class="schedule-inner">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-12">
+              <h2 class="section-title">
+                Need AI or mobile app expert feedback on your idea?
+              </h2>
+              <p class="section-subtitle">
+                Create your job attract great talent to your open roles to take
+                your business to the next level. Build, promote and manage your
+                jobs with our free to use recruitment software.
+              </p>
+              <button class="btn btn-schedule">
+                Schedule a meeting
+                <img
+                  class="ms-2"
+                  src="./images/white_arrow.svg"
+                  alt="Arrow Right"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enhanced Services Section with Tabs -->
+    <section id="services" class="services-section">
+      <div class="container">
+        <div class="row justify-content-center text-left mb-5">
+          <div class="col-lg-12">
+            <h2 class="section-title">Services</h2>
+          </div>
+        </div>
+        <div class="d-flex align-items-center flex-wrap">
+          <div
+            class="nav flex-column nav-pills"
+            id="v-pills-tab"
+            role="tablist"
+            aria-orientation="vertical"
+          >
+            <button
+              class="nav-link active"
+              id="v-pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-home"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-home"
+              aria-selected="true"
+            >
+              Customer Portal
+            </button>
+            <button
+              class="nav-link"
+              id="v-pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-profile"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-profile"
+              aria-selected="false"
+            >
+              Work Management
+            </button>
+            <button
+              class="nav-link"
+              id="v-pills-messages-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-messages"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-messages"
+              aria-selected="false"
+            >
+              Process tracking
+            </button>
+            <button
+              class="nav-link"
+              id="v-pills-settings-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-settings"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-settings"
+              aria-selected="false"
+            >
+              Modern ERP
+            </button>
+            <button
+              class="nav-link"
+              id="v-pills-partner-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-partner"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-partner"
+              aria-selected="false"
+            >
+              Partner hub
+            </button>
+          </div>
+          <div class="tab-content text-white" id="v-pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="v-pills-home"
+              role="tabpanel"
+              aria-labelledby="v-pills-home-tab"
+            >
+              <h3>Customer Portal</h3>
+              <p>
+                Deliver next-level digital experiences with intelligent
+                self-service platforms.
+              </p>
+              <ul>
+                <li>
+                  <img
+                    src="./images/service_list_dot.png"
+                    alt="List dot"
+                  />Unified access to data, billing, and support.
+                </li>
+                <li>
+                  <img
+                    src="./images/service_list_dot.png"
+                    alt="List dot"
+                  />AI-driven personalization to increase engagement.
+                </li>
+                <li>
+                  <img
+                    src="./images/service_list_dot.png"
+                    alt="List dot"
+                  />Multilingual and multi-currency support for global reach.
+                </li>
+              </ul>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="v-pills-profile"
+              role="tabpanel"
+              aria-labelledby="v-pills-profile-tab"
+            >
+              <h3>Work Management</h3>
+              <p>Reimagine productivity with smart collaboration ecosystems.</p>
+              <ul>
+                <li>
+                  <img
+                    src="./images/service_list_dot.png"
+                    alt="List dot"
+                  />End-to-end job tracking with real-time visibility.
+                </li>
+                <li>
+                  <img
+                    src="./images/service_list_dot.png"
+                    alt="List dot"
+                  />Cloud-native workflows for remote and hybrid teams.
+                </li>
+                <li>
+                  <img
+                    src="./images/service_list_dot.png"
+                    alt="List dot"
+                  />AI-powered insights for faster, smarter decisions.
+                </li>
+              </ul>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="v-pills-messages"
+              role="tabpanel"
+              aria-labelledby="v-pills-messages-tab"
+            >
+              <h3>Process Tracking</h3>
+              <p>Achieve operational excellence with intelligent monitoring.</p>
+              <ul>
+                <li>
+                  <img src="./images/service_list_dot.png" alt="List dot" />IoT
+                  integration for real-time process visibility.
+                </li>
+                <li>
+                  <img
+                    src="./images/service_list_dot.png"
+                    alt="List dot"
+                  />Predictive analytics to prevent downtime.
+                </li>
+                <li>
+                  <img
+                    src="./images/service_list_dot.png"
+                    alt="List dot"
+                  />Compliance-ready frameworks for regulated industries.
+                </li>
+              </ul>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="v-pills-settings"
+              role="tabpanel"
+              aria-labelledby="v-pills-settings-tab"
+            >
+              <h3>Modern ERP</h3>
+              <p>
+                Future-proof your enterprise with a modular, cloud-first ERP.
+              </p>
+              <ul>
+                <li>
+                  <img
+                    src="./images/service_list_dot.png"
+                    alt="List dot"
+                  />Centralized finance, HR, supply chain, and operations.
+                </li>
+                <li>
+                  <img
+                    src="./images/service_list_dot.png"
+                    alt="List dot"
+                  />Seamless integration with AWS, Firebase, and third-party
+                  APIs.
+                </li>
+                <li>
+                  <img
+                    src="./images/service_list_dot.png"
+                    alt="List dot"
+                  />Scalable design to support global expansion.
+                </li>
+              </ul>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="v-pills-partner"
+              role="tabpanel"
+              aria-labelledby="v-pills-partner-tab"
+            >
+              <h3>Partner Hub</h3>
+              <p>Build thriving ecosystems that scale beyond borders.</p>
+              <ul>
+                <li>
+                  <img
+                    src="./images/service_list_dot.png"
+                    alt="List dot"
+                  />Streamlined onboarding and secure collaboration.
+                </li>
+                <li>
+                  <img
+                    src="./images/service_list_dot.png"
+                    alt="List dot"
+                  />Data-driven performance tracking for partners.
+                </li>
+                <li>
+                  <img
+                    src="./images/service_list_dot.png"
+                    alt="List dot"
+                  />Unified global marketplace with resource sharing.
+                </li>
+              </ul>
+            </div>
+            <button class="btn btn-learn-more btn-schedule">
+              See More
+              <img
+                class="ms-2"
+                src="./images/white_arrow.svg"
+                alt="Arrow Right"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Platform Section -->
+    <section class="platform-section">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-12">
+            <h2 class="section-title">
+              Technologies<br />
+              Platforms
+              <img src="./images/title_tag.svg" alt="Title Tag" />
+            </h2>
+            <div class="platform-content">
+              <img
+                class="img-fluid"
+                src="./images/Integrations.png"
+                alt="social main"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Section -->
+    <section class="work-section">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div
+            class="col-lg-12 d-flex justify-content-between align-items-center"
+          >
+            <div class="section-title">
+              <div>
+                <img src="./images/title_icon.svg" alt="Title Tag" />
+                Company Core value
+              </div>
+              <h2>Working Progress</h2>
+            </div>
+            <div class="d-flex flex-wrap title-content">
+              <strong class="d-block"
+                >Our Working Process To Drive Digital Growth:</strong
+              >
+              <p>
+                We combine clear strategy, agile collaboration, and flawless
+                execution to deliver solutions that scale with your business.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="work-card active">
+              <div class="work-badge d-flex justify-content-between">
+                01
+                <div class="work-badge-image">
+                  <img
+                    src="./images/award.svg"
+                    alt="Work 1"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <h5 class="mt-3">Discovery & Alignment</h5>
+              <p>
+                In by understanding your vision, business goals, and challenges
+                to set a clear roadmap.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="work-card">
+              <div>
+                <h5 class="mt-3">Strategy & Ideation</h5>
+                <p>
+                  In by understanding your vision, business goals, and
+                  challenges to set a clear roadmap.
+                </p>
+              </div>
+              <div
+                class="work-badge d-flex d-flex align-items-end justify-content-between"
+              >
+                <div class="work-badge-image">
+                  <img
+                    src="./images/award.svg"
+                    alt="Work 1"
+                    class="img-fluid"
+                  />
+                </div>
+                02
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="work-card">
+              <div class="work-badge d-flex justify-content-between">
+                03
+                <div class="work-badge-image">
+                  <img
+                    src="./images/award.svg"
+                    alt="Work 1"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <h5 class="mt-3">Design & Development</h5>
+              <p>
+                From wireframes to code, our team creates scalable, user-centric
+                solutions powered by modern technologies.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="work-card">
+              <div>
+                <h5 class="mt-3">Testing, Launch & Growth</h5>
+                <p>
+                  Rigorous QA ensures reliability, followed by seamless
+                  deployment and continuous optimization for lasting success.
+                </p>
+              </div>
+              <div
+                class="work-badge d-flex align-items-end justify-content-between"
+              >
+                <div class="work-badge-image">
+                  <img
+                    src="./images/award.svg"
+                    alt="Work 1"
+                    class="img-fluid"
+                  />
+                </div>
+                04
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section class="work-section vision-section">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div
+            class="col-lg-12 d-flex justify-content-between align-items-center"
+          >
+            <div class="section-title">
+              <div>
+                <img src="./images/title_icon.svg" alt="Title Tag" />
+                Company Core value
+              </div>
+              <h2>Working Progress</h2>
+            </div>
+            <div class="d-flex flex-wrap title-content">
+              <li>
+                We specialize in crafting flexible, high-performance
+                applications tailored to your business needs, ensuring long-term
+                value and measurable impact.
+              </li>
+            </div>
+          </div>
+        </div>
+
+        <div class="vision-content">
+          <!-- Tabs -->
+          <div class="vision-tabs">
+            <div class="vision-tab active" data-index="0">
+              <div class="vision-tab-icon"></div>
+              Strategic Innovation
+            </div>
+            <div class="vision-tab" data-index="1">
+              <div class="vision-tab-icon"></div>
+              Tailored Approach
+            </div>
+            <div class="vision-tab" data-index="2">
+              <div class="vision-tab-icon"></div>
+              Partnerships
+            </div>
+          </div>
+
+          <!-- Carousel -->
+          <div class="vision-carousel">
+            <div class="vision-slides">
+              <div class="vision-slide">
+                <div class="vision-slide-content">
+                  <h2>01</h2>
+                  <p>
+                    We had the vision to make recruiting and hiring as
+                    <span>easy as managing any other business.</span>
+                  </p>
+                </div>
+                <img src="./images/work_img.jpg" alt="" />
+              </div>
+
+              <div class="vision-slide">
+                <div class="vision-slide-content">
+                  <h2>02</h2>
+                  <p>
+                    We had the vision to make recruiting and hiring as
+                    <span>easy as managing any other business.</span>
+                  </p>
+                </div>
+                <img src="./images/work_img.jpg" alt="" />
+              </div>
+
+              <div class="vision-slide">
+                <div class="vision-slide-content">
+                  <h2>03</h2>
+                  <p>
+                    We had the vision to make recruiting and hiring as
+                    <span>easy as managing any other business.</span>
+                  </p>
+                </div>
+                <img src="./images/work_img.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Dots -->
+          <div class="vision-dots">
+            <div class="vision-dot active" data-index="0"></div>
+            <div class="vision-dot" data-index="1"></div>
+            <div class="vision-dot" data-index="2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="work-section quote-section">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div
+            class="col-lg-12 d-flex justify-content-between align-items-center"
+          >
+            <div class="section-title">
+              <h2>Get a Free Quote of your Project</h2>
+            </div>
+            <div class="d-flex title-content flex-wrap">
+              <div>
+                <span>Drop Us An Email</span>
+                <a class="d-block" href="mailto:dashstackinfotech@gmail.com">
+                  dashstackinfotech@gmail.com
+                </a>
+              </div>
+              <div>
+                <span>Call Our Project Experts</span>
+                <a class="d-block" href="tel:+918153916802">+91 8153916802</a>
+                <a class="d-block" href="tel:+919662882578">+91 9662882578</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enhanced Footer -->
+    <footer id="contact" class="footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-6 col-md-12">
+            <h5>Subscribe newsletter</h5>
+            <p class="mb-4">
+              Subscribe our newsletter to get the latest news and updates!
+            </p>
+            <div class="footer-email">
+              <img
+                src="./images/email.svg"
+                alt="Newsletter Icon"
+                class="me-2"
+              />
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter your email address"
+                id="emailInput"
+              />
+              <button class="btn btn-subscribe">Subscribe</button>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <h5 class="mb-4">Company</h5>
+            <ul>
+              <li><a href="#about">Who we are</a></li>
+              <li><a href="#services">Our services</a></li>
+              <li><a href="#clients">Our clients</a></li>
+              <li><a href="#contact">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <h5 class="mb-4">Services</h5>
+            <ul>
+              <li><a href="#">Planning</a></li>
+              <li><a href="#">Research</a></li>
+              <li><a href="#">Consulting</a></li>
+              <li><a href="#">Analysis</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <img
+              src="./images/footer_img.png"
+              alt="Footer Logo"
+              class="mb-3 img-fluid"
+            />
+          </div>
+        </div>
+        <div class="d-flex align-items-center text-left mt-4">
+          <img
+            src="./images/logo.svg"
+            alt="Footer Logo"
+            class="footer-logo me-4"
+          />
+          <p class="mb-0">
+            Powering Digital Journeys from<br />
+            Startups to Enterprises.
+          </p>
+        </div>
+        <div
+          class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center"
+        >
+          <p>© 2023 - Dashstack design agency. All rights reserved.</p>
+          <div class="social-icons">
+            <a class="me-2" href="#">
+              <img src="./images/dribble.svg" alt="Dribbble" />
+            </a>
+            <a class="me-2" href="#">
+              <img src="./images/facebook.svg" alt="Facebook" />
+            </a>
+            <a class="me-2" href="#">
+              <img src="./images/twitter.svg" alt="Twitter" />
+            </a>
+            <a href="#">
+              <img src="./images/instagram.svg" alt="Instagram" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modals (same as before) -->
+    <div class="modal fade" id="consultationModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Free Consultation</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="consultationForm">
+              <div class="mb-3">
+                <label class="form-label">Name *</label>
+                <input type="text" class="form-control" required />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email *</label>
+                <input type="email" class="form-control" required />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Phone</label>
+                <input type="tel" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Tell us about your project</label>
+                <textarea class="form-control" rows="4"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="submit"
+              form="consultationForm"
+              class="btn btn-primary"
+            >
+              Request Consultation
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./js/custom.js" defer></script>
+  </body>
+</html>
