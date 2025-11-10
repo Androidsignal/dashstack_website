@@ -600,9 +600,11 @@ a {
     }
     @media (max-width: 767px) {
       font-size: 36px !important;
+      line-height: 38px;
     }
     @media (max-width: 575px) {
       font-size: 26px !important;
+      line-height: 30px;
     }
   }
 
@@ -616,6 +618,23 @@ a {
     color: $secondary-light;
     @media (max-width: 767px) {
       margin-bottom: 30px;
+    }
+  }
+  &.details-hero-section {
+    .schedule-inner {
+      padding: 50px;
+      .detail-img {
+        max-width: 134px;
+        max-height: 134px;
+        margin-right: auto;
+        margin-left: 0;
+        display: block;
+      }
+      .row {
+        padding: 100px 0px 0px 67px;
+        border-radius: 40px;
+        overflow: hidden;
+      }
     }
   }
 }
@@ -841,9 +860,21 @@ a {
       right: 0;
       left: 0;
       margin: auto;
+      animation: swing ease-in-out 1.5s infinite alternate;
+      transform-origin: center 45px;
 
       @media (max-width: 767px) {
         max-width: 100px;
+      }
+    }
+    @keyframes swing {
+      0% {
+        transform: rotate(30deg);
+        bottom: 30px;
+      }
+      100% {
+        transform: rotate(-30deg);
+        bottom: -90px;
       }
     }
   }
@@ -1231,7 +1262,6 @@ a {
             }
           }
           img {
-
             @media (max-width: 1199px) {
               max-width: 400px;
               min-width: 230px;
@@ -1545,7 +1575,7 @@ a {
   }
 
   img.footer-logo.me-4 {
-    filter: brightness(0);
+    //filter: brightness(0);
 
     @media (max-width: 576px) {
       max-width: 100px;
@@ -1676,6 +1706,44 @@ a {
     right: 10px;
     &::before {
       color: $black;
+    }
+  }
+}
+
+// /code-tool-section
+.code-tool-section{
+  .code-tool-content{
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    .code-box{
+      padding: 32px 45px;
+      border: 1px solid $light-gray;
+      background-color: #FBFBFB;
+      border-radius: 42px;
+      width: calc(25% - 18px);
+      img{
+        box-shadow: -20px 23px 118px 0px #0101010F;
+        padding: 26px;
+        background-color: $white;
+        border-radius: 50%;
+        max-height: 112px;
+        max-width: 112px; 
+      }
+      p{
+        margin-top: 18px;
+        font-size: 30px;
+        font-family: $generalRegular;
+      }
+    }
+    @media (max-width: 991px) {
+      grid-template-columns: auto auto auto;
+    }
+    @media (max-width: 767px) {
+      grid-template-columns: auto auto;
+    }
+    @media (max-width: 575px) {
+      grid-template-columns: auto;
     }
   }
 }
