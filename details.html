@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dashstack - About</title>
+  <title>Dashstack - Home</title>
   <link rel="icon" href="./images/favicon.png" type="image/png" />
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -22,7 +22,7 @@
   <link rel="stylesheet" type="text/css" href="./css/slick-theme.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll">
   <!-- Enhanced Navigation -->
   <nav class="navbar navbar-expand-lg" id="mainNavbar">
     <div class="container">
@@ -33,10 +33,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto me-4">
           <li class="nav-item">
-            <a class="nav-link active" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#services">Service</a>
@@ -48,7 +45,7 @@
             <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
-        <button class="btn btn-consultation" data-bs-toggle="modal" data-bs-target="#consultationModal">
+        <button class="btn btn-consultation w-auto" data-bs-toggle="modal" data-bs-target="#consultationModal">
           Free Consultation
           <img src="./images/black_arrow.svg" alt="Arrow Right" />
         </button>
@@ -57,7 +54,7 @@
   </nav>
 
   <!-- Enhanced Hero Section -->
-  <section class="hero-section">
+  <section class="hero-section" id="about">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-12">
@@ -87,7 +84,7 @@
   </section>
 
   <!-- Enhanced Stats Section -->
-  <section class="stats-section">
+  <section class="stats-section" id="services">
     <div class="container">
       <div class="row g-4">
         <ul id="counter">
@@ -147,131 +144,207 @@
   <!-- Enhanced Services Section with Tabs -->
   <section class="services-section">
     <div class="container">
-      <div class="row justify-content-center text-left mb-5">
+      <div class="row justify-content-center text-left mb-3 mb-md-5">
         <div class="col-lg-12">
           <h2 class="section-title">Services</h2>
         </div>
       </div>
-      <div class="d-flex align-items-center flex-wrap">
+      <div class="d-md-flex d-block">
         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
             type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
-            Customer Portal
+            Mobile Application
           </button>
           <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
             type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
-            Work Management
+            Web Development
           </button>
-          <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
-            type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
-            Process tracking
+          <button class="nav-link" id="v-pills-ai-tab" data-bs-toggle="pill" data-bs-target="#v-pills-ai" type="button"
+            role="tab" aria-controls="v-pills-ai" aria-selected="false">
+            AI/Machine Learning
           </button>
-          <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings"
-            type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
-            Modern ERP
+          <button class="nav-link" id="v-pills-enterprise-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-enterprise" type="button" role="tab" aria-controls="v-pills-enterprise"
+            aria-selected="false">
+            Enterprise Solutions
           </button>
-          <button class="nav-link" id="v-pills-partner-tab" data-bs-toggle="pill" data-bs-target="#v-pills-partner"
-            type="button" role="tab" aria-controls="v-pills-partner" aria-selected="false">
-            Partner hub
+          <button class="nav-link" id="v-pills-uiux-design-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-uiux-design" type="button" role="tab" aria-controls="v-pills-uiux-design"
+            aria-selected="false">
+            UI/UX Design
           </button>
+          <button class="nav-link" id="v-pills-branding-tab" data-bs-toggle="pill" data-bs-target="#v-pills-branding"
+            type="button" role="tab" aria-controls="v-pills-branding" aria-selected="false">
+            Branding
+          </button>
+
         </div>
         <div class="tab-content text-white" id="v-pills-tabContent">
           <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-            <h3>Customer Portal</h3>
+            <h3>Mobile Application</h3>
             <p>
-              Deliver next-level digital experiences with intelligent
-              self-service platforms.
+              With development capabilities across all platforms and devices, DashStack Infotech experienced mobile app
+              development and design teams will work closely with you in creating a mobile app that engages and retains
+              users while increasing your overall brand value.
             </p>
             <ul>
               <li>
-                <img src="./images/service_list_dot.png" alt="List dot" />Unified access to data, billing, and support.
+                <img src="./images/service_list_dot.png" alt="List dot" />Flutter App Development for iOS and Android.
               </li>
               <li>
-                <img src="./images/service_list_dot.png" alt="List dot" />AI-driven personalization to increase
+                <img src="./images/service_list_dot.png" alt="List dot" />iPhone App Development with seamless user
                 engagement.
               </li>
               <li>
-                <img src="./images/service_list_dot.png" alt="List dot" />Multilingual and multi-currency support for
-                global reach.
+                <img src="./images/service_list_dot.png" alt="List dot" />Android App Development with robust
+                performance.
               </li>
+              <li>
+                <img src="./images/service_list_dot.png" alt="List dot" />Internet of Things (IoT) App Development for
+                connected experiences.
+              </li>
+              <li>
+                <img src="./images/service_list_dot.png" alt="List dot" />MVP & AI-Powered Apps.
             </ul>
           </div>
           <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-            <h3>Work Management</h3>
-            <p>Reimagine productivity with smart collaboration ecosystems.</p>
+            <h3>Web Development</h3>
+            <p>DashStack Infotech takes a dynamic approach while following a clear web development process. We
+              seamlessly blend different technologies to develop appealing and functional business solutions.</p>
             <ul>
               <li>
-                <img src="./images/service_list_dot.png" alt="List dot" />End-to-end job tracking with real-time
-                visibility.
+                <img src="./images/service_list_dot.png" alt="List dot" />Progressive Web Apps.
               </li>
               <li>
-                <img src="./images/service_list_dot.png" alt="List dot" />Cloud-native workflows for remote and hybrid
-                teams.
+                <img src="./images/service_list_dot.png" alt="List dot" />E-commerce Web Development.
               </li>
               <li>
-                <img src="./images/service_list_dot.png" alt="List dot" />AI-powered insights for faster, smarter
-                decisions.
+                <img src="./images/service_list_dot.png" alt="List dot" />API Development & Integration.
+              </li>
+              <li>
+                <img src="./images/service_list_dot.png" alt="List dot" />Content Management System (CMS) Development.
               </li>
             </ul>
           </div>
-          <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-            <h3>Process Tracking</h3>
-            <p>Achieve operational excellence with intelligent monitoring.</p>
+          <div class="tab-pane fade" id="v-pills-ai" role="tabpanel" aria-labelledby="v-pills-ai-tab">
+            <h3>AI/Machine Learning</h3>
+            <p>We offer a comprehensive range of AI and Machine Learning development services, specializing in agentic
+              generative AI. Whether you’re enhancing an existing system with AI or looking for a technology partner to
+              bring your next big AI project to life, we have the expertise to meet your needs.</p>
             <ul>
               <li>
-                <img src="./images/service_list_dot.png" alt="List dot" />IoT
-                integration for real-time process visibility.
+                <img src="./images/service_list_dot.png" alt="List dot" />AI-Powered process automation.
               </li>
               <li>
-                <img src="./images/service_list_dot.png" alt="List dot" />Predictive analytics to prevent downtime.
+                <img src="./images/service_list_dot.png" alt="List dot" />Recommendations and predictive insights.
               </li>
               <li>
-                <img src="./images/service_list_dot.png" alt="List dot" />Compliance-ready frameworks for regulated
-                industries.
+                <img src="./images/service_list_dot.png" alt="List dot" />Chatboats and AI assistance integration.
+              </li>
+              <li>
+                <img src="./images/service_list_dot.png" alt="List dot" />ESP/NRF softwares.
+              </li>
+              <li>
+                <img src="./images/service_list_dot.png" alt="List dot" />NFC implementations.
               </li>
             </ul>
           </div>
-          <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-            <h3>Modern ERP</h3>
+
+
+          <div class="tab-pane fade" id="v-pills-enterprise" role="tabpanel" aria-labelledby="v-pills-enterprise-tab">
+
+            <h3>Enterprise Solutions</h3>
             <p>
-              Future-proof your enterprise with a modular, cloud-first ERP.
+              For many businesses, a service-based development strategy with integrated mobile capabilities
+              is becoming a necessity. DashStack can strategize to help your business boost productivity,
+              lower costs, improve security, and increase visibility and control.
             </p>
-            <ul>
+
+            <ul class="service-list">
               <li>
-                <img src="./images/service_list_dot.png" alt="List dot" />Centralized finance, HR, supply chain, and
-                operations.
+                <img src="./images/service_list_dot.png" alt="" aria-hidden="true" />
+                Enterprise Resource Planning (ERP)
               </li>
               <li>
-                <img src="./images/service_list_dot.png" alt="List dot" />Seamless integration with AWS, Firebase, and
-                third-party
-                APIs.
+                <img src="./images/service_list_dot.png" alt="" aria-hidden="true" />
+                AI &amp; Machine Learning (ML)
               </li>
               <li>
-                <img src="./images/service_list_dot.png" alt="List dot" />Scalable design to support global expansion.
-              </li>
-            </ul>
-          </div>
-          <div class="tab-pane fade" id="v-pills-partner" role="tabpanel" aria-labelledby="v-pills-partner-tab">
-            <h3>Partner Hub</h3>
-            <p>Build thriving ecosystems that scale beyond borders.</p>
-            <ul>
-              <li>
-                <img src="./images/service_list_dot.png" alt="List dot" />Streamlined onboarding and secure
-                collaboration.
+                <img src="./images/service_list_dot.png" alt="" aria-hidden="true" />
+                Blockchain Development
               </li>
               <li>
-                <img src="./images/service_list_dot.png" alt="List dot" />Data-driven performance tracking for partners.
-              </li>
-              <li>
-                <img src="./images/service_list_dot.png" alt="List dot" />Unified global marketplace with resource
-                sharing.
+                <img src="./images/service_list_dot.png" alt="" aria-hidden="true" />
+                CRM &amp; POS
               </li>
             </ul>
           </div>
-          <button class="btn btn-learn-more btn-schedule">
+
+          <!-- UI/UX Design Tab Content -->
+          <div class="tab-pane fade" id="v-pills-uiux-design" role="tabpanel" aria-labelledby="v-pills-uiux-design-tab">
+
+            <h3>UI/UX Design</h3>
+            <p>
+              We craft intuitive, engaging, and visually appealing user experiences that align with your product goals.
+              Our design process focuses on usability, aesthetics, and seamless interaction to ensure your app or
+              website
+              feels natural and performs flawlessly.
+            </p>
+
+            <ul class="service-list">
+              <li>
+                <img src="./images/service_list_dot.png" alt="" aria-hidden="true" />
+                User Interface (UI) Design
+              </li>
+              <li>
+                <img src="./images/service_list_dot.png" alt="" aria-hidden="true" />
+                User Experience (UX) Strategy
+              </li>
+              <li>
+                <img src="./images/service_list_dot.png" alt="" aria-hidden="true" />
+                Wireframing &amp; Prototyping
+              </li>
+              <li>
+                <img src="./images/service_list_dot.png" alt="" aria-hidden="true" />
+                Interaction Design
+              </li>
+            </ul>
+          </div>
+
+          <!-- Branding Tab Content -->
+          <div class="tab-pane fade" id="v-pills-branding" role="tabpanel" aria-labelledby="v-pills-branding-tab">
+
+            <h3>Branding</h3>
+            <p>
+              We help you build a strong and memorable brand identity that connects with your audience.
+              From logos and color palettes to brand tone and visuals, we create a consistent look and feel
+              that represents your vision and values.
+            </p>
+
+            <ul class="service-list">
+              <li>
+                <img src="./images/service_list_dot.png" alt="" aria-hidden="true" />
+                Logo &amp; Visual Identity Design
+              </li>
+              <li>
+                <img src="./images/service_list_dot.png" alt="" aria-hidden="true" />
+                Brand Strategy &amp; Guidelines
+              </li>
+              <li>
+                <img src="./images/service_list_dot.png" alt="" aria-hidden="true" />
+                Graphic &amp; Marketing Design
+              </li>
+              <li>
+                <img src="./images/service_list_dot.png" alt="" aria-hidden="true" />
+                Rebranding &amp; Positioning
+              </li>
+            </ul>
+          </div>
+
+          <a class="btn btn-learn-more btn-schedule d-inline-flex" href="details.html">
             See More
             <img class="ms-2" src="./images/white_arrow.svg" alt="Arrow Right" />
-          </button>
+          </a>
         </div>
       </div>
     </div>
@@ -459,9 +532,9 @@
           <div class="vision-slides">
             <div class="vision-slide py-0 my-0">
               <div class="healthcare slider mb-0">
-                <div class="vision-slide">
+                <div class="vision-slide pe-4 ps-0">
                   <div class="vision-slide-content">
-                    <div class="d-flex align-items-center gap-4 mb-5">
+                    <div class="d-flex align-items-center gap-4 mb-3 mb-md-5">
                       <h2>01</h2>
                       <p class="fs-4 mb-0 generalFont">Symcheck Vitals</p>
                     </div>
@@ -469,16 +542,16 @@
                       A Secure, Intelligent Platform Powering the
                       <span>Future of Health and Data Exchange</span>
                     </p>
-                    <button class="btn btn-learn-more btn-schedule mt-5">
+                    <a class="btn btn-learn-more btn-schedule mt-5 d-inline-flex" href="details.html">
                       See More
                       <img class="ms-2" src="./images/white_arrow.svg" alt="Arrow Right" />
-                    </button>
+                    </a>
                   </div>
                   <img src="./images/app_img.png" alt="" />
                 </div>
-                <div class="vision-slide">
+                <div class="vision-slide pe-4 ps-0">
                   <div class="vision-slide-content">
-                    <div class="d-flex align-items-center gap-4 mb-5">
+                    <div class="d-flex align-items-center gap-4 mb-3 mb-md-5">
                       <h2>01</h2>
                       <p class="fs-4 mb-0 generalFont">Symcheck Vitals</p>
                     </div>
@@ -486,10 +559,10 @@
                       A Secure, Intelligent Platform Powering the
                       <span>Future of Health and Data Exchange</span>
                     </p>
-                    <button class="btn btn-learn-more btn-schedule mt-5">
+                    <a class="btn btn-learn-more btn-schedule mt-5 d-inline-flex" href="details.html">
                       See More
                       <img class="ms-2" src="./images/white_arrow.svg" alt="Arrow Right" />
-                    </button>
+                    </a>
                   </div>
                   <img src="./images/app_img.png" alt="" />
                 </div>
@@ -497,7 +570,7 @@
             </div>
             <div class="vision-slide">
               <div class="vision-slide-content">
-                <div class="d-flex align-items-center gap-4 mb-5">
+                <div class="d-flex align-items-center gap-4 mb-3 mb-md-5">
                   <h2>02</h2>
                   <p class="fs-4 mb-0 generalFont">Symcheck Vitals</p>
                 </div>
@@ -505,16 +578,16 @@
                   A Secure, Intelligent Platform Powering the
                   <span>Future of Health and Data Exchange</span>
                 </p>
-                <button class="btn btn-learn-more btn-schedule mt-5">
+                <a class="btn btn-learn-more btn-schedule mt-5 d-inline-flex" href="details.html">
                   See More
                   <img class="ms-2" src="./images/white_arrow.svg" alt="Arrow Right" />
-                </button>
+                </a>
               </div>
               <img src="./images/app_img.png" alt="" />
             </div>
             <div class="vision-slide">
               <div class="vision-slide-content">
-                <div class="d-flex align-items-center gap-4 mb-5">
+                <div class="d-flex align-items-center gap-4 mb-3 mb-md-5">
                   <h2>03</h2>
                   <p class="fs-4 mb-0 generalFont">Symcheck Vitals</p>
                 </div>
@@ -522,16 +595,16 @@
                   We had the vision to make recruiting and hiring as
                   <span>easy as managing any other business.</span>
                 </p>
-                <button class="btn btn-learn-more btn-schedule mt-5">
+                <a class="btn btn-learn-more btn-schedule mt-5 d-inline-flex" href="details.html">
                   See More
                   <img class="ms-2" src="./images/white_arrow.svg" alt="Arrow Right" />
-                </button>
+                </a>
               </div>
               <img src="./images/app_img.png" alt="" />
             </div>
             <div class="vision-slide">
               <div class="vision-slide-content">
-                <div class="d-flex align-items-center gap-4 mb-5">
+                <div class="d-flex align-items-center gap-4 mb-3 mb-md-5">
                   <h2>03</h2>
                   <p class="fs-4 mb-0 generalFont">Symcheck Vitals</p>
                 </div>
@@ -539,16 +612,16 @@
                   We had the vision to make recruiting and hiring as
                   <span>easy as managing any other business.</span>
                 </p>
-                <button class="btn btn-learn-more btn-schedule mt-5">
+                <a class="btn btn-learn-more btn-schedule mt-5 d-inline-flex" href="details.html">
                   See More
                   <img class="ms-2" src="./images/white_arrow.svg" alt="Arrow Right" />
-                </button>
+                </a>
               </div>
               <img src="./images/app_img.png" alt="" />
             </div>
             <div class="vision-slide">
               <div class="vision-slide-content">
-                <div class="d-flex align-items-center gap-4 mb-5">
+                <div class="d-flex align-items-center gap-4 mb-3 mb-md-5">
                   <h2>03</h2>
                   <p class="fs-4 mb-0 generalFont">Symcheck Vitals</p>
                 </div>
@@ -556,16 +629,16 @@
                   We had the vision to make recruiting and hiring as
                   <span>easy as managing any other business.</span>
                 </p>
-                <button class="btn btn-learn-more btn-schedule mt-5">
+                <a class="btn btn-learn-more btn-schedule mt-5 d-inline-flex" href="details.html">
                   See More
                   <img class="ms-2" src="./images/white_arrow.svg" alt="Arrow Right" />
-                </button>
+                </a>
               </div>
               <img src="./images/app_img.png" alt="" />
             </div>
             <div class="vision-slide">
               <div class="vision-slide-content">
-                <div class="d-flex align-items-center gap-4 mb-5">
+                <div class="d-flex align-items-center gap-4 mb-3 mb-md-5">
                   <h2>03</h2>
                   <p class="fs-4 mb-0 generalFont">Symcheck Vitals</p>
                 </div>
@@ -573,16 +646,16 @@
                   We had the vision to make recruiting and hiring as
                   <span>easy as managing any other business.</span>
                 </p>
-                <button class="btn btn-learn-more btn-schedule mt-5">
+                <a class="btn btn-learn-more btn-schedule mt-5 d-inline-flex" href="details.html">
                   See More
                   <img class="ms-2" src="./images/white_arrow.svg" alt="Arrow Right" />
-                </button>
+                </a>
               </div>
               <img src="./images/app_img.png" alt="" />
             </div>
             <div class="vision-slide">
               <div class="vision-slide-content">
-                <div class="d-flex align-items-center gap-4 mb-5">
+                <div class="d-flex align-items-center gap-4 mb-3 mb-md-5">
                   <h2>03</h2>
                   <p class="fs-4 mb-0 generalFont">Symcheck Vitals</p>
                 </div>
@@ -590,10 +663,10 @@
                   We had the vision to make recruiting and hiring as
                   <span>easy as managing any other business.</span>
                 </p>
-                <button class="btn btn-learn-more btn-schedule mt-5">
+                <a class="btn btn-learn-more btn-schedule mt-5 d-inline-flex" href="details.html">
                   See More
                   <img class="ms-2" src="./images/white_arrow.svg" alt="Arrow Right" />
-                </button>
+                </a>
               </div>
               <img src="./images/app_img.png" alt="" />
             </div>
@@ -632,7 +705,7 @@
   <!-- Enhanced Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="row g-4">
+      <div class="row g-4 d-none">
         <div class="col-lg-6 col-md-12">
           <h5>Subscribe newsletter</h5>
           <p class="mb-4">
@@ -708,7 +781,15 @@
         centerMode: false,
         slidesToShow: 1,
         arrows: false,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+
+            },
+          },
+        ],
       });
     });
   </script>
