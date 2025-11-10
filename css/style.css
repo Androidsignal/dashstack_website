@@ -2,79 +2,94 @@
   font-family: "General Sans Regular";
   font-style: normal;
   font-weight: normal;
-  src: local("General Sans Regular"), url("../fonts/GeneralSans-Regular.woff") format("woff");
+  src: local("General Sans Regular"), url("../fonts/GeneralSans-Regular.otf") format("otf");
 }
 @font-face {
   font-family: "General Sans Italic";
   font-style: normal;
   font-weight: normal;
-  src: local("General Sans Italic"), url("../fonts/GeneralSans-Italic.woff") format("woff");
+  src: local("General Sans Italic"), url("../fonts/GeneralSans-Italic.otf") format("otf");
 }
 @font-face {
   font-family: "General Sans Extralight";
   font-style: normal;
   font-weight: normal;
-  src: local("General Sans Extralight"), url("../fonts/GeneralSans-Extralight.woff") format("woff");
+  src: local("General Sans Extralight"), url("../fonts/GeneralSans-Extralight.otf") format("otf");
 }
 @font-face {
   font-family: "General Sans Extralight Italic";
   font-style: normal;
   font-weight: normal;
-  src: local("General Sans Extralight Italic"), url("../fonts/GeneralSans-ExtralightItalic.woff") format("woff");
+  src: local("General Sans Extralight Italic"), url("../fonts/GeneralSans-ExtralightItalic.otf") format("otf");
 }
 @font-face {
   font-family: "General Sans Light";
   font-style: normal;
   font-weight: normal;
-  src: local("General Sans Light"), url("../fonts/GeneralSans-Light.woff") format("woff");
+  src: local("General Sans Light"), url("../fonts/GeneralSans-Light.otf") format("otf");
 }
 @font-face {
   font-family: "General Sans Light Italic";
   font-style: normal;
   font-weight: normal;
-  src: local("General Sans Light Italic"), url("../fonts/GeneralSans-LightItalic.woff") format("woff");
+  src: local("General Sans Light Italic"), url("../fonts/GeneralSans-LightItalic.otf") format("otf");
 }
 @font-face {
   font-family: "General Sans Medium";
   font-style: normal;
   font-weight: normal;
-  src: local("General Sans Medium"), url("../fonts/GeneralSans-Medium.woff") format("woff");
+  src: local("General Sans Medium"), url("../fonts/GeneralSans-Medium.otf") format("otf");
 }
 @font-face {
   font-family: "General Sans Medium Italic";
   font-style: normal;
   font-weight: normal;
-  src: local("General Sans Medium Italic"), url("../fonts/GeneralSans-MediumItalic.woff") format("woff");
+  src: local("General Sans Medium Italic"), url("../fonts/GeneralSans-MediumItalic.otf") format("otf");
 }
 @font-face {
   font-family: "General Sans Semibold";
   font-style: normal;
   font-weight: normal;
-  src: local("General Sans Semibold"), url("../fonts/GeneralSans-Semibold.woff") format("woff");
+  src: local("General Sans Semibold"), url("../fonts/GeneralSans-Semibold.otf") format("otf");
 }
 @font-face {
   font-family: "General Sans Semibold Italic";
   font-style: normal;
   font-weight: normal;
-  src: local("General Sans Semibold Italic"), url("../fonts/GeneralSans-SemiboldItalic.woff") format("woff");
+  src: local("General Sans Semibold Italic"), url("../fonts/GeneralSans-SemiboldItalic.otf") format("otf");
 }
 @font-face {
   font-family: "General Sans Bold";
   font-style: normal;
   font-weight: normal;
-  src: local("General Sans Bold"), url("../fonts/GeneralSans-Bold.woff") format("woff");
+  src: local("General Sans Bold"), url("../fonts/GeneralSans-Bold.otf") format("otf");
 }
 @font-face {
   font-family: "General Sans Bold Italic";
   font-style: normal;
   font-weight: normal;
-  src: local("General Sans Bold Italic"), url("../fonts/GeneralSans-BoldItalic.woff") format("woff");
+  src: local("General Sans Bold Italic"), url("../fonts/GeneralSans-BoldItalic.otf") format("otf");
 }
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
   color: #1e293b;
   overflow-x: hidden;
+}
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+body::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: #f5f5f5;
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #b7b7b7;
 }
 
 input,
@@ -100,6 +115,8 @@ a:focus {
           backdrop-filter: blur(20px);
   transition: all 0.3s ease;
   padding: 1rem 0;
+  position: relative;
+  z-index: 11;
 }
 .navbar.scrolled {
   padding: 0.5rem 0;
@@ -258,8 +275,9 @@ a:focus {
   z-index: 2;
   display: flex;
   align-items: center;
+  gap: 15px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .hero-section .hero-content {
     flex-direction: column;
     text-align: center;
@@ -297,7 +315,7 @@ a:focus {
     font-size: 1rem !important;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .hero-section .hero-description {
     width: 100%;
   }
@@ -435,6 +453,16 @@ a:focus {
   margin-bottom: 65px;
   border-radius: 50px;
 }
+@media (max-width: 767px) {
+  .schedule-section .container .schedule-inner {
+    padding: 80px 32px;
+  }
+}
+@media (max-width: 575px) {
+  .schedule-section .container .schedule-inner {
+    padding: 60px 25px;
+  }
+}
 .schedule-section h2 {
   font-weight: 500;
   font-size: 63px;
@@ -447,17 +475,32 @@ a:focus {
 }
 @media (max-width: 991px) {
   .schedule-section h2 {
-    font-size: 42px;
+    font-size: 42px !important;
+  }
+}
+@media (max-width: 767px) {
+  .schedule-section h2 {
+    font-size: 36px !important;
+  }
+}
+@media (max-width: 575px) {
+  .schedule-section h2 {
+    font-size: 26px !important;
   }
 }
 .schedule-section p {
   font-family: "General Sans Regular", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 16px !important;
   line-height: 120%;
   max-width: 660px;
   margin: 0 auto 50px;
   color: #5f5f86;
+}
+@media (max-width: 767px) {
+  .schedule-section p {
+    margin-bottom: 30px;
+  }
 }
 
 .btn-schedule {
@@ -489,6 +532,12 @@ a:focus {
 .btn-schedule:hover::before {
   left: 100%;
 }
+@media (max-width: 575px) {
+  .btn-schedule {
+    font-size: 14px;
+    padding: 15px 20px;
+  }
+}
 
 .services-section {
   background-image: url("../images/creative_approach.jpg");
@@ -504,7 +553,7 @@ a:focus {
   margin-bottom: 1rem;
   letter-spacing: -1px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .services-section .section-title {
     font-size: 2rem;
   }
@@ -519,7 +568,7 @@ a:focus {
   border: 1px solid #6a6a6a;
   border-radius: 50px;
   padding: 32px;
-  margin-right: 100px;
+  margin-right: 40px;
 }
 .services-section .nav-pills .nav-link {
   position: relative;
@@ -530,6 +579,7 @@ a:focus {
   border-radius: 50px;
   font-size: 18px;
   color: #9c9c9c;
+  white-space: nowrap;
 }
 .services-section .nav-pills .nav-link::before {
   content: "";
@@ -559,21 +609,31 @@ a:focus {
     font-size: 16px;
   }
 }
-@media (max-width: 1199px) {
-  .services-section .nav-pills {
-    margin-right: 50px;
+@media (max-width: 575px) {
+  .services-section .nav-pills .nav-link {
+    font-size: 14px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1199px) {
+  .services-section .nav-pills {
+    margin-right: 35px;
+  }
+}
+@media (max-width: 767px) {
   .services-section .nav-pills {
     width: 100%;
     margin-right: 0;
   }
 }
-.services-section .tab-content {
-  max-width: calc(100% - 375px);
+@media (max-width: 575px) {
+  .services-section .nav-pills {
+    padding: 20px;
+  }
 }
-@media (max-width: 768px) {
+.services-section .tab-content {
+  max-width: calc(100% - 345px);
+}
+@media (max-width: 767px) {
   .services-section .tab-content {
     max-width: 100%;
     margin-top: 40px;
@@ -633,9 +693,9 @@ a:focus {
 .services-section .btn-schedule {
   margin-top: 32px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .services-section {
-    padding: 60px 0;
+    padding: 60px 15px;
   }
 }
 
@@ -657,28 +717,16 @@ a:focus {
   left: 0;
   margin: auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .platform-section h2 img {
     max-width: 100px;
   }
 }
 .platform-section .platform-content {
   background: linear-gradient(146.64deg, #f3f4ff 2.74%, #ffffff 82.33%);
-  padding: 120px 40px;
   margin-bottom: 65px;
   border-radius: 50px;
 }
-@media (max-width: 768px) {
-  .platform-section .platform-content {
-    padding: 60px 30px;
-  }
-}
-@media (max-width: 480px) {
-  .platform-section .platform-content {
-    padding: 40px 20px;
-  }
-}
-
 .work-section {
   margin-bottom: 65px;
 }
@@ -857,7 +905,33 @@ a:focus {
   background: #fff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   margin-bottom: 30px;
-  flex-wrap: wrap;
+  overflow-x: auto;
+  /* Add space at bottom (200px) */
+}
+.vision-section .vision-content .vision-tabs::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+.vision-section .vision-content .vision-tabs::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: #f5f5f5;
+}
+.vision-section .vision-content .vision-tabs::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #b7b7b7;
+}
+.vision-section .vision-content .vision-tabs::-webkit-scrollbar-button:start:increment {
+  height: 200px;
+  display: block;
+  background: transparent;
+}
+.vision-section .vision-content .vision-tabs::-webkit-scrollbar-button:end:decrement {
+  height: 200px;
+  display: block;
+  background: transparent;
 }
 .vision-section .vision-content .vision-tabs .vision-tab {
   padding: 10px 20px;
@@ -869,10 +943,30 @@ a:focus {
   display: flex;
   align-items: center;
   gap: 5px;
+  white-space: nowrap;
+}
+.vision-section .vision-content .vision-tabs .vision-tab .vision-tab-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .vision-section .vision-content .vision-tabs .vision-tab .vision-tab-icon img {
-  max-width: 28px;
-  max-height: 28px;
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 28px;
+  min-height: 28px;
+}
+@media (max-width: 991px) {
+  .vision-section .vision-content .vision-tabs .vision-tab .vision-tab-icon img {
+    min-width: 16px;
+    min-height: 16px;
+  }
+}
+@media (max-width: 575px) {
+  .vision-section .vision-content .vision-tabs .vision-tab .vision-tab-icon img {
+    min-width: 14px;
+    min-height: 14px;
+  }
 }
 .vision-section .vision-content .vision-tabs .vision-tab.active {
   background: linear-gradient(176.74deg, #1a084b -13.59%, #4a24a5 109.86%);
@@ -962,13 +1056,44 @@ a:focus {
     font-size: 28px;
   }
 }
-.vision-section .vision-content .vision-carousel .vision-slides .vision-slide img {
-  border-radius: 40px;
+.vision-section .vision-content .vision-carousel .vision-slides .vision-slide .vision-slide-content img {
+  width: auto;
+  min-width: inherit;
 }
 @media (max-width: 1199px) {
   .vision-section .vision-content .vision-carousel .vision-slides .vision-slide img {
     max-width: 400px;
     min-width: 230px;
+  }
+}
+@media (max-width: 991px) {
+  .vision-section .vision-content .vision-carousel .vision-slides .vision-slide img {
+    max-width: 160px;
+    min-width: 160px;
+  }
+}
+@media (max-width: 767px) {
+  .vision-section .vision-content .vision-carousel .vision-slides .vision-slide {
+    flex-direction: column-reverse;
+    text-align: left;
+    gap: 20px;
+    padding: 0 20px;
+  }
+  .vision-section .vision-content .vision-carousel .vision-slides .vision-slide .vision-slide-content p {
+    font-size: 28px;
+  }
+  .vision-section .vision-content .vision-carousel .vision-slides .vision-slide img {
+    max-width: 200px;
+    margin-top: 0px;
+  }
+}
+@media (max-width: 575px) {
+  .vision-section .vision-content .vision-carousel .vision-slides .vision-slide .vision-slide-content p {
+    font-size: 24px;
+  }
+  .vision-section .vision-content .vision-carousel .vision-slides .vision-slide img {
+    max-width: 120px;
+    min-width: 120px;
   }
 }
 .vision-section .vision-content .vision-dots {
@@ -1011,13 +1136,13 @@ a:focus {
   .vision-section .vision-content {
     padding: 32px 30px;
   }
-  .vision-section .vision-content .vision-slide {
-    flex-direction: column;
-    text-align: center;
-  }
   .vision-section .vision-content .vision-slide img {
     width: 200px;
     margin-top: 20px;
+  }
+  .vision-section .vision-content .vision-slide-content img {
+    width: auto;
+    margin-top: 0 !important;
   }
 }
 @media (max-width: 576px) {
@@ -1050,6 +1175,16 @@ a:focus {
 @media (max-width: 1199px) {
   .quote-section .section-title h2 {
     font-size: 32px;
+  }
+}
+@media (max-width: 991px) {
+  .quote-section .section-title h2 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 576px) {
+  .quote-section .section-title h2 {
+    font-size: 24px;
   }
 }
 .quote-section .title-content {
@@ -1092,7 +1227,7 @@ a:focus {
     flex-direction: column;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .quote-section {
     margin-bottom: 0px;
   }
@@ -1201,7 +1336,7 @@ a:focus {
 .footer ul li:last-child {
   margin-bottom: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .footer ul li {
     margin-bottom: 8px;
   }
@@ -1233,7 +1368,7 @@ a:focus {
   color: #5f5f86;
   font-family: "poppins", sans-serif;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .footer .footer-bottom p {
     font-size: 14px;
     margin-bottom: 12px;
@@ -1339,7 +1474,7 @@ a:focus {
     margin-top: 1rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .stats-section {
     padding: 60px 0;
   }
@@ -1358,7 +1493,7 @@ a:focus {
 }
 @media (max-width: 576px) {
   .hero-section {
-    padding: 130px 0 20px;
+    padding: 60px 0 20px;
     text-align: center;
   }
   .btn-consultation {
@@ -1369,7 +1504,7 @@ a:focus {
     grid-template-columns: 1fr !important;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .footer {
     text-align: left;
   }

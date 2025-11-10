@@ -51,8 +51,8 @@ function updateSlide(index) {
   if (dots[currentIndex]) dots[currentIndex].classList.add("active");
 
   // auto-scroll active tab into view (when overflowing)
-  const activeTab = document.querySelector(`.vision-tab[data-index="${currentIndex}"]`);
-  if (activeTab) activeTab.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+  // const activeTab = document.querySelector(`.vision-tab[data-index="${currentIndex}"]`);
+  // if (activeTab) activeTab.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
 }
 
 function goTo(delta) { updateSlide(currentIndex + delta); }

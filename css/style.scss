@@ -21,122 +21,150 @@ $white: #ffffff;
 $dark-gray: #5a5a59;
 $light-gray: #d2d2d2;
 $secondary-black: #131313;
-$generalRegular: 'General Sans Regular', sans-serif;
-$generalItalic: 'General Sans Italic', sans-serif;
-$generalExtralight: 'General Sans Extralight', sans-serif;
-$generalExtralightItalic: 'General Sans Extralight Italic', sans-serif;
-$generalLight: 'General Sans Light', sans-serif;
-$generalLightItalic: 'General Sans Light Italic', sans-serif;
-$generalMedium: 'General Sans Medium', sans-serif;
-$generalMediumItalic: 'General Sans Medium Italic', sans-serif;
-$generalSemibold: 'General Sans Semibold', sans-serif;
-$generalSemiboldItalic: 'General Sans Semibold Italic', sans-serif;
-$generalBold: 'General Sans Bold', sans-serif;
-$generalBoldItalic: 'General Sans Bold Italic', sans-serif;
-
+$generalRegular: "General Sans Regular", sans-serif;
+$generalItalic: "General Sans Italic", sans-serif;
+$generalExtralight: "General Sans Extralight", sans-serif;
+$generalExtralightItalic: "General Sans Extralight Italic", sans-serif;
+$generalLight: "General Sans Light", sans-serif;
+$generalLightItalic: "General Sans Light Italic", sans-serif;
+$generalMedium: "General Sans Medium", sans-serif;
+$generalMediumItalic: "General Sans Medium Italic", sans-serif;
+$generalSemibold: "General Sans Semibold", sans-serif;
+$generalSemiboldItalic: "General Sans Semibold Italic", sans-serif;
+$generalBold: "General Sans Bold", sans-serif;
+$generalBoldItalic: "General Sans Bold Italic", sans-serif;
 
 // General Font and Body Styles
 @font-face {
-  font-family: 'General Sans Regular';
+  font-family: "General Sans Regular";
   font-style: normal;
   font-weight: normal;
-  src: local('General Sans Regular'), url('../fonts/GeneralSans-Regular.woff') format('woff');
+  src:
+    local("General Sans Regular"),
+    url("../fonts/GeneralSans-Regular.otf") format("otf");
 }
-
 
 @font-face {
-  font-family: 'General Sans Italic';
+  font-family: "General Sans Italic";
   font-style: normal;
   font-weight: normal;
-  src: local('General Sans Italic'), url('../fonts/GeneralSans-Italic.woff') format('woff');
+  src:
+    local("General Sans Italic"),
+    url("../fonts/GeneralSans-Italic.otf") format("otf");
 }
-
 
 @font-face {
-  font-family: 'General Sans Extralight';
+  font-family: "General Sans Extralight";
   font-style: normal;
   font-weight: normal;
-  src: local('General Sans Extralight'), url('../fonts/GeneralSans-Extralight.woff') format('woff');
+  src:
+    local("General Sans Extralight"),
+    url("../fonts/GeneralSans-Extralight.otf") format("otf");
 }
-
 
 @font-face {
-  font-family: 'General Sans Extralight Italic';
+  font-family: "General Sans Extralight Italic";
   font-style: normal;
   font-weight: normal;
-  src: local('General Sans Extralight Italic'), url('../fonts/GeneralSans-ExtralightItalic.woff') format('woff');
+  src:
+    local("General Sans Extralight Italic"),
+    url("../fonts/GeneralSans-ExtralightItalic.otf") format("otf");
 }
-
 
 @font-face {
-  font-family: 'General Sans Light';
+  font-family: "General Sans Light";
   font-style: normal;
   font-weight: normal;
-  src: local('General Sans Light'), url('../fonts/GeneralSans-Light.woff') format('woff');
+  src:
+    local("General Sans Light"),
+    url("../fonts/GeneralSans-Light.otf") format("otf");
 }
-
 
 @font-face {
-  font-family: 'General Sans Light Italic';
+  font-family: "General Sans Light Italic";
   font-style: normal;
   font-weight: normal;
-  src: local('General Sans Light Italic'), url('../fonts/GeneralSans-LightItalic.woff') format('woff');
+  src:
+    local("General Sans Light Italic"),
+    url("../fonts/GeneralSans-LightItalic.otf") format("otf");
 }
-
 
 @font-face {
-  font-family: 'General Sans Medium';
+  font-family: "General Sans Medium";
   font-style: normal;
   font-weight: normal;
-  src: local('General Sans Medium'), url('../fonts/GeneralSans-Medium.woff') format('woff');
+  src:
+    local("General Sans Medium"),
+    url("../fonts/GeneralSans-Medium.otf") format("otf");
 }
-
 
 @font-face {
-  font-family: 'General Sans Medium Italic';
+  font-family: "General Sans Medium Italic";
   font-style: normal;
   font-weight: normal;
-  src: local('General Sans Medium Italic'), url('../fonts/GeneralSans-MediumItalic.woff') format('woff');
+  src:
+    local("General Sans Medium Italic"),
+    url("../fonts/GeneralSans-MediumItalic.otf") format("otf");
 }
-
 
 @font-face {
-  font-family: 'General Sans Semibold';
+  font-family: "General Sans Semibold";
   font-style: normal;
   font-weight: normal;
-  src: local('General Sans Semibold'), url('../fonts/GeneralSans-Semibold.woff') format('woff');
+  src:
+    local("General Sans Semibold"),
+    url("../fonts/GeneralSans-Semibold.otf") format("otf");
 }
-
 
 @font-face {
-  font-family: 'General Sans Semibold Italic';
+  font-family: "General Sans Semibold Italic";
   font-style: normal;
   font-weight: normal;
-  src: local('General Sans Semibold Italic'), url('../fonts/GeneralSans-SemiboldItalic.woff') format('woff');
+  src:
+    local("General Sans Semibold Italic"),
+    url("../fonts/GeneralSans-SemiboldItalic.otf") format("otf");
 }
-
 
 @font-face {
-  font-family: 'General Sans Bold';
+  font-family: "General Sans Bold";
   font-style: normal;
   font-weight: normal;
-  src: local('General Sans Bold'), url('../fonts/GeneralSans-Bold.woff') format('woff');
+  src:
+    local("General Sans Bold"),
+    url("../fonts/GeneralSans-Bold.otf") format("otf");
 }
-
 
 @font-face {
-  font-family: 'General Sans Bold Italic';
+  font-family: "General Sans Bold Italic";
   font-style: normal;
   font-weight: normal;
-  src: local('General Sans Bold Italic'), url('../fonts/GeneralSans-BoldItalic.woff') format('woff');
+  src:
+    local("General Sans Bold Italic"),
+    url("../fonts/GeneralSans-BoldItalic.otf") format("otf");
 }
-
 
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
   color: $text-dark;
   overflow-x: hidden;
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #f5f5f5;
+  }
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: #f5f5f5;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #b7b7b7;
+  }
 }
 
 input,
@@ -162,6 +190,8 @@ a {
   backdrop-filter: blur(20px);
   transition: all 0.3s ease;
   padding: 1rem 0;
+  position: relative;
+  z-index: 11;
 
   &.scrolled {
     padding: 0.5rem 0;
@@ -266,7 +296,8 @@ a {
       box-shadow: 1px 0 15px 0 rgb(19 19 19 / 20%);
       padding-left: 20px;
 
-      .navbar-nav {}
+      .navbar-nav {
+      }
     }
 
     .collapse:not(.show) {
@@ -349,8 +380,9 @@ a {
     z-index: 2;
     display: flex;
     align-items: center;
+    gap: 15px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       flex-direction: column;
       text-align: center;
     }
@@ -385,7 +417,7 @@ a {
       font-size: 1rem !important;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       width: 100%;
     }
 
@@ -520,7 +552,6 @@ a {
         }
 
         &:nth-child(odd) {
-
           &::before,
           &::after {
             display: none;
@@ -545,6 +576,12 @@ a {
       padding: 120px 40px;
       margin-bottom: 65px;
       border-radius: 50px;
+      @media (max-width: 767px) {
+        padding: 80px 32px;
+      }
+      @media (max-width: 575px) {
+        padding: 60px 25px;
+      }
     }
   }
 
@@ -559,18 +596,27 @@ a {
     margin-bottom: 20px;
 
     @media (max-width: 991px) {
-      font-size: 42px;
+      font-size: 42px !important;
+    }
+    @media (max-width: 767px) {
+      font-size: 36px !important;
+    }
+    @media (max-width: 575px) {
+      font-size: 26px !important;
     }
   }
 
   p {
     font-family: $generalRegular;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 16px !important;
     line-height: 120%;
     max-width: 660px;
     margin: 0 auto 50px;
     color: $secondary-light;
+    @media (max-width: 767px) {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -605,6 +651,10 @@ a {
       left: 100%;
     }
   }
+  @media (max-width: 575px) {
+    font-size: 14px;
+    padding: 15px 20px;
+  }
 }
 
 // =========================
@@ -624,7 +674,7 @@ a {
     margin-bottom: 1rem;
     letter-spacing: -1px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       font-size: 2rem;
     }
   }
@@ -640,7 +690,7 @@ a {
     border: 1px solid #6a6a6a;
     border-radius: 50px;
     padding: 32px;
-    margin-right: 100px;
+    margin-right: 40px;
 
     .nav-link {
       position: relative;
@@ -651,6 +701,7 @@ a {
       border-radius: 50px;
       font-size: 18px;
       color: #9c9c9c;
+      white-space: nowrap;
 
       &::before {
         content: "";
@@ -681,22 +732,28 @@ a {
         padding-bottom: 18px;
         font-size: 16px;
       }
+      @media (max-width: 575px) {
+        font-size: 14px;
+      }
     }
 
     @media (max-width: 1199px) {
-      margin-right: 50px;
+      margin-right: 35px;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       width: 100%;
       margin-right: 0;
+    }
+    @media (max-width: 575px) {
+      padding: 20px;
     }
   }
 
   .tab-content {
-    max-width: calc(100% - 375px);
+    max-width: calc(100% - 345px);
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       max-width: 100%;
       margin-top: 40px;
     }
@@ -758,8 +815,8 @@ a {
     margin-top: 32px;
   }
 
-  @media (max-width: 768px) {
-    padding: 60px 0;
+  @media (max-width: 767px) {
+    padding: 60px 15px;
   }
 }
 
@@ -785,7 +842,7 @@ a {
       left: 0;
       margin: auto;
 
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
         max-width: 100px;
       }
     }
@@ -793,16 +850,16 @@ a {
 
   .platform-content {
     background: linear-gradient(146.64deg, #f3f4ff 2.74%, #ffffff 82.33%);
-    padding: 120px 40px;
+    //padding: 120px 40px;
     margin-bottom: 65px;
     border-radius: 50px;
 
-    @media (max-width: 768px) {
-      padding: 60px 30px;
+    @media (max-width: 767px) {
+      //padding: 60px 30px;
     }
 
     @media (max-width: 480px) {
-      padding: 40px 20px;
+      //padding: 40px 20px;
     }
   }
 }
@@ -1008,8 +1065,36 @@ a {
       background: #fff;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
       margin-bottom: 30px;
-      flex-wrap: wrap;
+      overflow-x: auto;
+      &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        background-color: #f5f5f5;
+      }
 
+      &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+        background-color: #f5f5f5;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background-color: #b7b7b7;
+      }
+      &::-webkit-scrollbar-button:start:increment {
+        height: 200px;
+        display: block;
+        background: transparent;
+      }
+
+      /* Add space at bottom (200px) */
+      &::-webkit-scrollbar-button:end:decrement {
+        height: 200px;
+        display: block;
+        background: transparent;
+      }
       .vision-tab {
         padding: 10px 20px;
         border-radius: 30px;
@@ -1020,11 +1105,25 @@ a {
         display: flex;
         align-items: center;
         gap: 5px;
+        white-space: nowrap;
 
         .vision-tab-icon {
-          img{
-            max-width: 28px;
-          max-height: 28px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            max-width: 100%;
+            max-height: 100%;
+            min-width: 28px;
+            min-height: 28px;
+            @media (max-width: 991px) {
+              min-width: 16px;
+              min-height: 16px;
+            }
+            @media (max-width: 575px) {
+              min-width: 14px;
+              min-height: 14px;
+            }
           }
         }
 
@@ -1073,7 +1172,6 @@ a {
           margin: 20px 0;
 
           .vision-slide-content {
-
             h2 {
               margin-bottom: 0;
               color: #1e1e2d;
@@ -1126,13 +1224,50 @@ a {
               }
             }
           }
-
+          .vision-slide-content {
+            img {
+              width: auto;
+              min-width: inherit;
+            }
+          }
           img {
-            border-radius: 40px;
 
             @media (max-width: 1199px) {
               max-width: 400px;
               min-width: 230px;
+            }
+            @media (max-width: 991px) {
+              max-width: 160px;
+              min-width: 160px;
+            }
+          }
+          @media (max-width: 767px) {
+            flex-direction: column-reverse;
+            text-align: left;
+            gap: 20px;
+            padding: 0 20px;
+
+            .vision-slide-content {
+              p {
+                font-size: 28px;
+              }
+            }
+
+            img {
+              max-width: 200px;
+              margin-top: 0px;
+            }
+          }
+          @media (max-width: 575px) {
+            .vision-slide-content {
+              p {
+                font-size: 24px;
+              }
+            }
+
+            img {
+              max-width: 120px;
+              min-width: 120px;
             }
           }
         }
@@ -1183,14 +1318,15 @@ a {
     @media (max-width: 991px) {
       padding: 32px 30px;
 
-      .vision-slide {
-        flex-direction: column;
-        text-align: center;
-      }
-
       .vision-slide img {
         width: 200px;
         margin-top: 20px;
+      }
+      .vision-slide-content {
+        img {
+          width: auto;
+          margin-top: 0 !important;
+        }
       }
     }
 
@@ -1232,6 +1368,13 @@ a {
 
       @media (max-width: 1199px) {
         font-size: 32px;
+      }
+      @media (max-width: 991px) {
+        font-size: 26px;
+      }
+
+      @media (max-width: 576px) {
+        font-size: 24px;
       }
     }
   }
@@ -1275,7 +1418,7 @@ a {
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     margin-bottom: 0px;
 
     .row {
@@ -1395,7 +1538,7 @@ a {
         margin-bottom: 0;
       }
 
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
         margin-bottom: 8px;
       }
     }
@@ -1408,7 +1551,7 @@ a {
       max-width: 100px;
       margin-right: 12px !important;
 
-      +p {
+      + p {
         font-size: 14px;
 
         br {
@@ -1430,7 +1573,7 @@ a {
       color: $secondary-light;
       font-family: "poppins", sans-serif;
 
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
         font-size: 14px;
         margin-bottom: 12px;
       }
@@ -1460,7 +1603,6 @@ a {
     }
   }
 }
-
 
 //  =======================
 // custom slider styles
@@ -1511,28 +1653,28 @@ a {
           position: relative;
           border-radius: 50%;
 
-            &::before {
-              content: "";
-              position: absolute;
-              width: 10px;
-              height: 10px;
-              background-color: $secondary-color;
-              border-radius: 50%;
-              top: 0;
-              bottom: 0;
-              left: 0;
-              right: 0;
-              margin: auto;
-            }
+          &::before {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: $secondary-color;
+            border-radius: 50%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+          }
         }
       }
     }
   }
   .slick-prev,
-  .slick-next{
+  .slick-next {
     transform: rotate(90deg);
     right: 10px;
-    &::before{
+    &::before {
       color: $black;
     }
   }
@@ -1557,7 +1699,7 @@ a {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .stats-section {
     padding: 60px 0;
 
@@ -1580,7 +1722,7 @@ a {
 
 @media (max-width: 576px) {
   .hero-section {
-    padding: 130px 0 20px;
+    padding: 60px 0 20px;
     text-align: center;
   }
 
@@ -1594,7 +1736,7 @@ a {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .footer {
     text-align: left;
 
