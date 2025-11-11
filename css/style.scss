@@ -435,6 +435,8 @@ a {
 
   @media (max-width: 991px) {
     padding: 100px 0 60px;
+    background-repeat: repeat;
+    background-size: contain;
   }
 }
 
@@ -623,17 +625,57 @@ a {
   &.details-hero-section {
     .schedule-inner {
       padding: 50px;
+      .section-title{
+        font-size: 42px;
+        color: $black;
+      }
+      .section-subtitle{
+        font-size: 20px !important;
+        font-family: $generalRegular;
+        color: $secondary-light;
+        b{
+          font-family: $generalBold;
+        }
+        @media (max-width: 767px) {
+          font-size: 16px !important;
+        }
+        @media (max-width: 575px) {
+          font-size: 14px !important;
+        }
+      }
       .detail-img {
         max-width: 134px;
         max-height: 134px;
         margin-right: auto;
         margin-left: 0;
         display: block;
+        @media (max-width: 767px) {
+          max-width: 100px;
+          max-height: 100px;
+        }
+        @media (max-width: 575px) {
+          max-width: 75px;
+          max-height: 75px;
+        }
       }
       .row {
         padding: 100px 0px 0px 67px;
         border-radius: 40px;
         overflow: hidden;
+        @media (max-width: 991px) {
+          padding: 20px;
+          flex-direction: column-reverse;
+          margin: 0;
+        }
+        @media (max-width: 575px) {
+          padding: 8px;
+        }
+      }
+      @media (max-width: 767px) {
+        padding: 30px;
+      }
+      @media (max-width: 575px) {
+        padding: 15px;
       }
     }
   }

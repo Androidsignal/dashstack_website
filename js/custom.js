@@ -76,10 +76,10 @@ document.querySelector(".vision-tabs").addEventListener("click", (e) => {
 // document.querySelector(".vision-next").addEventListener("click", () => goTo(1));
 
 // Optional: arrow keys
-document.addEventListener("keydown", (e) => {
-  if (e.key === "ArrowLeft") goTo(-1);
-  if (e.key === "ArrowRight") goTo(1);
-});
+// document.addEventListener("keydown", (e) => {
+//   if (e.key === "ArrowLeft") goTo(-1);
+//   if (e.key === "ArrowRight") goTo(1);
+// });
 
 // Init
 updateSlide(0);
