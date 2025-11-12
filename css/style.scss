@@ -917,8 +917,8 @@ a {
       right: 0;
       left: 0;
       margin: auto;
-      animation: swing ease-in-out 1.5s infinite alternate;
-      transform-origin: center 45px;
+     // animation: swing ease-in-out 1.5s infinite alternate;
+      //transform-origin: center 45px;
 
       @media (max-width: 767px) {
         max-width: 100px;
