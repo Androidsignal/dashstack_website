@@ -404,7 +404,7 @@ a {
       min-width: 320px;
     }
 
-    @media (max-width: 576px) {
+    @media (max-width: 575px) {
       font-size: 28px;
     }
   }
@@ -420,7 +420,7 @@ a {
       width: 100%;
     }
 
-    @media (max-width: 576px) {
+    @media (max-width: 575px) {
       font-size: 14px !important;
     }
   }
@@ -995,7 +995,7 @@ a {
       }
     }
     .app-screenshots {
-      margin-bottom: 64px;
+      margin-bottom: 74px;
       .slick-slide{
         margin: 0px 12px;
       }
@@ -1043,7 +1043,7 @@ a {
         font-size: 36px;
       }
 
-      @media (max-width: 576px) {
+      @media (max-width: 575px) {
         font-size: 32px;
       }
     }
@@ -1183,6 +1183,103 @@ a {
             display: flex;
           }
         }
+      }
+    }
+  }
+  &.features-benefits-section{
+    margin-top: 128px;
+    h2{
+      font-size: 72px;
+      font-family: $generalRegular;
+      font-weight: 500;
+      color: $secondary-color;
+      @media (max-width: 1199px) {
+        font-size: 46px;
+      }
+
+      @media (max-width: 991px) {
+        font-size: 42px;
+      }
+
+      @media (max-width: 575px) {
+        font-size: 32px;
+      }
+    }
+    .title-content p{
+      font-size: 18px;
+      font-family: $generalRegular;
+      font-weight: 400;
+      color: $secondary-light;
+      @media (max-width: 575px) {
+        font-size: 16px;
+      }
+    }
+    .feature-box{
+      background-color: $white;
+      padding: 40px;
+      border-radius: 50px;
+      height: calc(100% - 24px);
+      .feature-box-head{
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        margin-bottom: 24px;
+        .feature-img{
+          min-width: 80px;
+          height: 80px;
+          background: linear-gradient(176.74deg, #1A084B -13.59%, #4A24A5 109.86%);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          @media (max-width: 1199px) {
+            min-width: 65px;
+            height: 65px;
+          }
+
+          @media (max-width: 991px) {
+            min-width: 50px;
+            height: 50px;
+          }
+        }
+        h4{
+          font-size: 40px;
+          font-weight: 500;
+          color: $secondary-color;
+          margin: 0;
+          letter-spacing: -2px;
+          @media (max-width: 1199px) {
+            font-size: 26px;
+          }
+
+          @media (max-width: 991px) {
+            font-size: 20px;
+          }
+          @media (max-width: 767px) {
+            letter-spacing: normal;
+          }
+        }
+        @media (max-width: 991px) {
+          gap: 16px;
+        }
+        @media (max-width: 767px) {
+          gap: 14px;
+        }
+      }
+      p{
+        font-size: 18px;
+        color: $secondary-light;
+        font-family: $generalRegular;
+        margin-bottom: 0;
+        @media (max-width: 991px) {
+            font-size: 16px;
+          }
+          @media (max-width: 575px) {
+            font-size: 14px;
+          }
+      }
+      @media (max-width: 767px) {
+        padding: 30px;
       }
     }
   }
@@ -1354,7 +1451,7 @@ a {
               }
             }
 
-            @media (max-width: 576px) {
+            @media (max-width: 575px) {
               min-width: inherit;
 
               h2 {
@@ -1471,7 +1568,7 @@ a {
       }
     }
 
-    @media (max-width: 576px) {
+    @media (max-width: 575px) {
       padding: 20px 15px;
 
       .vision-tabs {
@@ -1514,7 +1611,7 @@ a {
         font-size: 26px;
       }
 
-      @media (max-width: 576px) {
+      @media (max-width: 575px) {
         font-size: 24px;
       }
     }
@@ -1688,7 +1785,7 @@ a {
   img.footer-logo.me-4 {
     //filter: brightness(0);
 
-    @media (max-width: 576px) {
+    @media (max-width: 575px) {
       max-width: 100px;
       margin-right: 12px !important;
 
@@ -1872,6 +1969,9 @@ a {
         }
       }
       @media (max-width: 767px) {
+        width: calc(50% - 12px);
+      }
+      @media (max-width: 575px) {
         width: calc(50% - 9px);
       }
     }
@@ -2009,7 +2109,7 @@ a {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   .hero-section {
     padding: 60px 0 20px;
     text-align: center;
