@@ -281,10 +281,12 @@ a {
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-    display: flex;
     padding: 11px;
     background-color: $primary-warmer;
     border: 0;
+    @media (max-width: 991px){
+      display: flex;
+    }
   }
 
   @media (max-width: 991px) {
