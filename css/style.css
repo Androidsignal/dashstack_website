@@ -631,6 +631,7 @@ a:focus {
   margin-right: auto;
   margin-left: 0;
   display: block;
+  margin-bottom: 15px;
 }
 @media (max-width: 767px) {
   .schedule-section.details-hero-section .schedule-inner .detail-img {
@@ -1217,7 +1218,7 @@ a:focus {
   margin: 0px 15px;
 }
 .platform-section.testimonial-section .slick-dots {
-  bottom: -45px;
+  bottom: -40px;
 }
 .platform-section.testimonial-section .slick-dots li {
   margin: 0;
@@ -2401,6 +2402,7 @@ a:focus {
   color: #131313;
   letter-spacing: -3px;
   margin-bottom: 32px;
+  text-transform: capitalize;
 }
 @media (max-width: 1199px) {
   .feedback-section .section-title {
