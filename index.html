@@ -69,7 +69,7 @@
     </nav>
 
     <!-- Enhanced Hero Section -->
-    <section class="hero-section" id="about">
+    <section class="hero-section pb-0" id="about">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-12">
@@ -86,21 +86,22 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <section class="hero-img-section">
-      <div class="container text-center position-relative">
-        <div class="row">
-          <div class="col-12">
-            <img
-              src="./images/hero_img.png"
-              alt="Hero Image"
-              class="hero-image"
-            />
+      <section class="hero-img-section">
+        <div class="container text-center position-relative">
+          <div class="row">
+            <div class="col-12">
+              <img
+                src="./images/hero_img.png"
+                alt="Hero Image"
+                class="hero-image"
+              />
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </section>
+
+
 
     <!-- Enhanced Stats Section -->
     <section class="stats-section">
@@ -262,41 +263,32 @@
             >
               <h3>Mobile Application</h3>
               <p>
-                With development capabilities across all platforms and devices,
-                DashStack Infotech experienced mobile app development and design
-                teams will work closely with you in creating a mobile app that
-                engages and retains users while increasing your overall brand
-                value.
+                With development capabilities across all platforms and devices, DashStack Infotech experienced mobile app development and design teams will work closely with you in creating a mobile app that engages and retains users while increasing your overall brand value.
               </p>
               <ul>
                 <li>
                   <img
                     src="./images/service_list_dot.png"
                     alt="List dot"
-                  />Flutter App Development for iOS and Android.
+                  />Flutter App Development
                 </li>
                 <li>
                   <img
                     src="./images/service_list_dot.png"
                     alt="List dot"
-                  />iPhone App Development with seamless user engagement.
+                  />iPhone App Development
                 </li>
                 <li>
                   <img
                     src="./images/service_list_dot.png"
                     alt="List dot"
-                  />Android App Development with robust performance.
+                  />Android App Development
                 </li>
                 <li>
                   <img
                     src="./images/service_list_dot.png"
                     alt="List dot"
-                  />Internet of Things (IoT) App Development for connected
-                  experiences.
-                </li>
-                <li>
-                  <img src="./images/service_list_dot.png" alt="List dot" />MVP
-                  & AI-Powered Apps.
+                  />Internet of Things (IoT)
                 </li>
               </ul>
             </div>
@@ -693,7 +685,7 @@
     <!-- Vision Section -->
     <section class="work-section vision-section">
       <div class="container">
-        <div class="row justify-content-center text-center mb-5">
+        <div class="row justify-content-center text-center mb-5 d-none">
           <div
             class="col-lg-12 d-flex justify-content-between align-items-center"
           >
@@ -765,7 +757,7 @@
           <div class="vision-carousel">
             <div class="vision-slides">
               <div class="vision-slide py-0 my-0">
-                <div class="healthcare slider mb-0">
+                <div class="healthcare slider mb-md-0">
                   <div class="vision-slide pe-4 ps-0">
                     <div class="vision-slide-content">
                       <div class="d-flex align-items-center gap-4 mb-3 mb-md-5">
@@ -789,6 +781,12 @@
                       </a>
                     </div>
                     <img src="./images/app_img.png" alt="" />
+                    <div class="vision-slide-content d-md-none">
+                      <div class="d-flex align-items-center gap-4 justify-content-center">
+                          <h2>01</h2>
+                          <p class="fs-4 mb-0 generalFont">Symcheck Vitals</p>
+                        </div>
+                    </div>
                   </div>
                   <div class="vision-slide pe-4 ps-0">
                     <div class="vision-slide-content">
@@ -813,6 +811,12 @@
                       </a>
                     </div>
                     <img src="./images/app_img.png" alt="" />
+                    <div class="vision-slide-content d-md-none">
+                      <div class="d-flex align-items-center gap-4 justify-content-center">
+                          <h2>01</h2>
+                          <p class="fs-4 mb-0 generalFont">Symcheck Vitals</p>
+                        </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -967,7 +971,7 @@
     </section>
 
     <!-- Schedule Meeting Section -->
-    <section class="schedule-section">
+    <section class="schedule-section schedule-meeting">
       <div class="container">
         <div class="schedule-inner mb-0">
           <div class="row justify-content-center text-center">
@@ -1119,7 +1123,6 @@
           responsive: [
             {
               breakpoint: 768,
-              settings: {},
             },
           ],
         });
