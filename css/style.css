@@ -829,6 +829,7 @@ a:focus {
     width: 120%;
     flex-direction: inherit !important;
     flex-wrap: inherit;
+    padding-right: 20%;
   }
   .services-section .nav-pills::-webkit-scrollbar {
     width: 6px;
