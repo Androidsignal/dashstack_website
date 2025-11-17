@@ -2940,7 +2940,7 @@ a:focus {
 }
 @media (max-width: 767px) {
   .what-we-do-section.work-section .accordion .accordion-item .accordion-header button p {
-    font-size: 15 px;
+    font-size: 15px;
   }
 }
 .what-we-do-section.work-section .accordion .accordion-item .accordion-header button::after {
