@@ -485,20 +485,20 @@
               Join the 4,200 companies using omoway
             </h3>
             <div class="logo-slider">
-              <div class="company-logo">
-                <img src="images/company_1.svg" alt="image">
+              <div class="company-logo text-center">
+                <img src="images/company_1.svg" class="m-auto" alt="image">
               </div>
-              <div class="company-logo">
-                <img src="images/company_2.svg" alt="image">
+              <div class="company-logo text-center">
+                <img src="images/company_2.svg" class="m-auto" alt="image">
               </div>
-              <div class="company-logo">
-                <img src="images/company_3.svg" alt="image">
+              <div class="company-logo text-center">
+                <img src="images/company_3.svg" class="m-auto" alt="image">
               </div>
-              <div class="company-logo">
-                <img src="images/company_4.svg" alt="image">
+              <div class="company-logo text-center">
+                <img src="images/company_4.svg" class="m-auto" alt="image">
               </div>
-              <div class="company-logo">
-                <img src="images/company_5.svg" alt="image">
+              <div class="company-logo text-center">
+                <img src="images/company_5.svg" class="m-auto" alt="image">
               </div>
             </div>
           </div>
@@ -613,17 +613,33 @@
     <script type="text/javascript">
       $(document).on("ready", function () {
         $(".logo-slider").slick({
-          dots: true,
+          dots: false,
           centerMode: true,
-          slidesToShow: 4.7,
+          slidesToShow: 3.7,
           arrows: false,
           slidesToScroll: 1,
           responsive: [
             {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 2.7,
+                autoplay: true,
+                autoplaySpeed: 1500,
+              },
+            },
+            {
               breakpoint: 992,
               settings: {
-                slidesToShow: 1,
+                slidesToShow: 1.7,
                 autoplay: true,
+                autoplaySpeed: 1500,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+                autoplay: false,
                 autoplaySpeed: 1500,
               },
             },
