@@ -1129,7 +1129,7 @@ a {
       ul {
         padding-left: 20px;
       }
-      li {
+      li,p {
         color: #5f5f86;
         font-family: $generalRegular;
 
@@ -1616,7 +1616,7 @@ a {
           margin-bottom: 16px;
         }
       }
-      p {
+      p,li {
         font-size: 18px;
         color: $secondary-light;
         font-family: $generalRegular;

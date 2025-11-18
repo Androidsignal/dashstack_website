@@ -1064,16 +1064,16 @@ a:focus {
 .platform-section.app-detail-section .platform-content ul {
   padding-left: 20px;
 }
-.platform-section.app-detail-section .platform-content li {
+.platform-section.app-detail-section .platform-content li, .platform-section.app-detail-section .platform-content p {
   color: #5f5f86;
   font-family: "General Sans Regular", sans-serif;
 }
-.platform-section.app-detail-section .platform-content li b {
+.platform-section.app-detail-section .platform-content li b, .platform-section.app-detail-section .platform-content p b {
   font-family: "General Sans Bold", sans-serif;
   font-weight: 700;
 }
 @media (max-width: 575px) {
-  .platform-section.app-detail-section .platform-content li {
+  .platform-section.app-detail-section .platform-content li, .platform-section.app-detail-section .platform-content p {
     font-size: 14px !important;
   }
 }
@@ -1578,19 +1578,19 @@ a:focus {
     margin-bottom: 16px;
   }
 }
-.work-section.features-benefits-section .feature-box p {
+.work-section.features-benefits-section .feature-box p, .work-section.features-benefits-section .feature-box li {
   font-size: 18px;
   color: #5f5f86;
   font-family: "General Sans Regular", sans-serif;
   margin-bottom: 0;
 }
 @media (max-width: 991px) {
-  .work-section.features-benefits-section .feature-box p {
+  .work-section.features-benefits-section .feature-box p, .work-section.features-benefits-section .feature-box li {
     font-size: 16px;
   }
 }
 @media (max-width: 575px) {
-  .work-section.features-benefits-section .feature-box p {
+  .work-section.features-benefits-section .feature-box p, .work-section.features-benefits-section .feature-box li {
     font-size: 14px;
   }
 }
