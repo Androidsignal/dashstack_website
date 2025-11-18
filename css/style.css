@@ -2,73 +2,73 @@
   font-family: "General Sans Regular";
   font-style: normal;
   font-weight: normal;
-  src: local("General Sans Regular"), url("../fonts/GeneralSans-Regular.otf") format("otf");
+  src: local("General Sans Regular"), url("../fonts/GeneralSans-Regular.otf");
 }
 @font-face {
   font-family: "General Sans Italic";
   font-style: normal;
   font-weight: normal;
-  src: local("General Sans Italic"), url("../fonts/GeneralSans-Italic.otf") format("otf");
+  src: local("General Sans Italic"), url("../fonts/GeneralSans-Italic.otf");
 }
 @font-face {
   font-family: "General Sans Extralight";
   font-style: normal;
   font-weight: normal;
-  src: local("General Sans Extralight"), url("../fonts/GeneralSans-Extralight.otf") format("otf");
+  src: local("General Sans Extralight"), url("../fonts/GeneralSans-Extralight.otf");
 }
 @font-face {
   font-family: "General Sans Extralight Italic";
   font-style: normal;
   font-weight: normal;
-  src: local("General Sans Extralight Italic"), url("../fonts/GeneralSans-ExtralightItalic.otf") format("otf");
+  src: local("General Sans Extralight Italic"), url("../fonts/GeneralSans-ExtralightItalic.otf");
 }
 @font-face {
   font-family: "General Sans Light";
   font-style: normal;
   font-weight: normal;
-  src: local("General Sans Light"), url("../fonts/GeneralSans-Light.otf") format("otf");
+  src: local("General Sans Light"), url("../fonts/GeneralSans-Light.otf");
 }
 @font-face {
   font-family: "General Sans Light Italic";
   font-style: normal;
   font-weight: normal;
-  src: local("General Sans Light Italic"), url("../fonts/GeneralSans-LightItalic.otf") format("otf");
+  src: local("General Sans Light Italic"), url("../fonts/GeneralSans-LightItalic.otf");
 }
 @font-face {
   font-family: "General Sans Medium";
   font-style: normal;
   font-weight: normal;
-  src: local("General Sans Medium"), url("../fonts/GeneralSans-Medium.otf") format("otf");
+  src: local("General Sans Medium"), url("../fonts/GeneralSans-Medium.otf");
 }
 @font-face {
   font-family: "General Sans Medium Italic";
   font-style: normal;
   font-weight: normal;
-  src: local("General Sans Medium Italic"), url("../fonts/GeneralSans-MediumItalic.otf") format("otf");
+  src: local("General Sans Medium Italic"), url("../fonts/GeneralSans-MediumItalic.otf");
 }
 @font-face {
   font-family: "General Sans Semibold";
   font-style: normal;
   font-weight: normal;
-  src: local("General Sans Semibold"), url("../fonts/GeneralSans-Semibold.otf") format("otf");
+  src: local("General Sans Semibold"), url("../fonts/GeneralSans-Semibold.otf");
 }
 @font-face {
   font-family: "General Sans Semibold Italic";
   font-style: normal;
   font-weight: normal;
-  src: local("General Sans Semibold Italic"), url("../fonts/GeneralSans-SemiboldItalic.otf") format("otf");
+  src: local("General Sans Semibold Italic"), url("../fonts/GeneralSans-SemiboldItalic.otf");
 }
 @font-face {
   font-family: "General Sans Bold";
   font-style: normal;
   font-weight: normal;
-  src: local("General Sans Bold"), url("../fonts/GeneralSans-Bold.otf") format("otf");
+  src: local("General Sans Bold"), url("../fonts/GeneralSans-Bold.otf");
 }
 @font-face {
   font-family: "General Sans Bold Italic";
   font-style: normal;
   font-weight: normal;
-  src: local("General Sans Bold Italic"), url("../fonts/GeneralSans-BoldItalic.otf") format("otf");
+  src: local("General Sans Bold Italic"), url("../fonts/GeneralSans-BoldItalic.otf");
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -2695,6 +2695,9 @@ a:focus {
 .hero-section.contact-section {
   margin-bottom: 64px;
 }
+.hero-section.contact-section .btn-schedule {
+  font-family: "General Sans Medium", sans-serif;
+}
 .hero-section.contact-section .hero-content > div {
   color: #5a5a59;
   font-family: "General Sans Regular", sans-serif;
@@ -2836,7 +2839,7 @@ a:focus {
   width: 100%;
 }
 .contact-map-section .mapouter {
-  margin-top: -400px;
+  margin-top: -440px;
 }
 .contact-map-section .mapouter iframe {
   height: 647px;
