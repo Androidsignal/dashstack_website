@@ -2421,6 +2421,33 @@ a {
     @media (max-width: 575px) {
       gap: 18px;
     }
+    &.five-grid{
+      .code-box{
+        width: calc(20% - 19.5px);
+        padding: 32px 25px;
+        p{
+          font-size: 22px;
+          @media (max-width: 1199px) {
+            font-size: 18px;
+          }
+          @media (max-width: 991px){
+            font-size: 16px;
+          }
+        }
+        @media (max-width: 1199px) {
+          padding: 32px 20px;
+        }
+        @media (max-width: 991px){
+          width: calc(25% - 18px);
+        }
+        @media (max-width: 767px) {
+          width: calc(50% - 12px);
+        }
+        @media (max-width: 575px) {
+          width: calc(50% - 9px);
+        }
+      }
+    }
   }
 }
 
@@ -2491,6 +2518,7 @@ a {
       margin-right: 12px;
       padding-right: 12px;
       border-right: 1px solid $light-gray;
+      max-height: 50px;
     }
     h4 {
       font-family: $generalSemibold;
