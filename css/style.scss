@@ -2371,13 +2371,17 @@ a {
       background-color: #fbfbfb;
       border-radius: 42px;
       width: calc(25% - 18px);
-      img {
+      div {
         box-shadow: -20px 23px 118px 0px #0101010f;
         padding: 26px;
         background-color: $white;
         border-radius: 50%;
         max-height: 112px;
         max-width: 112px;
+        margin: auto;
+        img{
+          max-width: 100%;
+        }
         @media (max-width: 1199px) {
           max-height: 90px;
           max-width: 90px;
@@ -3049,6 +3053,10 @@ a {
         }
       }
     }
+     @media (max-width: 575px) {
+      padding-left: 5px;
+      padding-right: 5px;
+     }
   }
   @media (max-width: 1199px) {
     padding: 45px 0;

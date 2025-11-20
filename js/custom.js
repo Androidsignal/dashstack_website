@@ -55,7 +55,7 @@ function updateSlide(index) {
   // if (activeTab) activeTab.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
 }
 
-function goTo(delta) { updateSlide(currentIndex + delta); }
+//function goTo(delta) { updateSlide(currentIndex + delta); }
 
 // Event delegation for tabs (works if tabs are added later)
 document.querySelector(".vision-tabs").addEventListener("click", (e) => {
@@ -82,7 +82,7 @@ document.querySelector(".vision-tabs").addEventListener("click", (e) => {
 // });
 
 // Init
-updateSlide(0);
+//updateSlide(0);
 
 // slider code ended 
 
@@ -157,5 +157,18 @@ $(window).scroll(function () {
   }
 });
 
+$(document).ready(function () {
+  const $navbar = $('#navbarNav'); // your collapse ID
+
+  // When navbar opens
+  $navbar.on('shown.bs.collapse', function () {
+    $('body').addClass('overflow-hidden');
+  });
+
+  // When navbar closes (outside click, link click, ESC, anything)
+  $navbar.on('hidden.bs.collapse', function () {
+    $('body').removeClass('overflow-hidden');
+  });
+});
 // remove no-js class if JS is enabled
 document.documentElement.classList.remove("no-js");
