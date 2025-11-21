@@ -1,29 +1,3 @@
-// tab and slider sync
-// const tabs = document.querySelectorAll(".vision-tab");
-// const dots = document.querySelectorAll(".vision-dot");
-// const slides = document.querySelector(".vision-slides");
-// let currentIndex = 0;
-
-// function updateSlide(index) {
-//   currentIndex = index;
-//   slides.style.transform = `translateX(-${index * 100}%)`;
-
-//   tabs.forEach((t) => t.classList.remove("active"));
-//   tabs[index].classList.add("active");
-
-//   dots.forEach((d) => d.classList.remove("active"));
-//   dots[index].classList.add("active");
-// }
-
-// tabs.forEach((tab) => {
-//   tab.addEventListener("click", () => updateSlide(Number(tab.dataset.index)));
-// });
-
-// dots.forEach((dot) => {
-//   dot.addEventListener("click", () => updateSlide(Number(dot.dataset.index)));
-// });
-
-
 // new slider code
 // tab, dot, nav + auto-scroll sync
 const slidesEl = document.querySelector(".vision-slides");
@@ -49,13 +23,7 @@ function updateSlide(index) {
   const dots = $dots();
   dots.forEach(d => d.classList.remove("active"));
   if (dots[currentIndex]) dots[currentIndex].classList.add("active");
-
-  // auto-scroll active tab into view (when overflowing)
-  // const activeTab = document.querySelector(`.vision-tab[data-index="${currentIndex}"]`);
-  // if (activeTab) activeTab.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
 }
-
-function goTo(delta) { updateSlide(currentIndex + delta); }
 
 // Event delegation for tabs (works if tabs are added later)
 document.querySelector(".vision-tabs").addEventListener("click", (e) => {
@@ -64,37 +32,14 @@ document.querySelector(".vision-tabs").addEventListener("click", (e) => {
   updateSlide(Number(tab.dataset.index));
 });
 
-// Event delegation for dots
-// document.querySelector(".vision-dots").addEventListener("click", (e) => {
-//   const dot = e.target.closest(".vision-dot");
-//   if (!dot) return;
-//   updateSlide(Number(dot.dataset.index));
-// });
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+window.addEventListener('popstate', (e) => {
+  updateSlide(0);
+  window.scrollTo({ top: 0, left: 0 });
+});
 
-// Prev/Next buttons
-// document.querySelector(".vision-prev").addEventListener("click", () => goTo(-1));
-// document.querySelector(".vision-next").addEventListener("click", () => goTo(1));
-
-// Optional: arrow keys
-// document.addEventListener("keydown", (e) => {
-//   if (e.key === "ArrowLeft") goTo(-1);
-//   if (e.key === "ArrowRight") goTo(1);
-// });
-
-// Init
-updateSlide(0);
-
-// slider code ended 
-
-// Enhanced navigation with scroll effect
-// window.addEventListener("scroll", function () {
-//   const navbar = document.getElementById("mainNavbar");
-//   if (window.scrollY > 50) {
-//     navbar.classList.add("scrolled");
-//   } else {
-//     navbar.classList.remove("scrolled");
-//   }
-// });
 
 // Close Bootstrap collapse when clicking outside (navbar collapse)
 document.addEventListener("click", function (event) {
@@ -157,5 +102,18 @@ $(window).scroll(function () {
   }
 });
 
+$(document).ready(function () {
+  const $navbar = $('#navbarNav'); // your collapse ID
+
+  // When navbar opens
+  $navbar.on('shown.bs.collapse', function () {
+    $('body').addClass('overflow-hidden');
+  });
+
+  // When navbar closes (outside click, link click, ESC, anything)
+  $navbar.on('hidden.bs.collapse', function () {
+    $('body').removeClass('overflow-hidden');
+  });
+});
 // remove no-js class if JS is enabled
 document.documentElement.classList.remove("no-js");
