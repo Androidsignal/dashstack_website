@@ -625,6 +625,36 @@ Transform healthcare delivery with SymCheck's comprehensive biometric scanning t
           ],
         });
       });
+      // Close Bootstrap collapse when clicking outside (navbar collapse)
+      document.addEventListener("click", function (event) {
+        const navbar = document.querySelector(".navbar");
+        const collapseEl = document.querySelector(".navbar-collapse");
+        if (!collapseEl) return;
+
+        // If click isn't inside navbar and collapse is open, hide it
+        if (
+          !navbar.contains(event.target) &&
+          collapseEl.classList.contains("show")
+        ) {
+          // Use Bootstrap Collapse API
+          const collapse = bootstrap.Collapse.getOrCreateInstance(collapseEl);
+          collapse.hide();
+        }
+      });
+
+      $(document).ready(function () {
+        const $navbar = $("#navbarNav"); // your collapse ID
+
+        // When navbar opens
+        $navbar.on("shown.bs.collapse", function () {
+          $("body").addClass("overflow-hidden");
+        });
+
+        // When navbar closes (outside click, link click, ESC, anything)
+        $navbar.on("hidden.bs.collapse", function () {
+          $("body").removeClass("overflow-hidden");
+        });
+      });
     </script>
   </body>
 </html>
