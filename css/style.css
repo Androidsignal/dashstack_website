@@ -3086,27 +3086,27 @@ a:focus {
   }
 }
 .what-we-do-section.staff-section .staff-content img {
-  width: 410px;
-  height: 500px;
-  border-radius: 42px;
+  width: auto;
+  height: auto;
+  border-radius: 0;
   -o-object-fit: cover;
      object-fit: cover;
 }
 @media (max-width: 1199px) {
   .what-we-do-section.staff-section .staff-content img {
-    height: 410px;
+    height: auto;
     border-radius: 30px;
   }
 }
 @media (max-width: 991px) {
   .what-we-do-section.staff-section .staff-content img {
-    height: 300px;
+    height: auto;
     border-radius: 20px;
   }
 }
 @media (max-width: 767px) {
   .what-we-do-section.staff-section .staff-content img {
-    height: 500px;
+    height: auto;
     width: 100%;
     border-radius: 20px;
   }
@@ -3114,7 +3114,7 @@ a:focus {
 @media (max-width: 575px) {
   .what-we-do-section.staff-section .staff-content img {
     width: 100%;
-    height: 500px;
+    height: auto;
   }
 }
 .what-we-do-section.staff-section .staff-content h4 {
