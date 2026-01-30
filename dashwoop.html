@@ -26,7 +26,7 @@
     <!-- Enhanced Navigation -->
     <nav class="navbar navbar-expand-lg" id="mainNavbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html">DASHSTACK</a>
+            <a class="navbar-brand" href="index.html" aria-label="DashStack-icon">DASHSTACK</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -48,7 +48,8 @@
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
-                <button class="btn btn-consultation w-auto" data-bs-toggle="modal" data-bs-target="#consultationModal">
+                <button type="button" class="btn btn-consultation w-auto" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
                     Free Consultation
                     <img src="./images/black_arrow.svg" alt="Arrow Right" />
                 </button>
@@ -61,7 +62,7 @@
             <div class="schedule-inner">
                 <div class="row justify-content-center text-center bg-white align-items-end">
                     <div class="col-lg-6 mt-lg-0 mt-4 px-1">
-                        <img src="../images/dash_woop_icon.png" alt="Detail Image" class="detail-img" />
+                        <img src="../images/dash_woop_icon.png" alt="DashWoop Icon" class="detail-img" />
                         <h2 class="section-title text-start">DashWoop</h2>
                         <p class="section-subtitle text-start">
                             DashWoop is designed to simplify real-time video communication for businesses, communities,
@@ -82,7 +83,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 mt-lg-0 mt-3 px-1">
-                        <img src="./images/dash_woop_hero_image.png" alt="Schedule Meeting" class="img-fluid" />
+                        <img src="./images/dash_woop_hero_image.png" alt="DashWoop heroImage" class="img-fluid" />
                     </div>
                 </div>
             </div>
@@ -100,8 +101,8 @@
                     <div class="col-lg-6">
                         <div class="feedback-content mt-5 mt-lg-0">
                             <div class="feedback-content-top d-flex align-items-center mb-4 gap-2">
-                                <img src="./images/star_round.png" alt="Star Round" />
-                                <p class="mb-0">Valuable 🧑🏼🤝🧑 Feedback</p>
+                                <img src="./images/star_round.png" alt="Review" />
+                                <p class="mb-0" aria-label="Client Feedback">Valuable 🧑🏼🤝🧑 Feedback</p>
                             </div>
                             <h2 class="section-title text-start">Reliable Performance Meets Technical Excellence</h2>
                             <p class="section-subtitle text-start mb-5">
@@ -118,7 +119,7 @@
                                 professional, secure, and high-performance video calling experience flutter app.
                             </p>
                             <div class="feedback-content-bottom d-flex align-items-center flex-row">
-                                <img src="../images/dash_woop_icon.png" alt="DashWoop" class="img-fluid"
+                                <img src="../images/dash_woop_icon.png" alt="DashWoop Icon" class="img-fluid"
                                     style="width: 60px; height: 60px; object-fit: contain;" />
                                 <div class="d-flex flex-column text-start">
                                     <h4>DashWoop App</h4>
@@ -197,13 +198,13 @@
         <div class="container-fluid p-0">
             <div class="app-screenshots">
                 <div class="app-screenshots-slide">
-                    <div class="text-center"><img src="../images/dash_woop_ss1.png" alt="CrickAdmin Screenshot 1"
+                    <div class="text-center"><img src="../images/dash_woop_ss1.png" alt="DashWoop Screenshot 1"
                             class="img-fluid" /></div>
-                    <div class="text-center"><img src="../images/dash_woop_ss2.png" alt="CrickAdmin Screenshot 2"
+                    <div class="text-center"><img src="../images/dash_woop_ss2.png" alt="DashWoop Screenshot 2"
                             class="img-fluid" /></div>
-                    <div class="text-center"><img src="../images/dash_woop_ss3.png" alt="CrickAdmin Screenshot 3"
+                    <div class="text-center"><img src="../images/dash_woop_ss3.png" alt="DashWoop Screenshot 3"
                             class="img-fluid" /></div>
-                    <div class="text-center"><img src="../images/dash_woop_ss4.png" alt="CrickAdmin Screenshot 4"
+                    <div class="text-center"><img src="../images/dash_woop_ss4.png" alt="DashWoop Screenshot 4"
                             class="img-fluid" /></div>
                 </div>
             </div>
@@ -219,25 +220,25 @@
                     <div class="code-tool-content">
                         <div class="code-box">
                             <div>
-                                <img src="../images/app_icon.jpg" alt="App Icon" />
+                                <img src="../images/android_studio_icon.jpg" alt="Android-Studio Icon" />
                             </div>
                             <p class="mb-0">Android Studio</p>
                         </div>
                         <div class="code-box">
                             <div>
-                                <img src="../images/flutter_icon.jpg" alt="App Icon" />
+                                <img src="../images/flutter_icon.jpg" alt="Flutter Icon" />
                             </div>
                             <p class="mb-0">Flutter</p>
                         </div>
                         <div class="code-box">
                             <div>
-                                <img src="../images/hammer_icon.jpg" alt="X code" />
+                                <img src="../images/xcode_icon.jpg" alt="X-Code Icon" />
                             </div>
                             <p class="mb-0">Xcode</p>
                         </div>
                         <div class="code-box">
                             <div>
-                                <img src="../images/git_icon.jpg" alt="Git Icon" />
+                                <img src="../images/git_icon.jpg" alt="GitHub Icon" />
                             </div>
                             <p class="mb-0">Github</p>
                         </div>
@@ -382,7 +383,8 @@
                             development approach.
                         </p>
                         <div class="text-start">
-                            <button class="btn btn-schedule d-inline-block">
+                            <button class="btn btn-schedule d-inline-block" type="button" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
                                 Schedule a meeting
                                 <img class="ms-2" src="./images/white_arrow.svg" alt="Arrow Right" />
                             </button>
@@ -395,6 +397,63 @@
             </div>
         </div>
     </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="staticBackdropLabel">Get Free Consultation</h1>
+                    <p>Want to create your online store and improve your sales? Our Company is the one and only solution
+                        you need to build your online business.</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="contact-form">
+                        <div class="row">
+                            <div class="col-md-12 mb-4">
+                                <div class="form-group">
+                                    <label for="fullName">Full name</label>
+                                    <input type="text" class="form-control" id="fullName"
+                                        placeholder="Full name here" />
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="form-group">
+                                    <label for="company">Company name</label>
+                                    <input type="text" class="form-control" id="company" placeholder="Omoway agency" />
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="form-group">
+                                    <label for="email">Your email</label>
+                                    <input type="email" class="form-control" id="email"
+                                        placeholder="name@example.com" />
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="description">
+                                        Tell us more about your project
+                                    </label>
+                                    <textarea class="form-control textarea" id="description" rows="3"
+                                        placeholder="Something about your great ideas..."></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button type="submit"
+                                    class="btn btn-learn-more btn-schedule d-inline-flex mt-md-4 mt-3">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Enhanced Footer -->
     <footer class="footer">
@@ -436,7 +495,7 @@
             </div>
             <div class="d-flex align-items-center quote-section">
                 <div class="d-flex align-items-center text-left mb-4 mb-sm-4 mb-lg-0">
-                    <img src="./images/logo.svg" alt="Footer Logo" class="footer-logo me-4" />
+                    <img src="./images/logo.svg" alt="DashStck FooterLogo" class="footer-logo me-4" />
                     <p class="mb-0">
                         Powering Digital Journeys from<br />
                         Startups to Enterprises.
@@ -462,7 +521,7 @@
                         <img src="./images/linkedin_icon.png" alt="LinkeDin" />
                     </a>
                     <a class="me-2" href="https://pub.dev/publishers/dashstack.tech/packages">
-                        <img src="./images/flutter_icon.png" alt="Flutter" />
+                        <img src="./images/flutter_icon.png" alt="Flutter Open-Source Packages" />
                     </a>
                     <a class="me-2" href="https://share.google/jNeEXJylERyU6zyFs">
                         <img src="./images/google_icon.png" alt="Google" />
