@@ -39,108 +39,84 @@ $generalBoldItalic: "General Sans Bold Italic", sans-serif;
   font-family: "General Sans Regular";
   font-style: normal;
   font-weight: normal;
-  src:
-    local("General Sans Regular"),
-    url("../fonts/GeneralSans-Regular.otf") ;
+  src: local("General Sans Regular"), url("../fonts/GeneralSans-Regular.otf");
 }
 
 @font-face {
   font-family: "General Sans Italic";
   font-style: normal;
   font-weight: normal;
-  src:
-    local("General Sans Italic"),
-    url("../fonts/GeneralSans-Italic.otf") ;
+  src: local("General Sans Italic"), url("../fonts/GeneralSans-Italic.otf");
 }
 
 @font-face {
   font-family: "General Sans Extralight";
   font-style: normal;
   font-weight: normal;
-  src:
-    local("General Sans Extralight"),
-    url("../fonts/GeneralSans-Extralight.otf") ;
+  src: local("General Sans Extralight"), url("../fonts/GeneralSans-Extralight.otf");
 }
 
 @font-face {
   font-family: "General Sans Extralight Italic";
   font-style: normal;
   font-weight: normal;
-  src:
-    local("General Sans Extralight Italic"),
-    url("../fonts/GeneralSans-ExtralightItalic.otf") ;
+  src: local("General Sans Extralight Italic"), url("../fonts/GeneralSans-ExtralightItalic.otf");
 }
 
 @font-face {
   font-family: "General Sans Light";
   font-style: normal;
   font-weight: normal;
-  src:
-    local("General Sans Light"),
-    url("../fonts/GeneralSans-Light.otf") ;
+  src: local("General Sans Light"), url("../fonts/GeneralSans-Light.otf");
 }
 
 @font-face {
   font-family: "General Sans Light Italic";
   font-style: normal;
   font-weight: normal;
-  src:
-    local("General Sans Light Italic"),
-    url("../fonts/GeneralSans-LightItalic.otf") ;
+  src: local("General Sans Light Italic"), url("../fonts/GeneralSans-LightItalic.otf");
 }
 
 @font-face {
   font-family: "General Sans Medium";
   font-style: normal;
   font-weight: normal;
-  src:
-    local("General Sans Medium"),
-    url("../fonts/GeneralSans-Medium.otf") ;
+  src: local("General Sans Medium"), url("../fonts/GeneralSans-Medium.otf");
 }
 
 @font-face {
   font-family: "General Sans Medium Italic";
   font-style: normal;
   font-weight: normal;
-  src:
-    local("General Sans Medium Italic"),
-    url("../fonts/GeneralSans-MediumItalic.otf") ;
+  src: local("General Sans Medium Italic"), url("../fonts/GeneralSans-MediumItalic.otf");
 }
 
 @font-face {
   font-family: "General Sans Semibold";
   font-style: normal;
   font-weight: normal;
-  src:
-    local("General Sans Semibold"),
-    url("../fonts/GeneralSans-Semibold.otf") ;
+  src: local("General Sans Semibold"), url("../fonts/GeneralSans-Semibold.otf");
 }
 
 @font-face {
   font-family: "General Sans Semibold Italic";
   font-style: normal;
   font-weight: normal;
-  src:
-    local("General Sans Semibold Italic"),
-    url("../fonts/GeneralSans-SemiboldItalic.otf") ;
+  src: local("General Sans Semibold Italic"), url("../fonts/GeneralSans-SemiboldItalic.otf");
 }
 
 @font-face {
   font-family: "General Sans Bold";
   font-style: normal;
   font-weight: normal;
-  src:
-    local("General Sans Bold"),
-    url("../fonts/GeneralSans-Bold.otf") ;
+  src: local("General Sans Bold"), url("../fonts/GeneralSans-Bold.otf");
 }
 
 @font-face {
   font-family: "General Sans Bold Italic";
   font-style: normal;
   font-weight: normal;
-  src:
-    local("General Sans Bold Italic"),
-    url("../fonts/GeneralSans-BoldItalic.otf") ;
+  src: local("General Sans Bold Italic"), url("../fonts/GeneralSans-BoldItalic.otf");
 }
 
 body {
@@ -1670,6 +1646,8 @@ a {
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
       margin-bottom: 30px;
       overflow-x: auto;
+      user-select: none;
+      cursor: pointer;
       &::-webkit-scrollbar-track {
         -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
         border-radius: 10px;
@@ -1778,9 +1756,9 @@ a {
           gap: 40px;
           margin: 20px 0;
 
-            .slick-slide{
-              margin: 0 0;
-            }
+          .slick-slide {
+            margin: 0 0;
+          }
           .vision-slide-content {
             h2 {
               margin-bottom: 0;
@@ -2381,7 +2359,7 @@ a {
         max-height: 112px;
         max-width: 112px;
         margin: auto;
-        img{
+        img {
           max-width: 100%;
         }
         @media (max-width: 1199px) {
@@ -2423,23 +2401,23 @@ a {
     @media (max-width: 575px) {
       gap: 18px;
     }
-    &.five-grid{
-      .code-box{
+    &.five-grid {
+      .code-box {
         width: calc(20% - 19.5px);
         padding: 32px 25px;
-        p{
+        p {
           font-size: 22px;
           @media (max-width: 1199px) {
             font-size: 18px;
           }
-          @media (max-width: 991px){
+          @media (max-width: 991px) {
             font-size: 16px;
           }
         }
         @media (max-width: 1199px) {
           padding: 32px 20px;
         }
-        @media (max-width: 991px){
+        @media (max-width: 991px) {
           width: calc(25% - 18px);
         }
         @media (max-width: 767px) {
@@ -2741,7 +2719,7 @@ a {
 .hero-section {
   &.contact-section {
     margin-bottom: 64px;
-    .btn-schedule{
+    .btn-schedule {
       font-family: $generalMedium;
     }
     .hero-content {
@@ -2761,7 +2739,7 @@ a {
         @media (max-width: 767px) {
           text-align: center;
           font-size: 42px;
-                  padding: 0px 10px;
+          padding: 0px 10px;
         }
       }
     }
@@ -2911,7 +2889,7 @@ a {
     background-color: $secondary-black;
     .section-title {
       color: $light-gray;
-      img{
+      img {
         @media (max-width: 575px) {
           height: 32px;
           width: auto;
@@ -2926,7 +2904,7 @@ a {
       @media (max-width: 575px) {
         font-size: 42px;
         margin-bottom: 24px;
-      } 
+      }
     }
     .title-content {
       color: #b3b3b3;
@@ -3026,9 +3004,9 @@ a {
   }
   &.staff-section {
     h2 {
-     max-width: 440px;
-    margin-left: auto;
-    margin-right: auto;
+      max-width: 440px;
+      margin-left: auto;
+      margin-right: auto;
     }
     .col-lg-12 {
       margin-bottom: 64px;
@@ -3093,10 +3071,10 @@ a {
         }
       }
     }
-     @media (max-width: 575px) {
+    @media (max-width: 575px) {
       padding-left: 5px;
       padding-right: 5px;
-     }
+    }
   }
   @media (max-width: 1199px) {
     padding: 45px 0;
@@ -3111,30 +3089,30 @@ a {
     font-size: 30px;
     font-family: $generalMedium;
     margin-bottom: 42px;
-    @media (max-width: 575px){
+    @media (max-width: 575px) {
       font-size: 24px;
     }
   }
   .slick-list {
-    .slick-track{
-      @media (max-width: 575px){
+    .slick-track {
+      @media (max-width: 575px) {
         display: flex;
         align-items: center;
       }
     }
-    .slick-slide{
+    .slick-slide {
       margin: 0px 8px;
-      img{
+      img {
         max-width: 100%;
       }
-      @media (max-width: 575px){
+      @media (max-width: 575px) {
         margin: 0px 15px;
       }
     }
     &::after,
     &::before {
       content: "";
-      background: linear-gradient(90deg, #FFFFFF 28.42%, rgba(255, 255, 255, 0) 100%);
+      background: linear-gradient(90deg, #ffffff 28.42%, rgba(255, 255, 255, 0) 100%);
       height: 100%;
       position: absolute;
       width: 100px;
@@ -3142,14 +3120,14 @@ a {
       left: 0;
       top: 0;
       bottom: 0;
-       @media (max-width: 575px) {
+      @media (max-width: 575px) {
         width: 60px;
-       } 
+      }
     }
-    &::before{
+    &::before {
       left: auto;
       right: 0;
-      background: linear-gradient(270deg, #FFFFFF 28.42%, rgba(255, 255, 255, 0) 100%);
+      background: linear-gradient(270deg, #ffffff 28.42%, rgba(255, 255, 255, 0) 100%);
     }
   }
   @media (max-width: 1199px) {
@@ -3157,6 +3135,147 @@ a {
   }
   @media (max-width: 575px) {
     margin: 30px 0 10px;
+  }
+}
+
+//modal css
+.modal {
+  .modal-content{
+    border-radius: 50px;
+    @media (max-width: 1199px) {
+      border-radius: 30px;
+    }
+    @media (max-width: 767px) {
+      border-radius: 20px;
+    }
+  }
+  .modal-header {
+    display: block;
+    text-align: center;
+    padding: 80px 80px 35px;
+    border: 0;
+    @media (max-width: 1199px) {
+      padding: 60px 40px 25px;
+    }
+    @media (max-width: 767px) {
+      padding: 40px 20px 20px;
+    }
+    @media (max-width: 575px) {
+      padding: 30px 15px 15px;
+    }
+    h1 {
+      font-size: 63px;
+      margin-bottom: 26px;
+      color: #000000;
+      line-height: normal;
+      @media (max-width: 1199px) {
+        font-size: 48px;
+        margin-bottom: 20px;
+        line-height: 45px;
+      }
+      @media (max-width: 767px) {
+        font-size: 36px;
+        margin-bottom: 16px;
+      }
+      @media (max-width: 575px) {
+        font-size: 28px;
+        margin-bottom: 12px;
+        line-height: 32px;
+      }
+    }
+    p {
+      font-size: 18px;
+      color: $dark-gray;
+      max-width: 668px;
+      margin: auto;
+      @media (max-width: 1199px) {
+        font-size: 16px;
+        max-width: 100%;
+      }
+      @media (max-width: 767px) {
+        font-size: 14px;
+      }
+      @media (max-width: 575px) {
+          font-size: 12px;
+      }
+    }
+    .btn-close {
+      position: absolute;
+      top: 38px;
+      right: 38px;
+      border: 1px solid;
+      border-radius: 50%;
+      opacity: 1;
+      @media (max-width: 1199px) {
+        top: 30px;
+        right: 30px;
+      }
+      @media (max-width: 767px) {
+        top: 20px;
+        right: 20px;
+        border: 0;
+      }
+      @media (max-width: 575px) {
+        top: 15px;
+        right: 15px;
+      }
+    }
+  }
+  .modal-body {
+    padding: 80px;
+    padding-top: 0;
+    @media (max-width: 1199px) {
+      padding: 0 60px 40px;
+    }
+    @media (max-width: 767px) {
+      padding: 0 40px 30px;
+    }
+    @media (max-width: 575px) {
+      padding: 0 20px 20px;
+    }
+    .mb-4{
+      margin-bottom: 32px;
+      @media (max-width: 767px) {
+        margin-bottom: 24px !important;
+      }
+      @media (max-width: 575px) {
+        margin-bottom: 16px !important;
+      }
+    }
+  }
+  label {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: $secondary-color;
+    margin-bottom: 14px;
+    @media (max-width: 1199px) {
+      font-size: 16px;
+    }
+    @media (max-width: 767px) {
+      font-size: 14px;
+    }
+    @media (max-width: 575px) {
+      font-size: 12px;
+    }
+  }
+  input,
+  textarea {
+    padding: 24px 32px;
+    color: #7a7782;
+    font-size: 18px;
+    border-radius: 20px;
+    @media (max-width: 1199px) {
+      font-size: 16px;
+      padding: 16px 24px;
+    }
+    @media (max-width: 767px) {
+      font-size: 14px;
+    }
+    @media (max-width: 575px) {
+      font-size: 12px;
+    }
   }
 }
 
