@@ -10,7 +10,12 @@ async function submitContactForm(event) {
 
   // Validate form
   if (!fullName || !email || !projectDetails) {
-    alert('Please fill in all required fields');
+    Swal.fire({
+      icon: 'warning',
+      title: 'Missing Fields',
+      text: 'Please fill in all required fields',
+      confirmButtonColor: '#10b981'
+    });
     return;
   }
 
@@ -35,7 +40,12 @@ async function submitContactForm(event) {
     });
 
     if (response.ok) {
-      alert('Thank you! We will get back to you soon.');
+      Swal.fire({
+        icon: 'success',
+        title: 'Thank You!',
+        text: 'Your inquiry has been sent successfully. We will get back to you soon.',
+        confirmButtonColor: '#10b981'
+      });
       event.target.reset(); // Clear form
       // Close modal if it exists
       const modalElement = document.getElementById('staticBackdrop');
@@ -46,11 +56,21 @@ async function submitContactForm(event) {
         }
       }
     } else {
-      alert('Error submitting form. Please try again.');
+      Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        text: 'Error submitting form. Please try again.',
+        confirmButtonColor: '#10b981'
+      });
     }
   } catch (error) {
     console.error('Error:', error);
-    alert('Error submitting form. Please try again.');
+    Swal.fire({
+      icon: 'error',
+      title: 'Error',
+      text: 'Error submitting form. Please try again.',
+      confirmButtonColor: '#10b981'
+    });
   } finally {
     submitBtn.textContent = originalText;
     submitBtn.disabled = false;
