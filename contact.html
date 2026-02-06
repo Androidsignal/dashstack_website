@@ -74,11 +74,11 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <form class="contact-form">
+          <form class="contact-form" id="contactForm">
             <div class="row">
               <div class="col-md-6 mb-4">
                 <div class="form-group">
-                  <label for="fullName">Full name</label>
+                  <label for="fullName">Full name <span style="color: #10b981;">*</span></label>
                   <input type="text" class="form-control" id="fullName" placeholder="Full name here" />
                 </div>
               </div>
@@ -90,7 +90,7 @@
               </div>
               <div class="col-md-6 mb-4">
                 <div class="form-group">
-                  <label for="email">Your email</label>
+                  <label for="email">Your email <span style="color: #10b981;">*</span></label>
                   <input type="email" class="form-control" id="email" placeholder="name@example.com" />
                 </div>
               </div>
@@ -131,25 +131,31 @@
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="interest" id="landing" />
                       <label class="form-check-label" for="Inventory app">
-                        Flutter POS & Inventory Management Apps
+                        POS & Inventory Management Systems
                       </label>
                     </div>
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="interest" id="responsive" value="option2" />
                       <label class="form-check-label" for="AI-Powered app">
-                        AI-Powered Flutter Applications
+                        AI-Powered Mobile Solutions
+                      </label>
+                    </div>
+                     <div class="form-check">
+                      <input class="form-check-input" type="radio" name="interest" id="responsive" value="option2" />
+                      <label class="form-check-label" for="AI-Powered app">
+                        IoT Dashboards & Hardware Integration
                       </label>
                     </div>
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="interest" id="landing" />
                       <label class="form-check-label" for="enterprise app">
-                        Enterprise Resource Planning (ERP) App Development
+                        Enterprise ERP & SaaS Platforms
                       </label>
                     </div>
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="interest" id="landing" />
                       <label class="form-check-label" for="health app">
-                        Flutter Healthcare App Development
+                        Other
                       </label>
                     </div>
                   </div>
@@ -193,17 +199,17 @@
               <div class="col-md-12">
                 <div class="form-group">
                   <label for="description">
-                    Tell us more about your project
+                    Tell us more about your project <span style="color: #10b981;">*</span>
                   </label>
                   <textarea class="form-control textarea" id="description" rows="3"
                     placeholder="Something about your great ideas..."></textarea>
                 </div>
               </div>
               <div class="col-md-12">
-                <a class="btn btn-learn-more btn-schedule d-inline-flex mt-md-4 mt-3" href="">
+                <button type="submit" class="btn btn-learn-more btn-schedule d-inline-flex mt-md-4 mt-3">
                   Submit
                   <img class="ms-2" src="./images/white_arrow.svg" alt="Arrow Right" />
-                </a>
+                </button>
               </div>
             </div>
           </form>
