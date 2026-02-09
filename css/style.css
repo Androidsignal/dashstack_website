@@ -1666,6 +1666,12 @@ a:focus {
     background-color: #0cbb52
 }
 
+
+.work-section .row.g-4 .col-lg-3 .work-card:hover h3,
+.work-section .row.g-4 .col-lg-3 .work-card.active h3 {
+    color: #d2d2d2
+}
+
 .work-section .row.g-4 .col-lg-3 .work-card:hover h5,
 .work-section .row.g-4 .col-lg-3 .work-card.active h5 {
     color: #d2d2d2
