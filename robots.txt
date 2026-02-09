@@ -1,0 +1,28 @@
+# Allow all search engines to crawl the website
+User-agent: *
+Allow: /
+
+# Specific rules for Google
+User-agent: Googlebot
+Allow: /
+
+# Specific rules for Bing
+User-agent: Bingbot
+Allow: /
+
+# Disallow crawling of admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /includes/modal.html
+
+# Allow crawling of CSS, JS, and images
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /fonts/
+
+# Sitemap location
+Sitemap: https://www.dashstack.tech/sitemap.xml
+
+# Crawl delay (optional - prevents server overload)
+Crawl-delay: 1
