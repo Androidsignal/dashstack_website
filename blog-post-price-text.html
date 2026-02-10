@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Format prices in multiple currencies with PriceText package for Flutter. Support for USD, EUR, INR, JPY and more with automatic formatting and flags." />
+  <title>PriceText: Multi-Currency Formatting for Flutter | DashStack Blog</title>
+  <link rel="icon" href="./images/favicon.png" type="image/png" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Roboto+Slab:wght@100..900&display=swap"
+    rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body data-bs-spy="scroll">
+  <!-- Enhanced Navigation -->
+  <nav class="navbar navbar-expand-lg" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand" href="/" aria-label="Flutter Development Company – DashStack">DASHSTACK</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto me-4">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#services">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#testimonial">Testimonial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <button type="button" class="btn btn-consultation w-auto" data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop">
+          Free Consultation
+          <img src="./images/black_arrow.svg" alt="Arrow Right" />
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Blog Post Header -->
+    <section class="blog-post-header-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="blog-post-header-content">
+              <div class="blog-breadcrumb mb-4">
+                <a href="blog.html">Blog</a>
+                <span class="mx-2">/</span>
+                <span>PriceText: Multi-Currency Formatting</span>
+              </div>
+              <div class="blog-category-tag mb-4">
+                <span class="category-badge">Flutter Packages</span>
+              </div>
+              <h1 class="blog-post-title mb-4">PriceText: Multi-Currency Formatting Made Easy</h1>
+              <p class="blog-post-subtitle">Master the art of displaying prices across multiple currencies with proper localization and formatting in Flutter apps.</p>
+              <div class="blog-post-meta mt-5 d-flex justify-content-between align-items-center">
+                <div class="blog-post-author d-flex align-items-center">
+                  <img src="./images/director_3.png" alt="Author" class="author-avatar me-3" />
+                  <div>
+                    <strong class="d-block">DashStack Team</strong>
+                    <small class="text-muted">Flutter Package Maintainers</small>
+                  </div>
+                </div>
+                <div class="blog-post-info">
+                  <span class="me-4"><i class="fas fa-calendar-alt me-2"></i>Feb 7, 2026</span>
+                  <span><i class="fas fa-clock me-2"></i>8 min read</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Post Content -->
+    <section class="blog-post-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <article class="blog-post-content">
+              <p>
+                Building global applications that support multiple currencies can be challenging. Handling currency 
+                formatting, displaying symbols correctly, and maintaining localization across different regions requires 
+                careful planning. The <code>price_text</code> package from DashStack simplifies this complexity into a 
+                single, easy-to-use widget.
+              </p>
+
+              <h2>What is PriceText?</h2>
+              <p>
+                <code>PriceText</code> is a powerful Flutter package that handles currency formatting and display 
+                across 13+ currencies with automatic localization support. It combines currency symbols, flags, codes, 
+                and customizable formatting into one elegant widget.
+              </p>
+
+              <h2>Supported Currencies</h2>
+              <p>
+                The package supports the following currencies out of the box:
+              </p>
+              <ul>
+                <li>USD (United States Dollar)</li>
+                <li>EUR (Euro)</li>
+                <li>GBP (British Pound)</li>
+                <li>INR (Indian Rupee)</li>
+                <li>JPY (Japanese Yen)</li>
+                <li>AUD (Australian Dollar)</li>
+                <li>CAD (Canadian Dollar)</li>
+                <li>CNY (Chinese Yuan)</li>
+                <li>SGD (Singapore Dollar)</li>
+                <li>NZD (New Zealand Dollar)</li>
+                <li>MXN (Mexican Peso)</li>
+                <li>ZAR (South African Rand)</li>
+                <li>TRY (Turkish Lira)</li>
+              </ul>
+
+              <h2>Installation</h2>
+              <blockquote>
+                Add to your <code>pubspec.yaml</code>:<br/>
+                <code>dependencies:<br/>
+                &nbsp;&nbsp;price_text: ^0.0.7</code>
+              </blockquote>
+
+              <h2>Basic Usage</h2>
+              <p>The simplest implementation requires just a couple of parameters:</p>
+              <pre>import 'package:price_text/price_text.dart';
+
+PriceText(
+  currencyType: CurrencyType.USD,
+  amount: 1000.50,
+)</pre>
+
+              <p>This displays: <strong>$1,000.50</strong></p>
+
+              <h2>Key Features</h2>
+              <ul>
+                <li><strong>Multiple Currencies:</strong> Support for 13+ currencies worldwide</li>
+                <li><strong>Auto Formatting:</strong> Handles decimal places and thousand separators</li>
+                <li><strong>Currency Symbols & Codes:</strong> Display $ £ ₹ and currency codes</li>
+                <li><strong>Country Flags:</strong> Show flag icons for each currency</li>
+                <li><strong>Color Coding:</strong> Automatic colors for positive (green), negative (red), and zero values</li>
+                <li><strong>Custom Styling:</strong> Full control over text appearance</li>
+                <li><strong>Localization:</strong> Regional formatting using intl package</li>
+              </ul>
+
+              <h2>Advanced Example: E-Commerce</h2>
+              <pre>PriceText(
+  currencyType: CurrencyType.USD,
+  amount: 12345.67,
+  showFlag: true,                    // Show country flag
+  showCurrencyCode: true,            // Show "USD" text
+  flagSpacing: 10,                   // Space between flag & code
+  flagAlignment: AlignmentOption.left, // Flag on left side
+  locale: "en_US",                   // US formatting
+  formatterPattern: '#,##0.00',      // Custom number format
+  amountColorStyle: (amount) {
+    if (amount > 0) return Colors.green;
+    if (amount < 0) return Colors.red;
+    return Colors.grey;
+  },
+)</pre>
+
+              <h2>Customization Options</h2>
+              <p>The package provides extensive customization:</p>
+              <table class="table table-striped">
+                <tbody>
+                  <tr>
+                    <td><strong>showFlag</strong></td>
+                    <td>Display country flag (true/false)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>showCurrencyCode</strong></td>
+                    <td>Display currency code like "USD"</td>
+                  </tr>
+                  <tr>
+                    <td><strong>hideCurrencySymbol</strong></td>
+                    <td>Hide $ € ₹ symbols</td>
+                  </tr>
+                  <tr>
+                    <td><strong>flagAlignment</strong></td>
+                    <td>Position flag left or right</td>
+                  </tr>
+                  <tr>
+                    <td><strong>locale</strong></td>
+                    <td>Regional formatting (en_US, en_IN, etc.)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>formatterPattern</strong></td>
+                    <td>Custom number format like #,##0.00</td>
+                  </tr>
+                  <tr>
+                    <td><strong>customFlagWidget</strong></td>
+                    <td>Use your own flag image instead of default</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <h2>Handling Positive and Negative Values</h2>
+              <p>
+                PriceText automatically applies different colors based on amount values:
+              </p>
+              <pre>// Positive amount shows green
+PriceText(
+  currencyType: CurrencyType.USD,
+  amount: 1000,
+)
+
+// Negative amount shows red
+PriceText(
+  currencyType: CurrencyType.USD,
+  amount: -1000,
+)
+
+// Zero amount shows grey
+PriceText(
+  currencyType: CurrencyType.USD,
+  amount: 0,
+)</pre>
+
+              <h2>Localized Formatting</h2>
+              <p>
+                Different regions format currencies differently. PriceText handles this automatically:
+              </p>
+              <ul>
+                <li><strong>en_US:</strong> $1,234.56</li>
+                <li><strong>en_IN:</strong> ₹12,34,567.89</li>
+                <li><strong>de_DE:</strong> 1.234,56 €</li>
+                <li><strong>fr_FR:</strong> 1 234,56 €</li>
+              </ul>
+
+              <h2>Real-World Applications</h2>
+              <p>Perfect for:</p>
+              <ul>
+                <li>E-commerce and shopping apps</li>
+                <li>Banking and financial applications</li>
+                <li>Cryptocurrency and trading apps</li>
+                <li>Travel and booking platforms</li>
+                <li>Expense tracking applications</li>
+                <li>Multi-currency wallets</li>
+              </ul>
+
+              <h2>Pro Tips</h2>
+              <blockquote>
+                Always use the locale property when building apps for international users. This ensures that number 
+                formatting follows regional conventions and improves user experience.
+              </blockquote>
+              <ul>
+                <li>Combine with StreamBuilder for real-time price updates</li>
+                <li>Use custom color logic for financial applications</li>
+                <li>Leverage custom flags for branded experiences</li>
+                <li>Cache currency rates to minimize API calls</li>
+              </ul>
+
+              <h2>Conclusion</h2>
+              <p>
+                The <code>price_text</code> package eliminates the headache of currency formatting in Flutter apps. 
+                Whether you're building a simple online store or a complex financial application, PriceText provides 
+                the tools you need to display prices professionally across multiple currencies and locales. Download it 
+                today and simplify your currency handling!
+              </p>
+
+              <!-- Share Section -->
+              <div class="blog-post-share">
+                <button class="share-btn" title="Share on Twitter"><i class="fab fa-twitter"></i></button>
+                <button class="share-btn" title="Share on LinkedIn"><i class="fab fa-linkedin"></i></button>
+                <button class="share-btn" title="Share on Facebook"><i class="fab fa-facebook"></i></button>
+                <button class="share-btn" title="Copy link"><i class="fas fa-link"></i></button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Posts -->
+    <section class="blog-related-section">
+      <div class="container">
+        <h2>Related Articles</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <article class="blog-card">
+              <div class="blog-card-image">
+                <img src="./images/flutter_placeholder_1.jpg" alt="Flutter macOS Permissions" />
+                <span class="blog-category-badge">Flutter Packages</span>
+              </div>
+              <div class="blog-card-content">
+                <h3 class="blog-card-title">
+                  <a href="blog-post-flutter-macos-permissions.html">Handling macOS Permissions with flutter_macos_permissions</a>
+                </h3>
+                <p class="blog-card-excerpt">
+                  Master system permissions in Flutter macOS desktop applications...
+                </p>
+                <div class="blog-card-meta">
+                  <span class="blog-date"><i class="fas fa-calendar"></i> Feb 10, 2026</span>
+                  <span class="blog-read-time"><i class="fas fa-clock"></i> 7 min read</span>
+                </div>
+                <a href="blog-post-flutter-macos-permissions.html" class="blog-read-more">
+                  Read More <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <article class="blog-card">
+              <div class="blog-card-image">
+                <img src="./images/flutter_placeholder_2.jpg" alt="Animated Search TextField" />
+                <span class="blog-category-badge">Flutter Packages</span>
+              </div>
+              <div class="blog-card-content">
+                <h3 class="blog-card-title">
+                  <a href="blog-post-animated-search-textfield.html">Animated Search TextField for Beautiful UIs</a>
+                </h3>
+                <p class="blog-card-excerpt">
+                  Create smooth animated search experiences in your Flutter apps...
+                </p>
+                <div class="blog-card-meta">
+                  <span class="blog-date"><i class="fas fa-calendar"></i> Feb 9, 2026</span>
+                  <span class="blog-read-time"><i class="fas fa-clock"></i> 6 min read</span>
+                </div>
+                <a href="blog-post-animated-search-textfield.html" class="blog-read-more">
+                  Read More <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <article class="blog-card">
+              <div class="blog-card-image">
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=500&h=300&fit=crop" alt="Startup Tech Stack" />
+                <span class="blog-category-badge">Business</span>
+              </div>
+              <div class="blog-card-content">
+                <h3 class="blog-card-title">
+                  <a href="blog-post-startup-tech-stack.html">Choosing the Right Tech Stack for Your Startup</a>
+                </h3>
+                <p class="blog-card-excerpt">
+                  Strategic decisions for selecting technology stack based on your business needs...
+                </p>
+                <div class="blog-card-meta">
+                  <span class="blog-date"><i class="fas fa-calendar"></i> Jan 25, 2026</span>
+                  <span class="blog-read-time"><i class="fas fa-clock"></i> 9 min read</span>
+                </div>
+                <a href="blog-post-startup-tech-stack.html" class="blog-read-more">
+                  Read More <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4 d-none">
+        <div class="col-lg-6 col-md-12">
+          <h5>Subscribe newsletter</h5>
+          <p class="mb-4">
+            Subscribe our newsletter to get the latest news and updates!
+          </p>
+          <div class="footer-email">
+            <img src="./images/email.svg" alt="Newsletter Icon" class="me-2" />
+            <input type="email" class="form-control" placeholder="Enter your email address" id="emailInput" />
+            <button class="btn btn-subscribe">Subscribe</button>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h5 class="mb-4">Company</h5>
+          <ul>
+            <li><a href="#about">Who we are</a></li>
+            <li><a href="#services">Our services</a></li>
+            <li><a href="#clients">Our clients</a></li>
+            <li><a href="#contact">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h5 class="mb-4">Services</h5>
+          <ul>
+            <li><a href="#">Planning</a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="#">Consulting</a></li>
+            <li><a href="#">Analysis</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <img src="./images/footer_img.png" alt="Footer Logo" class="mb-3 img-fluid" />
+        </div>
+      </div>
+      <div class="d-flex align-items-center quote-section">
+        <div class="d-flex align-items-center text-left mb-4 mb-sm-4 mb-lg-0">
+          <img src="./images/logo.svg" alt="DashStack FooterLogo" class="footer-logo me-4" />
+          <p class="mb-0">
+            Powering Digital Journeys from<br />
+            Startups to Enterprises.
+          </p>
+        </div>
+        <div class="d-flex title-content flex-wrap">
+          <div>
+            <span>Drop Us An Email</span>
+            <a class="d-block" href="mailto:team@dashstack.tech">
+              team@dashstack.tech
+            </a>
+          </div>
+          <div>
+            <span>Call Our Project Experts</span>
+            <a class="d-block" href="tel:+918153916802">(+91) 8153 9168 02</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p aria-label="Mobile App Development Company">© 2026 DashStack Infotech – Flutter App Development Company. All
+          rights reserved.</p>
+        <div class="social-icons">
+          <a class="me-2" href="https://in.linkedin.com/company/dashstack-infotech">
+            <img src="./images/linkedin_icon.png" alt="LinkeDin" />
+          </a>
+          <a class="me-2" href="https://pub.dev/publishers/dashstack.tech/packages">
+            <img src="./images/flutter_icon.png" alt="Flutter Open-Source Packages" />
+          </a>
+          <a class="me-2" href="https://share.google/jNeEXJylERyU6zyFs">
+            <img src="./images/google_icon.png" alt="Google" />
+          </a>
+          <a href="https://www.instagram.com/flutter_dev_ravi/">
+            <img src="./images/instagram_icon.png" alt="Instagram" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/blog.js"></script>
+</body>
+
+</html>
