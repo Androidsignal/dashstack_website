@@ -122,6 +122,7 @@
 
     .about-person-wrapper {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         gap: 15px;
@@ -306,12 +307,29 @@
         .hero-section .row div {
             width: 100%;
         }
-        .hero-section .hero-title {
+        .hero-section .hero-title,
+        .about-title {
             font-size: 36px;
         }
         .hero-subtitle {
             font-size: 22px;
             margin: 0px;
+        }
+
+        .about-section {
+            padding: 50px 10px;
+        }
+        .about-content-wrapper {
+            gap: 32px;
+        }
+        .schedule-section {
+            padding: 52px 8px;
+        }
+        .schedule-section.skill-section .container .schedule-inner {
+            padding: 26px 18px;
+        }
+        .schedule-section.skill-section .section-title{
+          flex-wrap: wrap;
         }
     }
 }
