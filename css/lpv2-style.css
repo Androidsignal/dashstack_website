@@ -293,10 +293,11 @@
 
 @media(max-width:684px){
   .hero-section .row{
-    flex-wrap: wrap!important;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
   }
   .hero-section .row div{
-    width: 100%!important;
+    width: 100%;
   }
 }
 
