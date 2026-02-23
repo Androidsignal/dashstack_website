@@ -293,7 +293,7 @@
 
 @media(max-wdith:684px){
   .hero-section .row{
-    flex-wrap: wrap;
+    flex-wrap: wrap!important;
   }
   .hero-section .row div{
     width: 100%;
