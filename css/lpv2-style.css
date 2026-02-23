@@ -291,7 +291,7 @@
     }
   }
 
-@media(max-wdith:684px){
+@media(max-width:684px){
   .hero-section .row{
     flex-wrap: wrap!important;
   }
