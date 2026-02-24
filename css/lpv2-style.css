@@ -327,6 +327,47 @@
         }
     }
 
+    @media (max-width: 991px) {
+        .hero-section {
+            padding: 58px 0 58px;
+        }
+        .hero-section .hero-title {
+            font-size: 38px;
+        }
+        .hero-subtitle {
+            font-size: 22px;
+        }
+        .services-section .nav-pills {
+            padding: 20px;
+        }
+        .services-section .nav-pills .nav-link::before {
+            left: 18px;
+        }
+        .services-section .nav-pills .nav-link {
+            padding: 10px 10px 10px 40px;
+            margin-bottom: 12px;
+        }
+        .services-section h3 {
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+        .services-section ul li {
+            margin-bottom: 12px;
+        }
+        .services-section ul li img {
+            width: 12px;
+            height: 12px;
+            margin-right: 10px;
+            margin-top: 4px;
+        }
+        .services-section div.mb-md-5 {
+            margin-bottom: 32px !important;
+        }
+        .services-section {
+            padding: 62px 0;
+        }
+    }
+
     @media (max-width: 768px) {
         .tab-wrapper {
             display: flex;
