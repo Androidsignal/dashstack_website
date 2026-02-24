@@ -248,17 +248,53 @@
             font-size: 65px;
         }
         .services-section .nav-pills .nav-link {
-            padding: 10px 10px 10px 52px;
-            margin-bottom: 10px;
+            padding: 12px 10px 12px 52px;
+            margin-bottom: 12px;
         }
         .services-section h3 {
             font-size: 40px;
+        }
+        .services-section .tab-content {
+            padding-left: 32px;
         }
     }
 
     @media (max-width: 1200px) {
         .services-section .nav-pills {
             width: 40%;
+        }
+    }
+
+    @media (max-width: 1199px) {
+        .hero-section .hero-title {
+            font-size: 52px;
+        }
+        .hero-subtitle {
+            font-size: 32px;
+        }
+        .work-section .row.g-4 .col-lg-3 .work-card {
+            padding: 22px 16px;
+            border-radius: 22px;
+        }
+        .work-section .row.g-4 .col-lg-3 .work-card h3 {
+            font-size: 20px;
+        }
+        .work-section
+            .row.g-4
+            .col-lg-3
+            .work-card
+            .work-badge
+            .work-badge-image {
+            height: 42px;
+            width: 42px;
+        }
+        .work-section
+            .row.g-4
+            .col-lg-3
+            .work-card
+            .work-badge
+            .work-badge-image {
+            width: 26px;
         }
     }
 
