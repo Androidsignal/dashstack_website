@@ -524,6 +524,15 @@
         .platform-section.testimonial-section .testimonial-box {
             padding: 10px;
         }
+        .services-section .nav-pills .nav-link {
+            margin: 0px;
+        }
+        .services-section .tab-content {
+            padding-left: 6px;
+        }
+        .services-section div.mb-md-5 {
+            margin-bottom: 22px !important;
+        }
     }
 }
 
