@@ -337,5 +337,21 @@
         .services-section .nav {
             padding: 6px 12px;
         }
+        .services-section ul li {
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .services-section ul li img {
+            width: 16px;
+            height: 16px;
+            margin-right: 10px;
+            margin-top: 2px;
+        }
+        .schedule-section.skill-section .container .schedule-inner{
+          
+        }
+        .schedule-section.skill-section .section-title {
+            width: 100%;
+        }
     }
 }
