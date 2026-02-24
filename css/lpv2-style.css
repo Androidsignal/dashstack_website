@@ -243,6 +243,14 @@
     .work-section.vision-section {
         padding: 0;
     }
+    @media (max-width: 1366px) {
+        .hero-section .hero-title {
+            font-size: 65px;
+        }
+        .services-section .nav-pills .nav-link {
+            padding: 10px 52px 10px 10px;
+        }
+    }
 
     @media (max-width: 1200px) {
         .services-section .nav-pills {
