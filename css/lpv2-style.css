@@ -328,8 +328,14 @@
         .schedule-section.skill-section .container .schedule-inner {
             padding: 26px 18px;
         }
-        .schedule-section.skill-section .section-title{
-          flex-wrap: wrap;
+        .schedule-section.skill-section .section-title {
+            flex-wrap: wrap;
+        }
+        .services-section {
+            padding: 58px 10px;
+        }
+        .services-section .nav {
+            padding: 6px 12px;
         }
     }
 }
