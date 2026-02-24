@@ -2169,48 +2169,7 @@ document.head.appendChild(o)}initApollo();</script>
     });
   </script>
 
-  <script>
-document.querySelectorAll('a.nav-link[href^="#"]').forEach(link => {
-  link.addEventListener("click", function(e) {
-    e.preventDefault();
-    e.stopPropagation();
-
-    const id = this.getAttribute("href").substring(1);
-    const section = document.getElementById(id);
-
-    if (!section) return;
-
-    // scroll smoothly
-    window.scrollTo({
-      top: section.offsetTop - 70, // adjust if navbar fixed
-      behavior: "smooth"
-    });
-
-    // remove old hash instantly
-    history.replaceState(null, null, window.location.pathname);
-
-    // add clean URL
-    history.pushState({}, "", "/" + id);
-  });
-});
-
-
-// handle refresh or direct open like /about
-window.addEventListener("load", () => {
-  const path = window.location.pathname.replace("/", "");
-  if (!path) return;
-
-  const section = document.getElementById(path);
-  if (section) {
-    setTimeout(() => {
-      window.scrollTo({
-        top: section.offsetTop - 70,
-        behavior: "auto"
-      });
-    }, 200);
-  }
-});
-</script>
+  
 
 </body>
 
