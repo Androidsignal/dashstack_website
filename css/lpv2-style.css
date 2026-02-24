@@ -305,7 +305,7 @@
             .vision-carousel
             .vision-slides
             .vision-slide
-            img {
+            img.mobile_imgs {
             max-width: 342px;
             min-width: 188px;
         }
