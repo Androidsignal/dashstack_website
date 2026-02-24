@@ -293,8 +293,27 @@
             .col-lg-3
             .work-card
             .work-badge
-            .work-badge-image {
+            .work-badge-image
+            img {
             width: 26px;
+        }
+        .work-section .row.g-4 .col-lg-3 .work-card .work-badge {
+            font-size: 36px;
+        }
+        .vision-section
+            .vision-content
+            .vision-carousel
+            .vision-slides
+            .vision-slide
+            img {
+            max-width: 342px;
+            min-width: 188px;
+        }
+        .schedule-section h2 {
+            font-size: 46px;
+        }
+        .schedule-section .container .schedule-inner {
+            padding: 66px 40px;
         }
     }
 
