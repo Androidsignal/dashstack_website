@@ -2169,6 +2169,38 @@ document.head.appendChild(o)}initApollo();</script>
     });
   </script>
 
+<script>
+  document.querySelectorAll('a.nav-link[href^="#"]').forEach(link => {
+    link.addEventListener("click", function(e) {
+      e.preventDefault();
+  
+      const targetId = this.getAttribute("href").replace("#", "");
+      const section = document.getElementById(targetId);
+  
+      if (section) {
+        // smooth scroll
+        section.scrollIntoView({ behavior: "smooth" });
+  
+        // change URL without #
+        history.pushState(null, "", "/" + targetId);
+      }
+    });
+  });
+  
+  // If page loads directly on /about or /services
+  window.addEventListener("load", () => {
+    const path = window.location.pathname.replace("/", "");
+    if (path) {
+      const section = document.getElementById(path);
+      if (section) {
+        setTimeout(() => {
+          section.scrollIntoView();
+        }, 100);
+      }
+    }
+  });
+  </script>
+
 </body>
 
 </html>
