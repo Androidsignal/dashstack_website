@@ -248,7 +248,11 @@
             font-size: 65px;
         }
         .services-section .nav-pills .nav-link {
-            padding: 10px 52px 10px 10px;
+            padding: 10px 10px 10px 52px;
+            margin-bottom: 10px;
+        }
+        .services-section h3 {
+            font-size: 40px;
         }
     }
 
