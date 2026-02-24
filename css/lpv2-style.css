@@ -368,5 +368,11 @@
             margin: 0;
             padding-top: 20px;
         }
+        .schedule-section.skill-section .skill-name {
+            gap: 10px;
+        }
+        .schedule-section.skill-section .skill-name p {
+            padding: 12px 20px;
+        }
     }
 }
