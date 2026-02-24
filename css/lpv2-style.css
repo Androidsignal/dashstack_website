@@ -374,5 +374,12 @@
         .schedule-section.skill-section .skill-name p {
             padding: 12px 20px;
         }
+        .work-section {
+            padding: 50px 10px;
+        }
+        .work-section .row.g-4 .col-lg-3 .work-card:nth-child(2) .work-badge{
+          flex-direction: row-reverse;
+        }
     }
+    
 }
