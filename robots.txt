@@ -1,28 +1,53 @@
 # Allow all search engines to crawl the website
+# User-agent: *
+# Allow: /
+
+# Specific rules for Google
+# User-agent: Googlebot
+# Allow: /
+
+# Specific rules for Bing
+# User-agent: Bingbot
+# Allow: /
+
+# Disallow crawling of admin and private areas
+# Disallow: /admin/
+# Disallow: /private/
+# Disallow: /includes/modal.html
+
+# Allow crawling of CSS, JS, and images
+# Allow: /css/
+# Allow: /js/
+# Allow: /images/
+#Allow: /fonts/
+
+# Sitemap location
+#Sitemap: https://www.dashstack.tech/sitemap.xml
+
+# Crawl delay (optional - prevents server overload)
+# Crawl-delay: 1
+# Allow all search engines to crawl the website
 User-agent: *
 Allow: /
 
-# Specific rules for Google
+# Specific rules for Googlebot
 User-agent: Googlebot
 Allow: /
-
-# Specific rules for Bing
-User-agent: Bingbot
-Allow: /
-
-# Disallow crawling of admin and private areas
-Disallow: /admin/
-Disallow: /private/
-Disallow: /includes/modal.html
-
-# Allow crawling of CSS, JS, and images
+# Ensure Google can see all assets for rendering
+Allow: /includes/
 Allow: /css/
 Allow: /js/
 Allow: /images/
 Allow: /fonts/
 
+# Specific rules for Bingbot
+User-agent: Bingbot
+Allow: /
+
+# Disallow crawling of backend and private areas ONLY
+# Ensure these folders do not contain files needed to display your public pages
+Disallow: /admin/
+Disallow: /private/
+
 # Sitemap location
 Sitemap: https://www.dashstack.tech/sitemap.xml
-
-# Crawl delay (optional - prevents server overload)
-Crawl-delay: 1
