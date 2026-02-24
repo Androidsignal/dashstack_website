@@ -347,8 +347,8 @@
             margin-right: 10px;
             margin-top: 2px;
         }
-        .schedule-section.skill-section .container .schedule-inner{
-          
+        .schedule-section.skill-section .container .schedule-inner .d-wrap {
+            flex-wrap: wrap;
         }
         .schedule-section.skill-section .section-title {
             width: 100%;
