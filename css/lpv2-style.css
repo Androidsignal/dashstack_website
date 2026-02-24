@@ -353,5 +353,20 @@
         .schedule-section.skill-section .section-title {
             width: 100%;
         }
+        .schedule-section.skill-section h2 {
+            margin: 0px;
+            line-height: 32px;
+        }
+        .schedule-section.skill-section
+            .container
+            .schedule-inner
+            .d-wrap
+            .title-content
+            p {
+            text-align: left;
+            width: 100%;
+            margin: 0;
+            padding-top: 20px;
+        }
     }
 }
