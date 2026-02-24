@@ -366,6 +366,25 @@
         .services-section {
             padding: 62px 0;
         }
+        .schedule-section.skill-section .container .schedule-inner {
+            padding: 32px;
+        }
+        .schedule-section h2 {
+            font-size: 32px !important;
+            line-height: 36px !important;
+        }
+        .work-section {
+            padding: 36px 0 100px;
+        }
+        .vision-section
+            .vision-content
+            .vision-carousel
+            .vision-slides
+            .vision-slide
+            .vision-slide-content
+            p {
+            font-size: 26px;
+        }
     }
 
     @media (max-width: 768px) {
@@ -400,7 +419,7 @@
         }
     }
 
-    @media (max-width: 684px) {
+    @media (max-width: 767px) {
         .hero-section {
             padding: 20px 10px 10px;
         }
