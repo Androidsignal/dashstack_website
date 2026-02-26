@@ -2256,54 +2256,56 @@ PRESENTATION SECTION (EXACT STYLE)
   </div> -->
 
 
-  <section class="showcase-section">
+  <section class="cs-showcase">
 
-    <div class="showcase-wrapper">
+    <div class="cs-container">
   
-      <!-- SLIDER -->
-      <div class="showcase-slider">
+      <div class="cs-slider">
   
-        <button class="nav prev">
-          ‹
+        <button class="cs-nav cs-prev" aria-label="Previous">
+          <span>‹</span>
         </button>
   
-        <div class="slider-track" id="sliderTrack">
+        <div class="cs-track-wrapper">
+          <div class="cs-track">
   
-          <!-- slide -->
-          <div class="slide">
-            <img src="https://picsum.photos/1200/800?1">
-          </div>
+            <!-- Slide -->
+            <div class="cs-slide">
+              <img src="https://picsum.photos/1200/800?1" alt="">
+            </div>
   
-          <div class="slide active">
-            <img src="https://picsum.photos/1200/800?2">
+            <div class="cs-slide cs-active">
+              <img src="https://picsum.photos/1200/800?2" alt="">
   
-            <!-- overlay -->
-            <div class="slide-overlay">
-              <div class="meta">• 2023 &nbsp;&nbsp; • Cary Neville</div>
-              <h3>
-                We strive to develop real-world<br>
-                web solutions that are ideal
-              </h3>
+              <div class="cs-overlay">
+                <div class="cs-meta">• 2023 &nbsp;&nbsp; • Cary Neville</div>
+                <h3>
+                  We strive to develop real-world<br>
+                  web solutions that are ideal
+                </h3>
+              </div>
   
-              <div class="tags">
+              <div class="cs-tags">
                 <span>Branding</span>
                 <span>Website</span>
               </div>
+  
+              <div class="cs-gradient"></div>
             </div>
-          </div>
   
-          <div class="slide">
-            <img src="https://picsum.photos/1200/800?3">
-          </div>
+            <div class="cs-slide">
+              <img src="https://picsum.photos/1200/800?3" alt="">
+            </div>
   
-          <div class="slide">
-            <img src="https://picsum.photos/1200/800?4">
-          </div>
+            <div class="cs-slide">
+              <img src="https://picsum.photos/1200/800?4" alt="">
+            </div>
   
+          </div>
         </div>
   
-        <button class="nav next">
-          ›
+        <button class="cs-nav cs-next" aria-label="Next">
+          <span>›</span>
         </button>
   
       </div>
@@ -2311,175 +2313,219 @@ PRESENTATION SECTION (EXACT STYLE)
     </div>
   </section>
 
+
   <style>
-    /* ===== SECTION ===== */
-.showcase-section{
+    /* ============================= */
+/* SHOWCASE SECTION (ISOLATED)  */
+/* ============================= */
+
+.cs-showcase{
   background:#0b0b0f;
-  padding:80px 0;
+  padding:100px 0;
   overflow:hidden;
-  font-family:Arial, sans-serif;
+  font-family:Inter, sans-serif;
 }
 
-.showcase-wrapper{
-  width:92%;
-  max-width:1400px;
+.cs-showcase *{
+  box-sizing:border-box;
+}
+
+.cs-container{
+  width:100%;
+  max-width:1600px;
   margin:auto;
   position:relative;
 }
 
-/* ===== SLIDER ===== */
-.showcase-slider{
+.cs-slider{
   position:relative;
   display:flex;
   align-items:center;
   justify-content:center;
 }
 
-/* ===== TRACK ===== */
-.slider-track{
+/* WRAPPER creates half-cut look */
+.cs-track-wrapper{
+  width:100%;
+  overflow:hidden;
+  padding:0 15%;
+}
+
+/* TRACK */
+.cs-track{
   display:flex;
-  gap:40px;
   align-items:center;
+  gap:50px;
   transition:transform .6s cubic-bezier(.77,0,.18,1);
 }
 
-/* ===== SLIDES ===== */
-.slide{
-  min-width:280px;
-  height:420px;
-  border-radius:30px;
+/* SLIDES */
+.cs-slide{
+  flex:0 0 70%;
+  height:520px;
+  border-radius:40px;
   overflow:hidden;
-  opacity:.5;
-  transform:scale(.85);
-  transition:.5s;
   position:relative;
+  opacity:.6;
+  transform:scale(.85);
+  transition:.5s ease;
 }
 
-.slide img{
+.cs-slide img{
   width:100%;
   height:100%;
   object-fit:cover;
   display:block;
 }
 
-/* active center slide */
-.slide.active{
-  width:760px;
-  height:460px;
+/* ACTIVE CENTER */
+.cs-slide.cs-active{
   opacity:1;
   transform:scale(1);
-  box-shadow:0 30px 80px rgba(0,0,0,.6);
 }
 
-/* ===== OVERLAY ===== */
-.slide-overlay{
+/* OVERLAY TEXT */
+.cs-overlay{
+  position:absolute;
+  bottom:80px;
+  left:80px;
+  color:#fff;
+  z-index:2;
+}
+
+.cs-meta{
+  opacity:.7;
+  margin-bottom:12px;
+  font-size:14px;
+}
+
+.cs-overlay h3{
+  font-size:42px;
+  font-weight:500;
+  line-height:1.2;
+}
+
+/* TAGS bottom right */
+.cs-tags{
   position:absolute;
   bottom:40px;
-  left:40px;
-  color:#fff;
-}
-
-.slide-overlay .meta{
-  opacity:.7;
-  margin-bottom:10px;
-  font-size:14px;
-}
-
-.slide-overlay h3{
-  font-size:34px;
-  line-height:1.2;
-  font-weight:500;
-  margin-bottom:20px;
-}
-
-.tags{
+  right:40px;
   display:flex;
-  gap:12px;
+  gap:15px;
+  z-index:2;
 }
 
-.tags span{
-  border:1px solid rgba(255,255,255,.4);
-  padding:10px 18px;
-  border-radius:30px;
+.cs-tags span{
+  border:1px solid rgba(255,255,255,.5);
+  padding:12px 22px;
+  border-radius:40px;
+  color:#fff;
   font-size:14px;
 }
 
-/* ===== NAV BUTTONS ===== */
-.nav{
+/* DARK BOTTOM FADE */
+.cs-gradient{
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:45%;
+  background:linear-gradient(to top, rgba(0,0,0,.8), transparent);
+  z-index:1;
+}
+
+/* NAVIGATION BUTTONS */
+.cs-nav{
   position:absolute;
   top:50%;
   transform:translateY(-50%);
-  width:56px;
-  height:56px;
+  width:70px;
+  height:70px;
   border-radius:50%;
   border:none;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:30px;
   cursor:pointer;
-  font-size:28px;
   z-index:5;
 }
 
-/* left */
-.prev{
-  left:calc(50% - 430px);
-  background:#eee;
-  color:#6c3cff;
+/* LEFT BUTTON */
+.cs-prev{
+  left:calc(50% - 500px);
+  background:#f1f1f1;
+  color:#6b3cff;
 }
 
-/* right */
-.next{
-  right:calc(50% - 430px);
+/* RIGHT BUTTON */
+.cs-next{
+  right:calc(50% - 500px);
   background:linear-gradient(135deg,#6a00ff,#7c5cff);
   color:#fff;
-  box-shadow:0 10px 25px rgba(108,40,255,.5);
+  box-shadow:0 15px 35px rgba(108,40,255,.5);
 }
 
-/* ===== RESPONSIVE ===== */
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
 @media(max-width:1200px){
-  .slide.active{
-    width:600px;
-    height:380px;
-  }
-  .prev{ left:10px; }
-  .next{ right:10px; }
+  .cs-slide{ height:420px; }
+  .cs-overlay h3{ font-size:32px; }
+  .cs-prev{ left:20px; }
+  .cs-next{ right:20px; }
 }
 
 @media(max-width:768px){
-  .slide{ min-width:220px; height:320px;}
-  .slide.active{ width:90vw; height:360px;}
-  .slide-overlay h3{ font-size:22px;}
+  .cs-track-wrapper{ padding:0 5%; }
+  .cs-slide{ flex:0 0 90%; height:360px; }
+  .cs-overlay{ left:30px; bottom:60px; }
+  .cs-overlay h3{ font-size:22px; }
 }
   </style>
 
 
-<script>const track = document.getElementById("sliderTrack");
-  const slides = document.querySelectorAll(".slide");
-  const next = document.querySelector(".next");
-  const prev = document.querySelector(".prev");
-  
+
+<script>(function(){
+
+  const section = document.querySelector(".cs-showcase");
+  if(!section) return;
+
+  const track = section.querySelector(".cs-track");
+  const slides = section.querySelectorAll(".cs-slide");
+  const next = section.querySelector(".cs-next");
+  const prev = section.querySelector(".cs-prev");
+
   let index = 1;
-  
+
   function updateSlider(){
-    slides.forEach(s=>s.classList.remove("active"));
-    slides[index].classList.add("active");
-  
-    const offset = slides[index].offsetLeft - (window.innerWidth/2) + (slides[index].offsetWidth/2);
-    track.style.transform = `translateX(${-offset}px)`;
+    slides.forEach(s=>s.classList.remove("cs-active"));
+    slides[index].classList.add("cs-active");
+
+    const wrapper = section.querySelector(".cs-track-wrapper");
+    const slideWidth = slides[index].offsetWidth + 50;
+    const centerOffset = slides[index].offsetLeft - (wrapper.offsetWidth/2) + (slides[index].offsetWidth/2);
+
+    track.style.transform = `translateX(${-centerOffset}px)`;
   }
-  
-  next.onclick = ()=>{
+
+  next.addEventListener("click",()=>{
     index++;
     if(index >= slides.length) index = 0;
     updateSlider();
-  }
-  
-  prev.onclick = ()=>{
+  });
+
+  prev.addEventListener("click",()=>{
     index--;
     if(index < 0) index = slides.length-1;
     updateSlider();
-  }
-  
+  });
+
+  window.addEventListener("resize",updateSlider);
   updateSlider();
-  window.addEventListener("resize", updateSlider);</script>
+
+})();</script>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
