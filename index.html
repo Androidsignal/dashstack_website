@@ -32,6 +32,133 @@
 o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
 o.onload=function(){window.trackingFunctions.onLoad({appId:"69983273644dde00217f09a2"})},
 document.head.appendChild(o)}initApollo();</script>
+
+<style>
+  /* =========================
+PRESENTATION SECTION STYLE
+========================= */
+
+.presentation-section {
+  padding: 80px 0;
+  background: #f6f7fb;
+  font-family: Arial, sans-serif;
+}
+
+.presentation-container {
+  width: 92%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.presentation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  margin-bottom: 50px;
+}
+
+.presentation-header h2 {
+  font-size: 52px;
+  font-weight: 700;
+  color: #2c1a57;
+}
+
+.presentation-text {
+  max-width: 650px;
+}
+
+.presentation-text p {
+  font-size: 15px;
+  color: #8e8e9a;
+  line-height: 1.6;
+}
+
+/* Slider */
+.presentation-slider-wrapper {
+  position: relative;
+}
+
+.presentation-slider {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 22px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.slide {
+  border-radius: 18px;
+  overflow: hidden;
+  height: 240px;
+  flex: 0 0 auto;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Navigation */
+.nav {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  background: #fff;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  cursor: pointer;
+  z-index: 5;
+  font-size: 18px;
+}
+
+.prev { left: -20px; }
+.next { right: -20px; }
+
+/* CTA */
+.view-all-wrap {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.view-btn {
+  display: inline-block;
+  padding: 16px 34px;
+  border-radius: 40px;
+  background: linear-gradient(135deg,#6a00ff,#7b5cff);
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .presentation-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .presentation-slider {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .presentation-slider {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .slide {
+    height: 220px;
+  }
+}
+</style>
 </head>
 
 <body data-bs-spy="scroll">
@@ -1031,6 +1158,64 @@ document.head.appendChild(o)}initApollo();</script>
         </div>
       </div>
     </section>
+
+
+   <!-- Presentation Section -->
+<!-- =========================
+PRESENTATION SECTION
+========================= -->
+<section class="presentation-section">
+  <div class="presentation-container">
+
+    <!-- Header -->
+    <div class="presentation-header">
+      <h2>Presentation</h2>
+      <div class="presentation-text">
+        <p>
+          Salesloft’s logotype is a custom logotype built on the bones of the typeface
+          Moret and contains script-like connections that increase legibility and
+          ownability. The monogram is a short-hand of the logotype to give the visual
+          identity distinction in small instances, such as an app icon.
+        </p>
+      </div>
+    </div>
+
+    <!-- Slider -->
+    <div class="presentation-slider-wrapper">
+      <button class="nav prev">&#10094;</button>
+
+      <div class="presentation-slider" id="presentationSlider">
+        <!-- slide group -->
+        <div class="slide">
+          <img src="https://picsum.photos/600/400?1" />
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/600/400?2" />
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/600/400?3" />
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/600/400?4" />
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/600/400?5" />
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/600/400?6" />
+        </div>
+      </div>
+
+      <button class="nav next">&#10095;</button>
+    </div>
+
+    <!-- CTA -->
+    <div class="view-all-wrap">
+      <a href="#" class="view-btn">View All →</a>
+    </div>
+
+  </div>
+</section>
 
     <!-- Platform Section -->
     <section class="platform-section testimonial-section pt-4" id="testimonial">
@@ -2127,6 +2312,24 @@ document.head.appendChild(o)}initApollo();</script>
       }
     });
   </script>
+
+  <script>// =========================
+    // SIMPLE SLIDER NAVIGATION
+    // =========================
+    const slider = document.getElementById("presentationSlider");
+    const next = document.querySelector(".next");
+    const prev = document.querySelector(".prev");
+    
+    let scrollAmount = 0;
+    const scrollStep = 350;
+    
+    next.addEventListener("click", () => {
+      slider.scrollLeft += scrollStep;
+    });
+    
+    prev.addEventListener("click", () => {
+      slider.scrollLeft -= scrollStep;
+    });</script>
 
 </body>
 
