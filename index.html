@@ -27,13 +27,168 @@
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" type="text/css" href="./css/slick.css" />
   <link rel="stylesheet" type="text/css" href="./css/slick-theme.css" />
+
+
+<style>
+  /* =========================
+PRESENTATION EXACT STYLE
+========================= */
+
+.presentation-section {
+  padding: 90px 0 80px;
+  background: #f4f5fb;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.presentation-container {
+  width: 92%;
+  max-width: 1350px;
+  margin: auto;
+}
+
+/* Header */
+.presentation-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  margin-bottom: 50px;
+  align-items: flex-start;
+}
+
+.presentation-header h2 {
+  font-size: 64px;
+  font-weight: 700;
+  color: #2c1755;
+  letter-spacing: -1px;
+}
+
+.presentation-text {
+  max-width: 640px;
+}
+
+.presentation-text p {
+  color: #8f8f99;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Slider area */
+.presentation-sliders {
+  position: relative;
+}
+
+/* gradient mask sides (half cut look) */
+.presentation-sliders:before,
+.presentation-sliders:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.presentation-sliders:before {
+  left: 0;
+  background: linear-gradient(90deg,#f4f5fb 0%,rgba(244,245,251,0)100%);
+}
+
+.presentation-sliders:after {
+  right: 0;
+  background: linear-gradient(-90deg,#f4f5fb 0%,rgba(244,245,251,0)100%);
+}
+
+/* row */
+.slider-row {
+  overflow: hidden;
+  margin-bottom: 22px;
+}
+
+/* track */
+.slider-track {
+  display: flex;
+  gap: 22px;
+  width: max-content;
+}
+
+/* cards */
+.card {
+  width: 360px;
+  height: 240px;
+  border-radius: 26px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #ddd;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* auto scroll animations */
+.slider-left .slider-track {
+  animation: scrollLeft 40s linear infinite;
+}
+
+.slider-right .slider-track {
+  animation: scrollRight 40s linear infinite;
+}
+
+@keyframes scrollLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes scrollRight {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+/* CTA */
+.view-all-wrap {
+  text-align: center;
+  margin-top: 45px;
+}
+
+.view-btn {
+  padding: 18px 40px;
+  border-radius: 60px;
+  background: linear-gradient(135deg,#6b1bff,#7c5cff);
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  box-shadow: 0 8px 30px rgba(108,40,255,0.35);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .presentation-header {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 260px;
+    height: 180px;
+  }
+
+  .presentation-header h2 {
+    font-size: 42px;
+  }
+}
+</style>
+
+
   <!-- Apollo Tracking Script -->
   <script>function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
 o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
 o.onload=function(){window.trackingFunctions.onLoad({appId:"69983273644dde00217f09a2"})},
 document.head.appendChild(o)}initApollo();</script>
-
-
 </head>
 
 <body data-bs-spy="scroll">
@@ -1035,9 +1190,9 @@ document.head.appendChild(o)}initApollo();</script>
     </section>
 
 
-   <!-- Presentation Section -->
-<!-- =========================
-PRESENTATION SECTION
+   <!--  Section -->
+   <!-- =========================
+PRESENTATION SECTION (EXACT STYLE)
 ========================= -->
 <section class="presentation-section">
   <div class="presentation-container">
@@ -1045,52 +1200,68 @@ PRESENTATION SECTION
     <!-- Header -->
     <div class="presentation-header">
       <h2>Presentation</h2>
+
       <div class="presentation-text">
         <p>
-          Salesloft’s logotype is a custom logotype built on the bones of the typeface
-          Moret and contains script-like connections that increase legibility and
-          ownability. The monogram is a short-hand of the logotype to give the visual
-          identity distinction in small instances, such as an app icon.
+          Salesloft’s logotype is a custom logotype built on the bones of the typeface Moret and contains script-like connections that increase legibility and ownability. The monogram is a short-hand of the logotype to give the visual identity distinction in small instances, such as an app icon.
         </p>
       </div>
     </div>
 
-    <!-- Slider -->
-    <div class="presentation-slider-wrapper">
-      <button class="nav prev">&#10094;</button>
+    <!-- SLIDER AREA -->
+    <div class="presentation-sliders">
 
-      <div class="presentation-slider" id="presentationSlider">
-        <!-- slide group -->
-        <div class="slide">
-          <img src="https://picsum.photos/600/400?1" />
-        </div>
-        <div class="slide">
-          <img src="https://picsum.photos/600/400?2" />
-        </div>
-        <div class="slide">
-          <img src="https://picsum.photos/600/400?3" />
-        </div>
-        <div class="slide">
-          <img src="https://picsum.photos/600/400?4" />
-        </div>
-        <div class="slide">
-          <img src="https://picsum.photos/600/400?5" />
-        </div>
-        <div class="slide">
-          <img src="https://picsum.photos/600/400?6" />
+      <!-- ROW 1 (Right → Left) -->
+      <div class="slider-row slider-left">
+        <div class="slider-track">
+          <!-- repeat for smooth infinite scroll -->
+          <div class="card"><img src="https://picsum.photos/600/400?1"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?2"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?3"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?4"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?5"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?6"></div>
+
+          <!-- duplicate for infinite -->
+          <div class="card"><img src="https://picsum.photos/600/400?1"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?2"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?3"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?4"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?5"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?6"></div>
         </div>
       </div>
 
-      <button class="nav next">&#10095;</button>
+      <!-- ROW 2 (Left → Right) -->
+      <div class="slider-row slider-right">
+        <div class="slider-track">
+          <div class="card"><img src="https://picsum.photos/600/400?7"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?8"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?9"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?10"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?11"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?12"></div>
+
+          <!-- duplicate -->
+          <div class="card"><img src="https://picsum.photos/600/400?7"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?8"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?9"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?10"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?11"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?12"></div>
+        </div>
+      </div>
+
     </div>
 
-    <!-- CTA -->
+    <!-- BUTTON -->
     <div class="view-all-wrap">
       <a href="#" class="view-btn">View All →</a>
     </div>
 
   </div>
 </section>
+
 
     <!-- Platform Section -->
     <section class="platform-section testimonial-section pt-4" id="testimonial">
@@ -2188,23 +2359,20 @@ PRESENTATION SECTION
     });
   </script>
 
-  <script>// =========================
-    // SIMPLE SLIDER NAVIGATION
-    // =========================
-    const slider = document.getElementById("presentationSlider");
-    const next = document.querySelector(".next");
-    const prev = document.querySelector(".prev");
-    
-    let scrollAmount = 0;
-    const scrollStep = 350;
-    
-    next.addEventListener("click", () => {
-      slider.scrollLeft += scrollStep;
-    });
-    
-    prev.addEventListener("click", () => {
-      slider.scrollLeft -= scrollStep;
-    });</script>
+
+<script>
+  // No JS needed — pure CSS auto infinite carousel
+// If you want pause on hover:
+
+document.querySelectorAll(".slider-row").forEach(row=>{
+  row.addEventListener("mouseenter",()=>{
+    row.querySelector(".slider-track").style.animationPlayState="paused";
+  });
+  row.addEventListener("mouseleave",()=>{
+    row.querySelector(".slider-track").style.animationPlayState="running";
+  });
+});
+</script>
 
 </body>
 
