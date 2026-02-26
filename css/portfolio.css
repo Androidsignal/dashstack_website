@@ -87,6 +87,9 @@
   }
 
   .showcase-section {
+    padding: 120px 0;
+    background-color: #131313;
+
     .row {
       gap: 56px;
 
@@ -97,10 +100,21 @@
         display: flex;
         flex-direction: column;
         gap: 64px;
+        align-items: end;
       }
 
       .showcase-title-wrapper .showcase-title {
         width: 100%;
+
+        h2 {
+          font-weight: 500;
+          font-size: 52px;
+          line-height: 100%;
+          letter-spacing: -3%;
+          text-transform: capitalize;
+          margin: 0;
+          color: #fff3ed;
+        }
       }
 
       .project-wrapper {
@@ -121,26 +135,47 @@
 
           .project-tag-wrapper ul {
             display: flex;
-          }
-
-          .project-title {
             margin: 0;
+            gap: 40px;
             font-weight: 500;
-            font-size: 24px;
+            font-size: 20px;
             line-height: 100%;
             letter-spacing: -1%;
-            color: #131313;
+            color: #d2d2d2;
           }
 
-          .project-description {
-            margin-bottom: 0;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 140%;
-            letter-spacing: 0%;
-            color: #131313;
+          .project-title-wrapper h3 {
+            margin: 0;
+            font-weight: 500;
+            font-size: 38px;
+            line-height: 100%;
+            letter-spacing: -2%;
+            text-transform: capitalize;
+            color: #fffefd;
+          }
+        }
+      }
+
+      .showcase-description-wrapper {
+        max-width: 417px;
+        display: flex;
+        flex-direction: column;
+        gap: 42px;
+
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+          letter-spacing: 0%;
+          color: #d2d2d2;
+          margin: 0;
         }
       }
     }
+  }
+
+  .platform-section {
+    padding: 120px 0;
+    margin-bottom: 0;
   }
 }
