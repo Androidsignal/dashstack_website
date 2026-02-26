@@ -1,0 +1,114 @@
+.portfolio-page {
+  .hero-section {
+    background-image: url(../images/portfolio_hero_Pattern.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 64px 0;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 64px;
+
+      .row {
+        position: relative;
+        z-index: 11;
+        gap: 40px;
+        align-items: end;
+
+        .hero-title-wrapper {
+          max-width: 756px;
+          width: calc(50% - 20px);
+          flex-grow: 1;
+
+          .hero-title {
+            width: 100%;
+            margin: 0;
+            font-weight: 500;
+            font-size: 63px;
+            line-height: 100%;
+            letter-spacing: -3%;
+            text-transform: capitalize;
+            color: #131313;
+          }
+        }
+
+        .hero-description-wrapper {
+          max-width: 434px;
+          width: calc(50% - 20px);
+          display: flex;
+          flex-direction: column;
+          gap: 64px;
+
+          .hero-description {
+            width: 100%;
+            margin-bottom: 0;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 140%;
+            letter-spacing: 0%;
+            color: #131313;
+          }
+        }
+
+        .skill-group-wrapper {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          p {
+            margin-bottom: 0;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 100%;
+            letter-spacing: -1%;
+            color: #131313;
+          }
+
+          .skill-name {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+
+            p {
+              border: 0.8px solid #d2d2d2;
+              border-radius: 60px;
+              padding: 16px 24px;
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 100%;
+              letter-spacing: 0%;
+              color: #131313;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .showcase-section {
+    .row {
+        gap: 64px;
+
+        .showcase-title-wrapper, .project-wrapper, .showcase-description-wrapper {
+            max-width: calc(50% - 32px);
+            width: 100%;
+        }
+
+        .showcase-title-wrapper .showcase-title {
+            width: 100%;
+        }
+
+        .project-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            .project-image img {
+                width: 100%;
+                border-radius: 8px;
+            }
+        }
+    }
+  }
+}

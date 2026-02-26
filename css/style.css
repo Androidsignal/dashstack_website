@@ -1572,7 +1572,7 @@ a:focus {
 }
 
 .work-section .row.g-4 {
-    background-image: url("../images/dashed_arrow.png");
+    background-image: url("../images/dashed_arrow.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center
