@@ -114,22 +114,6 @@ document.head.appendChild(o)}initApollo();</script>
         </div>
       </div>
     </section>
-
-    <section class="slider-section">
-      <div class="owl-carousel owl-theme owl-loaded loop">
-        <div class="owl-stage-outer">
-            <div class="owl-stage">
-                <div class="owl-item">...</div>
-                <div class="owl-item">...</div>
-                <div class="owl-item">...</div>
-            </div>
-        </div>
-        <div class="owl-nav">
-            <div class="owl-prev">prev</div>
-            <div class="owl-next">next</div>
-        </div>
-      </div>
-    </section>
     
     <!-- Showcase Section -->
     <section class="showcase-section" id="showcase">
@@ -1256,31 +1240,6 @@ document.head.appendChild(o)}initApollo();</script>
           }
         },
         navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>']
-      });
-
-      $('.loop').owlCarousel({
-          center: true,
-          items: 3,
-          loop: true,
-          margin: 30,
-          stagePadding: 100,
-          autoplay: true,
-          autoplayTimeout: 3000,
-          smartSpeed: 800,
-          responsive:{
-              0:{
-                  items:1,
-                  stagePadding: 30
-              },
-              768:{
-                  items:3,
-                  stagePadding: 60
-              },
-              1200:{
-                  items:3,
-                  stagePadding: 150
-              }
-          }
       });
 
       $(".healthcare").slick({
