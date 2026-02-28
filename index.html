@@ -2256,155 +2256,152 @@ PRESENTATION SECTION (EXACT STYLE)
   </div> -->
   <!-- ============ -->
   <!-- portfolo -->
-  <section class="ref-slider">
-
-    <div class="ref-stage">
+  <section class="portfolio-carousel">
+    <div class="pc-wrapper">
   
-      <button class="ref-arrow ref-prev">&#8249;</button>
+      <button class="pc-arrow pc-prev">&#8249;</button>
   
-      <div class="ref-viewport">
-        <div class="ref-track">
+      <div class="pc-track">
   
-          <!-- Slide -->
-          <div class="ref-slide">
-            <img src="https://picsum.photos/1600/1000?1" alt="">
-            <div class="ref-overlay"></div>
-            <div class="ref-content">
-              <div class="ref-meta">• 2023 &nbsp;&nbsp; • Cary Neville</div>
-              <h2>We strive to develop real-world<br>web solutions that are ideal</h2>
-              <div class="ref-buttons">
-                <span>Branding</span>
-                <span>Website</span>
-              </div>
+        <div class="pc-slide">
+          <img src="https://picsum.photos/1600/1000?1" alt="">
+          <div class="pc-overlay"></div>
+          <div class="pc-content">
+            <div class="pc-meta">• 2023 • Cary Neville</div>
+            <h2>We strive to develop real-world<br>web solutions that are ideal</h2>
+            <div class="pc-pills">
+              <span>Branding</span>
+              <span>Website</span>
             </div>
           </div>
-  
-          <div class="ref-slide active">
-            <img src="https://picsum.photos/1600/1000?2" alt="">
-            <div class="ref-overlay"></div>
-            <div class="ref-content">
-              <div class="ref-meta">• 2023 &nbsp;&nbsp; • Cary Neville</div>
-              <h2>We strive to develop real-world<br>web solutions that are ideal</h2>
-              <div class="ref-buttons">
-                <span>Branding</span>
-                <span>Website</span>
-              </div>
-            </div>
-          </div>
-  
-          <div class="ref-slide">
-            <img src="https://picsum.photos/1600/1000?3" alt="">
-            <div class="ref-overlay"></div>
-            <div class="ref-content">
-              <div class="ref-meta">• 2023 &nbsp;&nbsp; • Cary Neville</div>
-              <h2>We strive to develop real-world<br>web solutions that are ideal</h2>
-              <div class="ref-buttons">
-                <span>Branding</span>
-                <span>Website</span>
-              </div>
-            </div>
-          </div>
-  
         </div>
+  
+        <div class="pc-slide active">
+          <img src="https://picsum.photos/1600/1000?2" alt="">
+          <div class="pc-overlay"></div>
+          <div class="pc-content">
+            <div class="pc-meta">• 2023 • Cary Neville</div>
+            <h2>We strive to develop real-world<br>web solutions that are ideal</h2>
+            <div class="pc-pills">
+              <span>Branding</span>
+              <span>Website</span>
+            </div>
+          </div>
+        </div>
+  
+        <div class="pc-slide">
+          <img src="https://picsum.photos/1600/1000?3" alt="">
+          <div class="pc-overlay"></div>
+          <div class="pc-content">
+            <div class="pc-meta">• 2023 • Cary Neville</div>
+            <h2>We strive to develop real-world<br>web solutions that are ideal</h2>
+            <div class="pc-pills">
+              <span>Branding</span>
+              <span>Website</span>
+            </div>
+          </div>
+        </div>
+  
       </div>
   
-      <button class="ref-arrow ref-next">&#8250;</button>
+      <button class="pc-arrow pc-next">&#8250;</button>
   
     </div>
   </section>
 
   <style>
-    .ref-slider {
-  background: #05060f;
-  padding: 120px 0;
+    .portfolio-carousel {
+  background: #040816;
+  padding: 140px 0;
   overflow: hidden;
-}
-
-.ref-stage {
   position: relative;
-  max-width: 1500px;
+}
+
+.pc-wrapper {
+  position: relative;
+  max-width: 1600px;
   margin: auto;
+  height: 600px;
 }
 
-.ref-viewport {
-  overflow: hidden;
-}
-
-.ref-track {
+/* Track */
+.pc-track {
   display: flex;
-  gap: 70px;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
   transition: transform .6s cubic-bezier(.77,0,.18,1);
 }
 
-.ref-slide {
+/* Slides */
+.pc-slide {
   position: relative;
-  flex: 0 0 72%;
+  width: 900px;
   height: 560px;
-  border-radius: 64px;
+  border-radius: 70px;
   overflow: hidden;
-  transform: scale(.86);
-  opacity: .55;
+  transform: scale(.82);
+  opacity: .45;
   transition: .5s ease;
 }
 
-.ref-slide img {
+.pc-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.ref-slide.active {
+.pc-slide.active {
   transform: scale(1);
   opacity: 1;
 }
 
-/* Deep bottom fade */
-.ref-overlay {
+/* Bottom fade */
+.pc-overlay {
   position: absolute;
   bottom: 0;
-  left: 0;
   width: 100%;
-  height: 55%;
-  background: linear-gradient(to top, rgba(0,0,0,.9), rgba(0,0,0,.45), transparent);
+  height: 60%;
+  background: linear-gradient(to top, rgba(0,0,0,.9), rgba(0,0,0,.4), transparent);
 }
 
 /* Content */
-.ref-content {
+.pc-content {
   position: absolute;
-  left: 80px;
-  bottom: 70px;
+  bottom: 80px;
+  left: 90px;
   color: #fff;
   opacity: 0;
   transition: .3s ease;
 }
 
-.ref-slide.active .ref-content {
+.pc-slide.active .pc-content {
   opacity: 1;
 }
 
-.ref-meta {
+.pc-meta {
   font-size: 20px;
   opacity: .7;
   margin-bottom: 15px;
 }
 
-.ref-content h2 {
-  font-size: 46px;
+.pc-content h2 {
+  font-size: 48px;
   line-height: 1.15;
   margin-bottom: 30px;
 }
 
 /* Pills */
-.ref-buttons {
+.pc-pills {
   position: absolute;
-  right: -320px;
+  right: -380px;
   bottom: 0;
   display: flex;
   gap: 14px;
 }
 
-.ref-buttons span {
-  padding: 12px 28px;
+.pc-pills span {
+  padding: 14px 28px;
   border-radius: 50px;
   border: 1px solid rgba(255,255,255,.4);
   background: rgba(0,0,0,.25);
@@ -2412,26 +2409,26 @@ PRESENTATION SECTION (EXACT STYLE)
 }
 
 /* Arrows */
-.ref-arrow {
+.pc-arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 92px;
-  height: 92px;
+  width: 95px;
+  height: 95px;
   border-radius: 50%;
   border: 4px solid #fff;
-  font-size: 36px;
+  font-size: 38px;
   cursor: pointer;
   z-index: 5;
 }
 
-.ref-prev {
+.pc-prev {
   left: -50px;
   background: #fff;
   color: #5b2dff;
 }
 
-.ref-next {
+.pc-next {
   right: -50px;
   background: linear-gradient(135deg,#5b2dff,#7b3dff);
   color: #fff;
@@ -2441,11 +2438,11 @@ PRESENTATION SECTION (EXACT STYLE)
   <script>
     (function(){
 
-const slider = document.querySelector(".ref-slider");
-const track = slider.querySelector(".ref-track");
-const slides = slider.querySelectorAll(".ref-slide");
-const next = slider.querySelector(".ref-next");
-const prev = slider.querySelector(".ref-prev");
+const slider = document.querySelector(".portfolio-carousel");
+const track = slider.querySelector(".pc-track");
+const slides = slider.querySelectorAll(".pc-slide");
+const next = slider.querySelector(".pc-next");
+const prev = slider.querySelector(".pc-prev");
 
 let index = 1;
 
@@ -2453,15 +2450,9 @@ function update(){
   slides.forEach(s => s.classList.remove("active"));
   slides[index].classList.add("active");
 
-  const viewport = slider.querySelector(".ref-viewport");
-  const slide = slides[index];
-
-  const offset =
-    slide.offsetLeft -
-    (viewport.offsetWidth / 2) +
-    (slide.offsetWidth / 2);
-
-  track.style.transform = `translateX(${-offset}px)`;
+  const center = slider.offsetWidth / 2;
+  const slideCenter = slides[index].offsetLeft + (slides[index].offsetWidth / 2);
+  track.style.transform = `translateX(${center - slideCenter}px)`;
 }
 
 next.onclick = () => {
