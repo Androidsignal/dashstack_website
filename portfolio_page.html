@@ -298,61 +298,51 @@ document.head.appendChild(o)}initApollo();</script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premium Portfolio Slider</title>
+    <title>Portfolio Slider - White Theme</title>
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --primary-purple: #6c2cf5;
+            --brand-purple: #6332fa;
+            --text-dark: #1a1a1a;
+            --text-muted: #666666;
             --white: #ffffff;
-            --black: #0f0f0f;
-            --slide-radius: 40px;
+            --slide-width: 70%; /* Desktop slide width */
         }
 
         body {
             margin: 0;
             font-family: 'Inter', sans-serif;
             background-color: var(--white);
+            -webkit-font-smoothing: antialiased;
         }
 
-        .portfolio-outer {
-            padding: 80px 0 0 0;
+        .portfolio-section {
+            padding: 100px 0;
             background-color: var(--white);
-            overflow: hidden;
+            overflow: hidden; /* Hide the bleed of the side slides */
             position: relative;
         }
 
-        /* The Black Base matching your image */
-        .portfolio-outer::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 180px;
-            background-color: var(--black);
-            z-index: 1;
-        }
-
+        /* Swiper Overrides */
         .swiper {
             width: 100%;
-            padding-bottom: 120px; /* Space for the content overlap */
-            overflow: visible !important;
-            z-index: 2;
+            overflow: visible !important; /* Crucial for seeing the cut-off slides */
         }
 
         .swiper-slide {
-            width: 70%;
-            aspect-ratio: 16 / 10;
-            border-radius: var(--slide-radius);
+            width: var(--slide-width);
+            aspect-ratio: 16 / 9;
+            border-radius: 40px;
+            overflow: hidden;
             position: relative;
             background-size: cover;
             background-position: center;
-            transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.6s ease;
-            opacity: 0.4;
-            transform: scale(0.9);
+            transition: transform 0.6s ease, opacity 0.6s ease;
+            opacity: 0.5; /* Side slides are dimmed */
+            transform: scale(0.92); /* Side slides are slightly smaller */
         }
 
         .swiper-slide-active {
@@ -360,92 +350,84 @@ document.head.appendChild(o)}initApollo();</script>
             transform: scale(1);
         }
 
-        /* Slide Text Content */
-        .slide-content {
+        /* Slide Content Overlay */
+        .content-overlay {
             position: absolute;
-            bottom: 40px;
-            left: 40px;
-            right: 40px;
-            color: var(--white);
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 60%);
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
             opacity: 0;
-            transform: translateY(20px);
-            transition: all 0.5s ease 0.2s;
+            transition: opacity 0.4s ease;
             pointer-events: none;
+            color: white;
         }
 
-        .swiper-slide-active .slide-content {
+        .swiper-slide-active .content-overlay {
             opacity: 1;
-            transform: translateY(0);
             pointer-events: auto;
         }
 
-        .meta-info {
+        .meta {
             font-size: 18px;
-            color: rgba(255,255,255,0.7);
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
+            font-weight: 400;
+            color: rgba(255,255,255,0.8);
         }
-
-        .meta-info span { opacity: 0.5; }
 
         .headline {
-            font-size: clamp(1.5rem, 4vw, 2.8rem);
+            font-size: 2.5rem;
+            line-height: 1.2;
             font-weight: 500;
-            line-height: 1.1;
-            max-width: 80%;
             margin: 0;
+            max-width: 600px;
         }
 
-        /* Tag Container (Bottom Right Black Tab) */
-        .tag-wrapper {
+        /* Pill Buttons (Bottom Right) */
+        .pill-container {
             position: absolute;
-            bottom: -80px; /* Pushes it into the black section */
-            right: 0;
-            background: var(--black);
-            padding: 25px 40px;
-            border-radius: 40px 0 0 0;
+            bottom: 40px;
+            right: 40px;
             display: flex;
-            gap: 12px;
-            opacity: 0;
-            transition: opacity 0.4s ease;
+            gap: 10px;
         }
 
-        .swiper-slide-active .tag-wrapper {
-            opacity: 1;
-        }
-
-        .tag-pill {
-            border: 1px solid rgba(255,255,255,0.3);
-            color: var(--white);
-            padding: 10px 24px;
+        .pill {
+            background: #111111;
+            color: white;
+            padding: 12px 24px;
             border-radius: 100px;
-            font-size: 15px;
+            font-size: 14px;
             text-decoration: none;
+            border: 1px solid rgba(255,255,255,0.1);
             transition: 0.3s;
         }
 
-        .tag-pill:hover {
-            background: rgba(255,255,255,0.1);
+        .pill:hover {
+            background: #222222;
         }
 
-        /* Navigation Arrows (Overlap Design) */
-        .nav-container {
+        /* Navigation Controls - Absolute Precision */
+        .nav-wrapper {
             position: absolute;
-            top: 40%;
+            top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 70%; /* Matches slide width */
-            z-index: 10;
+            width: var(--slide-width); /* Matches the center slide exactly */
+            z-index: 100;
             display: flex;
             justify-content: space-between;
             pointer-events: none;
         }
 
         .nav-btn {
-            width: 60px;
-            height: 60px;
+            width: 55px;
+            height: 55px;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -453,21 +435,20 @@ document.head.appendChild(o)}initApollo();</script>
             cursor: pointer;
             border: none;
             pointer-events: auto;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             transition: 0.3s;
         }
 
-        .btn-prev {
-            background: var(--white);
-            color: var(--primary-purple);
-            transform: translateX(-50%);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        .nav-prev {
+            background: white;
+            color: var(--brand-purple);
+            transform: translateX(-50%); /* Pins it to the left edge of center slide */
         }
 
-        .btn-next {
-            background: var(--primary-purple);
-            color: var(--white);
-            transform: translateX(50%);
-            border: 4px solid var(--white); /* Match the white border in image */
+        .nav-next {
+            background: var(--brand-purple);
+            color: white;
+            transform: translateX(50%); /* Pins it to the right edge of center slide */
         }
 
         .nav-btn svg {
@@ -476,75 +457,81 @@ document.head.appendChild(o)}initApollo();</script>
             stroke-width: 3;
         }
 
-        /* MOBILE VIEW ADJUSTMENTS */
+        /* Responsive Breakpoints */
+        @media (max-width: 1024px) {
+            :root { --slide-width: 85%; }
+            .headline { font-size: 1.8rem; }
+        }
+
         @media (max-width: 768px) {
-            .portfolio-outer::after { height: 150px; }
-            .swiper-slide { 
-                width: 90%; 
-                aspect-ratio: 1/1; /* Square for mobile view as per image */
-                border-radius: 30px; 
-            }
-            .nav-container { width: 90%; top: 45%; }
-            .nav-btn { width: 48px; height: 48px; }
-            .slide-content { left: 20px; bottom: 20px; }
-            .headline { max-width: 100%; font-size: 1.6rem; }
-            .tag-wrapper { 
-                position: relative; 
-                bottom: -20px; 
-                padding: 15px 0; 
-                border-radius: 0;
-                justify-content: center;
-                width: 100%;
-            }
+            :root { --slide-width: 92%; }
+            .portfolio-section { padding: 60px 0; }
+            .swiper-slide { border-radius: 20px; }
+            .content-overlay { padding: 30px; }
+            .headline { font-size: 1.4rem; }
+            .nav-wrapper { width: 92%; }
+            .nav-btn { width: 45px; height: 45px; }
+            .pill-container { position: relative; bottom: 0; right: 0; margin-top: 15px; }
         }
     </style>
 </head>
 <body>
 
-<section class="portfolio-outer">
-    <div class="swiper portfolioSwiper">
+<section class="portfolio-section">
+    <div class="swiper myPortfolio">
         <div class="swiper-wrapper">
             
-            <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1400');">
-                <div class="slide-content">
-                    <div class="meta-info">• 2023 <span>•</span> Cary Neville</div>
-                    <h2 class="headline">A workplace consultancy creating inspiring environments</h2>
-                </div>
-                <div class="tag-wrapper">
-                    <a href="#" class="tag-pill">Branding</a>
-                    <a href="#" class="tag-pill">Website</a>
+            <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1586717791821-3f44a563cc4c?q=80&w=1200');">
+                <div class="content-overlay">
+                    <div class="meta">• 2023 • Cary Neville</div>
+                    <h2 class="headline">Design thinking and user research for modern apps</h2>
+                    <div class="pill-container">
+                        <a href="#" class="pill">UI Design</a>
+                        <a href="#" class="pill">Research</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1400');">
-                <div class="slide-content">
-                    <div class="meta-info">• 2023 <span>•</span> Cary Neville</div>
+            <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1200');">
+                <div class="content-overlay">
+                    <div class="meta">• 2023 • Cary Neville</div>
                     <h2 class="headline">We strive to develop real-world web solutions that are ideal</h2>
-                </div>
-                <div class="tag-wrapper">
-                    <a href="#" class="tag-pill">Branding</a>
-                    <a href="#" class="tag-pill">Website</a>
+                    <div class="pill-container">
+                        <a href="#" class="pill">Branding</a>
+                        <a href="#" class="pill">Website</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1400');">
-                <div class="slide-content">
-                    <div class="meta-info">• 2024 <span>•</span> Design Lab</div>
-                    <h2 class="headline">Modern interfaces for the next generation of users</h2>
+            <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200');">
+                <div class="content-overlay">
+                    <div class="meta">• 2024 • Design Studio</div>
+                    <h2 class="headline">Innovative architecture for digital ecosystems</h2>
+                    <div class="pill-container">
+                        <a href="#" class="pill">Product</a>
+                        <a href="#" class="pill">Dev</a>
+                    </div>
                 </div>
-                <div class="tag-wrapper">
-                    <a href="#" class="tag-pill">UI/UX</a>
-                    <a href="#" class="tag-pill">Mobile</a>
+            </div>
+
+            <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200');">
+                <div class="content-overlay">
+                    <div class="meta">• 2024 • Creative Lab</div>
+                    <h2 class="headline">Connecting brands with their target audience</h2>
+                    <div class="pill-container">
+                        <a href="#" class="pill">Marketing</a>
+                        <a href="#" class="pill">Strategy</a>
+                    </div>
                 </div>
             </div>
 
         </div>
 
-        <div class="nav-container">
-            <button class="nav-btn btn-prev">
+        <div class="nav-wrapper">
+            <button class="nav-btn nav-prev">
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg>
             </button>
-            <button class="nav-btn btn-next">
+            <button class="nav-btn nav-next">
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
             </button>
         </div>
@@ -554,19 +541,19 @@ document.head.appendChild(o)}initApollo();</script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
-    const swiper = new Swiper(".portfolioSwiper", {
+    const swiper = new Swiper(".myPortfolio", {
         slidesPerView: "auto",
         centeredSlides: true,
         loop: true,
-        spaceBetween: 20,
-        speed: 900,
-        grabCursor: true,
-        // Ensures side slides are visible on load
-        loopedSlides: 3, 
+        spaceBetween: 30,
+        speed: 800,
+        // This ensures enough slides are cloned for the side visibility
+        loopedSlides: 2,
         navigation: {
-            nextEl: ".btn-next",
-            prevEl: ".btn-prev",
+            nextEl: ".nav-next",
+            prevEl: ".nav-prev",
         },
+        // Enable keyboard for accessibility
         keyboard: {
             enabled: true,
         },
