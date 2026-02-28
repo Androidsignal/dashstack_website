@@ -2261,146 +2261,160 @@ PRESENTATION SECTION (EXACT STYLE)
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Slider Section</title>
+    <title>Portfolio Section - Exact Match</title>
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --primary-purple: #7000FF;
-            --bg-black: #0a0a0a;
-            --text-white: #ffffff;
-            --transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            --brand-purple: #7000FF;
+            --bg-black: #000000;
+            --text-gray: #a1a1a1;
+            --slide-radius: 40px;
         }
 
         body {
-            background-color: var(--bg-black);
             margin: 0;
+            background-color: var(--bg-black);
             font-family: 'Inter', sans-serif;
-            color: var(--text-white);
-            overflow-x: hidden;
+            color: #ffffff;
         }
 
-        .portfolio-section {
-            padding: 80px 0;
+        /* Section Container */
+        .portfolio-slider-section {
+            padding: 100px 0;
+            overflow: hidden; /* Important for the half-cut effect */
             position: relative;
         }
 
         .swiper {
             width: 100%;
-            padding-top: 50px;
-            padding-bottom: 50px;
-            overflow: visible !important; /* Critical for showing side slides */
+            overflow: visible !important; /* Allows side slides to bleed out */
         }
 
         .swiper-slide {
-            position: relative;
-            width: 70%; /* Adjust based on preference */
+            width: 65%; /* Controls the width of the center slide */
             aspect-ratio: 16 / 9;
-            border-radius: 40px;
+            border-radius: var(--slide-radius);
+            position: relative;
             overflow: hidden;
-            background-position: center;
+            transition: transform 0.6s cubic-bezier(0.2, 1, 0.3, 1), opacity 0.6s;
+            opacity: 0.4;
+            transform: scale(0.9);
             background-size: cover;
-            transition: var(--transition);
-            transform: scale(0.9); /* Non-active slides are smaller */
-            opacity: 0.5;
+            background-position: center;
         }
 
+        /* Active Slide Styling */
         .swiper-slide-active {
-            transform: scale(1);
             opacity: 1;
+            transform: scale(1);
         }
 
-        /* Slide Overlay/Content */
-        .slide-inner {
+        /* Slide Content (Hidden by default) */
+        .slide-content {
             position: absolute;
             inset: 0;
-            background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 50%);
+            background: linear-gradient(0deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 40%);
+            padding: 50px;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            padding: 40px;
-            opacity: 0; /* Hidden by default */
-            transition: var(--transition);
+            opacity: 0;
+            transition: opacity 0.4s ease-in-out;
             pointer-events: none;
         }
 
-        .swiper-slide-active .slide-inner {
-            opacity: 1; /* Only visible on center slide */
+        .swiper-slide-active .slide-content {
+            opacity: 1;
             pointer-events: auto;
         }
 
-        .meta-text {
-            font-size: 18px;
-            font-weight: 300;
-            margin-bottom: 10px;
-            color: rgba(255,255,255,0.7);
+        /* Metadata Text */
+        .slide-meta {
+            font-size: 20px;
+            color: var(--text-gray);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
         }
 
-        .meta-text span {
-            margin: 0 10px;
+        .slide-meta span::before {
+            content: "•";
+            margin-right: 15px;
         }
 
         .slide-title {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
+            line-height: 1.1;
             font-weight: 400;
-            line-height: 1.2;
-            max-width: 600px;
+            max-width: 70%;
             margin: 0;
         }
 
-        /* Category Tags */
-        .tags-container {
+        /* Bottom Right Buttons */
+        .slide-actions {
             position: absolute;
             bottom: 40px;
             right: 40px;
             display: flex;
-            gap: 10px;
+            gap: 12px;
         }
 
-        .tag {
-            background: rgba(255, 255, 255, 0.05);
+        .action-btn {
+            background: rgba(255, 255, 255, 0.1);
             border: 1px solid rgba(255, 255, 255, 0.2);
-            padding: 10px 25px;
+            color: #fff;
+            padding: 12px 28px;
             border-radius: 50px;
-            font-size: 14px;
-            color: white;
             text-decoration: none;
+            font-size: 15px;
             backdrop-filter: blur(10px);
             transition: 0.3s;
         }
 
-        .tag:hover {
-            background: rgba(255, 255, 255, 0.2);
+        .action-btn:hover {
+            background: rgba(255, 255, 255, 0.25);
         }
 
         /* Navigation Arrows */
-        .nav-btn {
+        .nav-controls {
             position: absolute;
             top: 50%;
-            transform: translateY(-50%);
-            z-index: 10;
-            width: 60px;
-            height: 60px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 68%; /* Should be slightly wider than slide width to sit on edges */
+            z-index: 20;
+            display: flex;
+            justify-content: space-between;
+            pointer-events: none;
+        }
+
+        .nav-btn {
+            width: 54px;
+            height: 54px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            transition: 0.3s;
             border: none;
+            pointer-events: auto;
+            transition: 0.3s;
         }
 
         .btn-prev {
-            left: 12%; /* Positions it on the edge of the center slide */
-            background-color: white;
-            color: var(--primary-purple);
+            background: #ffffff;
+            color: var(--brand-purple);
+            transform: translateX(-50%); /* Center on the edge */
         }
 
         .btn-next {
-            right: 12%;
-            background-color: var(--primary-purple);
-            color: white;
+            background: var(--brand-purple);
+            color: #ffffff;
+            transform: translateX(50%); /* Center on the edge */
         }
 
         .nav-btn svg {
@@ -2408,90 +2422,93 @@ PRESENTATION SECTION (EXACT STYLE)
             height: 24px;
             fill: none;
             stroke: currentColor;
-            stroke-width: 2;
+            stroke-width: 2.5;
             stroke-linecap: round;
             stroke-linejoin: round;
         }
 
-        /* Responsive Settings */
-        @media (max-width: 1024px) {
-            .swiper-slide { width: 85%; }
-            .slide-title { font-size: 1.8rem; }
-            .btn-prev { left: 5%; }
-            .btn-next { right: 5%; }
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .swiper-slide { width: 80%; }
+            .nav-controls { width: 83%; }
+            .slide-title { font-size: 2rem; }
         }
 
         @media (max-width: 768px) {
-            .swiper-slide { width: 95%; border-radius: 20px; }
-            .tags-container { position: relative; bottom: 0; right: 0; margin-top: 20px; }
-            .slide-inner { padding: 20px; }
-            .nav-btn { width: 45px; height: 45px; }
+            .swiper-slide { width: 90%; border-radius: 25px; }
+            .nav-controls { display: none; } /* Hide arrows on small mobile for touch UX */
+            .slide-content { padding: 25px; }
+            .slide-title { font-size: 1.5rem; max-width: 100%; }
+            .slide-actions { position: relative; bottom: 0; right: 0; margin-top: 20px; }
         }
     </style>
 </head>
 <body>
 
-<section class="portfolio-section">
-    <div class="swiper mySwiper">
+<section class="portfolio-slider-section">
+    <div class="swiper portfolioSwiper">
         <div class="swiper-wrapper">
             
-            <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1200');">
-                <div class="slide-inner">
-                    <div class="meta-text">• 2023 <span>•</span> Cary Neville</div>
+            <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&q=80&w=1200');">
+                <div class="slide-content">
+                    <div class="slide-meta">• 2023 <span>Cary Neville</span></div>
                     <h2 class="slide-title">Is the application interesting for this target audience?</h2>
-                    <div class="tags-container">
-                        <a href="#" class="tag">Concept</a>
-                        <a href="#" class="tag">Research</a>
+                    <div class="slide-actions">
+                        <a href="#" class="action-btn">Concept</a>
+                        <a href="#" class="action-btn">Research</a>
                     </div>
                 </div>
             </div>
 
-            <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&q=80&w=1200');">
-                <div class="slide-inner">
-                    <div class="meta-text">• 2023 <span>•</span> Cary Neville</div>
+            <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1200');">
+                <div class="slide-content">
+                    <div class="slide-meta">• 2023 <span>Cary Neville</span></div>
                     <h2 class="slide-title">We strive to develop real-world web solutions that are ideal</h2>
-                    <div class="tags-container">
-                        <a href="#" class="tag">Branding</a>
-                        <a href="#" class="tag">Website</a>
+                    <div class="slide-actions">
+                        <a href="#" class="action-btn">Branding</a>
+                        <a href="#" class="action-btn">Website</a>
                     </div>
                 </div>
             </div>
 
-            <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200');">
-                <div class="slide-inner">
-                    <div class="meta-text">• 2024 <span>•</span> Design Lab</div>
-                    <h2 class="slide-title">Building architecture for the digital age</h2>
-                    <div class="tags-container">
-                        <a href="#" class="tag">UI/UX</a>
-                        <a href="#" class="tag">Mobile</a>
+            <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1614850523296-d8c1af93d400?auto=format&fit=crop&q=80&w=1200');">
+                <div class="slide-content">
+                    <div class="slide-meta">• 2024 <span>Design Lab</span></div>
+                    <h2 class="slide-title">Crafting digital experiences with precision and passion</h2>
+                    <div class="slide-actions">
+                        <a href="#" class="action-btn">UI/UX</a>
+                        <a href="#" class="action-btn">Mobile</a>
                     </div>
                 </div>
             </div>
 
         </div>
 
-        <button class="nav-btn btn-prev">
-            <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
-        </button>
-        <button class="nav-btn btn-next">
-            <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
-        </button>
+        <div class="nav-controls">
+            <button class="nav-btn btn-prev">
+                <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <button class="nav-btn btn-next">
+                <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+        </div>
     </div>
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
-    const swiper = new Swiper(".mySwiper", {
+    const swiper = new Swiper(".portfolioSwiper", {
         slidesPerView: "auto",
         centeredSlides: true,
         spaceBetween: 30,
         loop: true,
+        speed: 800,
+        grabCursor: true,
         navigation: {
             nextEl: ".btn-next",
             prevEl: ".btn-prev",
         },
-        // Keyboard support
         keyboard: {
             enabled: true,
         },
