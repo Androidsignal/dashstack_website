@@ -2256,220 +2256,250 @@ PRESENTATION SECTION (EXACT STYLE)
   </div> -->
   <!-- ============ -->
   <!-- portfolo -->
-  <section class="portfolio-carousel">
-    <div class="pc-wrapper">
-  
-      <button class="pc-arrow pc-prev">&#8249;</button>
-  
-      <div class="pc-track">
-  
-        <div class="pc-slide">
-          <img src="https://picsum.photos/1600/1000?1" alt="">
-          <div class="pc-overlay"></div>
-          <div class="pc-content">
-            <div class="pc-meta">• 2023 • Cary Neville</div>
-            <h2>We strive to develop real-world<br>web solutions that are ideal</h2>
-            <div class="pc-pills">
-              <span>Branding</span>
-              <span>Website</span>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Slider Section</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-purple: #7000FF;
+            --bg-black: #0a0a0a;
+            --text-white: #ffffff;
+            --transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            background-color: var(--bg-black);
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            color: var(--text-white);
+            overflow-x: hidden;
+        }
+
+        .portfolio-section {
+            padding: 80px 0;
+            position: relative;
+        }
+
+        .swiper {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            overflow: visible !important; /* Critical for showing side slides */
+        }
+
+        .swiper-slide {
+            position: relative;
+            width: 70%; /* Adjust based on preference */
+            aspect-ratio: 16 / 9;
+            border-radius: 40px;
+            overflow: hidden;
+            background-position: center;
+            background-size: cover;
+            transition: var(--transition);
+            transform: scale(0.9); /* Non-active slides are smaller */
+            opacity: 0.5;
+        }
+
+        .swiper-slide-active {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        /* Slide Overlay/Content */
+        .slide-inner {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 40px;
+            opacity: 0; /* Hidden by default */
+            transition: var(--transition);
+            pointer-events: none;
+        }
+
+        .swiper-slide-active .slide-inner {
+            opacity: 1; /* Only visible on center slide */
+            pointer-events: auto;
+        }
+
+        .meta-text {
+            font-size: 18px;
+            font-weight: 300;
+            margin-bottom: 10px;
+            color: rgba(255,255,255,0.7);
+        }
+
+        .meta-text span {
+            margin: 0 10px;
+        }
+
+        .slide-title {
+            font-size: 2.5rem;
+            font-weight: 400;
+            line-height: 1.2;
+            max-width: 600px;
+            margin: 0;
+        }
+
+        /* Category Tags */
+        .tags-container {
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .tag {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-size: 14px;
+            color: white;
+            text-decoration: none;
+            backdrop-filter: blur(10px);
+            transition: 0.3s;
+        }
+
+        .tag:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Navigation Arrows */
+        .nav-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: 0.3s;
+            border: none;
+        }
+
+        .btn-prev {
+            left: 12%; /* Positions it on the edge of the center slide */
+            background-color: white;
+            color: var(--primary-purple);
+        }
+
+        .btn-next {
+            right: 12%;
+            background-color: var(--primary-purple);
+            color: white;
+        }
+
+        .nav-btn svg {
+            width: 24px;
+            height: 24px;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        /* Responsive Settings */
+        @media (max-width: 1024px) {
+            .swiper-slide { width: 85%; }
+            .slide-title { font-size: 1.8rem; }
+            .btn-prev { left: 5%; }
+            .btn-next { right: 5%; }
+        }
+
+        @media (max-width: 768px) {
+            .swiper-slide { width: 95%; border-radius: 20px; }
+            .tags-container { position: relative; bottom: 0; right: 0; margin-top: 20px; }
+            .slide-inner { padding: 20px; }
+            .nav-btn { width: 45px; height: 45px; }
+        }
+    </style>
+</head>
+<body>
+
+<section class="portfolio-section">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            
+            <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1200');">
+                <div class="slide-inner">
+                    <div class="meta-text">• 2023 <span>•</span> Cary Neville</div>
+                    <h2 class="slide-title">Is the application interesting for this target audience?</h2>
+                    <div class="tags-container">
+                        <a href="#" class="tag">Concept</a>
+                        <a href="#" class="tag">Research</a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-  
-        <div class="pc-slide active">
-          <img src="https://picsum.photos/1600/1000?2" alt="">
-          <div class="pc-overlay"></div>
-          <div class="pc-content">
-            <div class="pc-meta">• 2023 • Cary Neville</div>
-            <h2>We strive to develop real-world<br>web solutions that are ideal</h2>
-            <div class="pc-pills">
-              <span>Branding</span>
-              <span>Website</span>
+
+            <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&q=80&w=1200');">
+                <div class="slide-inner">
+                    <div class="meta-text">• 2023 <span>•</span> Cary Neville</div>
+                    <h2 class="slide-title">We strive to develop real-world web solutions that are ideal</h2>
+                    <div class="tags-container">
+                        <a href="#" class="tag">Branding</a>
+                        <a href="#" class="tag">Website</a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-  
-        <div class="pc-slide">
-          <img src="https://picsum.photos/1600/1000?3" alt="">
-          <div class="pc-overlay"></div>
-          <div class="pc-content">
-            <div class="pc-meta">• 2023 • Cary Neville</div>
-            <h2>We strive to develop real-world<br>web solutions that are ideal</h2>
-            <div class="pc-pills">
-              <span>Branding</span>
-              <span>Website</span>
+
+            <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200');">
+                <div class="slide-inner">
+                    <div class="meta-text">• 2024 <span>•</span> Design Lab</div>
+                    <h2 class="slide-title">Building architecture for the digital age</h2>
+                    <div class="tags-container">
+                        <a href="#" class="tag">UI/UX</a>
+                        <a href="#" class="tag">Mobile</a>
+                    </div>
+                </div>
             </div>
-          </div>
+
         </div>
-  
-      </div>
-  
-      <button class="pc-arrow pc-next">&#8250;</button>
-  
+
+        <button class="nav-btn btn-prev">
+            <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button class="nav-btn btn-next">
+            <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
     </div>
-  </section>
+</section>
 
-  <style>
-    .portfolio-carousel {
-  background: #040816;
-  padding: 140px 0;
-  overflow: hidden;
-  position: relative;
-}
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-.pc-wrapper {
-  position: relative;
-  max-width: 1600px;
-  margin: auto;
-  height: 600px;
-}
+<script>
+    const swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+            nextEl: ".btn-next",
+            prevEl: ".btn-prev",
+        },
+        // Keyboard support
+        keyboard: {
+            enabled: true,
+        },
+    });
+</script>
 
-/* Track */
-.pc-track {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 90px;
-  transition: transform .6s cubic-bezier(.77,0,.18,1);
-}
-
-/* Slides */
-.pc-slide {
-  position: relative;
-  width: 900px;
-  height: 560px;
-  border-radius: 70px;
-  overflow: hidden;
-  transform: scale(.82);
-  opacity: .45;
-  transition: .5s ease;
-}
-
-.pc-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.pc-slide.active {
-  transform: scale(1);
-  opacity: 1;
-}
-
-/* Bottom fade */
-.pc-overlay {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 60%;
-  background: linear-gradient(to top, rgba(0,0,0,.9), rgba(0,0,0,.4), transparent);
-}
-
-/* Content */
-.pc-content {
-  position: absolute;
-  bottom: 80px;
-  left: 90px;
-  color: #fff;
-  opacity: 0;
-  transition: .3s ease;
-}
-
-.pc-slide.active .pc-content {
-  opacity: 1;
-}
-
-.pc-meta {
-  font-size: 20px;
-  opacity: .7;
-  margin-bottom: 15px;
-}
-
-.pc-content h2 {
-  font-size: 48px;
-  line-height: 1.15;
-  margin-bottom: 30px;
-}
-
-/* Pills */
-.pc-pills {
-  position: absolute;
-  right: -380px;
-  bottom: 0;
-  display: flex;
-  gap: 14px;
-}
-
-.pc-pills span {
-  padding: 14px 28px;
-  border-radius: 50px;
-  border: 1px solid rgba(255,255,255,.4);
-  background: rgba(0,0,0,.25);
-  backdrop-filter: blur(6px);
-}
-
-/* Arrows */
-.pc-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 95px;
-  height: 95px;
-  border-radius: 50%;
-  border: 4px solid #fff;
-  font-size: 38px;
-  cursor: pointer;
-  z-index: 5;
-}
-
-.pc-prev {
-  left: -50px;
-  background: #fff;
-  color: #5b2dff;
-}
-
-.pc-next {
-  right: -50px;
-  background: linear-gradient(135deg,#5b2dff,#7b3dff);
-  color: #fff;
-}
-  </style>
-
-  <script>
-    (function(){
-
-const slider = document.querySelector(".portfolio-carousel");
-const track = slider.querySelector(".pc-track");
-const slides = slider.querySelectorAll(".pc-slide");
-const next = slider.querySelector(".pc-next");
-const prev = slider.querySelector(".pc-prev");
-
-let index = 1;
-
-function update(){
-  slides.forEach(s => s.classList.remove("active"));
-  slides[index].classList.add("active");
-
-  const center = slider.offsetWidth / 2;
-  const slideCenter = slides[index].offsetLeft + (slides[index].offsetWidth / 2);
-  track.style.transform = `translateX(${center - slideCenter}px)`;
-}
-
-next.onclick = () => {
-  index = (index + 1) % slides.length;
-  update();
-};
-
-prev.onclick = () => {
-  index = (index - 1 + slides.length) % slides.length;
-  update();
-};
-
-window.addEventListener("resize", update);
-update();
-
-})();
-  </script>
+</body>
+</html>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
