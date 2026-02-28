@@ -30,6 +30,180 @@
   <link rel="stylesheet" href="./css/portfolio.css" />
   <link rel="stylesheet" type="text/css" href="./css/slick.css" />
   <link rel="stylesheet" type="text/css" href="./css/slick-theme.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --brand-purple: #6332fa;
+            --text-dark: #1a1a1a;
+            --text-muted: #666666;
+            --white: #ffffff;
+            --slide-width: 70%; /* Desktop slide width */
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--white);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .portfolio-section {
+            padding: 100px 0;
+            background-color: var(--white);
+            overflow: hidden; /* Hide the bleed of the side slides */
+            position: relative;
+        }
+
+        /* Swiper Overrides */
+        .swiper {
+            width: 100%;
+            overflow: visible !important; /* Crucial for seeing the cut-off slides */
+        }
+
+        .swiper-slide {
+            width: var(--slide-width);
+            aspect-ratio: 16 / 9;
+            border-radius: 40px;
+            overflow: hidden;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.6s ease, opacity 0.6s ease;
+            opacity: 0.5; /* Side slides are dimmed */
+            transform: scale(0.92); /* Side slides are slightly smaller */
+        }
+
+        .swiper-slide-active {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        /* Slide Content Overlay */
+        .content-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 60%);
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            pointer-events: none;
+            color: white;
+        }
+
+        .swiper-slide-active .content-overlay {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .meta {
+            font-size: 18px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 400;
+            color: rgba(255,255,255,0.8);
+        }
+
+        .headline {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            font-weight: 500;
+            margin: 0;
+            max-width: 600px;
+        }
+
+        /* Pill Buttons (Bottom Right) */
+        .pill-container {
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .pill {
+            background: #111111;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 100px;
+            font-size: 14px;
+            text-decoration: none;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: 0.3s;
+        }
+
+        .pill:hover {
+            background: #222222;
+        }
+
+        /* Navigation Controls - Absolute Precision */
+        .nav-wrapper {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: var(--slide-width); /* Matches the center slide exactly */
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            pointer-events: none;
+        }
+
+        .nav-btn {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border: none;
+            pointer-events: auto;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .nav-prev {
+            background: white;
+            color: var(--brand-purple);
+            transform: translateX(-50%); /* Pins it to the left edge of center slide */
+        }
+
+        .nav-next {
+            background: var(--brand-purple);
+            color: white;
+            transform: translateX(50%); /* Pins it to the right edge of center slide */
+        }
+
+        .nav-btn svg {
+            width: 24px;
+            height: 24px;
+            stroke-width: 3;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 1024px) {
+            :root { --slide-width: 85%; }
+            .headline { font-size: 1.8rem; }
+        }
+
+        @media (max-width: 768px) {
+            :root { --slide-width: 92%; }
+            .portfolio-section { padding: 60px 0; }
+            .swiper-slide { border-radius: 20px; }
+            .content-overlay { padding: 30px; }
+            .headline { font-size: 1.4rem; }
+            .nav-wrapper { width: 92%; }
+            .nav-btn { width: 45px; height: 45px; }
+            .pill-container { position: relative; bottom: 0; right: 0; margin-top: 15px; }
+        }
+    </style>
   <!-- Apollo Tracking Script -->
   <script>function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
 o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
@@ -117,6 +291,72 @@ document.head.appendChild(o)}initApollo();</script>
         </div>
       </div>
     </section>
+
+
+    <!-- ============= -->
+
+    <section class="portfolio-section">
+      <div class="swiper myPortfolio">
+          <div class="swiper-wrapper">
+              
+              <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1586717791821-3f44a563cc4c?q=80&w=1200');">
+                  <div class="content-overlay">
+                      <div class="meta">• 2023 • Cary Neville</div>
+                      <h2 class="headline">Design thinking and user research for modern apps</h2>
+                      <div class="pill-container">
+                          <a href="#" class="pill">UI Design</a>
+                          <a href="#" class="pill">Research</a>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1200');">
+                  <div class="content-overlay">
+                      <div class="meta">• 2023 • Cary Neville</div>
+                      <h2 class="headline">We strive to develop real-world web solutions that are ideal</h2>
+                      <div class="pill-container">
+                          <a href="#" class="pill">Branding</a>
+                          <a href="#" class="pill">Website</a>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200');">
+                  <div class="content-overlay">
+                      <div class="meta">• 2024 • Design Studio</div>
+                      <h2 class="headline">Innovative architecture for digital ecosystems</h2>
+                      <div class="pill-container">
+                          <a href="#" class="pill">Product</a>
+                          <a href="#" class="pill">Dev</a>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200');">
+                  <div class="content-overlay">
+                      <div class="meta">• 2024 • Creative Lab</div>
+                      <h2 class="headline">Connecting brands with their target audience</h2>
+                      <div class="pill-container">
+                          <a href="#" class="pill">Marketing</a>
+                          <a href="#" class="pill">Strategy</a>
+                      </div>
+                  </div>
+              </div>
+  
+          </div>
+  
+          <div class="nav-wrapper">
+              <button class="nav-btn nav-prev">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg>
+              </button>
+              <button class="nav-btn nav-next">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+              </button>
+          </div>
+      </div>
+  </section>
+
+    <!-- ============= -->
 
     <section class="slider-section">
       <div class="owl-carousel owl-theme owl-loaded loop">
@@ -1344,6 +1584,26 @@ document.head.appendChild(o)}initApollo();</script>
       }
     });
   </script>
+
+<script>
+  const swiper = new Swiper(".myPortfolio", {
+      slidesPerView: "auto",
+      centeredSlides: true,
+      loop: true,
+      spaceBetween: 30,
+      speed: 800,
+      // This ensures enough slides are cloned for the side visibility
+      loopedSlides: 2,
+      navigation: {
+          nextEl: ".nav-next",
+          prevEl: ".nav-prev",
+      },
+      // Enable keyboard for accessibility
+      keyboard: {
+          enabled: true,
+      },
+  });
+</script>
 
 </body>
 
