@@ -179,10 +179,4 @@
         padding: 120px 0;
         margin-bottom: 0;
     }
-
-    @media (max-width: 1366px) {
-        .hero-title {
-            font-size: 55px;
-        }
-    }
 }
