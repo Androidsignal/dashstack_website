@@ -87,10 +87,9 @@
   }
 
   .showcase-section {
-    padding: 420px 0 120;
+    padding: 120px 0;
     background-color: #131313;
-    margin-top: -200px;
-  }
+
     .row {
       gap: 56px;
 
