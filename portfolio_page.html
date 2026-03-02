@@ -52,8 +52,9 @@
         .portfolio-section {
             padding:0px;
             background-color: transparent;
-            overflow: hidden; /* Hide the bleed of the side slides */
+            overflow: hidden;
             position: relative;
+            padding: 40px 0;
         }
 
         /* Swiper Overrides */
@@ -95,6 +96,14 @@
             color: white;
         }
 
+        .swiper-slide {
+            transform: scale(0.9) translateZ(0) !important;
+        }
+
+        .swiper-slide-active {
+            transform: scale(1.1) !important;
+        }
+
         .swiper-slide-active .content-overlay {
             opacity: 1;
             pointer-events: auto;
@@ -121,10 +130,13 @@
         /* Pill Buttons (Bottom Right) */
         .pill-container {
             position: absolute;
-            bottom: 40px;
-            right: 40px;
+            bottom: 0px;
+            right: 0px;
             display: flex;
             gap: 10px;
+            background-color: #131313;
+            padding: 8px;
+            border-top-left-radius: 20px; 
         }
 
         .pill {
@@ -147,7 +159,7 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%) scale(1.14);
             width: var(--slide-width); /* Matches the center slide exactly */
             z-index: 100;
             display: flex;
@@ -194,13 +206,19 @@
 
         @media (max-width: 768px) {
             :root { --slide-width: 92%; }
-            .portfolio-section { padding:20px 0 0px; }
+            .portfolio-section { padding:10px; }
             .swiper-slide { border-radius: 20px; }
-            .content-overlay { padding: 30px; }
-            .headline { font-size: 1.4rem; }
-            .nav-wrapper { width: 92%; }
-            .nav-btn { width: 45px; height: 45px; }
-            .pill-container { position: relative; bottom: 0; right: 0; margin-top: 15px; }
+            .content-overlay { padding: 30px; justify-content: center; }
+            .headline { font-size: 1.2rem; }
+            .meta { font-size: 12px; }
+            .nav-wrapper { transform: translate(-50%, -50%) scale(1); }
+            .nav-btn { width: 34px; height: 34px; }
+            .nav-btn svg { width: 16px; height: 16px; stroke-width: 2; }
+            /* .pill-container { position: relative; bottom: 0; right: 0; margin-top: 15px; } */
+            .swiper-slide-active { transform: scale(1) !important; }
+            .platform-section { padding: 80px 0 !important; }
+            .pill { padding: 8px 16px; font-size: 10px; }
+            .pill-container { gap: 8px; padding: 8px; }
         }
 
     
@@ -217,8 +235,9 @@
 
         @media(max-width:684px){
           .hero-section .row{
-flex-wrap: wrap!important;
-gap: 26px!important;
+            flex-wrap: wrap!important;
+            gap: 26px!important;
+            text-align: center;
           }
           .hero-title-wrapper, .hero-description-wrapper{
             width: 100%!important;
@@ -228,6 +247,7 @@ gap: 26px!important;
     }
     .hero-description-wrapper{
       gap: 32px!important;
+      align-items: center;
     }
     .skill-group-wrapper{
       flex-direction: column;
@@ -242,7 +262,7 @@ gap: 26px!important;
       padding: 12px 26px;
     }
     .showcase-section {
-        padding: 192px 0 120px;
+        padding: 152px 0 120px;
         margin-top: -108px;
     }
     .justify-content-between{
