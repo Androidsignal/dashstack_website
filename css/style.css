@@ -1498,7 +1498,7 @@ a:focus {
     margin-right: 12px
 }
 
-.work-section .section-title h2 {
+.work-section .section-title h2, .presentation-section h2 {
     font-size: 63px;
     font-weight: 500;
     color: #000;
