@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-    content="DashStack - Mobile App Development Company. We build scalable, high-performance mobile apps with clean architecture, advanced integrations, and cutting-edge technology solutions for startups to enterprises. " />
-  <title>DashStack | AI-Powered & Cross-Platform Full Stack App Development</title>
+    content="DashStack - Flutter App Development Company. We build scalable, high-performance mobile apps with clean architecture, advanced integrations, and cutting-edge technology solutions for startups to enterprises." />
+  <title>DashStack | Flutter App Development Company - Mobile & Web Solutions</title>
   <link rel="icon" href="./images/favicon.png" type="image/png" />
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -27,6 +27,161 @@
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" type="text/css" href="./css/slick.css" />
   <link rel="stylesheet" type="text/css" href="./css/slick-theme.css" />
+
+
+<style>
+  /* =========================
+PRESENTATION EXACT STYLE
+========================= */
+
+.presentation-section {
+  padding: 90px 0 80px;
+  background: #f4f5fb;
+  font-family: poppins;
+  overflow: hidden;
+}
+
+.presentation-container {
+  width: 92%;
+  max-width: 1350px;
+  margin: auto;
+}
+
+/* Header */
+.presentation-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  margin-bottom: 50px;
+  align-items: flex-start;
+}
+
+.presentation-header h2 {
+
+  letter-spacing: -1px;
+}
+
+.presentation-text {
+  max-width: 640px;
+}
+
+.presentation-text p {
+  color: #5a5a59;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Slider area */
+.presentation-sliders {
+  position: relative;
+}
+
+/* gradient mask sides (half cut look) */
+.presentation-sliders:before,
+.presentation-sliders:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.presentation-sliders:before {
+  left: 0;
+  background: linear-gradient(90deg,#f4f5fb 0%,rgba(244,245,251,0)100%);
+}
+
+.presentation-sliders:after {
+  right: 0;
+  background: linear-gradient(-90deg,#f4f5fb 0%,rgba(244,245,251,0)100%);
+}
+
+/* row */
+.slider-row {
+  overflow: hidden;
+  margin-bottom: 22px;
+}
+
+/* track */
+.slider-track {
+  display: flex;
+  gap: 22px;
+  width: max-content;
+}
+
+/* cards */
+.card {
+  width: 360px;
+  height: 240px;
+  border-radius: 26px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #ddd;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* auto scroll animations */
+.slider-left .slider-track {
+  animation: scrollLeft 40s linear infinite;
+}
+
+.slider-right .slider-track {
+  animation: scrollRight 40s linear infinite;
+}
+
+@keyframes scrollLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes scrollRight {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+/* CTA */
+.view-all-wrap {
+  text-align: center;
+  margin-top: 45px;
+}
+
+.view-btn {
+  padding: 18px 40px;
+  border-radius: 60px;
+  background: linear-gradient(135deg,#6b1bff,#7c5cff);
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  box-shadow: 0 8px 30px rgba(108,40,255,0.35);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .presentation-header {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 260px;
+    height: 180px;
+  }
+
+  .presentation-header h2 {
+    font-size: 42px;
+  }
+}
+</style>
+
+
   <!-- Apollo Tracking Script -->
   <script>function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
 o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
@@ -1032,6 +1187,80 @@ document.head.appendChild(o)}initApollo();</script>
       </div>
     </section>
 
+
+   <!--  Section -->
+   <!-- =========================
+PRESENTATION SECTION (EXACT STYLE)
+========================= -->
+<section class="presentation-section">
+  <div class="presentation-container">
+
+    <!-- Header -->
+    <div class="presentation-header">
+      <h2>Presentation</h2>
+
+      <div class="presentation-text">
+        <p>
+          Salesloft’s logotype is a custom logotype built on the bones of the typeface Moret and contains script-like connections that increase legibility and ownability. The monogram is a short-hand of the logotype to give the visual identity distinction in small instances, such as an app icon.
+        </p>
+      </div>
+    </div>
+
+    <!-- SLIDER AREA -->
+    <div class="presentation-sliders">
+
+      <!-- ROW 1 (Right → Left) -->
+      <div class="slider-row slider-left">
+        <div class="slider-track">
+          <!-- repeat for smooth infinite scroll -->
+          <div class="card"><img src="https://picsum.photos/600/400?1"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?2"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?3"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?4"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?5"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?6"></div>
+
+          <!-- duplicate for infinite -->
+          <div class="card"><img src="https://picsum.photos/600/400?1"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?2"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?3"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?4"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?5"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?6"></div>
+        </div>
+      </div>
+
+      <!-- ROW 2 (Left → Right) -->
+      <div class="slider-row slider-right">
+        <div class="slider-track">
+          <div class="card"><img src="https://picsum.photos/600/400?7"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?8"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?9"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?10"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?11"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?12"></div>
+
+          <!-- duplicate -->
+          <div class="card"><img src="https://picsum.photos/600/400?7"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?8"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?9"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?10"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?11"></div>
+          <div class="card"><img src="https://picsum.photos/600/400?12"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- BUTTON -->
+    <div class="view-all-wrap">
+      <a href="#" class="view-btn">View All →</a>
+    </div>
+
+  </div>
+</section>
+
+
     <!-- Platform Section -->
     <section class="platform-section testimonial-section pt-4" id="testimonial">
       <div class="container">
@@ -2025,6 +2254,290 @@ document.head.appendChild(o)}initApollo();</script>
       </div>
     </div>
   </div> -->
+  <!-- ============ -->
+  <!-- portfolo -->
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Portfolio Slider</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-purple: #6c2cf5;
+            --white: #ffffff;
+            --black: #0f0f0f;
+            --slide-radius: 40px;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--white);
+        }
+
+        .portfolio-outer {
+            padding: 80px 0 0 0;
+            background-color: var(--white);
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* The Black Base matching your image */
+        .portfolio-outer::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 180px;
+            background-color: var(--black);
+            z-index: 1;
+        }
+
+        .swiper {
+            width: 100%;
+            padding-bottom: 120px; /* Space for the content overlap */
+            overflow: visible !important;
+            z-index: 2;
+        }
+
+        .swiper-slide {
+            width: 70%;
+            aspect-ratio: 16 / 10;
+            border-radius: var(--slide-radius);
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.6s ease;
+            opacity: 0.4;
+            transform: scale(0.9);
+        }
+
+        .swiper-slide-active {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        /* Slide Text Content */
+        .slide-content {
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+            right: 40px;
+            color: var(--white);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease 0.2s;
+            pointer-events: none;
+        }
+
+        .swiper-slide-active .slide-content {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+        .meta-info {
+            font-size: 18px;
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .meta-info span { opacity: 0.5; }
+
+        .headline {
+            font-size: clamp(1.5rem, 4vw, 2.8rem);
+            font-weight: 500;
+            line-height: 1.1;
+            max-width: 80%;
+            margin: 0;
+        }
+
+        /* Tag Container (Bottom Right Black Tab) */
+        .tag-wrapper {
+            position: absolute;
+            bottom: -80px; /* Pushes it into the black section */
+            right: 0;
+            background: var(--black);
+            padding: 25px 40px;
+            border-radius: 40px 0 0 0;
+            display: flex;
+            gap: 12px;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .swiper-slide-active .tag-wrapper {
+            opacity: 1;
+        }
+
+        .tag-pill {
+            border: 1px solid rgba(255,255,255,0.3);
+            color: var(--white);
+            padding: 10px 24px;
+            border-radius: 100px;
+            font-size: 15px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .tag-pill:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        /* Navigation Arrows (Overlap Design) */
+        .nav-container {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%; /* Matches slide width */
+            z-index: 10;
+            display: flex;
+            justify-content: space-between;
+            pointer-events: none;
+        }
+
+        .nav-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border: none;
+            pointer-events: auto;
+            transition: 0.3s;
+        }
+
+        .btn-prev {
+            background: var(--white);
+            color: var(--primary-purple);
+            transform: translateX(-50%);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .btn-next {
+            background: var(--primary-purple);
+            color: var(--white);
+            transform: translateX(50%);
+            border: 4px solid var(--white); /* Match the white border in image */
+        }
+
+        .nav-btn svg {
+            width: 24px;
+            height: 24px;
+            stroke-width: 3;
+        }
+
+        /* MOBILE VIEW ADJUSTMENTS */
+        @media (max-width: 768px) {
+            .portfolio-outer::after { height: 150px; }
+            .swiper-slide { 
+                width: 90%; 
+                aspect-ratio: 1/1; /* Square for mobile view as per image */
+                border-radius: 30px; 
+            }
+            .nav-container { width: 90%; top: 45%; }
+            .nav-btn { width: 48px; height: 48px; }
+            .slide-content { left: 20px; bottom: 20px; }
+            .headline { max-width: 100%; font-size: 1.6rem; }
+            .tag-wrapper { 
+                position: relative; 
+                bottom: -20px; 
+                padding: 15px 0; 
+                border-radius: 0;
+                justify-content: center;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<section class="portfolio-outer">
+    <div class="swiper portfolioSwiper">
+        <div class="swiper-wrapper">
+            
+            <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1400');">
+                <div class="slide-content">
+                    <div class="meta-info">• 2023 <span>•</span> Cary Neville</div>
+                    <h2 class="headline">A workplace consultancy creating inspiring environments</h2>
+                </div>
+                <div class="tag-wrapper">
+                    <a href="#" class="tag-pill">Branding</a>
+                    <a href="#" class="tag-pill">Website</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1400');">
+                <div class="slide-content">
+                    <div class="meta-info">• 2023 <span>•</span> Cary Neville</div>
+                    <h2 class="headline">We strive to develop real-world web solutions that are ideal</h2>
+                </div>
+                <div class="tag-wrapper">
+                    <a href="#" class="tag-pill">Branding</a>
+                    <a href="#" class="tag-pill">Website</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1400');">
+                <div class="slide-content">
+                    <div class="meta-info">• 2024 <span>•</span> Design Lab</div>
+                    <h2 class="headline">Modern interfaces for the next generation of users</h2>
+                </div>
+                <div class="tag-wrapper">
+                    <a href="#" class="tag-pill">UI/UX</a>
+                    <a href="#" class="tag-pill">Mobile</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="nav-container">
+            <button class="nav-btn btn-prev">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg>
+            </button>
+            <button class="nav-btn btn-next">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+            </button>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper(".portfolioSwiper", {
+        slidesPerView: "auto",
+        centeredSlides: true,
+        loop: true,
+        spaceBetween: 20,
+        speed: 900,
+        grabCursor: true,
+        // Ensures side slides are visible on load
+        loopedSlides: 3, 
+        navigation: {
+            nextEl: ".btn-next",
+            prevEl: ".btn-prev",
+        },
+        keyboard: {
+            enabled: true,
+        },
+    });
+</script>
+
+</body>
+</html>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -2127,6 +2640,21 @@ document.head.appendChild(o)}initApollo();</script>
       }
     });
   </script>
+
+
+<script>
+  // No JS needed — pure CSS auto infinite carousel
+// If you want pause on hover:
+
+document.querySelectorAll(".slider-row").forEach(row=>{
+  row.addEventListener("mouseenter",()=>{
+    row.querySelector(".slider-track").style.animationPlayState="paused";
+  });
+  row.addEventListener("mouseleave",()=>{
+    row.querySelector(".slider-track").style.animationPlayState="running";
+  });
+});
+</script>
 
 </body>
 
