@@ -76,9 +76,23 @@
             transform: scale(0.92); /* Side slides are slightly smaller */
         }
 
+        .swiper-slide::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #FFFFFFAA
+        }
+
         .swiper-slide-active {
             opacity: 1;
             transform: scale(1);
+        }
+
+        .swiper-slide.swiper-slide-active::after {
+            background: transparent;
         }
 
         /*---- Slide Content Overlay---- */
@@ -198,6 +212,38 @@
             height: 24px;
             stroke-width: 3;
         }
+
+
+        /* testimonial slider customizations */
+    .testimonial-content .slick-prev,
+    .testimonial-content .slick-next {
+        display: block;
+        width: unset;
+        height: unset;
+        padding: 10px;
+        background: #131313;
+        border-radius: 50%;
+        z-index: 10;
+        top: 100%;
+    }
+
+    .testimonial-content .slick-prev {
+      left: 50%;
+      transform: translate(-110px, 10px);
+    }
+
+    .testimonial-content .slick-next {
+      right: 50%;
+      transform: translate(110px, 10px);
+    }
+
+    .platform-section.testimonial-section .slick-dots li button:before {
+      border-color: #13131350;
+    }
+    .platform-section.testimonial-section .slick-dots li.slick-active button::before {
+      background-color: #131313;
+    }
+
         /* Responsive Breakpoints */
         @media (max-width: 1024px) {
             :root { --slide-width: 85%; }
@@ -252,14 +298,24 @@
     .skill-group-wrapper{
       flex-direction: column;
       gap: 22px;
-      
     }
-    .skill-name{
+    /* container that holds the individual tabs */
+    .skill-tabs{
+      display: flex;
+      flex-wrap: wrap;
       gap: 6px!important;
       justify-content: center;
     }
-    .skill-name p{
+    /* each tab element */
+    .skill-tabs .skill-name{
       padding: 12px 26px;
+      cursor: pointer;
+      transition: background-color .2s, color .2s;
+    }
+    .skill-name.active{
+      /* simple active styling, adjust as needed */
+      background-color: #000;
+      color: #fff;
     }
     .showcase-section {
         padding: 152px 0 120px;
@@ -268,7 +324,7 @@
     .justify-content-between{
       flex-direction: column;
     }
-    .project-left-wrapper, .project-right-wrapper{
+    .project-full-wrapper {
       max-width: 100%!important;
       padding: 0px 16px;
     }
@@ -279,7 +335,7 @@
       font-size: 22px!important;
       line-height: 26px;
     }
-    .project-left-wrapper, .project-right-wrapper {
+    .project-full-wrapper {
       gap: 42px!important;
     }
     .showcase-section{
@@ -292,6 +348,23 @@
     .content-overlay {
         padding: 10px 20px!important;
     }
+
+    .slick-prev:before, .slick-next:before {
+        font-size: 16px;
+    }
+    .testimonial-content .slick-dots li.slick-active button {
+        background: #ffffff;
+        width: 12px;
+        height: 12px;
+        transform: translateY(5px);
+    }
+    .testimonial-content .slick-dots li button {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.6);
+    }
+
         }
     </style>
   <!-- Apollo Tracking Script -->
@@ -365,7 +438,7 @@ document.head.appendChild(o)}initApollo();</script>
             </div>
           </div>
         </div>
-        <div class="row justify-content-between align-items-center">
+        <!-- <div class="row justify-content-between align-items-center">
           <div class="skill-group-wrapper">
             <p>We create digital products:</p>
             <div class="skill-name">
@@ -378,7 +451,7 @@ document.head.appendChild(o)}initApollo();</script>
               <p>Responsive design</p>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -454,116 +527,118 @@ document.head.appendChild(o)}initApollo();</script>
         loop: true,
         spaceBetween: 30,
         speed: 800,
-        // This ensures enough slides are cloned for the side visibility
         loopedSlides: 2,
         navigation: {
             nextEl: ".nav-next",
             prevEl: ".nav-prev",
         },
-        // Enable keyboard for accessibility
         keyboard: {
             enabled: true,
         },
     });
 </script>
-
-
-
-
-<!-- ============================ -->
-
-
-
-
     
     <!-- Showcase Section -->
     <section class="showcase-section" id="showcase">
       <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="skill-group-wrapper">
+            <p>We create digital products:</p>
+            <!-- skill tabs container -->
+            <div class="skill-tabs">
+              <p class="skill-name active" data-type="all">All</p>
+              <p class="skill-name" data-type="web">Websites</p>
+              <p class="skill-name" data-type="app">Mobile app</p>
+              <p class="skill-name" data-type="seo">SEO</p>
+              <p class="skill-name" data-type="shopify">Shopify</p>
+              <p class="skill-name" data-type="marketing">Marketing</p>
+              <p class="skill-name" data-type="responsive">Responsive design</p>
+            </div>
+          </div>
+        </div>
         <div class="row justify-content-between">
-          <div class="project-left-wrapper">
-            <div class="showcase-title-wrapper">
-            <div class="showcase-title text-left">
-              <h2>Take a look at our Recent work</h2>
-            </div>
-          </div>
-          <div class="project-wrapper pw-1">
-            <div class="project-image">
-                <img src="./images/project_1.png" alt="Project 1">
-            </div>
-            <div class="project-content-wrapper">
-                <div class="project-tag-wrapper">
-                    <ul>
-                        <li>2024</li>
-                        <li>Cary Neville</li>
-                    </ul>
+          <div class="project-full-wrapper">
+              <div class="showcase-title-wrapper">
+                <div class="showcase-title text-left">
+                  <h2>Take a look at our Recent work</h2>
                 </div>
-                <div class="project-title-wrapper">
-                    <h3>A workplace consultancy creating inspiring environments</h3>
+              </div>
+              <div class="project-wrapper pw-1" data-type="web">
+                <div class="project-image">
+                  <img src="./images/project_1.png" alt="Project 1">
                 </div>
-            </div>
-          </div>
-          <div class="project-wrapper pw-2">
-            <div class="project-image">
-                <img src="./images/project_1.png" alt="Project 1">
-            </div>
-            <div class="project-content-wrapper">
-                <div class="project-tag-wrapper">
-                    <ul>
-                        <li>2024</li>
-                        <li>Cary Neville</li>
-                    </ul>
+                <div class="project-content-wrapper">
+                    <div class="project-tag-wrapper">
+                        <ul>
+                            <li>2024</li>
+                            <li>Cary Neville</li>
+                        </ul>
+                    </div>
+                    <div class="project-title-wrapper">
+                        <h3>A workplace consultancy creating inspiring environments</h3>
+                    </div>
                 </div>
-                <div class="project-title-wrapper">
-                    <h3>A workplace consultancy creating inspiring environments</h3>
+              </div>
+              <div class="project-wrapper pw-2" data-type="app">
+                <div class="project-image">
+                    <img src="./images/project_1.png" alt="Project 1">
                 </div>
-            </div>
-          </div>
-          </div>
-          <div class="project-right-wrapper">
-            <div class="project-wrapper pw-3">
-            <div class="project-image">
-                <img src="./images/project_1.png" alt="Project 1">
-            </div>
-            <div class="project-content-wrapper">
-                <div class="project-tag-wrapper">
-                    <ul>
-                        <li>2024</li>
-                        <li>Cary Neville</li>
-                    </ul>
+                <div class="project-content-wrapper">
+                    <div class="project-tag-wrapper">
+                        <ul>
+                            <li>2024</li>
+                            <li>Cary Neville</li>
+                        </ul>
+                    </div>
+                    <div class="project-title-wrapper">
+                        <h3>A workplace consultancy creating inspiring environments</h3>
+                    </div>
                 </div>
-                <div class="project-title-wrapper">
-                    <h3>A workplace consultancy creating inspiring environments</h3>
+              </div>
+              <div class="project-wrapper pw-3" data-type="seo">
+                <div class="project-image">
+                  <img src="./images/project_1.png" alt="Project 1">
                 </div>
-            </div>
-          </div>
-          <div class="project-wrapper pw-4">
-            <div class="project-image">
-                <img src="./images/project_1.png" alt="Project 1">
-            </div>
-            <div class="project-content-wrapper">
-                <div class="project-tag-wrapper">
-                    <ul>
-                        <li>2024</li>
-                        <li>Cary Neville</li>
-                    </ul>
+                <div class="project-content-wrapper">
+                    <div class="project-tag-wrapper">
+                        <ul>
+                            <li>2024</li>
+                            <li>Cary Neville</li>
+                        </ul>
+                    </div>
+                    <div class="project-title-wrapper">
+                        <h3>A workplace consultancy creating inspiring environments</h3>
+                    </div>
                 </div>
-                <div class="project-title-wrapper">
-                    <h3>A workplace consultancy creating inspiring environments</h3>
+              </div>
+              <div class="project-wrapper pw-4" data-type="marketing">
+                <div class="project-image">
+                    <img src="./images/project_1.png" alt="Project 1">
                 </div>
-            </div>
-          </div>
-          <div class="showcase-description-wrapper">
-            <p class="showcase-description">
-                We strive to develop real-world web solutions that are ideal for small to large projects with bespoke project requirements. 
-            </p>
-            <div class="text-start">
-                <button class="btn btn-schedule d-inline-block" type="button" data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop">
-                    More projects
-                    <img class="ms-2" src="./images/white_arrow.svg" alt="Schedule meeting" />
-                </button>
-            </div>
-          </div>
+                <div class="project-content-wrapper">
+                    <div class="project-tag-wrapper">
+                        <ul>
+                            <li>2024</li>
+                            <li>Cary Neville</li>
+                        </ul>
+                    </div>
+                    <div class="project-title-wrapper">
+                        <h3>A workplace consultancy creating inspiring environments</h3>
+                    </div>
+                </div>
+              </div>
+              <div class="showcase-description-wrapper">
+                <p class="showcase-description">
+                    We strive to develop real-world web solutions that are ideal for small to large projects with bespoke project requirements. 
+                </p>
+                <div class="text-start">
+                    <button class="btn btn-schedule d-inline-block" type="button" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                        More projects
+                        <img class="ms-2" src="./images/white_arrow.svg" alt="Schedule meeting" />
+                    </button>
+                </div>
+              </div>
           </div>
         </div>
         </div>
@@ -1629,25 +1704,125 @@ document.head.appendChild(o)}initApollo();</script>
           },
         ],
       });
-      $(".testimonial-content").slick({
-        dots: true,
-        centerMode: false,
-        slidesToShow: 2,
-        arrows: false,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1500,
-        responsive: [
-          {
-            breakpoint: 992,
-            settings: {
-              slidesToShow: 1,
-              autoplay: true,
-              autoplaySpeed: 1500,
-            }
-          },
-        ],
+      var $slider = $(".testimonial-content");
+
+$slider.on('init afterChange', function(event, slick, currentSlide){
+    var i = currentSlide ? currentSlide : 0;
+    var total = slick.$dots.find("li");
+
+    // only keep a sliding window of at most five dots
+    var maxVisible = 5;
+    var half = Math.floor(maxVisible / 2); // 2
+
+    total.hide();
+
+    var start = i - half;
+    var end   = i + half;
+
+    // clamp to bounds
+    if(start < 0){
+        start = 0;
+        end = Math.min(maxVisible - 1, total.length - 1);
+    }
+
+    if(end >= total.length){
+        end = total.length - 1;
+        start = Math.max(0, end - (maxVisible - 1));
+    }
+
+    total.slice(start, end + 1).show();
+});
+
+$slider.slick({
+    dots: true,
+    centerMode: false,
+    slidesToShow: 2,
+    arrows: true,           // show navigation arrows
+    slidesToScroll: 1,
+    autoplay: true,
+    loop: true,
+    autoplaySpeed: 1500,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1
+        }
+      },
+    ],
+});
+
+      function reorderProjects() {
+          var $container = $('.project-full-wrapper');
+          var $desc = $container.find('.showcase-description-wrapper');
+          var $items = $container.find('.project-wrapper:visible');
+
+          // sort by existing numeric pw- value
+          $items.sort(function(a, b) {
+              var aMatch = $(a).attr('class').match(/pw-(\d+)/);
+              var bMatch = $(b).attr('class').match(/pw-(\d+)/);
+              var aNum = aMatch ? parseInt(aMatch[1], 10) : 0;
+              var bNum = bMatch ? parseInt(bMatch[1], 10) : 0;
+              return aNum - bNum;
+          });
+
+          // move sorted elements before description wrapper
+          $items.each(function() {
+              if ($desc.length) {
+                  $(this).insertBefore($desc);
+              } else {
+                  $container.append(this);
+              }
+          });
+
+          // ensure description wrapper stays last
+          if ($desc.length) {
+              $container.append($desc);
+          }
+
+          // renumber pw- classes sequentially for visible items
+          $items.each(function(idx) {
+              var $el = $(this);
+              // remove existing pw-* classes
+              $el.removeClass(function(i, classes) {
+                  return (classes.match(/pw-\d+/g) || []).join(' ');
+              });
+              $el.addClass('pw-' + (idx + 1));
+          });
+
+          if (window.msnry) {
+              window.msnry.reloadItems();
+              window.msnry.layout();
+          }
+      }
+
+      $('.skill-name').on('click', function(){
+          var $this = $(this);
+          var type = $this.data('type');
+
+          // active class toggle
+          $('.skill-name').removeClass('active');
+          $this.addClass('active');
+
+          var $projects = $('.project-wrapper');
+
+          if(type === 'all'){
+              $projects.filter(':hidden').fadeIn(300);
+          } else {
+              $projects.each(function(){
+                  var $p = $(this);
+                  if($p.data('type') === type){
+                      if($p.is(':hidden')) $p.fadeIn(300);
+                  } else {
+                      if($p.is(':visible')) $p.fadeOut(300);
+                  }
+              });
+          }
+
+          setTimeout(reorderProjects, 350);
       });
+
+      reorderProjects();
     });
   </script>
 
