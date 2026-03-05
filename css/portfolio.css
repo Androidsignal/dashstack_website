@@ -215,6 +215,7 @@
         flex-direction: column;
         gap: 42px;
         align-items: end;
+        justify-content: center;
 
         p {
           font-weight: 400;
@@ -239,7 +240,7 @@
 .project-wrapper.pw-2,
 .project-wrapper.pw-4,
 .showcase-description-wrapper {
-  margin-top: -150px;
+  margin-top: -200px;
 }
 
 @media (max-width: 1024px) {
