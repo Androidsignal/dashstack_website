@@ -3,6 +3,7 @@
     background-image: url(../images/portfolio_hero_Pattern.svg);
     background-repeat: no-repeat;
     background-position: right;
+    background-size: auto;
     padding: 64px 0;
 
     .container {
