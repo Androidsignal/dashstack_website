@@ -332,3 +332,9 @@
     }
   }
 }
+
+@media(max-width: 767px) {
+    .portfolio-page .platform-section h2 {
+        font-size: 32px;
+    }
+}

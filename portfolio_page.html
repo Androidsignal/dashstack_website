@@ -189,21 +189,24 @@
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            border: none;
+            border: 3px solid white;
             pointer-events: auto;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            box-shadow: 2px 2px 20px 10px #00000050 !important;
             transition: 0.3s;
+            background: white;
+            color: var(--brand-purple);
         }
 
         .nav-prev {
-            background: white;
-            color: var(--brand-purple);
             transform: translateX(-50%); /* Pins it to the left edge of center slide */
         }
 
-        .nav-next {
+        .nav-btn:hover {
             background: var(--brand-purple);
             color: white;
+        }
+
+        .nav-next {
             transform: translateX(50%); /* Pins it to the right edge of center slide */
         }
 
@@ -221,20 +224,25 @@
         width: unset;
         height: unset;
         padding: 10px;
-        background: #131313;
+        background: transparent;
         border-radius: 50%;
         z-index: 10;
         top: 100%;
     }
 
+    .slick-prev:before, .slick-next:before {
+      color: #131313;
+      font-weight: 600;
+    }
+
     .testimonial-content .slick-prev {
       left: 50%;
-      transform: translate(-110px, 10px);
+      transform: translate(-110px, 8px);
     }
 
     .testimonial-content .slick-next {
       right: 50%;
-      transform: translate(110px, 10px);
+      transform: translate(110px, 8px);
     }
 
     .platform-section.testimonial-section .slick-dots li button:before {
@@ -528,6 +536,10 @@ document.head.appendChild(o)}initApollo();</script>
         spaceBetween: 30,
         speed: 800,
         loopedSlides: 2,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false
+        },
         navigation: {
             nextEl: ".nav-next",
             prevEl: ".nav-prev",
