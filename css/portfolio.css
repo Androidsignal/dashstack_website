@@ -57,7 +57,7 @@
           justify-content: space-between;
           align-items: center;
 
-          
+
           p {
             margin-bottom: 0;
             font-weight: 500;
@@ -72,6 +72,7 @@
             flex-wrap: wrap;
             gap: 12px;
           }
+
           .skill-tabs .skill-name {
             border: 0.8px solid #d2d2d2;
             border-radius: 60px;
@@ -83,6 +84,7 @@
             color: #131313;
             cursor: pointer;
           }
+
           .skill-tabs .skill-name.active {
             background-color: #000;
             color: #fff;
@@ -134,6 +136,7 @@
           color: #ffffff;
           cursor: pointer;
         }
+
         .skill-name.active {
           background-color: #ffffff;
           color: #131313;
@@ -202,11 +205,19 @@
           .project-title-wrapper h3 {
             margin: 0;
             font-weight: 500;
-            font-size: 32px;
-            line-height: 100%;
+            font-size: 28px;
+            line-height: 120%;
             letter-spacing: -2%;
             text-transform: capitalize;
             color: #fffefd;
+          }
+
+          .project-description {
+            margin: 12px 0 0 0;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 140%;
+            color: #d2d2d2;
           }
         }
       }
@@ -255,6 +266,7 @@
             font-size: 42px;
           }
         }
+
         & .project-wrapper {
           & .project-content-wrapper {
             .project-tag-wrapper ul {
@@ -267,14 +279,17 @@
             }
           }
         }
+
         .project-full-wrapper {
           gap: 32px;
         }
+
         .project-wrapper,
         .showcase-title-wrapper .showcase-title,
         .showcase-description-wrapper {
           max-width: calc(50% - 16px);
         }
+
         .showcase-description-wrapper {
           gap: 24px;
         }
@@ -298,6 +313,7 @@
             font-size: 34px;
           }
         }
+
         & .project-wrapper {
           & .project-content-wrapper {
             .project-tag-wrapper ul {
@@ -309,14 +325,17 @@
             }
           }
         }
+
         .project-full-wrapper {
           gap: 32px;
         }
+
         .project-wrapper,
         .showcase-title-wrapper .showcase-title,
         .showcase-description-wrapper {
           max-width: 100%;
         }
+
         .showcase-description-wrapper {
           gap: 20px;
           align-items: start;
@@ -337,7 +356,7 @@
 }
 
 @media(max-width: 767px) {
-    .portfolio-page .platform-section h2 {
-        font-size: 32px;
-    }
+  .portfolio-page .platform-section h2 {
+    font-size: 32px;
+  }
 }
