@@ -22,61 +22,62 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" />
   <!-- Owl Carousel CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" type="text/css" href="./css/slick.css" />
   <link rel="stylesheet" type="text/css" href="./css/slick-theme.css" />
 
 
-<style>
-  /* =========================
+  <style>
+    /* =========================
 PRESENTATION EXACT STYLE
 ========================= */
 
-.presentation-section {
-  padding: 90px 0 80px;
-  background: #f4f5fb;
-  font-family: poppins;
-  overflow: hidden;
-}
+    .presentation-section {
+      padding: 90px 0 80px;
+      background: #f4f5fb;
+      font-family: poppins;
+      overflow: hidden;
+    }
 
-.presentation-container {
-  width: 100%;
-  margin: auto;
-}
+    .presentation-container {
+      width: 100%;
+      margin: auto;
+    }
 
-/* Header */
-.presentation-header {
-  display: flex;
-  justify-content: space-between;
-  gap: 60px;
-  margin-bottom: 50px;
-  align-items: flex-start;
-}
+    /* Header */
+    .presentation-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 60px;
+      margin-bottom: 50px;
+      align-items: flex-start;
+    }
 
-.presentation-header h2 {
+    .presentation-header h2 {
 
-  letter-spacing: -1px;
-}
+      letter-spacing: -1px;
+    }
 
-.presentation-text {
-  max-width: 640px;
-}
+    .presentation-text {
+      max-width: 640px;
+    }
 
-.presentation-text p {
-  color: #5a5a59;
-  font-size: 15px;
-  line-height: 1.6;
-}
+    .presentation-text p {
+      color: #5a5a59;
+      font-size: 15px;
+      line-height: 1.6;
+    }
 
-/* Slider area */
-.presentation-sliders {
-  position: relative;
-}
+    /* Slider area */
+    .presentation-sliders {
+      position: relative;
+    }
 
-/* gradient mask sides (half cut look) */
-/* .presentation-sliders:before,
+    /* gradient mask sides (half cut look) */
+    /* .presentation-sliders:before,
 .presentation-sliders:after {
   content: "";
   position: absolute;
@@ -97,88 +98,98 @@ PRESENTATION EXACT STYLE
   background: linear-gradient(-90deg,#f4f5fb 0%,rgba(244,245,251,0)100%);
 } */
 
-/* row */
-.slider-row {
-  overflow: hidden;
-  margin-bottom: 22px;
-}
+    /* row */
+    .slider-row {
+      overflow: hidden;
+      margin-bottom: 22px;
+    }
 
-/* track */
-.slider-track {
-  display: flex;
-  gap: 20px;
-  width: max-content;
-}
+    /* track */
+    .slider-track {
+      display: flex;
+      gap: 20px;
+      width: max-content;
+    }
 
-/* cards */
-.card {
-  width: 360px;
-  height: 240px;
-  border-radius: 20px;
-  overflow: hidden;
-  flex-shrink: 0;
-  background: #ddd;
-}
+    /* cards */
+    .card {
+      width: 360px;
+      height: 240px;
+      border-radius: 20px;
+      overflow: hidden;
+      flex-shrink: 0;
+      background: #ddd;
+    }
 
-.card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
-/* auto scroll animations */
-.slider-left .slider-track {
-  animation: scrollLeft 40s linear infinite;
-}
+    /* auto scroll animations */
+    .slider-left .slider-track {
+      animation: scrollLeft 40s linear infinite;
+    }
 
-.slider-right .slider-track {
-  animation: scrollRight 40s linear infinite;
-}
+    .slider-right .slider-track {
+      animation: scrollRight 40s linear infinite;
+    }
 
-@keyframes scrollLeft {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
+    @keyframes scrollLeft {
+      0% {
+        transform: translateX(0);
+      }
 
-@keyframes scrollRight {
-  0% { transform: translateX(-50%); }
-  100% { transform: translateX(0); }
-}
+      100% {
+        transform: translateX(-50%);
+      }
+    }
 
-/* CTA */
-.view-all-wrap {
-  text-align: center;
-  margin-top: 45px;
-}
+    @keyframes scrollRight {
+      0% {
+        transform: translateX(-50%);
+      }
 
-.view-btn {
-  padding: 18px 40px;
-  border-radius: 60px;
-  background: linear-gradient(135deg,#6b1bff,#7c5cff);
-  color: #fff;
-  font-size: 16px;
-  text-decoration: none;
-  font-weight: 500;
-  display: inline-block;
-  box-shadow: 0 8px 30px rgba(108,40,255,0.35);
-}
+      100% {
+        transform: translateX(0);
+      }
+    }
 
-/* Responsive */
-@media (max-width: 900px) {
-  .presentation-header {
-    flex-direction: column;
-  }
+    /* CTA */
+    .view-all-wrap {
+      text-align: center;
+      margin-top: 45px;
+    }
 
-  .card {
-    width: 260px;
-    height: 180px;
-  }
+    .view-btn {
+      padding: 18px 40px;
+      border-radius: 60px;
+      background: linear-gradient(135deg, #6b1bff, #7c5cff);
+      color: #fff;
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: 500;
+      display: inline-block;
+      box-shadow: 0 8px 30px rgba(108, 40, 255, 0.35);
+    }
 
-  .presentation-header h2 {
-    font-size: 42px;
-  }
-}
-</style>
+    /* Responsive */
+    @media (max-width: 900px) {
+      .presentation-header {
+        flex-direction: column;
+      }
+
+      .card {
+        width: 260px;
+        height: 180px;
+      }
+
+      .presentation-header h2 {
+        font-size: 42px;
+      }
+    }
+  </style>
 
 
   <!-- Apollo Tracking Script -->
@@ -275,7 +286,7 @@ document.head.appendChild(o)}initApollo();</script>
               <div>IoT Integrations</div>
             </li>
             <li>
-              <span class="count percent" data-count="100"> 0</span>
+              <span class="count percent" data-count="98"> 0</span>
               <span>%</span>
               <div>Client Satisfaction</div>
             </li>
@@ -1158,72 +1169,73 @@ document.head.appendChild(o)}initApollo();</script>
     </section> -->
 
 
-   <!--  Section -->
-   <!-- =========================
+    <!--  Section -->
+    <!-- =========================
 PRESENTATION SECTION (EXACT STYLE)
 ========================= -->
-<section class="presentation-section">
-  <div class="presentation-container">
+    <section class="presentation-section">
+      <div class="presentation-container">
 
-    <!-- Header -->
-    <div class="presentation-header container">
-      <h2>Testimonial</h2>
+        <!-- Header -->
+        <div class="presentation-header container">
+          <h2>Testimonial</h2>
 
-      <div class="presentation-text">
-        <p>
-          Real feedback from people who have experienced our service. See how our platform helps businesses and individuals achieve better results, improve efficiency, and grow with confidence.
-        </p>
-      </div>
-    </div>
+          <div class="presentation-text">
+            <p>
+              Real feedback from people who have experienced our service. See how our platform helps businesses and
+              individuals achieve better results, improve efficiency, and grow with confidence.
+            </p>
+          </div>
+        </div>
 
-    <!-- SLIDER AREA -->
-    <div class="presentation-sliders">
+        <!-- SLIDER AREA -->
+        <div class="presentation-sliders">
 
-      <!-- ROW 1 (Right → Left) -->
-      <div class="slider-row slider-left">
-        <div class="slider-track">
-          <!-- repeat for smooth infinite scroll -->
-          <div class="card"><img src="./images/2i2i_hero.webp"></div>
-          <div class="card"><img src="./images/P_1.svg"></div>
-          <div class="card"><img src="./images/P_1.svg"></div>
+          <!-- ROW 1 (Right → Left) -->
+          <div class="slider-row slider-left">
+            <div class="slider-track">
+              <!-- repeat for smooth infinite scroll -->
               <div class="card"><img src="./images/2i2i_hero.webp"></div>
-               <div class="card"><img src="./images/2i2i_hero.webp"></div>
-          <div class="card"><img src="https://picsum.photos/600/400?4"></div>
-          <div class="card"><img src="https://picsum.photos/600/400?5"></div>
-          <div class="card"><img src="https://picsum.photos/600/400?6"></div>
+              <div class="card"><img src="./images/P_1.svg"></div>
+              <div class="card"><img src="./images/P_1.svg"></div>
+              <div class="card"><img src="./images/2i2i_hero.webp"></div>
+              <div class="card"><img src="./images/2i2i_hero.webp"></div>
+              <div class="card"><img src="https://picsum.photos/600/400?4"></div>
+              <div class="card"><img src="https://picsum.photos/600/400?5"></div>
+              <div class="card"><img src="https://picsum.photos/600/400?6"></div>
+
+            </div>
+          </div>
+
+          <!-- ROW 2 (Left → Right) -->
+          <div class="slider-row slider-right">
+            <div class="slider-track">
+              <div class="card"><img src="https://picsum.photos/600/400?7"></div>
+              <div class="card"><img src="https://picsum.photos/600/400?8"></div>
+              <div class="card"><img src="https://picsum.photos/600/400?9"></div>
+              <div class="card"><img src="https://picsum.photos/600/400?10"></div>
+              <div class="card"><img src="https://picsum.photos/600/400?11"></div>
+              <div class="card"><img src="https://picsum.photos/600/400?12"></div>
+
+              <!-- duplicate -->
+              <div class="card"><img src="https://picsum.photos/600/400?7"></div>
+              <div class="card"><img src="https://picsum.photos/600/400?8"></div>
+              <div class="card"><img src="https://picsum.photos/600/400?9"></div>
+              <div class="card"><img src="https://picsum.photos/600/400?10"></div>
+              <div class="card"><img src="https://picsum.photos/600/400?11"></div>
+              <div class="card"><img src="https://picsum.photos/600/400?12"></div>
+            </div>
+          </div>
 
         </div>
-      </div>
 
-      <!-- ROW 2 (Left → Right) -->
-      <div class="slider-row slider-right">
-        <div class="slider-track">
-          <div class="card"><img src="https://picsum.photos/600/400?7"></div>
-          <div class="card"><img src="https://picsum.photos/600/400?8"></div>
-          <div class="card"><img src="https://picsum.photos/600/400?9"></div>
-          <div class="card"><img src="https://picsum.photos/600/400?10"></div>
-          <div class="card"><img src="https://picsum.photos/600/400?11"></div>
-          <div class="card"><img src="https://picsum.photos/600/400?12"></div>
-
-          <!-- duplicate -->
-          <div class="card"><img src="https://picsum.photos/600/400?7"></div>
-          <div class="card"><img src="https://picsum.photos/600/400?8"></div>
-          <div class="card"><img src="https://picsum.photos/600/400?9"></div>
-          <div class="card"><img src="https://picsum.photos/600/400?10"></div>
-          <div class="card"><img src="https://picsum.photos/600/400?11"></div>
-          <div class="card"><img src="https://picsum.photos/600/400?12"></div>
+        <!-- BUTTON -->
+        <div class="view-all-wrap container">
+          <a href="/portfolio_page.html" class="view-btn">View All →</a>
         </div>
+
       </div>
-
-    </div>
-
-    <!-- BUTTON -->
-    <div class="view-all-wrap container">
-      <a href="/portfolio_page.html" class="view-btn">View All →</a>
-    </div>
-
-  </div>
-</section>
+    </section>
 
 
     <!-- Platform Section -->
@@ -1401,7 +1413,10 @@ PRESENTATION SECTION (EXACT STYLE)
                   </div>
                   <h3>Ultra Messenger : Video Calling and Messaging</h3>
                   <p>
-               Collaborating with DashStack was a great experience. They delivered high-quality work, understood my requirements perfectly, and provided excellent guidance. Their communication is clear, they work fast, and they solve problems smoothly. I highly recommend DashStack for software or web development and look forward to our next project together.
+                    Collaborating with DashStack was a great experience. They delivered high-quality work, understood my
+                    requirements perfectly, and provided excellent guidance. Their communication is clear, they work
+                    fast, and they solve problems smoothly. I highly recommend DashStack for software or web development
+                    and look forward to our next project together.
                   </p>
                   <div class="testimonial-user-rate">
                     <div class="testimonial-user">
@@ -1447,7 +1462,10 @@ PRESENTATION SECTION (EXACT STYLE)
                   </div>
                   <h3>2i2i - Safe and Private for friends to hang out in the age of video calls.</h3>
                   <p>
-                   Building 2i2i required a safe, private space, and Chandresh delivered perfectly. They built a robust, high-performance Flutter app for iOS and Android that handles our 'Zero Risk' security and video call stability flawlessly. Fast, responsive, and exactly what we envisioned—a fantastic partner for our roadmap.
+                    Building 2i2i required a safe, private space, and Chandresh delivered perfectly. They built a
+                    robust, high-performance Flutter app for iOS and Android that handles our 'Zero Risk' security and
+                    video call stability flawlessly. Fast, responsive, and exactly what we envisioned—a fantastic
+                    partner for our roadmap.
                   </p>
                   <div class="testimonial-user-rate">
                     <div class="testimonial-user">
@@ -1493,7 +1511,10 @@ PRESENTATION SECTION (EXACT STYLE)
                   </div>
                   <h3>UrbanSwift</h3>
                   <p>
-                   Working with this team was excellent. They delivered a high-quality product with clean design, smooth performance, and great attention to detail. They were proactive, met every deadline, and made the process stress-free through their technical expertise. I highly recommend them as a reliable and skilled development partner.
+                    Working with this team was excellent. They delivered a high-quality product with clean design,
+                    smooth performance, and great attention to detail. They were proactive, met every deadline, and made
+                    the process stress-free through their technical expertise. I highly recommend them as a reliable and
+                    skilled development partner.
                   </p>
                   <div class="testimonial-user-rate">
                     <div class="testimonial-user">
@@ -1539,7 +1560,9 @@ PRESENTATION SECTION (EXACT STYLE)
                   </div>
                   <h3>WeDoSolar</h3>
                   <p>
-                   Chandresh delivered an outstanding Flutter app for WeDoSolar, seamlessly integrating live solar statistics into a sleek, cross-platform interface. His independence, clear communication, and technical dedication were vital to our success.
+                    Chandresh delivered an outstanding Flutter app for WeDoSolar, seamlessly integrating live solar
+                    statistics into a sleek, cross-platform interface. His independence, clear communication, and
+                    technical dedication were vital to our success.
                   </p>
                   <div class="testimonial-user-rate">
                     <div class="testimonial-user">
@@ -1691,7 +1714,9 @@ PRESENTATION SECTION (EXACT STYLE)
                   </div>
                   <h3> Lotus Yacht – Membership & Yacht Management App</h3>
                   <p>
-                   DashStack Infotech delivered an exceptional Flutter app for Lotus Yacht, combining premium design with high-performance functionality. Their technical expertise and clear communication resulted in a secure, scalable solution that exceeded our business goals.
+                    DashStack Infotech delivered an exceptional Flutter app for Lotus Yacht, combining premium design
+                    with high-performance functionality. Their technical expertise and clear communication resulted in a
+                    secure, scalable solution that exceeded our business goals.
                   </p>
                   <div class="testimonial-user-rate">
                     <div class="testimonial-user">
@@ -1737,7 +1762,10 @@ PRESENTATION SECTION (EXACT STYLE)
                   </div>
                   <h3>Amyal : Driver Rewards Platform </h3>
                   <p>
-                  DashStack Infotech delivered an exceptional Flutter app for the Amyal project, featuring excellent performance, real-time tracking, and a clean UI. Their deep understanding of insurance workflows and driver analytics exceeded expectations. We highly recommend them for high-quality, scalable mobile development.
+                    DashStack Infotech delivered an exceptional Flutter app for the Amyal project, featuring excellent
+                    performance, real-time tracking, and a clean UI. Their deep understanding of insurance workflows and
+                    driver analytics exceeded expectations. We highly recommend them for high-quality, scalable mobile
+                    development.
                   </p>
                   <div class="testimonial-user-rate">
                     <div class="testimonial-user">
@@ -1834,7 +1862,10 @@ PRESENTATION SECTION (EXACT STYLE)
                   </div>
                   <h3>FestiGo : Event & Festival Ticket Booking App</h3>
                   <p>
-                   DashStack Infotech delivered a high-performing Flutter app for FestiGo, featuring seamless festival discovery, secure booking, and real-time notifications. Their expertise in Firebase and cross-platform development resulted in a scalable, high-quality product that exceeded expectations. We highly recommend them as a trusted partner for iOS, Android, and Web development.
+                    DashStack Infotech delivered a high-performing Flutter app for FestiGo, featuring seamless festival
+                    discovery, secure booking, and real-time notifications. Their expertise in Firebase and
+                    cross-platform development resulted in a scalable, high-quality product that exceeded expectations.
+                    We highly recommend them as a trusted partner for iOS, Android, and Web development.
                   </p>
                   <div class="testimonial-user-rate">
                     <div class="testimonial-user">
@@ -1933,7 +1964,9 @@ PRESENTATION SECTION (EXACT STYLE)
                   </div>
                   <h3>Navadiya Owner</h3>
                   <p>
-                DashStack delivered a professional, secure Flutter app for Navadiya Owner, flawlessly integrating site-wise accounting, party management, and real-time financial reporting. It’s a smooth, reliable solution for cross-platform business management, and we highly recommend them.
+                    DashStack delivered a professional, secure Flutter app for Navadiya Owner, flawlessly integrating
+                    site-wise accounting, party management, and real-time financial reporting. It’s a smooth, reliable
+                    solution for cross-platform business management, and we highly recommend them.
                   </p>
                   <div class="testimonial-user-rate">
                     <div class="testimonial-user">
@@ -2019,7 +2052,7 @@ PRESENTATION SECTION (EXACT STYLE)
           </div>
         </div>
       </div>
-    </section> 
+    </section>
 
     <!-- Schedule Meeting Section -->
     <section class="schedule-section schedule-meeting">
@@ -2325,19 +2358,19 @@ PRESENTATION SECTION (EXACT STYLE)
   </script>
 
 
-<script>
-  // No JS needed — pure CSS auto infinite carousel
-// If you want pause on hover:
+  <script>
+    // No JS needed — pure CSS auto infinite carousel
+    // If you want pause on hover:
 
-document.querySelectorAll(".slider-row").forEach(row=>{
-  row.addEventListener("mouseenter",()=>{
-    row.querySelector(".slider-track").style.animationPlayState="paused";
-  });
-  row.addEventListener("mouseleave",()=>{
-    row.querySelector(".slider-track").style.animationPlayState="running";
-  });
-});
-</script>
+    document.querySelectorAll(".slider-row").forEach(row => {
+      row.addEventListener("mouseenter", () => {
+        row.querySelector(".slider-track").style.animationPlayState = "paused";
+      });
+      row.addEventListener("mouseleave", () => {
+        row.querySelector(".slider-track").style.animationPlayState = "running";
+      });
+    });
+  </script>
 
 </body>
 

@@ -8,6 +8,7 @@ function $dots() { return Array.from(document.querySelectorAll(".vision-dot")); 
 function slideCount() { return document.querySelectorAll(".vision-slide").length; }
 
 function updateSlide(index) {
+  if (!slidesEl) return;
   const total = slideCount();
   currentIndex = ((index % total) + total) % total; // wrap both ways
 
@@ -26,11 +27,20 @@ function updateSlide(index) {
 }
 
 // Event delegation for tabs (works if tabs are added later)
-document.querySelector(".vision-tabs").addEventListener("click", (e) => {
-  const tab = e.target.closest(".vision-tab");
-  if (!tab) return;
-  updateSlide(Number(tab.dataset.index));
-});
+// document.querySelector(".vision-tabs").addEventListener("click", (e) => {
+//   const tab = e.target.closest(".vision-tab");
+//   if (!tab) return;
+//   updateSlide(Number(tab.dataset.index));
+// });
+
+const visionTabs = document.querySelector(".vision-tabs");
+if (visionTabs) {
+  visionTabs.addEventListener("click", (e) => {
+    const tab = e.target.closest(".vision-tab");
+    if (!tab) return;
+    updateSlide(Number(tab.dataset.index));
+  });
+}
 
 // HISTORY + localStorage + "open specific tab (portfolio)" handler
 (function () {
@@ -248,37 +258,55 @@ const observer = new IntersectionObserver(function (entries) {
   });
 }, observerOptions);
 
-//count on scroll
-var counted = 0;
-$(window).scroll(function () {
-  var oTop = $("#counter").offset().top - window.innerHeight;
-  if (counted == 0 && $(window).scrollTop() > oTop) {
-    $(".count").each(function () {
-      var $this = $(this),
-        countTo = $this.attr("data-count");
-      $({
-        countNum: $this.text(),
-      }).animate(
-        {
-          countNum: countTo,
-        },
+// count on scroll using IntersectionObserver for maximum reliability
+(function ($) {
+  "use strict";
 
-        {
-          duration: 2000,
-          easing: "swing",
-          step: function () {
-            $this.text(Math.floor(this.countNum));
-          },
-          complete: function () {
-            $this.text(this.countNum);
-            //alert('finished');
-          },
+  var countersInitiated = false;
+
+  function runCounterAnimation() {
+    if (countersInitiated) return;
+
+    $(".count").each(function () {
+      var $el = $(this);
+      var stopValue = parseInt($el.attr("data-count"), 10);
+
+      if (isNaN(stopValue)) return;
+
+      // Ensure we start from 0
+      $({ countVal: 0 }).animate({ countVal: stopValue }, {
+        duration: 2000,
+        easing: 'swing',
+        step: function () {
+          $el.text(Math.floor(this.countVal));
+        },
+        complete: function () {
+          $el.text(stopValue);
         }
-      );
+      });
     });
-    counted = 1;
+
+    countersInitiated = true;
   }
-});
+
+  $(function () {
+    var observerTarget = document.getElementById('counter');
+    if (!observerTarget) return;
+
+    if ('IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function (entries) {
+        if (entries[0].isIntersecting) {
+          runCounterAnimation();
+          observer.disconnect();
+        }
+      }, { threshold: 0.01 });
+      observer.observe(observerTarget);
+    } else {
+      // Fallback for older browsers
+      runCounterAnimation();
+    }
+  });
+})(jQuery);
 
 $(document).ready(function () {
   const $navbar = $('#navbarNav'); // your collapse ID
@@ -352,28 +380,30 @@ document.documentElement.classList.remove("no-js");
 
 
 const slider = document.getElementById('scrollContainer');
-        let isDown = false;
-        let startX;
-        let scrollLeft;
+let isDown = false;
+let startX;
+let scrollLeft;
 
-        slider.addEventListener('mousedown', (e) => {
-            isDown = true;
-            startX = e.pageX - slider.offsetLeft;
-            scrollLeft = slider.scrollLeft;
-        });
+if (slider) {
+  slider.addEventListener('mousedown', (e) => {
+    isDown = true;
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+  });
 
-        slider.addEventListener('mouseleave', () => {
-            isDown = false;
-        });
+  slider.addEventListener('mouseleave', () => {
+    isDown = false;
+  });
 
-        slider.addEventListener('mouseup', () => {
-            isDown = false;
-        });
+  slider.addEventListener('mouseup', () => {
+    isDown = false;
+  });
 
-        slider.addEventListener('mousemove', (e) => {
-            if (!isDown) return;
-            e.preventDefault();
-            const x = e.pageX - slider.offsetLeft;
-            const walk = (x - startX) * 2; // Scroll speed
-            slider.scrollLeft = scrollLeft - walk;
-        });
+  slider.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX) * 2; // Scroll speed
+    slider.scrollLeft = scrollLeft - walk;
+  });
+}
