@@ -13,7 +13,7 @@
 
       .row {
         position: relative;
-        z-index: 11;
+        z-index: 9;
         gap: 40px;
         align-items: end;
 
