@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
     content="DashStack - Flutter App Development Company. We build scalable, high-performance mobile apps with clean architecture, advanced integrations, and cutting-edge technology solutions for startups to enterprises." />
-  <title>DashStack | Flutter App Development Company - Mobile & Web Solutions</title>
+  <title>DashStack | AI-Powered & Cross-Platform Full Stack App Development</title>
   <link rel="icon" href="./images/favicon.png" type="image/png" />
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -113,18 +113,42 @@ PRESENTATION EXACT STYLE
 
     /* cards */
     .card {
-      width: 360px;
-      height: 240px;
+      width: 380px;
+      height: 280px;
       border-radius: 20px;
       overflow: hidden;
       flex-shrink: 0;
-      background: #ddd;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+      position: relative;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+      border-color: rgba(102, 126, 234, 0.2);
     }
 
     .card img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
+      object-position: center;
+      border-radius: 22px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.02);
     }
 
     /* auto scroll animations */
@@ -213,7 +237,7 @@ document.head.appendChild(o)}initApollo();</script>
             <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/portfolio_page.html">Portfolio</a>
+            <a class="nav-link" href="/portfolio.html">Portfolio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#services">Service</a>
@@ -990,7 +1014,7 @@ document.head.appendChild(o)}initApollo();</script>
                         <span>A luxury Flutter app designed to manage yacht memberships,</span> events, and exclusive
                         experiences.
                       </p>
-                      <a class="btn btn-learn-more btn-schedule mt-3 mt-md-4 mt-lg-5 d-inline-flex" href="Lotus.html">
+                      <a class="btn btn-learn-more btn-schedule mt-3 mt-md-4 mt-lg-5 d-inline-flex" href="lotus.html">
                         See More About Lotus
                         <img class="ms-2" src="./images/white_arrow.svg" alt="Arrow Right" />
                       </a>
@@ -1188,42 +1212,53 @@ PRESENTATION SECTION (EXACT STYLE)
           </div>
         </div>
 
-        <!-- SLIDER AREA -->
+        <!--   AREA -->
         <div class="presentation-sliders">
 
           <!-- ROW 1 (Right → Left) -->
           <div class="slider-row slider-left">
             <div class="slider-track">
               <!-- repeat for smooth infinite scroll -->
-              <div class="card"><img src="./images/2i2i_hero.webp"></div>
-              <div class="card"><img src="./images/P_1.svg"></div>
-              <div class="card"><img src="./images/P_1.svg"></div>
-              <div class="card"><img src="./images/2i2i_hero.webp"></div>
-              <div class="card"><img src="./images/2i2i_hero.webp"></div>
-              <div class="card"><img src="https://picsum.photos/600/400?4"></div>
-              <div class="card"><img src="https://picsum.photos/600/400?5"></div>
-              <div class="card"><img src="https://picsum.photos/600/400?6"></div>
-
+              <a href="2i2i.html" class="card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"><img src="./images/2i2i_hero.webp" alt="2i2i Video Calling App"></a>
+              <a href="symcheck.html" class="card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"><img src="./images/symcheck_hero.webp" alt="Symcheck Health App"></a>
+              <a href="urban-swift.html" class="card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"><img src="./images/urban_swift_hero_img.png" alt="UrbanSwift Delivery App"></a>
+              <a href="dfx5.html" class="card" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"><img src="./images/dfx5_hero.png" alt="DFX5 Cloud Solutions"></a>
+              <a href="ultra-messenger.html" class="card" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"><img src="./images/ultra_hero_image.png" alt="Ultra Messenger"></a>
+              <a href="festigo.html" class="card" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);"><img src="./images/festigo_hero.webp" alt="FestiGo Event Booking"></a>
+              <a href="we-do-solar.html" class="card" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"><img src="./images/wedosolar_hero.webp" alt="WeDoSolar Energy App"></a>
+              <a href="orte.html" class="card" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);"><img src="./images/orte_hero.webp" alt="Orte Fitness App"></a>
+              <!-- duplicate for smooth scroll -->
+              <a href="2i2i.html" class="card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"><img src="./images/2i2i_hero.webp" alt="2i2i Video Calling App"></a>
+              <a href="symcheck.html" class="card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"><img src="./images/symcheck_hero.webp" alt="Symcheck Health App"></a>
+              <a href="urban-swift.html" class="card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"><img src="./images/urban_swift_hero_img.png" alt="UrbanSwift Delivery App"></a>
+              <a href="dfx5.html" class="card" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"><img src="./images/dfx5_hero.png" alt="DFX5 Cloud Solutions"></a>
+              <a href="ultra-messenger.html" class="card" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"><img src="./images/ultra_hero_image.png" alt="Ultra Messenger"></a>
+              <a href="festigo.html" class="card" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);"><img src="./images/festigo_hero.webp" alt="FestiGo Event Booking"></a>
+              <a href="we-do-solar.html" class="card" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"><img src="./images/wedosolar_hero.webp" alt="WeDoSolar Energy App"></a>
+              <a href="orte.html" class="card" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);"><img src="./images/orte_hero.webp" alt="Orte Fitness App"></a>
             </div>
           </div>
 
           <!-- ROW 2 (Left → Right) -->
           <div class="slider-row slider-right">
             <div class="slider-track">
-              <div class="card"><img src="https://picsum.photos/600/400?7"></div>
-              <div class="card"><img src="https://picsum.photos/600/400?8"></div>
-              <div class="card"><img src="https://picsum.photos/600/400?9"></div>
-              <div class="card"><img src="https://picsum.photos/600/400?10"></div>
-              <div class="card"><img src="https://picsum.photos/600/400?11"></div>
-              <div class="card"><img src="https://picsum.photos/600/400?12"></div>
-
+              <a href="123family.html" class="card" style="background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);"><img src="./images/123family_hero.png" alt="123Family Senior App"></a>
+              <a href="aura-mind.html" class="card" style="background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);"><img src="./images/auramind_hero_img.png" alt="AuraMind Meditation"></a>
+              <a href="lotus.html" class="card" style="background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);"><img src="./images/lotus_hero_img.png" alt="Lotus Yacht Management"></a>
+              <a href="health_gauge.html" class="card" style="background: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%);"><img src="./images/health_gauge_hero_image.png" alt="Health Gauge App"></a>
+              <a href="amyal.html" class="card" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);"><img src="./images/amyal_hero_img.png" alt="Amyal Driver Rewards"></a>
+              <a href="navadiya_owners.html" class="card" style="background: linear-gradient(135deg, #ff6e7f 0%, #bfe9ff 100%);"><img src="./images/navadiya_owner_hero_image.png" alt="Navadiya Owner"></a>
+              <a href="antee.html" class="card" style="background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);"><img src="./images/antee_hero_image.png" alt="Antee Golf App"></a>
+              <a href="dashwoop.html" class="card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"><img src="./images/dash_woop_hero_image.png" alt="DashWoop Meetings"></a>
               <!-- duplicate -->
-              <div class="card"><img src="https://picsum.photos/600/400?7"></div>
-              <div class="card"><img src="https://picsum.photos/600/400?8"></div>
-              <div class="card"><img src="https://picsum.photos/600/400?9"></div>
-              <div class="card"><img src="https://picsum.photos/600/400?10"></div>
-              <div class="card"><img src="https://picsum.photos/600/400?11"></div>
-              <div class="card"><img src="https://picsum.photos/600/400?12"></div>
+              <a href="123family.html" class="card" style="background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);"><img src="./images/123family_hero.png" alt="123Family Senior App"></a>
+              <a href="aura-mind.html" class="card" style="background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);"><img src="./images/auramind_hero_img.png" alt="AuraMind Meditation"></a>
+              <a href="lotus.html" class="card" style="background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);"><img src="./images/lotus_hero_img.png" alt="Lotus Yacht Management"></a>
+              <a href="health_gauge.html" class="card" style="background: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%);"><img src="./images/health_gauge_hero_image.png" alt="Health Gauge App"></a>
+              <a href="amyal.html" class="card" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);"><img src="./images/amyal_hero_img.png" alt="Amyal Driver Rewards"></a>
+              <a href="navadiya_owners.html" class="card" style="background: linear-gradient(135deg, #ff6e7f 0%, #bfe9ff 100%);"><img src="./images/navadiya_owner_hero_image.png" alt="Navadiya Owner"></a>
+              <a href="antee.html" class="card" style="background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);"><img src="./images/antee_hero_image.png" alt="Antee Golf App"></a>
+              <a href="dashwoop.html" class="card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"><img src="./images/dash_woop_hero_image.png" alt="DashWoop Meetings"></a>
             </div>
           </div>
 
@@ -1231,7 +1266,7 @@ PRESENTATION SECTION (EXACT STYLE)
 
         <!-- BUTTON -->
         <div class="view-all-wrap container">
-          <a href="/portfolio_page.html" class="view-btn">View All →</a>
+          <a href="/portfolio.html" class="view-btn">View All →</a>
         </div>
 
       </div>
