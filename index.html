@@ -78,25 +78,25 @@ PRESENTATION EXACT STYLE
 
     /* gradient mask sides (half cut look) */
     .presentation-sliders:before,
-.presentation-sliders:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 120px;
-  height: 100%;
-  z-index: 2;
-  pointer-events: none;
-}
+    .presentation-sliders:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 120px;
+      height: 100%;
+      z-index: 2;
+      pointer-events: none;
+    }
 
-.presentation-sliders:before {
-  left: 0;
-  background: linear-gradient(90deg,#f4f5fb 0%,rgba(244,245,251,0)100%);
-}
+    .presentation-sliders:before {
+      left: 0;
+      background: linear-gradient(90deg, #f4f5fb 0%, rgba(244, 245, 251, 0)100%);
+    }
 
-.presentation-sliders:after {
-  right: 0;
-  background: linear-gradient(-90deg,#f4f5fb 0%,rgba(244,245,251,0)100%);
-}
+    .presentation-sliders:after {
+      right: 0;
+      background: linear-gradient(-90deg, #f4f5fb 0%, rgba(244, 245, 251, 0)100%);
+    }
 
     /* row */
     .slider-row {
@@ -133,9 +133,9 @@ PRESENTATION EXACT STYLE
     }
 
     .card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
-      border-color: rgba(102, 126, 234, 0.2);
+      transform: translateY(-1px);
+      /* box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12); */
+      /* border-color: rgba(102, 126, 234, 0.2); */
     }
 
     .card img {
@@ -217,13 +217,923 @@ PRESENTATION EXACT STYLE
 
 
   <!-- Apollo Tracking Script -->
-  <script>function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
-o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
-o.onload=function(){window.trackingFunctions.onLoad({appId:"69983273644dde00217f09a2"})},
-document.head.appendChild(o)}initApollo();</script>
+  <script>function initApollo() {
+      var n = Math.random().toString(36).substring(7), o = document.createElement("script");
+      o.src = "https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache=" + n, o.async = !0, o.defer = !0,
+        o.onload = function () { window.trackingFunctions.onLoad({ appId: "69983273644dde00217f09a2" }) },
+        document.head.appendChild(o)
+    } initApollo();</script>
+
+  <style>
+    /* Mouse Tracker Light Effect */
+    .mouse-light {
+      position: fixed;
+      width: 800px;
+      height: 800px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(102, 126, 234, 0.25) 0%, rgba(139, 92, 246, 0.15) 40%, transparent 70%);
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      transition: opacity 0.3s ease;
+      z-index: 9999;
+      mix-blend-mode: screen;
+      opacity: 0;
+      filter: blur(40px);
+    }
+
+    .mouse-light-inner {
+      position: fixed;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(240, 147, 251, 0.3) 0%, rgba(102, 126, 234, 0.2) 50%, transparent 70%);
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      z-index: 10000;
+      mix-blend-mode: screen;
+      opacity: 0;
+      filter: blur(20px);
+    }
+
+    .mouse-ring {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      border: 2px solid rgba(102, 126, 234, 0.5);
+      border-radius: 50%;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      z-index: 10001;
+      opacity: 0;
+      transition: width 0.2s ease, height 0.2s ease, opacity 0.3s ease;
+    }
+
+    body:hover .mouse-light,
+    body:hover .mouse-light-inner,
+    body:hover .mouse-ring {
+      opacity: 1;
+    }
+
+    /* Pulse animation for ring */
+    @keyframes ringPulse {
+
+      0%,
+      100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.6;
+      }
+
+      50% {
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 0.3;
+      }
+    }
+
+    .mouse-ring {
+      animation: ringPulse 2s ease-in-out infinite;
+    }
+
+    /* Interactive elements glow on hover */
+    a:hover,
+    button:hover,
+    .card:hover {
+      filter: drop-shadow(0 0 15px rgba(102, 126, 234, 0.4));
+    }
+
+    @media (max-width: 768px) {
+
+      .mouse-light,
+      .mouse-light-inner,
+      .mouse-ring {
+        display: none;
+      }
+    }
+
+    /* Clean Modern Hero Section */
+    .hero-section {
+      background-image: url("../images/pattern.png");
+      background-repeat: repeat;
+      background-size: contain;
+      padding: 120px 0 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.08) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .hero-content-modern {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      background: rgba(99, 25, 255, 0.08);
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 500;
+      color: #6319ff;
+      letter-spacing: 0.3px;
+    }
+
+    .tag-dot {
+      width: 6px;
+      height: 6px;
+      background: #6319ff;
+      border-radius: 50%;
+      animation: dotPulse 2s ease-in-out infinite;
+    }
+
+    @keyframes dotPulse {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.4;
+      }
+    }
+
+    .hero-heading {
+      font-size: clamp(40px, 6vw, 68px);
+      font-weight: 600;
+      line-height: 1.15;
+      color: #131313;
+      letter-spacing: -1.5px;
+      margin-bottom: 24px;
+    }
+
+    .hero-highlight {
+      background: linear-gradient(135deg, #6319ff 0%, #844aff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 700;
+    }
+
+    .hero-text {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #5a5a59;
+      max-width: 540px;
+    }
+
+    .btn-modern {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: 100px;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      border: none;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .btn-modern-primary {
+      background: radial-gradient(circle, #844aff, #6015ff);
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(99, 25, 255, 0.25);
+    }
+
+    .btn-modern-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(99, 25, 255, 0.35);
+      color: #fff;
+    }
+
+    .btn-modern-secondary {
+      background: #fff;
+      color: #6319ff;
+      border: 1.5px solid #6319ff;
+    }
+
+    .btn-modern-secondary:hover {
+      background: #6319ff;
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 20px rgba(99, 25, 255, 0.25);
+    }
+
+    .hero-metrics {
+      gap: 24px !important;
+      padding-top: 20px;
+      border-top: 1px solid rgba(99, 25, 255, 0.1);
+    }
+
+    /* Upwork Trust Badge */
+    .upwork-trust-badge {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 20px;
+      background: linear-gradient(135deg, rgba(99, 25, 255, 0.03) 0%, rgba(20, 168, 0, 0.03) 100%);
+      border: 1.5px solid rgba(20, 168, 0, 0.2);
+      border-radius: 12px;
+      transition: all 0.3s ease;
+    }
+
+    .upwork-trust-badge:hover {
+      border-color: rgba(20, 168, 0, 0.4);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(20, 168, 0, 0.1);
+    }
+
+    .upwork-logo-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: rgba(20, 168, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    .upwork-details {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .upwork-stars {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+    }
+
+    .upwork-stars span {
+      color: #FFB800;
+      font-size: 14px;
+      line-height: 1;
+    }
+
+    .rating-text {
+      font-size: 15px;
+      font-weight: 700;
+      color: #131313;
+      margin-left: 6px;
+    }
+
+    .upwork-label {
+      font-size: 11px;
+      color: #14a800;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .metric-item {
+      text-align: left;
+      padding-left: 20px;
+      border-left: 1px solid rgba(99, 25, 255, 0.15);
+    }
+
+    .metric-item:first-of-type {
+      border-left: none;
+      padding-left: 0;
+    }
+
+    .metric-value {
+      font-size: 28px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #6319ff 0%, #844aff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .metric-label {
+      font-size: 13px;
+      color: #5a5a59;
+      font-weight: 500;
+    }
+
+    .hero-visual {
+      position: relative;
+      z-index: 2;
+      height: 500px;
+    }
+
+    .jarvis-interface {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Arc Reactor Core */
+    .arc-reactor {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: reactorPulse 3s ease-in-out infinite;
+    }
+
+    @keyframes reactorPulse {
+
+      0%,
+      100% {
+        transform: translate(-50%, -50%) scale(1);
+        filter: drop-shadow(0 0 20px rgba(99, 25, 255, 0.6));
+      }
+
+      50% {
+        transform: translate(-50%, -50%) scale(1.05);
+        filter: drop-shadow(0 0 40px rgba(99, 25, 255, 0.9));
+      }
+    }
+
+    .arc-glow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 250px;
+      height: 250px;
+      background: radial-gradient(circle, rgba(99, 25, 255, 0.3) 0%, transparent 70%);
+      border-radius: 50%;
+      filter: blur(30px);
+      animation: glowPulse 3s ease-in-out infinite;
+    }
+
+    @keyframes glowPulse {
+
+      0%,
+      100% {
+        opacity: 0.5;
+      }
+
+      50% {
+        opacity: 1;
+      }
+    }
+
+    .arc-core {
+      position: relative;
+      filter: drop-shadow(0 0 15px rgba(99, 25, 255, 0.8));
+    }
+
+    .arc-rotate {
+      animation: arcRotation 4s linear infinite;
+      transform-origin: 100px 100px;
+    }
+
+    @keyframes arcRotation {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* HUD Circles */
+    .hud-circle {
+      position: absolute;
+      animation: hudFloat 5s ease-in-out infinite;
+    }
+
+    .hud-1 {
+      top: 5%;
+      right: 10%;
+      animation-delay: 0s;
+    }
+
+    .hud-2 {
+      bottom: 15%;
+      left: 8%;
+      animation-delay: 2s;
+    }
+
+    @keyframes hudFloat {
+
+      0%,
+      100% {
+        transform: translateY(0) rotate(0deg);
+      }
+
+      50% {
+        transform: translateY(-15px) rotate(180deg);
+      }
+    }
+
+    .hud-arc {
+      animation: hudArcRotate 3s linear infinite;
+      transform-origin: 75px 75px;
+    }
+
+    .hud-arc-2 {
+      animation: hudArcRotate 4s linear infinite reverse;
+      transform-origin: 60px 60px;
+    }
+
+    @keyframes hudArcRotate {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Robotic Arms */
+    .robot-arm-tech {
+      position: absolute;
+      animation: armTechMove 6s ease-in-out infinite;
+    }
+
+    .arm-tech-1 {
+      top: 25%;
+      left: 5%;
+      animation-delay: 0s;
+    }
+
+    .arm-tech-2 {
+      bottom: 25%;
+      right: 8%;
+      animation-delay: 3s;
+    }
+
+    .arm-segment-tech {
+      width: 100px;
+      height: 30px;
+      background: rgba(255, 255, 255, 0.02);
+      backdrop-filter: blur(10px);
+      border: 2px solid rgba(99, 25, 255, 0.4);
+      border-radius: 8px;
+      position: relative;
+      box-shadow: 0 0 20px rgba(99, 25, 255, 0.3),
+        inset 0 0 10px rgba(99, 25, 255, 0.1);
+    }
+
+    .segment-line {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      width: 60%;
+      height: 2px;
+      background: linear-gradient(90deg, #6319ff, #844aff);
+      transform: translateY(-50%);
+      box-shadow: 0 0 10px rgba(99, 25, 255, 0.8);
+    }
+
+    .segment-joint {
+      position: absolute;
+      right: -12px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 24px;
+      height: 24px;
+      background: radial-gradient(circle, #6319ff, #844aff);
+      border-radius: 50%;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 0 20px rgba(99, 25, 255, 0.8),
+        inset 0 0 10px rgba(99, 25, 255, 0.5);
+      animation: jointPulse 2s ease-in-out infinite;
+    }
+
+    @keyframes jointPulse {
+
+      0%,
+      100% {
+        transform: translateY(-50%) scale(1);
+      }
+
+      50% {
+        transform: translateY(-50%) scale(1.2);
+      }
+    }
+
+    .segment-detail {
+      position: absolute;
+      left: 15%;
+      top: 20%;
+      width: 4px;
+      height: 60%;
+      background: rgba(99, 25, 255, 0.5);
+      border-radius: 2px;
+    }
+
+    @keyframes armTechMove {
+
+      0%,
+      100% {
+        transform: translateY(0) rotate(0deg);
+      }
+
+      25% {
+        transform: translateY(-10px) rotate(-5deg);
+      }
+
+      75% {
+        transform: translateY(5px) rotate(5deg);
+      }
+    }
+
+    /* Tech Data Panels */
+    .tech-panel {
+      position: absolute;
+      width: 110px;
+      height: 90px;
+      background: rgba(255, 255, 255, 0.02);
+      backdrop-filter: blur(10px);
+      animation: panelFloat 6s ease-in-out infinite;
+    }
+
+    .tech-panel-1 {
+      top: 60%;
+      right: 15%;
+      animation-delay: 1s;
+    }
+
+    .tech-panel-2 {
+      top: 15%;
+      left: 12%;
+      animation-delay: 3s;
+    }
+
+    @keyframes panelFloat {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-12px);
+      }
+    }
+
+    .panel-border {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border: 1px solid rgba(99, 25, 255, 0.5);
+      box-shadow: 0 0 15px rgba(99, 25, 255, 0.3),
+        inset 0 0 15px rgba(99, 25, 255, 0.1);
+    }
+
+    .panel-content {
+      position: relative;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .data-row {
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, #6319ff 0%, transparent 100%);
+      border-radius: 2px;
+      animation: dataFlow 2s ease-in-out infinite;
+    }
+
+    .data-row.short {
+      width: 60%;
+    }
+
+    @keyframes dataFlow {
+
+      0%,
+      100% {
+        opacity: 0.3;
+        box-shadow: 0 0 5px rgba(99, 25, 255, 0.3);
+      }
+
+      50% {
+        opacity: 1;
+        box-shadow: 0 0 10px rgba(99, 25, 255, 0.8);
+      }
+    }
+
+    .status-indicator {
+      width: 10px;
+      height: 10px;
+      background: #6319ff;
+      border-radius: 50%;
+      animation: statusBlink 1.5s ease-in-out infinite;
+      box-shadow: 0 0 10px rgba(99, 25, 255, 0.8);
+    }
+
+    @keyframes statusBlink {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.3;
+      }
+    }
+
+    /* Corner Brackets */
+    .corner-bracket {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border: 2px solid #6319ff;
+    }
+
+    .corner-bracket.tl {
+      top: -1px;
+      left: -1px;
+      border-right: none;
+      border-bottom: none;
+    }
+
+    .corner-bracket.tr {
+      top: -1px;
+      right: -1px;
+      border-left: none;
+      border-bottom: none;
+    }
+
+    .corner-bracket.bl {
+      bottom: -1px;
+      left: -1px;
+      border-right: none;
+      border-top: none;
+    }
+
+    .corner-bracket.br {
+      bottom: -1px;
+      right: -1px;
+      border-left: none;
+      border-top: none;
+    }
+
+    /* Scanning Lines */
+    .scan-line-vertical {
+      position: absolute;
+      left: 30%;
+      top: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(to bottom,
+          transparent 0%,
+          rgba(99, 25, 255, 0.8) 50%,
+          transparent 100%);
+      animation: scanVertical 4s linear infinite;
+    }
+
+    .scan-line-horizontal {
+      position: absolute;
+      top: 40%;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(to right,
+          transparent 0%,
+          rgba(132, 74, 255, 0.8) 50%,
+          transparent 100%);
+      animation: scanHorizontal 5s linear infinite;
+    }
+
+    @keyframes scanVertical {
+      0% {
+        left: 20%;
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 1;
+      }
+
+      100% {
+        left: 80%;
+        opacity: 0;
+      }
+    }
+
+    @keyframes scanHorizontal {
+      0% {
+        top: 20%;
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 1;
+      }
+
+      100% {
+        top: 80%;
+        opacity: 0;
+      }
+    }
+
+    /* Target Reticle */
+    .target-reticle {
+      position: absolute;
+      top: 35%;
+      right: 5%;
+      animation: reticleRotate 8s linear infinite;
+      filter: drop-shadow(0 0 10px rgba(99, 25, 255, 0.6));
+    }
+
+    @keyframes reticleRotate {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Tech Particles */
+    .tech-particles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    .tech-particle {
+      position: absolute;
+      width: 3px;
+      height: 3px;
+      background: #6319ff;
+      border-radius: 50%;
+      box-shadow: 0 0 8px rgba(99, 25, 255, 0.8);
+      animation: particleDrift 10s ease-in-out infinite;
+    }
+
+    .tech-particle:nth-child(1) {
+      top: 15%;
+      left: 20%;
+      animation-delay: 0s;
+    }
+
+    .tech-particle:nth-child(2) {
+      top: 45%;
+      right: 25%;
+      animation-delay: 2s;
+    }
+
+    .tech-particle:nth-child(3) {
+      bottom: 30%;
+      left: 15%;
+      animation-delay: 4s;
+    }
+
+    .tech-particle:nth-child(4) {
+      top: 70%;
+      right: 15%;
+      animation-delay: 6s;
+    }
+
+    .tech-particle:nth-child(5) {
+      bottom: 15%;
+      left: 40%;
+      animation-delay: 8s;
+    }
+
+    @keyframes particleDrift {
+
+      0%,
+      100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 0.3;
+      }
+
+      25% {
+        transform: translate(15px, -20px) scale(1.5);
+        opacity: 1;
+      }
+
+      50% {
+        transform: translate(-10px, -40px) scale(1);
+        opacity: 0.5;
+      }
+
+      75% {
+        transform: translate(20px, -30px) scale(1.3);
+        opacity: 0.8;
+      }
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+
+      50% {
+        transform: scale(1.2);
+        opacity: 0.6;
+      }
+    }
+
+    /* Responsive */
+    @media (max-width: 991px) {
+      .hero-section {
+        padding: 100px 0 60px;
+      }
+
+      .hero-heading {
+        font-size: 48px;
+      }
+
+      .hero-text {
+        font-size: 16px;
+      }
+
+      .metric-value {
+        font-size: 28px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .hero-section {
+        padding: 80px 0 40px;
+      }
+
+      .hero-heading {
+        font-size: 36px;
+        letter-spacing: -1px;
+      }
+
+      .hero-text {
+        font-size: 15px;
+        max-width: 100%;
+      }
+
+      .hero-buttons {
+        flex-wrap: nowrap !important;
+        overflow-x: auto;
+      }
+
+      .btn-modern {
+        flex-shrink: 0;
+        padding: 12px 20px;
+        font-size: 14px;
+        white-space: nowrap;
+      }
+
+      .hero-metrics {
+        gap: 24px !important;
+      }
+
+      .metric-value {
+        font-size: 24px;
+      }
+
+      .metric-label {
+        font-size: 12px;
+      }
+    }
+
+    @media (max-width: 575px) {
+      .hero-heading {
+        font-size: 32px;
+      }
+
+      .hero-text {
+        font-size: 14px;
+      }
+
+      .btn-modern {
+        padding: 12px 24px;
+        font-size: 14px;
+      }
+    }
+  </style>
 </head>
 
 <body data-bs-spy="scroll">
+  <div class="mouse-light" id="mouseLight"></div>
+  <div class="mouse-light-inner" id="mouseLightInner"></div>
+  <div class="mouse-ring" id="mouseRing"></div>
   <!-- Enhanced Navigation -->
   <nav class="navbar navbar-expand-lg" id="mainNavbar">
     <div class="container">
@@ -262,70 +1172,215 @@ document.head.appendChild(o)}initApollo();</script>
   </nav>
 
   <main>
-    <!-- Enhanced Hero Section -->
-    <section class="hero-section pb-0" id="about">
+    <!-- Hero Section -->
+    <section class="hero-section py-5" id="about">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-12">
-            <div class="hero-content text-left">
-              <h1 class="hero-title">Turning Ideas Into Software</h1>
-              <p class="hero-description fs-5 mb-4">
-                Dashstack is a Flutter mobile app development startup
-                specializing in high-level technology solutions for client-based
-                projects. We partner with businesses worldwide to build
-                scalable, cross-platform applications with clean architecture,
-                advanced integrations, and cutting-edge performance.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <section class="hero-img-section">
-        <div class="container text-center position-relative">
-          <div class="row">
-            <div class="col-12">
-              <img src="./images/hero_img.png" alt="DashStack-landingpage" class="hero-image" />
-            </div>
-          </div>
-        </div>
-      </section>
-    </section>
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="hero-content-modern">
+              <div class="hero-tag mb-3">
+                <span class="tag-dot"></span>
+                Full Stack Cross-Platform Development Experts
+              </div>
 
-    <!-- Enhanced Stats Section -->
-    <section class="stats-section">
-      <div class="container">
-        <div class="row g-4">
-          <ul id="counter">
-            <li>
-              <img src="./images/rating.png" alt="ratings" />
-            </li>
-            <li>
-              <span class="count percent" data-count="150"> 0</span>
-              <span>+</span>
-              <div>Mobile Apps</div>
-            </li>
-            <li>
-              <span class="count percent" data-count="20"> 0</span>
-              <span>+</span>
-              <div>IoT Integrations</div>
-            </li>
-            <li>
-              <span class="count percent" data-count="98"> 0</span>
-              <span>%</span>
-              <div>Client Satisfaction</div>
-            </li>
-            <li>
-              <span class="count percent" data-count="7"> 0</span>
-              <span>+</span>
-              <div>Years of Experience</div>
-            </li>
-          </ul>
+              <h1 class="hero-heading mb-4">
+                Turning Ideas Into<br />
+                <span class="hero-highlight">Software</span>
+              </h1>
+
+              <p class="hero-text mb-4">
+                We partner with businesses worldwide to build scalable, cross-platform
+                applications with clean architecture, advanced integrations, and cutting-edge performance.
+              </p>
+
+              <div class="hero-buttons d-flex flex-wrap gap-3 mb-5">
+                <button class="btn-modern btn-modern-primary" type="button" data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop">
+                  Get Started
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M3.75 9H14.25M14.25 9L9 3.75M14.25 9L9 14.25" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <a href="/portfolio.html" class="btn-modern btn-modern-secondary">
+                  View Portfolio
+                </a>
+              </div>
+
+              <div class="hero-metrics d-flex flex-wrap gap-4 align-items-center">
+                <div class="upwork-trust-badge">
+                  <div class="upwork-logo-wrapper">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#14a800">
+                      <path
+                        d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703-.001 1.489-1.212 2.702-2.704 2.702zm0-8.14c-2.539 0-4.51 1.649-5.31 4.366-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112c-.002 1.406-1.141 2.546-2.547 2.548-1.405-.002-2.543-1.143-2.545-2.548V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303 2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109 3 0 5.439-2.452 5.439-5.45 0-3-2.439-5.439-5.439-5.439z" />
+                    </svg>
+                  </div>
+                  <div class="upwork-details">
+                    <div class="upwork-stars">
+                      <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                      <span class="rating-text">5.0</span>
+                    </div>
+                    <div class="upwork-label">Top Rated Plus</div>
+                  </div>
+                </div>
+                <div class="metric-item">
+                  <div class="metric-value">150+</div>
+                  <div class="metric-label">Projects</div>
+                </div>
+                <div class="metric-item">
+                  <div class="metric-value">98%</div>
+                  <div class="metric-label">Success Rate</div>
+                </div>
+                <div class="metric-item">
+                  <div class="metric-value">8</div>
+                  <div class="metric-label">Years</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="hero-visual">
+              <div class="jarvis-interface">
+                <!-- Arc Reactor Core -->
+                <div class="arc-reactor">
+                  <div class="arc-glow"></div>
+                  <svg class="arc-core" viewBox="0 0 200 200" width="200" height="200">
+                    <defs>
+                      <radialGradient id="arcGlow">
+                        <stop offset="0%" style="stop-color:#6319ff;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#844aff;stop-opacity:0.3" />
+                      </radialGradient>
+                    </defs>
+                    <circle cx="100" cy="100" r="80" fill="none" stroke="#6319ff" stroke-width="1" opacity="0.3" />
+                    <circle cx="100" cy="100" r="65" fill="none" stroke="#6319ff" stroke-width="2" opacity="0.5" />
+                    <circle cx="100" cy="100" r="50" fill="none" stroke="#6319ff" stroke-width="2" />
+                    <circle cx="100" cy="100" r="35" fill="url(#arcGlow)" opacity="0.4" />
+                    <circle cx="100" cy="100" r="20" fill="#6319ff" />
+
+                    <!-- Arc Lines -->
+                    <line x1="100" y1="20" x2="100" y2="50" stroke="#6319ff" stroke-width="2" />
+                    <line x1="100" y1="150" x2="100" y2="180" stroke="#6319ff" stroke-width="2" />
+                    <line x1="20" y1="100" x2="50" y2="100" stroke="#6319ff" stroke-width="2" />
+                    <line x1="150" y1="100" x2="180" y2="100" stroke="#6319ff" stroke-width="2" />
+
+                    <!-- Diagonal Lines -->
+                    <line x1="35" y1="35" x2="60" y2="60" stroke="#844aff" stroke-width="1.5" />
+                    <line x1="165" y1="35" x2="140" y2="60" stroke="#844aff" stroke-width="1.5" />
+                    <line x1="35" y1="165" x2="60" y2="140" stroke="#844aff" stroke-width="1.5" />
+                    <line x1="165" y1="165" x2="140" y2="140" stroke="#844aff" stroke-width="1.5" />
+
+                    <!-- Rotating Elements -->
+                    <g class="arc-rotate">
+                      <path d="M 100 20 A 80 80 0 0 1 180 100" fill="none" stroke="#6319ff" stroke-width="3"
+                        stroke-linecap="round" />
+                      <circle cx="180" cy="100" r="5" fill="#6319ff" />
+                    </g>
+                  </svg>
+                </div>
+
+                <!-- HUD Circles -->
+                <div class="hud-circle hud-1">
+                  <svg viewBox="0 0 150 150" width="150" height="150">
+                    <circle cx="75" cy="75" r="65" fill="none" stroke="#6319ff" stroke-width="1" opacity="0.3" />
+                    <circle cx="75" cy="75" r="50" fill="none" stroke="#6319ff" stroke-width="2"
+                      stroke-dasharray="5,5" />
+                    <path d="M 75 10 A 65 65 0 0 1 140 75" fill="none" stroke="#844aff" stroke-width="3"
+                      class="hud-arc" />
+                    <circle cx="75" cy="75" r="8" fill="#6319ff" />
+                    <line x1="75" y1="75" x2="75" y2="15" stroke="#6319ff" stroke-width="2" />
+                    <line x1="75" y1="75" x2="130" y2="75" stroke="#6319ff" stroke-width="1.5" />
+                  </svg>
+                </div>
+
+                <div class="hud-circle hud-2">
+                  <svg viewBox="0 0 120 120" width="120" height="120">
+                    <circle cx="60" cy="60" r="50" fill="none" stroke="#6015ff" stroke-width="1" opacity="0.3" />
+                    <circle cx="60" cy="60" r="40" fill="none" stroke="#6015ff" stroke-width="2" />
+                    <path d="M 60 10 A 50 50 0 1 0 60 110" fill="none" stroke="#844aff" stroke-width="2"
+                      class="hud-arc-2" />
+                    <circle cx="60" cy="60" r="10" fill="#6015ff" opacity="0.5" />
+                    <circle cx="60" cy="60" r="5" fill="#6015ff" />
+                  </svg>
+                </div>
+
+                <!-- Robotic Arm Elements -->
+                <div class="robot-arm-tech arm-tech-1">
+                  <div class="arm-segment-tech">
+                    <div class="segment-line"></div>
+                    <div class="segment-joint"></div>
+                    <div class="segment-detail"></div>
+                  </div>
+                </div>
+
+                <div class="robot-arm-tech arm-tech-2">
+                  <div class="arm-segment-tech">
+                    <div class="segment-line"></div>
+                    <div class="segment-joint"></div>
+                    <div class="segment-detail"></div>
+                  </div>
+                </div>
+
+                <!-- Tech Data Panels -->
+                <div class="tech-panel tech-panel-1">
+                  <div class="panel-border"></div>
+                  <div class="panel-content">
+                    <div class="data-row"></div>
+                    <div class="data-row short"></div>
+                    <div class="data-row"></div>
+                  </div>
+                  <div class="corner-bracket tl"></div>
+                  <div class="corner-bracket tr"></div>
+                  <div class="corner-bracket bl"></div>
+                  <div class="corner-bracket br"></div>
+                </div>
+
+                <div class="tech-panel tech-panel-2">
+                  <div class="panel-border"></div>
+                  <div class="panel-content">
+                    <div class="status-indicator"></div>
+                    <div class="data-row"></div>
+                    <div class="data-row short"></div>
+                  </div>
+                  <div class="corner-bracket tl"></div>
+                  <div class="corner-bracket tr"></div>
+                  <div class="corner-bracket bl"></div>
+                  <div class="corner-bracket br"></div>
+                </div>
+
+                <!-- Scanning Lines -->
+                <div class="scan-line-vertical"></div>
+                <div class="scan-line-horizontal"></div>
+
+                <!-- Target Reticle -->
+                <div class="target-reticle">
+                  <svg viewBox="0 0 80 80" width="80" height="80">
+                    <circle cx="40" cy="40" r="30" fill="none" stroke="#6319ff" stroke-width="1.5" />
+                    <circle cx="40" cy="40" r="20" fill="none" stroke="#6319ff" stroke-width="1" />
+                    <line x1="40" y1="0" x2="40" y2="15" stroke="#6319ff" stroke-width="2" />
+                    <line x1="40" y1="65" x2="40" y2="80" stroke="#6319ff" stroke-width="2" />
+                    <line x1="0" y1="40" x2="15" y2="40" stroke="#6319ff" stroke-width="2" />
+                    <line x1="65" y1="40" x2="80" y2="40" stroke="#6319ff" stroke-width="2" />
+                  </svg>
+                </div>
+
+                <!-- Tech Particles -->
+                <div class="tech-particles">
+                  <div class="tech-particle"></div>
+                  <div class="tech-particle"></div>
+                  <div class="tech-particle"></div>
+                  <div class="tech-particle"></div>
+                  <div class="tech-particle"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Schedule Meeting Section -->
-    <section class="schedule-section">
+    <section class="schedule-section py-5 my-5">
       <div class="container">
         <div class="schedule-inner">
           <div class="row justify-content-center text-center">
@@ -565,18 +1620,13 @@ document.head.appendChild(o)}initApollo();</script>
                 </li>
               </ul>
             </div>
-
-            <a class="btn btn-learn-more btn-schedule d-inline-flex d-none" href="urban-swift.html">
-              See More About Urban Swift
-              <img class="ms-2" src="./images/white_arrow.svg" alt="Arrow Right" />
-            </a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Platform Section -->
-    <section class="platform-section">
+    <section class="platform-section py-5 my-5">
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-lg-12">
@@ -594,7 +1644,7 @@ document.head.appendChild(o)}initApollo();</script>
     </section>
 
     <!-- Work Section -->
-    <section class="work-section">
+    <section class="work-section py-5 my-5">
       <div class="container">
         <div class="row justify-content-center text-center mb-5">
           <div class="col-lg-12 d-flex justify-content-between align-items-center">
@@ -1151,7 +2201,7 @@ document.head.appendChild(o)}initApollo();</script>
                     <h2>01</h2>
                     <p class="fs-4 mb-0 generalFont">Orte</p>
                   </div>
-                  <p>
+                  <p> 
                     Orte
                     <span>fitness and health insights application designed to optimize
                       performance, track readiness, provide personalized analytics, and motivate users through
@@ -1197,11 +2247,11 @@ document.head.appendChild(o)}initApollo();</script>
     <!-- =========================
 PRESENTATION SECTION (EXACT STYLE)
 ========================= -->
-    <section class="presentation-section">
-      <div class="presentation-container">
+    <!-- <section class="presentation-section">
+      <div class="presentation-container"> -->
 
-        <!-- Header -->
-        <div class="presentation-header container">
+    <!-- Header -->
+    <!-- <div class="presentation-header container">
           <h2>Testimonial</h2>
 
           <div class="presentation-text">
@@ -1210,25 +2260,25 @@ PRESENTATION SECTION (EXACT STYLE)
               individuals achieve better results, improve efficiency, and grow with confidence.
             </p>
           </div>
-        </div>
+        </div> -->
 
-        <!--   AREA -->
-        <div class="presentation-sliders">
+    <!--   AREA -->
+    <!-- <div class="presentation-sliders"> -->
 
-          <!-- ROW 1 (Right → Left) -->
-          <div class="slider-row slider-left">
-            <div class="slider-track">
-              <!-- repeat for smooth infinite scroll -->
-              <a href="2i2i.html" class="card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"><img src="./images/2i2i_hero.webp" alt="2i2i Video Calling App"></a>
+    <!-- ROW 1 (Right → Left) -->
+    <!-- <div class="slider-row slider-left">
+            <div class="slider-track"> -->
+    <!-- repeat for smooth infinite scroll -->
+    <!-- <a href="2i2i.html" class="card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"><img src="./images/2i2i_hero.webp" alt="2i2i Video Calling App"></a>
               <a href="symcheck.html" class="card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"><img src="./images/symcheck_hero.webp" alt="Symcheck Health App"></a>
               <a href="urban-swift.html" class="card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"><img src="./images/urban_swift_hero_img.png" alt="UrbanSwift Delivery App"></a>
               <a href="dfx5.html" class="card" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"><img src="./images/dfx5_hero.png" alt="DFX5 Cloud Solutions"></a>
               <a href="ultra-messenger.html" class="card" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"><img src="./images/ultra_hero_image.png" alt="Ultra Messenger"></a>
               <a href="festigo.html" class="card" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);"><img src="./images/festigo_hero.webp" alt="FestiGo Event Booking"></a>
               <a href="we-do-solar.html" class="card" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"><img src="./images/wedosolar_hero.webp" alt="WeDoSolar Energy App"></a>
-              <a href="orte.html" class="card" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);"><img src="./images/orte_hero.webp" alt="Orte Fitness App"></a>
-              <!-- duplicate for smooth scroll -->
-              <a href="2i2i.html" class="card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"><img src="./images/2i2i_hero.webp" alt="2i2i Video Calling App"></a>
+              <a href="orte.html" class="card" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);"><img src="./images/orte_hero.webp" alt="Orte Fitness App"></a> -->
+    <!-- duplicate for smooth scroll -->
+    <!-- <a href="2i2i.html" class="card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"><img src="./images/2i2i_hero.webp" alt="2i2i Video Calling App"></a>
               <a href="symcheck.html" class="card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"><img src="./images/symcheck_hero.webp" alt="Symcheck Health App"></a>
               <a href="urban-swift.html" class="card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"><img src="./images/urban_swift_hero_img.png" alt="UrbanSwift Delivery App"></a>
               <a href="dfx5.html" class="card" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"><img src="./images/dfx5_hero.png" alt="DFX5 Cloud Solutions"></a>
@@ -1237,44 +2287,44 @@ PRESENTATION SECTION (EXACT STYLE)
               <a href="we-do-solar.html" class="card" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"><img src="./images/wedosolar_hero.webp" alt="WeDoSolar Energy App"></a>
               <a href="orte.html" class="card" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);"><img src="./images/orte_hero.webp" alt="Orte Fitness App"></a>
             </div>
-          </div>
+          </div> -->
 
-          <!-- ROW 2 (Left → Right) -->
-          <div class="slider-row slider-right">
-            <div class="slider-track">
-              <a href="123family.html" class="card" style="background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);"><img src="./images/123family_hero.png" alt="123Family Senior App"></a>
+    <!-- ROW 2 (Left → Right) -->
+    <!-- <div class="slider-row slider-right">
+            <div class="slider-track"> -->
+    <!-- <a href="123family.html" class="card" style="background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);"><img src="./images/123family_hero.png" alt="123Family Senior App"></a>
               <a href="aura-mind.html" class="card" style="background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);"><img src="./images/auramind_hero_img.png" alt="AuraMind Meditation"></a>
               <a href="lotus.html" class="card" style="background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);"><img src="./images/lotus_hero_img.png" alt="Lotus Yacht Management"></a>
               <a href="health_gauge.html" class="card" style="background: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%);"><img src="./images/health_gauge_hero_image.png" alt="Health Gauge App"></a>
               <a href="amyal.html" class="card" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);"><img src="./images/amyal_hero_img.png" alt="Amyal Driver Rewards"></a>
               <a href="navadiya_owners.html" class="card" style="background: linear-gradient(135deg, #ff6e7f 0%, #bfe9ff 100%);"><img src="./images/navadiya_owner_hero_image.png" alt="Navadiya Owner"></a>
               <a href="antee.html" class="card" style="background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);"><img src="./images/antee_hero_image.png" alt="Antee Golf App"></a>
-              <a href="dashwoop.html" class="card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"><img src="./images/dash_woop_hero_image.png" alt="DashWoop Meetings"></a>
-              <!-- duplicate -->
-              <a href="123family.html" class="card" style="background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);"><img src="./images/123family_hero.png" alt="123Family Senior App"></a>
+              <a href="dashwoop.html" class="card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"><img src="./images/dash_woop_hero_image.png" alt="DashWoop Meetings"></a> -->
+    <!-- duplicate -->
+    <!-- <a href="123family.html" class="card" style="background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);"><img src="./images/123family_hero.png" alt="123Family Senior App"></a>
               <a href="aura-mind.html" class="card" style="background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);"><img src="./images/auramind_hero_img.png" alt="AuraMind Meditation"></a>
               <a href="lotus.html" class="card" style="background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);"><img src="./images/lotus_hero_img.png" alt="Lotus Yacht Management"></a>
               <a href="health_gauge.html" class="card" style="background: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%);"><img src="./images/health_gauge_hero_image.png" alt="Health Gauge App"></a>
               <a href="amyal.html" class="card" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);"><img src="./images/amyal_hero_img.png" alt="Amyal Driver Rewards"></a>
               <a href="navadiya_owners.html" class="card" style="background: linear-gradient(135deg, #ff6e7f 0%, #bfe9ff 100%);"><img src="./images/navadiya_owner_hero_image.png" alt="Navadiya Owner"></a>
               <a href="antee.html" class="card" style="background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);"><img src="./images/antee_hero_image.png" alt="Antee Golf App"></a>
-              <a href="dashwoop.html" class="card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"><img src="./images/dash_woop_hero_image.png" alt="DashWoop Meetings"></a>
-            </div>
+              <a href="dashwoop.html" class="card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"><img src="./images/dash_woop_hero_image.png" alt="DashWoop Meetings"></a> -->
+    <!-- </div>
           </div>
 
-        </div>
+        </div> -->
 
-        <!-- BUTTON -->
-        <div class="view-all-wrap container">
+    <!-- BUTTON -->
+    <!-- <div class="view-all-wrap container">
           <a href="/portfolio.html" class="view-btn">View All →</a>
-        </div>
+        </div> -->
 
-      </div>
-    </section>
+    <!-- </div> -->
+    <!-- </section> -->
 
 
     <!-- Platform Section -->
-    <section class="platform-section testimonial-section pt-4" id="testimonial">
+    <section class="platform-section testimonial-section py-5 my-5" id="testimonial">
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-lg-12" alt="Companies">
@@ -1410,7 +2460,7 @@ PRESENTATION SECTION (EXACT STYLE)
                         <img src="images/123family_ceo.png" alt="123Family Feedback" class="img-fluid">
                       </div>
                       <div class="testimonial-user-name">
-                        <h6>JRobbert Smit</h6>
+                        <h6>Robbert Smit</h6>
                         <p>Co founder YoooM Foundation</p>
                       </div>
                     </div>
@@ -1643,17 +2693,8 @@ PRESENTATION SECTION (EXACT STYLE)
                   </div>
                   <h3>DashWoop</h3>
                   <p>
-                    DashWooP has transformed the way we handle real-time communication. The app is fast,
-                    reliable, and
-                    incredibly easy to use, with instant meeting creation and smooth video and audio quality
-                    across both
-                    Android and iOS devices. The privacy controls and public member discovery features add
-                    real value,
-                    making the platform flexible for different use cases. The Flutter-based UI feels modern
-                    and responsive,
-                    while the AWS-powered backend ensures stability and scalability. Overall, DashWooP
-                    delivers a
-                    professional, secure, and high-performance video calling experience flutter app.
+                    DashWooP offers fast, reliable real-time communication with easy meeting setup, smooth audio/video, strong privacy features, and a modern Flutter UI backed by scalable AWS infrastructure.
+It provides a secure and high-performance video calling experience across Android and iOS.
                   </p>
                   <div class="testimonial-user-rate">
                     <div class="testimonial-user">
@@ -1846,12 +2887,9 @@ PRESENTATION SECTION (EXACT STYLE)
                   </div>
                   <h3>Orte</h3>
                   <p>
-                    DashStack Infotech delivered an exceptional mobile application for Orte, demonstrating strong
-                    expertise in Flutter app development and cross-platform architecture. The app’s performance, user
-                    experience, and implementation of fitness insights and readiness analytics were handled with
-                    precision. Their team maintained clear communication, met all milestones, and showed a deep
-                    understanding of scalable mobile solutions. We are extremely satisfied with the final product and
-                    confidently recommend DashStack Infotech as a reliable technology partner.
+                    DashStack Infotech built a high-quality Flutter app for Orte with excellent performance, user experience, and scalable architecture.
+Their team communicated clearly, met deadlines, and proved to be a reliable technology partner.
+
                   </p>
                   <div class="testimonial-user-rate">
                     <div class="testimonial-user">
@@ -1898,9 +2936,9 @@ PRESENTATION SECTION (EXACT STYLE)
                   <h3>FestiGo : Event & Festival Ticket Booking App</h3>
                   <p>
                     DashStack Infotech delivered a high-performing Flutter app for FestiGo, featuring seamless festival
-                    discovery, secure booking, and real-time notifications. Their expertise in Firebase and
-                    cross-platform development resulted in a scalable, high-quality product that exceeded expectations.
-                    We highly recommend them as a trusted partner for iOS, Android, and Web development.
+                    discovery, secure ticket booking, and real-time event updates. Their technical expertise in
+                    integrating APIs and handling large-scale data was impressive. The team maintained excellent
+                    communication, delivered on schedule, and provided a polished app that met all expectations.
                   </p>
                   <div class="testimonial-user-rate">
                     <div class="testimonial-user">
@@ -1908,8 +2946,8 @@ PRESENTATION SECTION (EXACT STYLE)
                         <img src="images/user.png" alt="FestiGo Feedback" class="img-fluid">
                       </div>
                       <div class="testimonial-user-name">
-                        <h6>festigo App</h6>
-                        <p>festigo,Co founder</p>
+                        <h6>FestiGo App</h6>
+                        <p>FestiGo, Co founder</p>
                       </div>
                     </div>
                     <div class="testimonial-rating d-none d-sm-block">
@@ -1944,25 +2982,23 @@ PRESENTATION SECTION (EXACT STYLE)
                       <p><span>5.0</span> Ratings</p>
                     </div>
                   </div>
-                  <h3>Health Gauge</h3>
+                  <h3>Health Gauge : Health Monitoring app</h3>
                   <p>
-                    DashStack Infotech delivered a high-quality Flutter mobile application for HealthGauge with
-                    excellent
-                    performance and a seamless cross-platform experience. The team expertly handled wearable
-                    integrations,
-                    real-time health tracking, and interactive data visualizations. Communication was clear, timelines
-                    were met, and every requirement was executed with precision. We highly recommend DashStack Infotech
-                    as
-                    a reliable Flutter development partner for health and wellness applications.
+                    DashStack Infotech delivered a high-quality Flutter app for Health Gauge, integrating wearable
+                    health tracking with precision. The app offers real-time heart rate and biometric monitoring,
+                    presented through an intuitive UI. Their deep technical knowledge in data handling and smooth
+                    Bluetooth integration was exceptional. Communication was professional and deadlines were
+                    consistently
+                    met.
                   </p>
                   <div class="testimonial-user-rate">
                     <div class="testimonial-user">
                       <div class="testimonial-user-profile">
-                        <img src="images/user.png" alt="HealthGauge Feedback" class="img-fluid">
+                        <img src="images/user.png" alt="Health Gauge Feedback" class="img-fluid">
                       </div>
                       <div class="testimonial-user-name">
-                        <h6>HealthGauge App</h6>
-                        <p>HealthGauge, Co founder</p>
+                        <h6>Health Gauge App</h6>
+                        <p>Health Gauge, Co founder</p>
                       </div>
                     </div>
                     <div class="testimonial-rating d-none d-sm-block">
@@ -1999,18 +3035,19 @@ PRESENTATION SECTION (EXACT STYLE)
                   </div>
                   <h3>Navadiya Owner</h3>
                   <p>
-                    DashStack delivered a professional, secure Flutter app for Navadiya Owner, flawlessly integrating
-                    site-wise accounting, party management, and real-time financial reporting. It’s a smooth, reliable
-                    solution for cross-platform business management, and we highly recommend them.
+                    DashStack Infotech provided an outstanding solution for our project. The app features real-time
+                    updates, seamless navigation, and efficient data management. They demonstrated strong expertise in
+                    Flutter app development, excellent communication, and delivered on time. We highly recommend them
+                    for anyone seeking high-quality mobile development.
                   </p>
                   <div class="testimonial-user-rate">
                     <div class="testimonial-user">
                       <div class="testimonial-user-profile">
-                        <img src="images/user.png" alt="FestiGo Feedback" class="img-fluid">
+                        <img src="images/user.png" alt="Navadiya Owner Feedback" class="img-fluid">
                       </div>
                       <div class="testimonial-user-name">
-                        <h6>Navadiya Owner App</h6>
-                        <p>Navadiya Owner,Co founder</p>
+                        <h6>Navadiya App</h6>
+                        <p>Navadiya Owner, Co founder</p>
                       </div>
                     </div>
                     <div class="testimonial-rating d-none d-sm-block">
@@ -2028,7 +3065,7 @@ PRESENTATION SECTION (EXACT STYLE)
                   </div>
                 </div>
               </div>
-              <!--AnteeApp review-->
+              <!--Antee review-->
               <div class="testimonial-box bg-second">
                 <div class="testimonial-inner">
                   <div class="testimonial-user-rate d-flex d-sm-none mb-4">
@@ -2045,27 +3082,22 @@ PRESENTATION SECTION (EXACT STYLE)
                       <p><span>5.0</span> Ratings</p>
                     </div>
                   </div>
-                  <h3>Antee Golf & Wager App</h3>
+                  <h3>Antee: Mobile Money Transfer App</h3>
                   <p>
-                    DashStack Infotech did an outstanding job developing the Antee Golf and Wager mobile app
-                    using
-                    Flutter. Their deep expertise in cross-platform app development helped us build a
-                    real-time
-                    golf scoring and wager tracking solution that performs flawlessly.
-                    From smooth UI animations to scalable Firebase integration and reliable app performance,
-                    the
-                    team delivered a high-quality mobile application that exceeded our expectations and
-                    supports
-                    with feature expansion with confidence.
+                    DashStack Infotech built a secure, high-performance mobile money transfer app for Antee with
+                    end-to-end encryption and seamless transactions. Their deep understanding of fintech security,
+                    Flutter best practices, and efficient API integration delivered a reliable product on time. We
+                    highly
+                    recommend them for complex mobile development projects.
                   </p>
                   <div class="testimonial-user-rate">
                     <div class="testimonial-user">
                       <div class="testimonial-user-profile">
-                        <img src="images/user.png" alt="HealthGauge Feedback" class="img-fluid">
+                        <img src="images/user.png" alt="Antee Feedback" class="img-fluid">
                       </div>
                       <div class="testimonial-user-name">
                         <h6>Antee App</h6>
-                        <p>AnteeApp, Co founder</p>
+                        <p>Antee, Co founder</p>
                       </div>
                     </div>
                     <div class="testimonial-rating d-none d-sm-block">
@@ -2089,8 +3121,9 @@ PRESENTATION SECTION (EXACT STYLE)
       </div>
     </section>
 
+
     <!-- Schedule Meeting Section -->
-    <section class="schedule-section schedule-meeting">
+    <section class="schedule-section schedule-meeting py-5 my-5">
       <div class="container">
         <div class="schedule-inner mb-0">
           <div class="row justify-content-center text-center">
@@ -2118,9 +3151,207 @@ PRESENTATION SECTION (EXACT STYLE)
         </div>
       </div>
     </section>
+
+    <!-- Technology Partners Section -->
+    <section class="partners-section py-5 my-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title">Industries We Serve</h2>
+          <p class="section-subtitle">Discover the industries we specialize in and how we can add value to your business</p>
+        </div>
+      </div>
+      
+      <!-- Technology Marquee Slider -->
+      <div class="technology-marquee">
+        <div class="tech-track">
+          <!-- Original Set -->
+          <div class="tech-card">
+            <a href="https://flutter.dev" target="_blank" rel="noopener noreferrer">
+              <img src="https://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png" alt="Flutter">
+            </a>
+          </div>
+          <div class="tech-card">
+            <a href="https://aws.amazon.com" target="_blank" rel="noopener noreferrer">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS">
+            </a>
+          </div>
+          <div class="tech-card">
+            <a href="https://firebase.google.com" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.vectorlogo.zone/logos/firebase/firebase-ar21.svg" alt="Firebase">
+            </a>
+          </div>
+          <div class="tech-card">
+            <a href="https://cloud.google.com" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-ar21.svg" alt="Google Cloud">
+            </a>
+          </div>
+          <div class="tech-card">
+            <a href="https://dart.dev" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.vectorlogo.zone/logos/dartlang/dartlang-ar21.svg" alt="Dart">
+            </a>
+          </div>
+          <div class="tech-card">
+            <a href="https://www.mongodb.com" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg" alt="MongoDB">
+            </a>
+          </div>
+          <div class="tech-card">
+            <a href="https://nodejs.org" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-ar21.svg" alt="Node.js">
+            </a>
+          </div>
+          <div class="tech-card">
+            <a href="https://www.python.org" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.vectorlogo.zone/logos/python/python-ar21.svg" alt="Python">
+            </a>
+          </div>
+          <div class="tech-card">
+            <a href="https://www.docker.com" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.vectorlogo.zone/logos/docker/docker-ar21.svg" alt="Docker">
+            </a>
+          </div>
+          <div class="tech-card">
+            <a href="https://kubernetes.io" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-ar21.svg" alt="Kubernetes">
+            </a>
+          </div>
+          <div class="tech-card">
+            <a href="https://www.postgresql.org" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.vectorlogo.zone/logos/postgresql/postgresql-ar21.svg" alt="PostgreSQL">
+            </a>
+          </div>
+          <div class="tech-card">
+            <a href="https://redis.io" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.vectorlogo.zone/logos/redis/redis-ar21.svg" alt="Redis">
+            </a>
+          </div>
+          <div class="tech-card">
+            <a href="https://graphql.org" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.vectorlogo.zone/logos/graphql/graphql-ar21.svg" alt="GraphQL">
+            </a>
+          </div>
+          <div class="tech-card">
+            <a href="https://www.typescriptlang.org" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-ar21.svg" alt="TypeScript">
+            </a>
+          </div>
+          <div class="tech-card">
+            <a href="https://www.tensorflow.org" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-ar21.svg" alt="TensorFlow">
+            </a>
+          </div>
+          <div class="tech-card">
+            <a href="https://react.dev" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg" alt="React">
+            </a>
+          </div>
+          <div class="tech-card">
+            <a href="https://stripe.com" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.vectorlogo.zone/logos/stripe/stripe-ar21.svg" alt="Stripe">
+            </a>
+          </div>
+          <div class="tech-card">
+            <a href="https://www.twilio.com" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.vectorlogo.zone/logos/twilio/twilio-ar21.svg" alt="Twilio">
+            </a>
+          </div>
+          
+          <!-- Duplicate Set for Seamless Loop -->
+          <div class="tech-card">
+            <a href="https://flutter.dev" target="_blank" rel="noopener noreferrer">
+              <img src="https://storage.googleapis.com/cms-storage-bucket/4fd0db61df0567c0f352.png" alt="Flutter">
+            </a>
+          </div>
+          <div class="tech-card">
+            <a href="https://aws.amazon.com" target="_blank" rel="noopener noreferrer">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS">
+            </a>
+          </div>
+          <div class="tech-card">
+            <a href="https://firebase.google.com" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.vectorlogo.zone/logos/firebase/firebase-ar21.svg" alt="Firebase">
+            </a>
+          </div>
+          <div class="tech-card">
+            <a href="https://cloud.google.com" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-ar21.svg" alt="Google Cloud">
+            </a>
+          </div>
+          <div class="tech-card">
+            <a href="https://dart.dev" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.vectorlogo.zone/logos/dartlang/dartlang-ar21.svg" alt="Dart">
+            </a>
+          </div>
+          <div class="tech-card">
+            <a href="https://www.mongodb.com" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg" alt="MongoDB">
+            </a>
+          </div>
+          <div class="tech-card">
+            <a href="https://nodejs.org" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-ar21.svg" alt="Node.js">
+            </a>
+          </div>
+          <div class="tech-card">
+            <a href="https://www.python.org" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.vectorlogo.zone/logos/python/python-ar21.svg" alt="Python">
+            </a>
+          </div>
+          <div class="tech-card">
+            <a href="https://www.docker.com" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.vectorlogo.zone/logos/docker/docker-ar21.svg" alt="Docker">
+            </a>
+          </div>
+          <div class="tech-card">
+            <a href="https://kubernetes.io" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-ar21.svg" alt="Kubernetes">
+            </a>
+          </div>
+          <div class="tech-card">
+            <a href="https://www.postgresql.org" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.vectorlogo.zone/logos/postgresql/postgresql-ar21.svg" alt="PostgreSQL">
+            </a>
+          </div>
+          <div class="tech-card">
+            <a href="https://redis.io" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.vectorlogo.zone/logos/redis/redis-ar21.svg" alt="Redis">
+            </a>
+          </div>
+          <div class="tech-card">
+            <a href="https://graphql.org" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.vectorlogo.zone/logos/graphql/graphql-ar21.svg" alt="GraphQL">
+            </a>
+          </div>
+          <div class="tech-card">
+            <a href="https://www.typescriptlang.org" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-ar21.svg" alt="TypeScript">
+            </a>
+          </div>
+          <div class="tech-card">
+            <a href="https://www.tensorflow.org" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-ar21.svg" alt="TensorFlow">
+            </a>
+          </div>
+          <div class="tech-card">
+            <a href="https://react.dev" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg" alt="React">
+            </a>
+          </div>
+          <div class="tech-card">
+            <a href="https://stripe.com" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.vectorlogo.zone/logos/stripe/stripe-ar21.svg" alt="Stripe">
+            </a>
+          </div>
+          <div class="tech-card">
+            <a href="https://www.twilio.com" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.vectorlogo.zone/logos/twilio/twilio-ar21.svg" alt="Twilio">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- Enhanced Footer -->
   <footer class="footer">
     <div class="container">
       <div class="row g-4 d-none">
@@ -2198,7 +3429,6 @@ PRESENTATION SECTION (EXACT STYLE)
       </div>
     </div>
   </footer>
-
   <!-- Modal -->
   <!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -2382,6 +3612,66 @@ PRESENTATION SECTION (EXACT STYLE)
   </script>
 
   <script src="./js/api.js" defer></script>
+
+  <!-- Mouse Tracker Light Script -->
+  <script>
+    (function () {
+      const mouseLight = document.getElementById('mouseLight');
+      const mouseLightInner = document.getElementById('mouseLightInner');
+      const mouseRing = document.getElementById('mouseRing');
+
+      let mouseX = 0, mouseY = 0;
+      let lightX = 0, lightY = 0;
+      let innerX = 0, innerY = 0;
+      let ringX = 0, ringY = 0;
+
+      // Track mouse position
+      document.addEventListener('mousemove', function (e) {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+      });
+
+      // Detect clicks for ring effect
+      document.addEventListener('click', function () {
+        mouseRing.style.width = '80px';
+        mouseRing.style.height = '80px';
+        mouseRing.style.borderColor = 'rgba(240, 147, 251, 0.8)';
+
+        setTimeout(() => {
+          mouseRing.style.width = '60px';
+          mouseRing.style.height = '60px';
+          mouseRing.style.borderColor = 'rgba(102, 126, 234, 0.5)';
+        }, 150);
+      });
+
+      // Smooth animation with requestAnimationFrame
+      function animate() {
+        // Smooth easing with different speeds for layered effect
+        lightX += (mouseX - lightX) * 0.08;
+        lightY += (mouseY - lightY) * 0.08;
+
+        innerX += (mouseX - innerX) * 0.15;
+        innerY += (mouseY - innerY) * 0.15;
+
+        ringX += (mouseX - ringX) * 0.25;
+        ringY += (mouseY - ringY) * 0.25;
+
+        mouseLight.style.left = lightX + 'px';
+        mouseLight.style.top = lightY + 'px';
+
+        mouseLightInner.style.left = innerX + 'px';
+        mouseLightInner.style.top = innerY + 'px';
+
+        mouseRing.style.left = ringX + 'px';
+        mouseRing.style.top = ringY + 'px';
+
+        requestAnimationFrame(animate);
+      }
+
+      animate();
+    })();
+  </script>
+
   <script>
     // Attach event listener when page loads
     document.addEventListener('DOMContentLoaded', function () {

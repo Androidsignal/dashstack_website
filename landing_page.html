@@ -28,6 +28,7 @@
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/lpv2-style.css" />
   <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+  <link rel="stylesheet" href="./css/mouse-tracker.css" />
   <link rel="stylesheet" type="text/css" href="./css/slick-theme.css" />
   <!-- Apollo Tracking Script -->
   <script>function initApollo() {
@@ -39,6 +40,9 @@
 </head>
 
 <body data-bs-spy="scroll" class="lpv2">
+<div class="mouse-light" id="mouseLight"></div>
+<div class="mouse-light-inner" id="mouseLightInner"></div>
+<div class="mouse-ring" id="mouseRing"></div>
   <!-- Enhanced Navigation -->
   <nav class="navbar navbar-expand-lg" id="mainNavbar">
     <div class="container">
@@ -2201,7 +2205,7 @@
     });
   </script>
 
-
+  <script src="./js/mouse-tracker.js"></script>
 
 </body>
 
