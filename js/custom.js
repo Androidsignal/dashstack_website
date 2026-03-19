@@ -414,6 +414,7 @@ if (slider) {
   if (!typingElement) return;
   
   const text = "We Build It Right, So It Lasts and Grows With You.";
+  // const text ="We Built Right. Built to Last. Built to Grow.";
   let index = 0;
   const typingSpeed = 80; // milliseconds per character
   const startDelay = 500; // delay before starting
