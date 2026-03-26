@@ -78,25 +78,25 @@ PRESENTATION EXACT STYLE
 
     /* gradient mask sides (half cut look) */
     .presentation-sliders:before,
-.presentation-sliders:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 120px;
-  height: 100%;
-  z-index: 2;
-  pointer-events: none;
-}
+    .presentation-sliders:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 120px;
+      height: 100%;
+      z-index: 2;
+      pointer-events: none;
+    }
 
-.presentation-sliders:before {
-  left: 0;
-  background: linear-gradient(90deg,#f4f5fb 0%,rgba(244,245,251,0)100%);
-}
+    .presentation-sliders:before {
+      left: 0;
+      background: linear-gradient(90deg, #f4f5fb 0%, rgba(244, 245, 251, 0)100%);
+    }
 
-.presentation-sliders:after {
-  right: 0;
-  background: linear-gradient(-90deg,#f4f5fb 0%,rgba(244,245,251,0)100%);
-}
+    .presentation-sliders:after {
+      right: 0;
+      background: linear-gradient(-90deg, #f4f5fb 0%, rgba(244, 245, 251, 0)100%);
+    }
 
     /* row */
     .slider-row {
@@ -189,14 +189,69 @@ PRESENTATION EXACT STYLE
         font-size: 42px;
       }
     }
+
+    /* testimonial slider customizations */
+    .testimonial-content .slick-prev,
+    .testimonial-content .slick-next {
+      display: block;
+      width: unset;
+      height: unset;
+      padding: 10px;
+      background: transparent;
+      border-radius: 50%;
+      z-index: 10;
+      top: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: #131313;
+      font-weight: 600;
+    }
+
+    .testimonial-content .slick-prev {
+      left: 50%;
+      transform: translate(-110px, 8px);
+    }
+
+    .testimonial-content .slick-next {
+      right: 50%;
+      transform: translate(110px, 8px);
+    }
+
+    .platform-section.testimonial-section .slick-dots li button:before {
+      border-color: #13131350;
+    }
+
+    .platform-section.testimonial-section .slick-dots li.slick-active button::before {
+      background-color: #131313;
+    }
+
+    @media (max-width: 684px) {
+      .testimonial-content .slick-dots li.slick-active button {
+        background: #ffffff;
+        width: 12px;
+        height: 12px;
+        transform: translateY(5px);
+      }
+
+      .testimonial-content .slick-dots li button {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.6);
+      }
+    }
   </style>
 
 
   <!-- Apollo Tracking Script -->
-  <script>function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
-o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
-o.onload=function(){window.trackingFunctions.onLoad({appId:"69983273644dde00217f09a2"})},
-document.head.appendChild(o)}initApollo();</script>
+  <script>function initApollo() {
+      var n = Math.random().toString(36).substring(7), o = document.createElement("script");
+      o.src = "https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache=" + n, o.async = !0, o.defer = !0,
+        o.onload = function () { window.trackingFunctions.onLoad({ appId: "69983273644dde00217f09a2" }) },
+        document.head.appendChild(o)
+    } initApollo();</script>
 </head>
 
 <body data-bs-spy="scroll">
@@ -1170,7 +1225,7 @@ document.head.appendChild(o)}initApollo();</script>
     </section>
 
 
-<section class="platform-section testimonial-section" id="testimonial">
+    <section class="platform-section testimonial-section" id="testimonial">
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-lg-12" alt="Companies">
@@ -2253,23 +2308,49 @@ document.head.appendChild(o)}initApollo();</script>
           },
         ],
       });
-      $(".testimonial-content").slick({
+      var $slider = $(".testimonial-content");
+
+      $slider.on('init afterChange', function (event, slick, currentSlide) {
+        var i = currentSlide ? currentSlide : 0;
+        var total = slick.$dots.find("li");
+
+        // only keep a sliding window of at most five dots
+        var maxVisible = 5;
+        var half = Math.floor(maxVisible / 2); // 2
+
+        total.hide();
+
+        var start = i - half;
+        var end = i + half;
+
+        // clamp to bounds
+        if (start < 0) {
+          start = 0;
+          end = Math.min(maxVisible - 1, total.length - 1);
+        }
+
+        if (end >= total.length) {
+          end = total.length - 1;
+          start = Math.max(0, end - (maxVisible - 1));
+        }
+
+        total.slice(start, end + 1).show();
+      });
+
+      $slider.slick({
         dots: true,
         centerMode: false,
         slidesToShow: 2,
-        arrows: true,
-        prevArrow: $('.prev-testimonial'),
-        nextArrow: $('.next-testimonial'),
+        arrows: true,           // show navigation arrows
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000,
+        loop: true,
+        autoplaySpeed: 1500,
         responsive: [
           {
             breakpoint: 992,
             settings: {
-              slidesToShow: 1,
-              autoplay: true,
-              autoplaySpeed: 3000,
+              slidesToShow: 1
             }
           },
         ],

@@ -407,32 +407,3 @@ if (slider) {
     slider.scrollLeft = scrollLeft - walk;
   });
 }
-
-// Typing Animation for Hero Highlight
-(function() {
-  const typingElement = document.getElementById('typingText');
-  if (!typingElement) return;
-  
-  const text = "We Build It Right, So It Lasts and Grows With You.";
-  // const text ="We Built Right. Built to Last. Built to Grow.";
-  let index = 0;
-  const typingSpeed = 80; // milliseconds per character
-  const startDelay = 500; // delay before starting
-  
-  function typeCharacter() {
-    if (index < text.length) {
-      typingElement.textContent += text.charAt(index);
-      index++;
-      setTimeout(typeCharacter, typingSpeed);
-    } else {
-      // Optional: Remove cursor after typing completes
-      setTimeout(() => {
-        const cursor = document.querySelector('.typing-cursor');
-        if (cursor) cursor.style.display = 'none';
-      }, 1000);
-    }
-  }
-  
-  // Start typing after delay
-  setTimeout(typeCharacter, startDelay);
-})();
