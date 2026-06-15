@@ -660,7 +660,7 @@ a:focus {
 
 .stats-section #counter li::before {
     content: "";
-    background-image: url(../images/shape_rating.png);
+    background-image: url(../images/shape_rating.avif);
     position: absolute;
     width: 80px;
     height: 20px;
@@ -1022,7 +1022,7 @@ a:focus {
 }
 
 .services-section {
-    background-image: url("../images/creative_approach.jpg");
+    background-image: url("../images/creative_approach.avif");
     padding: 100px 0;
     background-position: center;
     background-repeat: no-repeat;
@@ -5213,7 +5213,7 @@ a:focus {
     padding-top: 100px;
     padding-bottom: 100px;
     margin-bottom: 50px;
-    background-image: url("../images/creative_approach.jpg");
+    background-image: url("../images/creative_approach.avif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
