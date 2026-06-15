@@ -4346,25 +4346,27 @@ a:focus {
 
 .blog-search-input {
     width: 100%;
-    padding: 15px 20px 15px 45px;
+    padding: 16px 25px 16px 50px;
     font-size: 1rem;
-    border: 2px solid #e2e8f0;
-    border-radius: 8px;
+    border: 1px solid rgba(96, 21, 255, 0.1);
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
 }
 
 .blog-search-input:focus {
     outline: none;
-    border-color: #667eea;
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    border-color: #6015ff;
+    box-shadow: 0 0 0 4px rgba(96, 21, 255, 0.15);
 }
 
 .blog-search-icon {
     position: absolute;
-    left: 15px;
+    left: 20px;
     top: 50%;
     transform: translateY(-50%);
-    color: #94a3b8;
+    color: #6015ff;
     pointer-events: none;
 }
 
@@ -4377,26 +4379,29 @@ a:focus {
 }
 
 .blog-filter-btn {
-    padding: 10px 20px;
-    border: 2px solid #e2e8f0;
+    padding: 10px 24px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
     background-color: white;
-    color: #475569;
-    border-radius: 6px;
+    color: #5a5a59;
+    border-radius: 50px;
     cursor: pointer;
     font-size: 0.95rem;
     font-weight: 500;
-    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .blog-filter-btn:hover {
-    border-color: #667eea;
-    color: #667eea;
+    color: #6015ff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(96, 21, 255, 0.1);
 }
 
 .blog-filter-btn.active {
-    background-color: #667eea;
+    background: linear-gradient(135deg, #6015ff, #844aff);
     color: white;
-    border-color: #667eea;
+    border: none;
+    box-shadow: 0 6px 15px rgba(96, 21, 255, 0.35);
 }
 
 /* Blog Posts Section */
@@ -4444,7 +4449,7 @@ a:focus {
     position: absolute;
     top: 15px;
     right: 15px;
-    background-color: #667eea;
+    background-color: #6015ff;
     color: white;
     padding: 6px 12px;
     border-radius: 4px;
@@ -4461,24 +4466,24 @@ a:focus {
 }
 
 .blog-card-title {
-    font-size: 1.25rem;
+    font-size: 24px;
     font-weight: 600;
     margin-bottom: 12px;
     line-height: 1.4;
 }
 
 .blog-card-title a {
-    color: #1e293b;
+    color: #1e0a52;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .blog-card-title a:hover {
-    color: #667eea;
+    color: #6015ff;
 }
 
 .blog-card-excerpt {
-    color: #64748b;
+    color: #6c757d;
     font-size: 0.95rem;
     margin-bottom: 15px;
     line-height: 1.6;
@@ -4504,11 +4509,11 @@ a:focus {
 
 .blog-date i,
 .blog-read-time i {
-    color: #667eea;
+    color: #6015ff;
 }
 
 .blog-read-more {
-    color: #667eea;
+    color: #6015ff;
     text-decoration: none;
     font-weight: 600;
     display: inline-flex;
@@ -4528,7 +4533,7 @@ a:focus {
 
 /* Newsletter Section */
 .blog-newsletter-section {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #6015ff 0%, #764ba2 100%);
     color: white;
     padding: 60px 0;
 }
@@ -4571,7 +4576,7 @@ a:focus {
 
 .btn-newsletter {
     background-color: white;
-    color: #667eea;
+    color: #6015ff;
     border: none;
     padding: 15px 30px;
     font-weight: 600;
@@ -4692,7 +4697,7 @@ a:focus {
 }
 
 .blog-post-content blockquote {
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #6015ff;
     padding-left: 20px;
     margin: 30px 0;
     color: #64748b;
@@ -4734,14 +4739,14 @@ a:focus {
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
-    color: #667eea;
+    color: #6015ff;
     font-size: 1.2rem;
 }
 
 .share-btn:hover {
-    background-color: #667eea;
+    background-color: #6015ff;
     color: white;
-    border-color: #667eea;
+    border-color: #6015ff;
 }
 
 /* Responsive Design */
@@ -5198,5 +5203,270 @@ a:focus {
     .owl-carousel .owl-nav {
         top: auto;
         bottom: -60px;
+    }
+}
+
+/* ==========================================================================
+   Case Study Section Styles
+   ========================================================================== */
+.case-study-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 50px;
+    background-image: url("../images/creative_approach.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.case-study-label {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.case-study-desc {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.case-study-content {
+    margin: 0 -15px;
+}
+
+.case-study-box {
+    padding: 15px;
+    outline: none;
+}
+
+.case-study-card {
+    background: #fff;
+    border-radius: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.case-study-left {
+    flex: 1 1 50%;
+    padding: 40px;
+    color: #333;
+}
+
+.case-study-right {
+    flex: 1 1 50%;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.case-study-right img {
+    max-width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+}
+
+.case-study-header .case-study-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.case-study-header .case-study-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.case-study-brand {
+    font-weight: 700;
+    font-size: 16px;
+    color: #333;
+}
+
+.case-study-industry {
+    color: #0d6efd;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.case-study-left h3 {
+    font-size: 32px;
+    font-family: "General Sans Medium", sans-serif;
+    line-height: 1.4;
+    color: #1e0a52;
+    margin-bottom: 32px;
+}
+
+.case-study-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cs-tag {
+    background: #f0eeff;
+    color: #0d6efd;
+    font-size: 14px;
+    font-family: "General Sans Medium", sans-serif;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+.case-study-left p {
+    font-size: 18px;
+    font-family: "General Sans Regular", sans-serif;
+    color: #5f5f86;
+    line-height: 1.7;
+    margin-bottom: 32px;
+}
+
+.case-study-left .btn-schedule {
+    white-space: nowrap;
+    justify-content: center;
+}
+
+
+
+.case-study-achievements li {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.case-study-achievements li img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* Slick slider adjustments */
+.case-study-content .slick-prev,
+.case-study-content .slick-next {
+    width: 48px;
+    height: 48px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.case-study-content .slick-prev {
+    left: -50px;
+}
+
+.case-study-content .slick-next {
+    right: -50px;
+}
+
+.case-study-content .slick-prev:before,
+.case-study-content .slick-next:before {
+    color: #333;
+    font-size: 20px;
+}
+
+/* Prevent color change on hover */
+.case-study-content .slick-prev:hover,
+.case-study-content .slick-next:hover,
+.case-study-content .slick-prev:focus,
+.case-study-content .slick-next:focus {
+    background: #fff !important;
+    color: #333 !important;
+}
+
+.case-study-content .slick-prev:hover:before,
+.case-study-content .slick-next:hover:before,
+.case-study-content .slick-prev:focus:before,
+.case-study-content .slick-next:focus:before {
+    color: #333 !important;
+}
+
+.case-study-content .slick-dots {
+    bottom: -50px;
+}
+
+.case-study-content .slick-dots li {
+    margin: 0;
+    width: auto;
+    height: auto;
+}
+
+.case-study-content .slick-dots li button:before {
+    content: "";
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transition: all .3s ease;
+    opacity: 1;
+    right: 0;
+    color: transparent;
+}
+
+.case-study-content .slick-dots li.slick-active button {
+    height: 18px;
+    width: 18px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    position: relative;
+    border-radius: 50%;
+}
+
+.case-study-content .slick-dots li.slick-active button:before {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+@media (max-width: 991px) {
+    .case-study-card {
+        flex-direction: column;
+        border-radius: 30px;
+    }
+    .case-study-left, .case-study-right {
+        flex: 1 1 100%;
+    }
+    .case-study-left {
+        padding: 24px;
+    }
+    .case-study-left h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .case-study-left p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .case-study-left .btn-schedule {
+        width: 100%;
+        justify-content: center;
+        white-space: nowrap;
+    }
+    .case-study-right {
+        padding: 16px;
+    }
+    .case-study-right img {
+        max-height: 300px;
+    }
+    .case-study-content .slick-prev,
+    .case-study-content .slick-next {
+        display: none !important;
     }
 }
