@@ -2829,20 +2829,18 @@ a:focus {
 
 .slider .slick-dots {
     position: absolute;
-    right: -24px;
-    display: block;
-    left: auto;
+    right: -25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
     padding: 0;
     margin: 0;
     list-style: none;
-    text-align: center;
-    transform: rotate(90deg);
-    margin: auto;
-    bottom: 0;
-    height: -moz-fit-content;
-    height: fit-content;
-    top: 0;
-    width: auto
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
 }
 
 .slider .slick-dots li {
@@ -2889,26 +2887,55 @@ a:focus {
     margin: auto
 }
 
-@media(max-width: 767px) {
-    .slider .slick-dots {
-        width: 100%;
-        top: auto;
-        right: auto;
-        left: auto;
-        transform: inherit;
-        bottom: -25px
-    }
-}
+
 
 .slider .slick-prev,
 .slider .slick-next {
-    transform: rotate(90deg);
-    right: 10px
+    position: absolute;
+    right: -25px;
+    z-index: 10;
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    color: #5f5f86;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: auto;
 }
 
-.slider .slick-prev::before,
-.slider .slick-next::before {
-    color: #000
+.slider .slick-prev {
+    top: calc(50% - 80px);
+}
+
+.slider .slick-next {
+    top: calc(50% + 80px);
+    bottom: auto;
+}
+
+.slider .slick-prev svg,
+.slider .slick-next svg {
+    width: 20px;
+    height: 20px;
+}
+
+.slider .slick-prev:before,
+.slider .slick-next:before {
+    display: none !important;
+    content: none !important;
+}
+
+.slider .slick-prev:hover,
+.slider .slick-prev:focus,
+.slider .slick-prev:active,
+.slider .slick-next:hover,
+.slider .slick-next:focus,
+.slider .slick-next:active {
+    color: #5f5f86 !important;
+    background: transparent !important;
+    outline: none !important;
 }
 
 .code-tool-section .code-tool-content {
