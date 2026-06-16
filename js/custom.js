@@ -39,8 +39,31 @@ if (visionTabs) {
     const tab = e.target.closest(".vision-tab");
     if (!tab) return;
     updateSlide(Number(tab.dataset.index));
+    setTimeout(() => {
+      $('.healthcare, .conferencing').slick('setPosition');
+    }, 50);
   });
 }
+
+// Force uniform heights for vertical sliders to prevent overlap
+function setUniformSliderHeight() {
+  let maxHeight = 0;
+  const slides = document.querySelectorAll('.healthcare .vision-slide.slick-slide, .conferencing .vision-slide.slick-slide');
+  if (!slides.length) return;
+  
+  slides.forEach(s => s.style.height = 'auto');
+  slides.forEach(s => {
+    const h = s.offsetHeight;
+    if (h > maxHeight) maxHeight = h;
+  });
+  slides.forEach(s => s.style.height = maxHeight + 'px');
+  
+  if (window.jQuery) {
+    $('.healthcare, .conferencing').slick('setPosition');
+  }
+}
+window.addEventListener('load', setUniformSliderHeight);
+window.addEventListener('resize', setUniformSliderHeight);
 
 // HISTORY + localStorage + "open specific tab (portfolio)" handler
 (function () {
