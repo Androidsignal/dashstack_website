@@ -4336,7 +4336,7 @@ a:focus {
 /* Blog Search Section */
 .blog-search-section {
     padding: 50px 0;
-    background-color: #f8fafc;
+    background-color: transparent;
 }
 
 .blog-search-container {
@@ -4380,9 +4380,9 @@ a:focus {
 
 .blog-filter-btn {
     padding: 10px 24px;
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
     background-color: white;
-    color: #5a5a59;
+    color: #1e0a52;
     border-radius: 50px;
     cursor: pointer;
     font-size: 0.95rem;
@@ -4412,9 +4412,10 @@ a:focus {
 /* Blog Card */
 .blog-card {
     background: white;
-    border-radius: 12px;
+    border-radius: 30px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -4466,10 +4467,11 @@ a:focus {
 }
 
 .blog-card-title {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
     line-height: 1.4;
+    font-family: var(--bs-body-font-family);
 }
 
 .blog-card-title a {
@@ -4483,10 +4485,11 @@ a:focus {
 }
 
 .blog-card-excerpt {
-    color: #6c757d;
-    font-size: 0.95rem;
-    margin-bottom: 15px;
+    color: #5f5f86;
+    font-size: 16px;
+    margin-bottom: 20px;
     line-height: 1.6;
+    font-family: "General Sans Regular", sans-serif;
     flex-grow: 1;
 }
 
