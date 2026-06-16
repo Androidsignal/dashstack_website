@@ -197,6 +197,99 @@
     </section>
 
 
+  <!-- Section Divider -->
+  <div class="container py-4">
+    <div class="d-flex align-items-center justify-content-center opacity-75">
+      <div style="height: 2px; width: 80px; background: linear-gradient(to right, transparent, #844aff);"></div>
+      <div style="width: 12px; height: 12px; background: #6015ff; border-radius: 50%; margin: 0 20px; box-shadow: 0 0 15px rgba(96, 21, 255, 0.6);"></div>
+      <div style="height: 2px; width: 80px; background: linear-gradient(to left, transparent, #844aff);"></div>
+    </div>
+  </div>
+
+  <!-- Challenges & Solutions Section -->
+  <section class="work-section vision-section features-benefits-section pt-5 pb-5">
+    <div class="container">
+      <div class="row justify-content-center text-center mb-5">
+        <div class="col-lg-12 d-flex justify-content-between align-items-center flex-column flex-md-row">
+          <div class="section-title text-start mb-4 mb-md-0">
+            <h2>Challenges & Solutions</h2>
+          </div>
+          <div class="d-flex flex-wrap title-content text-start">
+            <p>
+              Developing an interactive, physics-based dice rolling application demanded cutting-edge animations and 3D rendering capabilities natively within Flutter.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="vision-content feature-boxs">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="feature-box mb-4">
+              <div class="feature-box-head">
+                <div class="feature-img">
+                  <img src="./images/check.svg" alt="Check 1" />
+                </div>
+                <h4>Realistic Physics Simulation</h4>
+              </div>
+              <p><strong>Standard animations looked fake; the dice needed to bounce and roll realistically.</strong></p>
+              <p>Integrated a 2D/3D physics engine directly into Flutter via FFI to calculate gravity, collision, and momentum accurately.</p>
+            </div>
+          </div>
+          
+          <div class="col-md-6">
+            <div class="feature-box mb-4">
+              <div class="feature-box-head">
+                <div class="feature-img">
+                  <img src="./images/check.svg" alt="Check 1" />
+                </div>
+                <h4>High Frame Rate Rendering</h4>
+              </div>
+              <p><strong>Rendering 3D dice meshes caused frame drops below 60FPS on older hardware.</strong></p>
+              <p>Utilized low-polygon models and hardware-accelerated canvas drawing to ensure silky-smooth 120FPS animations on supported displays.</p>
+            </div>
+          </div>
+          
+          <div class="col-md-6 mt-md-2">
+            <div class="feature-box mb-4">
+              <div class="feature-box-head">
+                <div class="feature-img">
+                  <img src="./images/check.svg" alt="Check 1" />
+                </div>
+                <h4>Haptic Feedback Integration</h4>
+              </div>
+              <p><strong>Users couldn't 'feel' the dice hitting the virtual table.</strong></p>
+              <p>Engineered precise, pattern-based haptic feedback that triggers exact vibrations at the exact millisecond of physics collisions.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 mt-md-2">
+            <div class="feature-box mb-4">
+              <div class="feature-box-head">
+                <div class="feature-img">
+                  <img src="./images/check.svg" alt="Check 1" />
+                </div>
+                <h4>State Synchronization</h4>
+              </div>
+              <p><strong>Multiplayer mode required all users to see the exact same dice roll outcome.</strong></p>
+              <p>Moved the random number generation and physics seed to the server, ensuring deterministic rendering across all devices.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Divider -->
+  <div class="container py-4">
+    <div class="d-flex align-items-center justify-content-center opacity-75">
+      <div style="height: 2px; width: 80px; background: linear-gradient(to right, transparent, #844aff);"></div>
+      <div style="width: 12px; height: 12px; background: #6015ff; border-radius: 50%; margin: 0 20px; box-shadow: 0 0 15px rgba(96, 21, 255, 0.6);"></div>
+      <div style="height: 2px; width: 80px; background: linear-gradient(to left, transparent, #844aff);"></div>
+    </div>
+  </div>
+
+
     <!-- Code & Tool Section -->
     <section class="code-tool-section">
         <div class="container">
@@ -211,7 +304,7 @@
                         </div>
                         <div class="code-box">
                             <div>
-                                <img src="../images/flutter_icon.avif" alt="Flutter Icon" />
+                                <img src="../images/flutter.png" alt="Flutter Icon" />
                             </div>
                             <p class="mb-0">Flutter</p>
                         </div>

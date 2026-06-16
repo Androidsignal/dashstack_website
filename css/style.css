@@ -5475,3 +5475,9 @@ a:focus {
         display: none !important;
     }
 }
+
+/* Override font family for strong tags inside feature box paragraphs to ensure bold rendering */
+.work-section.features-benefits-section .feature-box p strong {
+    font-family: "General Sans Medium", sans-serif !important;
+    font-weight: 500 !important;
+}

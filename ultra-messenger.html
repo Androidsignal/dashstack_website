@@ -202,6 +202,99 @@
 
   </section>
 
+  <!-- Section Divider -->
+  <div class="container py-4">
+    <div class="d-flex align-items-center justify-content-center opacity-75">
+      <div style="height: 2px; width: 80px; background: linear-gradient(to right, transparent, #844aff);"></div>
+      <div style="width: 12px; height: 12px; background: #6015ff; border-radius: 50%; margin: 0 20px; box-shadow: 0 0 15px rgba(96, 21, 255, 0.6);"></div>
+      <div style="height: 2px; width: 80px; background: linear-gradient(to left, transparent, #844aff);"></div>
+    </div>
+  </div>
+
+  <!-- Challenges & Solutions Section -->
+  <section class="work-section vision-section features-benefits-section pt-5 pb-5">
+    <div class="container">
+      <div class="row justify-content-center text-center mb-5">
+        <div class="col-lg-12 d-flex justify-content-between align-items-center flex-column flex-md-row">
+          <div class="section-title text-start mb-4 mb-md-0">
+            <h2>Challenges & Solutions</h2>
+          </div>
+          <div class="d-flex flex-wrap title-content text-start">
+            <p>
+              Creating a globally scalable video calling and messaging platform required mastering peer-to-peer networking, encryption, and instant message delivery.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="vision-content feature-boxs">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="feature-box mb-4">
+              <div class="feature-box-head">
+                <div class="feature-img">
+                  <img src="./images/check.svg" alt="Check 1" />
+                </div>
+                <h4>Global WebRTC Scaling</h4>
+              </div>
+              <p><strong>Connecting users across continents resulted in high latency and dropped packets.</strong></p>
+              <p>Deployed a distributed network of TURN servers globally to ensure the shortest possible relay path when P2P connection fails.</p>
+            </div>
+          </div>
+          
+          <div class="col-md-6">
+            <div class="feature-box mb-4">
+              <div class="feature-box-head">
+                <div class="feature-img">
+                  <img src="./images/check.svg" alt="Check 1" />
+                </div>
+                <h4>End-to-End Encryption (E2EE)</h4>
+              </div>
+              <p><strong>Ensuring absolute privacy for messages and video calls was paramount.</strong></p>
+              <p>Integrated the Signal Protocol into Flutter, guaranteeing that encryption keys never leave the users' personal devices.</p>
+            </div>
+          </div>
+          
+          <div class="col-md-6 mt-md-2">
+            <div class="feature-box mb-4">
+              <div class="feature-box-head">
+                <div class="feature-img">
+                  <img src="./images/check.svg" alt="Check 1" />
+                </div>
+                <h4>Background Call Wakeup</h4>
+              </div>
+              <p><strong>Incoming calls failed to wake up Android devices efficiently due to OS restrictions.</strong></p>
+              <p>Utilized specialized high-priority VoIP push notifications (APNs and FCM) integrated directly with native CallKit/ConnectionService.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 mt-md-2">
+            <div class="feature-box mb-4">
+              <div class="feature-box-head">
+                <div class="feature-img">
+                  <img src="./images/check.svg" alt="Check 1" />
+                </div>
+                <h4>Media Compression Pipeline</h4>
+              </div>
+              <p><strong>Sending 4K videos consumed too much data and took too long.</strong></p>
+              <p>Built a multi-threaded background compression engine that transcodes videos locally to H.264 before initiating the upload.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Divider -->
+  <div class="container py-4">
+    <div class="d-flex align-items-center justify-content-center opacity-75">
+      <div style="height: 2px; width: 80px; background: linear-gradient(to right, transparent, #844aff);"></div>
+      <div style="width: 12px; height: 12px; background: #6015ff; border-radius: 50%; margin: 0 20px; box-shadow: 0 0 15px rgba(96, 21, 255, 0.6);"></div>
+      <div style="height: 2px; width: 80px; background: linear-gradient(to left, transparent, #844aff);"></div>
+    </div>
+  </div>
+
+
   <!-- Code & Tool Section -->
   <section class="code-tool-section">
     <div class="container">
@@ -216,7 +309,7 @@
             </div>
             <div class="code-box">
               <div>
-                <img src="../images/flutter_icon.avif" alt="Flutter Icon" />
+                <img src="../images/flutter.png" alt="Flutter Icon" />
               </div>
               <p class="mb-0">Flutter</p>
             </div>
