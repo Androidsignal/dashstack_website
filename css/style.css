@@ -2713,13 +2713,15 @@ a:focus {
 }
 
 .footer img.footer-logo.me-4 {
-    filter: brightness(0)
+    height: 40px;
+    width: auto;
 }
 
 @media(max-width: 575px) {
     .footer img.footer-logo.me-4 {
-        max-width: 100px;
-        margin-right: 12px !important
+        max-width: 150px;
+        height: auto;
+        margin-right: 12px !important;
     }
 
     .footer img.footer-logo.me-4+p {
