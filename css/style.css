@@ -2691,7 +2691,7 @@ a:focus {
     text-decoration: none;
     font-size: 16px;
     color: #777;
-    font-family: Abyssinica SIL
+    font-family: "General Sans Regular", sans-serif
 }
 
 .footer ul li a::before {
@@ -5533,4 +5533,35 @@ a:focus {
 .work-section.features-benefits-section .feature-box p strong {
     font-family: "General Sans Medium", sans-serif !important;
     font-weight: 500 !important;
+}
+
+.client-initials {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+/* Footer Review Cards */
+.review-card {
+    display: block;
+    padding: 10px 15px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.review-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-color: #d0d0d0;
+}
+.footer .contact-info, .footer .contact-info a {
+    font-family: "General Sans Regular", sans-serif;
 }
