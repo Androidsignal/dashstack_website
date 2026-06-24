@@ -95,6 +95,8 @@
   RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
   RewriteRule ^ /%1 [R=301,NE,L]
 
+  RewriteRule ^services/?$ /index.html [L]
+
   # Internally forward extensionless URLs to .html if the file exists
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d

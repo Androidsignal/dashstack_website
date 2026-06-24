@@ -430,3 +430,25 @@ if (slider) {
     slider.scrollLeft = scrollLeft - walk;
   });
 }
+
+// Handling /services clean URL
+document.addEventListener('DOMContentLoaded', () => {
+    if (window.location.pathname === '/services' || window.location.pathname === '/services/') {
+        const el = document.getElementById('services');
+        if (el) {
+            setTimeout(() => el.scrollIntoView({behavior: 'smooth'}), 200);
+        }
+    }
+
+    document.querySelectorAll('a[href="/services"]').forEach(a => {
+        a.addEventListener('click', (e) => {
+            const path = window.location.pathname;
+            if (path === '/' || path === '/index.html' || path === '/services' || path === '/services/') {
+                e.preventDefault();
+                history.pushState(null, null, '/services');
+                const el = document.getElementById('services');
+                if (el) el.scrollIntoView({behavior: 'smooth'});
+            }
+        });
+    });
+});
