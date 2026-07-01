@@ -282,54 +282,6 @@ const observer = new IntersectionObserver(function (entries) {
 }, observerOptions);
 
 // count on scroll using IntersectionObserver for maximum reliability
-(function ($) {
-  "use strict";
-
-  var countersInitiated = false;
-
-  function runCounterAnimation() {
-    if (countersInitiated) return;
-
-    $(".count").each(function () {
-      var $el = $(this);
-      var stopValue = parseInt($el.attr("data-count"), 10);
-
-      if (isNaN(stopValue)) return;
-
-      // Ensure we start from 0
-      $({ countVal: 0 }).animate({ countVal: stopValue }, {
-        duration: 2000,
-        easing: 'swing',
-        step: function () {
-          $el.text(Math.floor(this.countVal));
-        },
-        complete: function () {
-          $el.text(stopValue);
-        }
-      });
-    });
-
-    countersInitiated = true;
-  }
-
-  $(function () {
-    var observerTarget = document.getElementById('counter');
-    if (!observerTarget) return;
-
-    if ('IntersectionObserver' in window) {
-      var observer = new IntersectionObserver(function (entries) {
-        if (entries[0].isIntersecting) {
-          runCounterAnimation();
-          observer.disconnect();
-        }
-      }, { threshold: 0.01 });
-      observer.observe(observerTarget);
-    } else {
-      // Fallback for older browsers
-      runCounterAnimation();
-    }
-  });
-})(jQuery);
 
 $(document).ready(function () {
   const $navbar = $('#navbarNav'); // your collapse ID

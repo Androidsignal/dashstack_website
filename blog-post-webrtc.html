@@ -70,8 +70,8 @@
               <div class="blog-category-tag mb-4">
                 <span class="category-badge">Web Development</span>
               </div>
-              <h1 class="blog-post-title mb-4">Flutter for Web Application Development in 2026</h1>
-              <p class="blog-post-subtitle">Master cross-platform web development with Flutter. Learn how to build beautiful, responsive web applications from a single codebase.</p>
+              <h1 class="blog-post-title mb-4">WebRTC on Flutter: What agencies get wrong</h1>
+              <p class="blog-post-subtitle">Avoid common pitfalls when building real-time communication apps. We explore architecture, scaling, and performance.</p>
               <div class="blog-post-meta mt-5 d-flex justify-content-between align-items-center">
                 <div class="blog-post-author d-flex align-items-center">
                   <img src="./images/director_1.avif" alt="Author" class="author-avatar me-3" />
@@ -220,6 +220,29 @@
               <h3>Testing Strategy</h3>
               <p>
                 Implement comprehensive testing across different browsers and devices. Flutter's testing framework supports unit, widget, and integration tests equally well for web applications.
+              </p>
+              <p>
+                Building real-time communication into mobile applications using Flutter and WebRTC seems straightforward at first glance. However, many agencies make critical architectural mistakes that don't surface until the app goes into production with real users on unstable networks.
+              </p>
+
+              <h2>1. Improper State Management for Signaling</h2>
+              <p>
+                One of the most common issues is tightly coupling the signaling logic (WebSocket or similar) with the UI code. Agencies often start with simple tutorials that put all the peer connection logic directly inside a StatefulWidget. When the user navigates away or the app goes to the background, the connection isn't properly managed, leading to memory leaks and zombie connections.
+              </p>
+
+              <h2>2. Ignoring Platform-Specific Permissions</h2>
+              <p>
+                While Flutter abstracts the UI, accessing the camera and microphone still requires native permissions. Handling these asynchronously and gracefully degrading the UX when permissions are denied is crucial. A crash on iOS because of a missing <code>NSCameraUsageDescription</code> is a rookie mistake we see too often.
+              </p>
+
+              <h2>3. Neglecting Network Transitions</h2>
+              <p>
+                Mobile devices constantly switch between WiFi and Cellular data, or drop packets entirely. If your WebRTC implementation doesn't handle ICE restarts or properly listen to connectivity changes, calls will drop inexplicably. Implementing a robust reconnection strategy is non-negotiable for a professional app.
+              </p>
+
+              <h2>The Solution</h2>
+              <p>
+                At DashStack, we've built a modular WebRTC architecture for Flutter that abstracts the signaling layer, manages permissions safely, and automatically recovers from network disruptions. By investing in a solid foundation, you avoid the technical debt that sinks most real-time communication projects.
               </p>
 
               <h2>Conclusion</h2>

@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Format prices in multiple currencies with PriceText package for Flutter. Support for USD, EUR, INR, JPY and more with automatic formatting and flags." />
-  <title>PriceText: Multi-Currency Formatting for Flutter | DashStack Blog</title>
+  <meta name="description" content="A deep dive into securing patient data, meeting compliance standards, and architecture decisions for healthcare apps in Flutter." />
+  <title>How we built a HIPAA-compliant Flutter app | DashStack Blog</title>
   <link rel="icon" href="./images/favicon.avif" type="image/png" />
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -65,13 +65,13 @@
               <div class="blog-breadcrumb mb-4">
                 <a href="blog">Blog</a>
                 <span class="mx-2">/</span>
-                <span>PriceText: Multi-Currency Formatting</span>
+                <span>HIPAA-compliant Flutter app</span>
               </div>
               <div class="blog-category-tag mb-4">
-                <span class="category-badge">Flutter Packages</span>
+                <span class="category-badge">Healthcare</span>
               </div>
-              <h1 class="blog-post-title mb-4">PriceText: Multi-Currency Formatting Made Easy</h1>
-              <p class="blog-post-subtitle">Master the art of displaying prices across multiple currencies with proper localization and formatting in Flutter apps.</p>
+              <h1 class="blog-post-title mb-4">How we built a HIPAA-compliant Flutter app</h1>
+              <p class="blog-post-subtitle">A deep dive into securing patient data, meeting compliance standards, and architecture decisions for healthcare apps in Flutter.</p>
               <div class="blog-post-meta mt-5 d-flex justify-content-between align-items-center">
                 <div class="blog-post-author d-flex align-items-center">
                   <img src="./images/director_3.avif" alt="Author" class="author-avatar me-3" />
@@ -81,8 +81,8 @@
                   </div>
                 </div>
                 <div class="blog-post-info">
-                  <span class="me-4"><i class="fas fa-calendar-alt me-2"></i>Feb 7, 2026</span>
-                  <span><i class="fas fa-clock me-2"></i>8 min read</span>
+                  <span class="me-4"><i class="fas fa-calendar-alt me-2"></i>Feb 9, 2026</span>
+                  <span><i class="fas fa-clock me-2"></i>6 min read</span>
                 </div>
               </div>
             </div>
@@ -98,182 +98,38 @@
           <div class="col-lg-8">
             <article class="blog-post-content">
               <p>
-                Building global applications that support multiple currencies can be challenging. Handling currency 
-                formatting, displaying symbols correctly, and maintaining localization across different regions requires 
-                careful planning. The <code>price_text</code> package from DashStack simplifies this complexity into a 
-                single, easy-to-use widget.
+                Building a healthcare app in Flutter involves much more than just a beautiful UI. Securing patient data and ensuring compliance with regulations like HIPAA is a complex but necessary challenge. At DashStack, we recently built a fully compliant healthcare app, and in this post, we'll walk you through the key architecture decisions we made.
               </p>
 
-              <h2>What is PriceText?</h2>
+              <h2>Why HIPAA Compliance Matters</h2>
               <p>
-                <code>PriceText</code> is a powerful Flutter package that handles currency formatting and display 
-                across 13+ currencies with automatic localization support. It combines currency symbols, flags, codes, 
-                and customizable formatting into one elegant widget.
+                HIPAA (Health Insurance Portability and Accountability Act) sets the standard for protecting sensitive patient data. Any app that deals with Protected Health Information (PHI) must ensure that the required physical, network, and process security measures are in place and followed.
               </p>
 
-              <h2>Supported Currencies</h2>
-              <p>
-                The package supports the following currencies out of the box:
-              </p>
+              <h2>Architectural & Infrastructure Requirements</h2>
               <ul>
-                <li>USD (United States Dollar)</li>
-                <li>EUR (Euro)</li>
-                <li>GBP (British Pound)</li>
-                <li>INR (Indian Rupee)</li>
-                <li>JPY (Japanese Yen)</li>
-                <li>AUD (Australian Dollar)</li>
-                <li>CAD (Canadian Dollar)</li>
-                <li>CNY (Chinese Yuan)</li>
-                <li>SGD (Singapore Dollar)</li>
-                <li>NZD (New Zealand Dollar)</li>
-                <li>MXN (Mexican Peso)</li>
-                <li>ZAR (South African Rand)</li>
-                <li>TRY (Turkish Lira)</li>
+                <li><strong>Business Associate Agreements (BAAs):</strong> You must sign a BAA with every third-party vendor that touches PHI, such as your cloud hosting provider (AWS, GCP), BaaS (Firebase), and analytics tools.</li>
+                <li><strong>Secure Backend:</strong> Never store PHI directly on the device unless absolutely necessary. Rely on a secure, HIPAA-compliant backend with properly configured access rules.</li>
+                <li><strong>Data Encryption:</strong> All data must be encrypted in transit (TLS 1.2+ minimum) and at rest (encrypted databases and cloud storage volumes).</li>
               </ul>
 
-              <h2>Installation</h2>
-              <blockquote>
-                Add to your <code>pubspec.yaml</code>:<br/>
-                <code>dependencies:<br/>
-                &nbsp;&nbsp;price_text: ^0.0.7</code>
-              </blockquote>
-
-              <h2>Basic Usage</h2>
-              <p>The simplest implementation requires just a couple of parameters:</p>
-              <pre>import 'package:price_text/price_text.dart';
-
-PriceText(
-  currencyType: CurrencyType.USD,
-  amount: 1000.50,
-)</pre>
-
-              <p>This displays: <strong>$1,000.50</strong></p>
-
-              <h2>Key Features</h2>
+              <h2>Flutter App Development Best Practices</h2>
               <ul>
-                <li><strong>Multiple Currencies:</strong> Support for 13+ currencies worldwide</li>
-                <li><strong>Auto Formatting:</strong> Handles decimal places and thousand separators</li>
-                <li><strong>Currency Symbols & Codes:</strong> Display $ £ ₹ and currency codes</li>
-                <li><strong>Country Flags:</strong> Show flag icons for each currency</li>
-                <li><strong>Color Coding:</strong> Automatic colors for positive (green), negative (red), and zero values</li>
-                <li><strong>Custom Styling:</strong> Full control over text appearance</li>
-                <li><strong>Localization:</strong> Regional formatting using intl package</li>
+                <li><strong>Secure Local Storage:</strong> Never store PHI in unencrypted <code>SharedPreferences</code>. If you must cache sensitive data locally, use the <code>flutter_secure_storage</code> package, which integrates directly with the iOS Keychain and Android Keystore for encrypted persistence.</li>
+                <li><strong>Avoid Sensitive Data in Logs:</strong> A common compliance failure is accidentally logging patient names or emails to external crash reporting services. Ensure your production builds strip out all sensitive logs.</li>
+                <li><strong>Certificate Pinning:</strong> Implement certificate pinning in your HTTP client to prevent Man-in-the-Middle (MitM) attacks, ensuring your app only communicates with your trusted backend server.</li>
               </ul>
 
-              <h2>Advanced Example: E-Commerce</h2>
-              <pre>PriceText(
-  currencyType: CurrencyType.USD,
-  amount: 12345.67,
-  showFlag: true,                    // Show country flag
-  showCurrencyCode: true,            // Show "USD" text
-  flagSpacing: 10,                   // Space between flag & code
-  flagAlignment: AlignmentOption.left, // Flag on left side
-  locale: "en_US",                   // US formatting
-  formatterPattern: '#,##0.00',      // Custom number format
-  amountColorStyle: (amount) {
-    if (amount > 0) return Colors.green;
-    if (amount < 0) return Colors.red;
-    return Colors.grey;
-  },
-)</pre>
-
-              <h2>Customization Options</h2>
-              <p>The package provides extensive customization:</p>
-              <table class="table table-striped">
-                <tbody>
-                  <tr>
-                    <td><strong>showFlag</strong></td>
-                    <td>Display country flag (true/false)</td>
-                  </tr>
-                  <tr>
-                    <td><strong>showCurrencyCode</strong></td>
-                    <td>Display currency code like "USD"</td>
-                  </tr>
-                  <tr>
-                    <td><strong>hideCurrencySymbol</strong></td>
-                    <td>Hide $ € ₹ symbols</td>
-                  </tr>
-                  <tr>
-                    <td><strong>flagAlignment</strong></td>
-                    <td>Position flag left or right</td>
-                  </tr>
-                  <tr>
-                    <td><strong>locale</strong></td>
-                    <td>Regional formatting (en_US, en_IN, etc.)</td>
-                  </tr>
-                  <tr>
-                    <td><strong>formatterPattern</strong></td>
-                    <td>Custom number format like #,##0.00</td>
-                  </tr>
-                  <tr>
-                    <td><strong>customFlagWidget</strong></td>
-                    <td>Use your own flag image instead of default</td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <h2>Handling Positive and Negative Values</h2>
-              <p>
-                PriceText automatically applies different colors based on amount values:
-              </p>
-              <pre>// Positive amount shows green
-PriceText(
-  currencyType: CurrencyType.USD,
-  amount: 1000,
-)
-
-// Negative amount shows red
-PriceText(
-  currencyType: CurrencyType.USD,
-  amount: -1000,
-)
-
-// Zero amount shows grey
-PriceText(
-  currencyType: CurrencyType.USD,
-  amount: 0,
-)</pre>
-
-              <h2>Localized Formatting</h2>
-              <p>
-                Different regions format currencies differently. PriceText handles this automatically:
-              </p>
+              <h2>Authentication & Session Management</h2>
               <ul>
-                <li><strong>en_US:</strong> $1,234.56</li>
-                <li><strong>en_IN:</strong> ₹12,34,567.89</li>
-                <li><strong>de_DE:</strong> 1.234,56 €</li>
-                <li><strong>fr_FR:</strong> 1 234,56 €</li>
-              </ul>
-
-              <h2>Real-World Applications</h2>
-              <p>Perfect for:</p>
-              <ul>
-                <li>E-commerce and shopping apps</li>
-                <li>Banking and financial applications</li>
-                <li>Cryptocurrency and trading apps</li>
-                <li>Travel and booking platforms</li>
-                <li>Expense tracking applications</li>
-                <li>Multi-currency wallets</li>
-              </ul>
-
-              <h2>Pro Tips</h2>
-              <blockquote>
-                Always use the locale property when building apps for international users. This ensures that number 
-                formatting follows regional conventions and improves user experience.
-              </blockquote>
-              <ul>
-                <li>Combine with StreamBuilder for real-time price updates</li>
-                <li>Use custom color logic for financial applications</li>
-                <li>Leverage custom flags for branded experiences</li>
-                <li>Cache currency rates to minimize API calls</li>
+                <li><strong>Automatic Session Timeouts:</strong> HIPAA requires strict session management. Your app should automatically lock or log the user out after a period of inactivity.</li>
+                <li><strong>Re-authentication:</strong> Require re-authentication (using biometrics like FaceID or fingerprint) when the app is brought back to the foreground from the background.</li>
+                <li><strong>Access Control (RBAC):</strong> Enforce strict Role-Based Access Control on your backend, guaranteeing that users and clinicians can only access the minimum necessary PHI required for their specific role.</li>
               </ul>
 
               <h2>Conclusion</h2>
               <p>
-                The <code>price_text</code> package eliminates the headache of currency formatting in Flutter apps. 
-                Whether you're building a simple online store or a complex financial application, PriceText provides 
-                the tools you need to display prices professionally across multiple currencies and locales. Download it 
-                today and simplify your currency handling!
+                Making a Flutter app HIPAA-compliant is not achieved by the Flutter framework alone, but by how you architect, secure, and manage your entire application ecosystem. By implementing strict infrastructure requirements, secure local storage, and robust authentication, you can build a safe and compliant healthcare app that protects patient data.
               </p>
             </article>
           </div>
@@ -289,7 +145,7 @@ PriceText(
           <div class="col-lg-4 col-md-6 mb-4">
             <article class="blog-card">
               <div class="blog-card-image">
-                <img src="./images/flutter_placeholder_1.avif" alt="Flutter macOS Permissions" />
+                <img src="./images/flutter_placeholder_2.avif" alt="Flutter macOS Permissions" />
                 <span class="blog-category-badge">Flutter Packages</span>
               </div>
               <div class="blog-card-content">
@@ -312,21 +168,21 @@ PriceText(
           <div class="col-lg-4 col-md-6 mb-4">
             <article class="blog-card">
               <div class="blog-card-image">
-                <img src="./images/flutter_placeholder_2.avif" alt="Animated Search TextField" />
+                <img src="https://images.unsplash.com/photo-1557821552-17105176677c?w=500&h=300&fit=crop" alt="Price Text" />
                 <span class="blog-category-badge">Flutter Packages</span>
               </div>
               <div class="blog-card-content">
                 <h3 class="blog-card-title">
-                  <a href="blog-post-animated-search-textfield">Animated Search TextField for Beautiful UIs</a>
+                  <a href="blog-post-price-text">PriceText: Multi-Currency Formatting Made Easy</a>
                 </h3>
                 <p class="blog-card-excerpt">
-                  Create smooth animated search experiences in your Flutter apps...
+                  Format and display prices in multiple currencies with ease...
                 </p>
                 <div class="blog-card-meta">
-                  <span class="blog-date"><i class="fas fa-calendar"></i> Feb 9, 2026</span>
-                  <span class="blog-read-time"><i class="fas fa-clock"></i> 6 min read</span>
+                  <span class="blog-date"><i class="fas fa-calendar"></i> Feb 7, 2026</span>
+                  <span class="blog-read-time"><i class="fas fa-clock"></i> 8 min read</span>
                 </div>
-                <a href="blog-post-animated-search-textfield" class="blog-read-more">
+                <a href="blog-post-price-text" class="blog-read-more">
                   Read More <i class="fas fa-arrow-right"></i>
                 </a>
               </div>
@@ -335,21 +191,21 @@ PriceText(
           <div class="col-lg-4 col-md-6 mb-4">
             <article class="blog-card">
               <div class="blog-card-image">
-                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=500&h=300&fit=crop" alt="Startup Tech Stack" />
-                <span class="blog-category-badge">Business</span>
+                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop" alt="Responsive Design" />
+                <span class="blog-category-badge">Web Development</span>
               </div>
               <div class="blog-card-content">
                 <h3 class="blog-card-title">
-                  <a href="blog-post-startup-tech-stack">Choosing the Right Tech Stack for Your Startup</a>
+                  <a href="blog-post-responsive-design">Creating Responsive Web Designs in 2026</a>
                 </h3>
                 <p class="blog-card-excerpt">
-                  Strategic decisions for selecting technology stack based on your business needs...
+                  Modern approach to responsive web design with mobile-first methodology...
                 </p>
                 <div class="blog-card-meta">
-                  <span class="blog-date"><i class="fas fa-calendar"></i> Jan 25, 2026</span>
-                  <span class="blog-read-time"><i class="fas fa-clock"></i> 9 min read</span>
+                  <span class="blog-date"><i class="fas fa-calendar"></i> Feb 8, 2026</span>
+                  <span class="blog-read-time"><i class="fas fa-clock"></i> 7 min read</span>
                 </div>
-                <a href="blog-post-startup-tech-stack" class="blog-read-more">
+                <a href="blog-post-responsive-design" class="blog-read-more">
                   Read More <i class="fas fa-arrow-right"></i>
                 </a>
               </div>

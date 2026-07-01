@@ -70,8 +70,8 @@
               <div class="blog-category-tag mb-4">
                 <span class="category-badge">Web Development</span>
               </div>
-              <h1 class="blog-post-title mb-4">Flutter for Web Application Development in 2026</h1>
-              <p class="blog-post-subtitle">Master cross-platform web development with Flutter. Learn how to build beautiful, responsive web applications from a single codebase.</p>
+              <h1 class="blog-post-title mb-4">BLE integration in Flutter: The 5 most common bugs</h1>
+              <p class="blog-post-subtitle">Bluetooth Low Energy can be tricky. Here are the top 5 issues developers face and how to reliably fix them in Flutter.</p>
               <div class="blog-post-meta mt-5 d-flex justify-content-between align-items-center">
                 <div class="blog-post-author d-flex align-items-center">
                   <img src="./images/director_1.avif" alt="Author" class="author-avatar me-3" />
@@ -220,6 +220,34 @@
               <h3>Testing Strategy</h3>
               <p>
                 Implement comprehensive testing across different browsers and devices. Flutter's testing framework supports unit, widget, and integration tests equally well for web applications.
+              </p>
+              <p>
+                Integrating Bluetooth Low Energy (BLE) into a Flutter application is notoriously difficult. The fragmentation of Android devices and the strict background restrictions of iOS create a minefield of potential bugs. Here are the five most common issues we see when auditing BLE implementations, and how to fix them.
+              </p>
+
+              <h2>1. Failing to Request Location Permissions on Android</h2>
+              <p>
+                On Android, scanning for BLE devices can theoretically reveal the user's location. Because of this, Android requires <code>ACCESS_FINE_LOCATION</code> and sometimes <code>ACCESS_COARSE_LOCATION</code> alongside the standard Bluetooth permissions. Failing to request these dynamically before scanning will result in silently empty scan results.
+              </p>
+
+              <h2>2. Connection Timeouts and GATT Error 133</h2>
+              <p>
+                The dreaded GATT Error 133 on Android usually means the connection timed out or the device is busy. Developers often try to connect immediately after scanning. The fix? Add a small delay (e.g., 500ms) after stopping the scan before initiating the connection, and always retry connections with an exponential backoff.
+              </p>
+
+              <h2>3. Discovering Services Too Early</h2>
+              <p>
+                After a successful connection, you must discover the device's services and characteristics. A common mistake is attempting to read or write to a characteristic before the service discovery process has fully completed. Always await the <code>discoverServices()</code> future before proceeding.
+              </p>
+
+              <h2>4. Ignoring iOS Background Execution Limits</h2>
+              <p>
+                If your app needs to maintain a BLE connection in the background (e.g., for a health monitor), you must configure your <code>Info.plist</code> with the correct UIBackgroundModes. Even then, iOS may terminate your app if it consumes too much memory. Proper state restoration logic is critical here.
+              </p>
+              
+              <h2>5. Memory Leaks from Unsubscribed Streams</h2>
+              <p>
+                Flutter BLE packages expose characteristics updates as Dart Streams. If you don't cancel your <code>StreamSubscription</code> when the widget disposes or the device disconnects, your app will leak memory and eventually crash, or you'll receive updates for stale connections.
               </p>
 
               <h2>Conclusion</h2>
