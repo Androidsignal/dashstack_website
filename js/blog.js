@@ -37,14 +37,16 @@ document.addEventListener('DOMContentLoaded', function () {
         let visibleCount = 0;
 
         blogCards.forEach(card => {
-            const category = card.getAttribute('data-category');
+            const category = card.getAttribute('data-category') || '';
             const title = card.querySelector('.blog-card-title a').textContent.toLowerCase();
             const excerpt = card.querySelector('.blog-card-excerpt').textContent.toLowerCase();
 
             // Check if card matches the search term
             const matchesSearch = title.includes(searchTerm) || excerpt.includes(searchTerm);
-            // Check if card matches the active filter
-            const matchesFilter = activeFilter === 'all' || category === activeFilter;
+            
+            // Check if card matches the active filter (handle multiple categories separated by space)
+            const categories = category.split(' ').map(c => c.trim());
+            const matchesFilter = activeFilter === 'all' || categories.includes(activeFilter);
 
             if (matchesSearch && matchesFilter) {
                 card.style.display = 'block';
@@ -61,6 +63,9 @@ document.addEventListener('DOMContentLoaded', function () {
             noResultsMessage.style.display = visibleCount === 0 ? 'block' : 'none';
         }
     }
+
+    // Initialize filter state on page load
+    filterBlogCards();
 
     // Newsletter subscription
     if (newsletterForm) {
