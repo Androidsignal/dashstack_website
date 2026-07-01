@@ -2354,7 +2354,8 @@ a:focus {
 
 @media(max-width: 767px) {
     .vision-section .vision-content .vision-carousel .vision-slides .vision-slide .vision-slide-content {
-        text-align: center
+        text-align: center;
+        padding: 0 30px;
     }
 
     .vision-section .vision-content .vision-carousel .vision-slides .vision-slide .vision-slide-content .d-flex.align-items-center.gap-4.mb-3.mb-md-5 {
