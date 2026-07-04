@@ -1,0 +1,16 @@
+url: "https://www.dashstack.tech"
+baseurl: ""
+
+exclude:
+  - "*.py"
+  - "*.sh"
+  - "node_modules/"
+  - "package.json"
+  - "package-lock.json"
+  - ".idea/"
+  - ".vscode/"
+  - "backup.html"
+  - "SEO_IMPROVEMENTS.md"
+  - "README.md"
+  - "Gemfile"
+  - "Gemfile.lock"
