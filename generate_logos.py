@@ -2,7 +2,7 @@ import os
 from PIL import Image, ImageDraw, ImageFont
 
 data = [
-    "Symcheck Vitals", "HealthGauge", "DFX5 AI Care", "123Family",
+    "Healthexus", "HealthGauge", "DFX5 AI Care", "123Family",
     "Ultra Messenger", "UrbanSwift", "WeDoSolar", "AuraMind",
     "Orte", "Navadiya Owner", "CrickBox", "DSDice"
 ]

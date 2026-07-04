@@ -3,7 +3,7 @@ from PIL import Image, ImageDraw, ImageFont
 import textwrap
 
 data = [
-    {"file": "images/symcheck_main_ss.jpg", "title": "Symcheck Vitals", "desc": "Secure, intelligent healthcare platform for medical data exchange."},
+    {"file": "images/symcheck_main_ss.jpg", "title": "Healthexus", "desc": "Secure, intelligent healthcare platform for medical data exchange."},
     {"file": "images/health_gauge_main_ss.jpg", "title": "HealthGauge", "desc": "Comprehensive wellness and health tracking application."},
     {"file": "images/dfx5_main_ss.jpg", "title": "DFX5 AI Care", "desc": "Cloud-native AI contact center for banking support."},
     {"file": "images/123family_ss_main.jpg", "title": "123Family", "desc": "Accessible video calling app designed for seniors."},
