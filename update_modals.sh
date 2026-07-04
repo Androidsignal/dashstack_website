@@ -19,7 +19,7 @@ files=(
   "ds-dice.html"
   "lotus.html"
   "navadiya_owners.html"
-  "symcheck.html"
+  "healthexus.html"
 )
 
 for file in "${files[@]}"; do
