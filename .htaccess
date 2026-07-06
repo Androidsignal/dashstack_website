@@ -97,6 +97,10 @@
 
   RewriteRule ^services/?$ /index.html [L]
 
+  # Redirects for old/typo URLs found in Search Console
+  RewriteRule ^portfolio_page\.html$ /portfolio [R=301,L]
+  RewriteRule ^Lotus$ /lotus [R=301,L]
+
   # Internally forward extensionless URLs to .html if the file exists
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
