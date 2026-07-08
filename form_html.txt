@@ -1,0 +1,799 @@
+<!doctype html>
+<html lang="en-US" prefix="og: https://ogp.me/ns#" class="no-js">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Apply Now | Corporate Tools</title>
+		<link href="//www.google-analytics.com" rel="dns-prefetch">
+		<link rel="preload" href="https://www.corporatetools.com/wp-content/themes/corptools/dist/lottie/unicorn-half-res/images/img_1.png" as="image">
+
+		<link href="//matomo.corporatetools.com" rel="dns-prefetch"><link href='//www.googletagmanager.com' rel='dns-prefetch'>
+<!-- Search Engine Optimization by Rank Math PRO - https://rankmath.com/ -->
+<meta name="description" content="We love a good cover letter! It&#039;s not an accident that we don&#039;t ask for a resume. Why do you want to work here? What kind of problems do you want to solve?"/>
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<link rel="canonical" href="https://www.corporatetools.com/jobs/apply-now/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Apply Now | Corporate Tools" />
+<meta property="og:description" content="We love a good cover letter! It&#039;s not an accident that we don&#039;t ask for a resume. Why do you want to work here? What kind of problems do you want to solve?" />
+<meta property="og:url" content="https://www.corporatetools.com/jobs/apply-now/" />
+<meta property="og:site_name" content="Corporate Tools" />
+<meta property="article:publisher" content="https://www.facebook.com/CorporateToolsLLC/" />
+<meta property="og:updated_time" content="2026-05-14T15:49:52+00:00" />
+<meta property="article:published_time" content="2020-01-10T16:29:10+00:00" />
+<meta property="article:modified_time" content="2026-05-14T15:49:52+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Apply Now | Corporate Tools" />
+<meta name="twitter:description" content="We love a good cover letter! It&#039;s not an accident that we don&#039;t ask for a resume. Why do you want to work here? What kind of problems do you want to solve?" />
+<meta name="twitter:label1" content="Time to read" />
+<meta name="twitter:data1" content="Less than a minute" />
+<script type="application/ld+json" class="rank-math-schema-pro">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.corporatetools.com/#organization","name":"Corporate Tools","url":"https://www.corporatetools.com","sameAs":["https://www.facebook.com/CorporateToolsLLC/","https://www.instagram.com/corporatetools/","https://www.linkedin.com/company/corporatetools"],"logo":{"@type":"ImageObject","@id":"https://www.corporatetools.com/#logo","url":"https://www.corporatetools.com/wp-content/uploads/2025/09/poster.png","contentUrl":"https://www.corporatetools.com/wp-content/uploads/2025/09/poster.png","caption":"Corporate Tools","inLanguage":"en-US","width":"1266","height":"706"},"contactPoint":[{"@type":"ContactPoint","telephone":"+1-(208) 618-2766","contactType":"customer support"}]},{"@type":"WebSite","@id":"https://www.corporatetools.com/#website","url":"https://www.corporatetools.com","name":"Corporate Tools","publisher":{"@id":"https://www.corporatetools.com/#organization"},"inLanguage":"en-US"},{"@type":"WebPage","@id":"https://www.corporatetools.com/jobs/apply-now/#webpage","url":"https://www.corporatetools.com/jobs/apply-now/","name":"Apply Now | Corporate Tools","datePublished":"2020-01-10T16:29:10+00:00","dateModified":"2026-05-14T15:49:52+00:00","isPartOf":{"@id":"https://www.corporatetools.com/#website"},"inLanguage":"en-US"},{"@type":"Person","@id":"https://www.corporatetools.com/jobs/apply-now/#author","name":"admin","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/43dcdb0c8c0111bc3a696957d725d816c340c8351f202f933bf13f82b2470259?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/43dcdb0c8c0111bc3a696957d725d816c340c8351f202f933bf13f82b2470259?s=96&amp;d=mm&amp;r=g","caption":"admin","inLanguage":"en-US"},"worksFor":{"@id":"https://www.corporatetools.com/#organization"}},{"@type":"Article","headline":"Apply Now | Corporate Tools","datePublished":"2020-01-10T16:29:10+00:00","dateModified":"2026-05-14T15:49:52+00:00","author":{"@id":"https://www.corporatetools.com/jobs/apply-now/#author","name":"admin"},"publisher":{"@id":"https://www.corporatetools.com/#organization"},"description":"We love a good cover letter! It&#039;s not an accident that we don&#039;t ask for a resume. Why do you want to work here? What kind of problems do you want to solve?","name":"Apply Now | Corporate Tools","@id":"https://www.corporatetools.com/jobs/apply-now/#richSnippet","isPartOf":{"@id":"https://www.corporatetools.com/jobs/apply-now/#webpage"},"inLanguage":"en-US","mainEntityOfPage":{"@id":"https://www.corporatetools.com/jobs/apply-now/#webpage"}}]}</script>
+<!-- /Rank Math WordPress SEO plugin -->
+
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.corporatetools.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.corporatetools.com%2Fjobs%2Fapply-now%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.corporatetools.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.corporatetools.com%2Fjobs%2Fapply-now%2F&#038;format=xml" />
+<style id='wp-img-auto-sizes-contain-inline-css' type='text/css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id='wp-block-library-inline-css' type='text/css'>
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=wp-block-library-inline-css */
+</style>
+<style id='wp-block-paragraph-inline-css' type='text/css'>
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+/*# sourceURL=https://www.corporatetools.com/wp-includes/blocks/paragraph/style.min.css */
+</style>
+
+<link rel='stylesheet' id='fe_block_styles-css' href='https://www.corporatetools.com/wp-content/plugins/frontend-blocks-plugin/assets/css/style.min.css?ver=6.9.4' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--base: #fbfffe;--wp--preset--color--contrast: #1b1b1e;--wp--preset--color--primary: #00cdc8;--wp--preset--color--secondary: #003e94;--wp--preset--color--tertiary: #77aef3;--wp--preset--color--quaternary: #1072ea;--wp--preset--color--beige: #efe6dd;--wp--preset--color--light-gray: #bcb8bc;--wp--preset--color--gray: #EBEBEB;--wp--preset--color--dark-gray: #49454a;--wp--preset--color--blue-primary: #00065d;--wp--preset--color--blue-primary-shade: #00032a;--wp--preset--color--button-font-color: #fff;--wp--preset--color--blue-primary-tint: #000990;--wp--preset--color--teal-secondary: #00cdc8;--wp--preset--color--teal-secondary-shade: #009a96;--wp--preset--color--teal-secondary-tint: #01fff9;--wp--preset--color--purple-tertiary: #8080b0;--wp--preset--color--purple-tertiary-shade: #61619c;--wp--preset--color--purple-tertiary-tint: #bfbfd7;--wp--preset--color--body-font-color: #4a4a4a;--wp--preset--color--header-font-color: #232f3b;--wp--preset--color--gray-color: #f8f9ff;--wp--preset--color--white: #ffffff;--wp--preset--color--black: #000000;--wp--preset--color--alert-color: #d73e0f;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--gradient--light-orange-to-vivid-orange: linear-gradient(145deg, #000990 0%, #00cdc8 60%, #01fff9 100%);--wp--preset--font-size--small: clamp(1rem, 1rem + ((1vw - 0.2rem) * 0.5), 1.35rem);--wp--preset--font-size--medium: clamp(1.35rem, 1.35rem + ((1vw - 0.2rem) * 0.929), 2rem);--wp--preset--font-size--large: clamp(2.2rem, 2.2rem + ((1vw - 0.2rem) * 0.429), 2.5rem);--wp--preset--font-size--x-large: clamp(2.5rem, 2.5rem + ((1vw - 0.2rem) * 0.571), 2.9rem);--wp--preset--font-size--x-small: 16px;--wp--preset--font-family--open-sans-300: "Open Sans Light", Open Sans, sans-serif;--wp--preset--font-family--open-sans-400: "Open Sans Regular", Open Sans, sans-serif;--wp--preset--font-family--open-sans-600: "Open Sans SemiBold", Open Sans, sans-serif;--wp--preset--font-family--open-sans-700: "Open Sans Bold", Open Sans, sans-serif;--wp--preset--font-family--open-sans-800: "Open Sans ExtraBold", Open Sans, sans-serif;--wp--preset--font-family--space-grotesk: "Space Grotesk", Arial, sans-serif;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);--wp--preset--shadow--theme-shadow: 2px 2px 8px #00000010;}:root { --wp--style--global--content-size: 1140px;--wp--style--global--wide-size: 1440px; }:where(body) { margin: 0; }.wp-site-blocks { padding-top: var(--wp--style--root--padding-top); padding-bottom: var(--wp--style--root--padding-bottom); }.has-global-padding { padding-right: var(--wp--style--root--padding-right); padding-left: var(--wp--style--root--padding-left); }.has-global-padding > .alignfull { margin-right: calc(var(--wp--style--root--padding-right) * -1); margin-left: calc(var(--wp--style--root--padding-left) * -1); }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) { padding-right: 0; padding-left: 0; }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) > .alignfull { margin-left: 0; margin-right: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 1.5rem; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 1.5rem; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 1.5rem;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 1.5rem;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 1.5rem;}:root :where(.is-layout-grid){gap: 1.5rem;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{font-family: var(--wp--preset--font-family--open-sans-400);font-size: var(--wp--preset--font-size--small);line-height: 1.5;--wp--style--root--padding-top: 0;--wp--style--root--padding-right: 1rem;--wp--style--root--padding-bottom: 0;--wp--style--root--padding-left: 1rem;}a:where(:not(.wp-element-button)){color: var(--wp--preset--color--blue-primary);font-weight: 700;text-decoration: underline;}:root :where(a:where(:not(.wp-element-button)):hover){color: var(--wp--preset--color--purple-tertiary-shade);text-decoration: underline;}:root :where(a:where(:not(.wp-element-button)):focus){text-decoration: underline;}:root :where(a:where(:not(.wp-element-button)):active){color: var(--wp--preset--color--purple-tertiary-shade);text-decoration: underline;}h1, h2, h3, h4, h5, h6{font-family: var(--wp--preset--font-family--open-sans-300);font-weight: 300;line-height: 1.3;}h1{font-size: var(--wp--preset--font-size--x-large);}h2{font-size: var(--wp--preset--font-size--large);}h3{font-size: var(--wp--preset--font-size--medium);}h4{font-size: var(--wp--preset--font-size--small);}h5{font-size: var(--wp--preset--font-size--x-small);}:root :where(.wp-element-button, .wp-block-button__link){background-color: var(--wp--preset--color--blue-primary);border-radius: 30px;border-width: 0;color: var(--wp--preset--color--white);font-family: var(--wp--preset--font-family--open-sans-700);font-size: var(--wp--preset--font-size--x-small);font-style: inherit;font-weight: 700;letter-spacing: inherit;line-height: inherit;padding-top: 0.625rem;padding-right: 2.0625rem;padding-bottom: 0.625rem;padding-left: 2.0625rem;text-decoration: none !important;text-transform: inherit;}:root :where(.wp-element-button:hover, .wp-block-button__link:hover){background-color: var(--wp--preset--color--purple-tertiary-shade);color: var(--wp--preset--color--white) !important;text-decoration: none;}:root :where(.wp-element-button:focus, .wp-block-button__link:focus){background-color: var(--wp--preset--color--purple-tertiary-shade);color: var(--wp--preset--color--white);text-decoration: none;}:root :where(.wp-element-button:active, .wp-block-button__link:active){background-color: var(--wp--preset--color--purple-tertiary-shade);color: var(--wp--preset--color--white);text-decoration: none;}.has-base-color{color: var(--wp--preset--color--base) !important;}.has-contrast-color{color: var(--wp--preset--color--contrast) !important;}.has-primary-color{color: var(--wp--preset--color--primary) !important;}.has-secondary-color{color: var(--wp--preset--color--secondary) !important;}.has-tertiary-color{color: var(--wp--preset--color--tertiary) !important;}.has-quaternary-color{color: var(--wp--preset--color--quaternary) !important;}.has-beige-color{color: var(--wp--preset--color--beige) !important;}.has-light-gray-color{color: var(--wp--preset--color--light-gray) !important;}.has-gray-color{color: var(--wp--preset--color--gray) !important;}.has-dark-gray-color{color: var(--wp--preset--color--dark-gray) !important;}.has-blue-primary-color{color: var(--wp--preset--color--blue-primary) !important;}.has-blue-primary-shade-color{color: var(--wp--preset--color--blue-primary-shade) !important;}.has-button-font-color-color{color: var(--wp--preset--color--button-font-color) !important;}.has-blue-primary-tint-color{color: var(--wp--preset--color--blue-primary-tint) !important;}.has-teal-secondary-color{color: var(--wp--preset--color--teal-secondary) !important;}.has-teal-secondary-shade-color{color: var(--wp--preset--color--teal-secondary-shade) !important;}.has-teal-secondary-tint-color{color: var(--wp--preset--color--teal-secondary-tint) !important;}.has-purple-tertiary-color{color: var(--wp--preset--color--purple-tertiary) !important;}.has-purple-tertiary-shade-color{color: var(--wp--preset--color--purple-tertiary-shade) !important;}.has-purple-tertiary-tint-color{color: var(--wp--preset--color--purple-tertiary-tint) !important;}.has-body-font-color-color{color: var(--wp--preset--color--body-font-color) !important;}.has-header-font-color-color{color: var(--wp--preset--color--header-font-color) !important;}.has-gray-color-color{color: var(--wp--preset--color--gray-color) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-alert-color-color{color: var(--wp--preset--color--alert-color) !important;}.has-base-background-color{background-color: var(--wp--preset--color--base) !important;}.has-contrast-background-color{background-color: var(--wp--preset--color--contrast) !important;}.has-primary-background-color{background-color: var(--wp--preset--color--primary) !important;}.has-secondary-background-color{background-color: var(--wp--preset--color--secondary) !important;}.has-tertiary-background-color{background-color: var(--wp--preset--color--tertiary) !important;}.has-quaternary-background-color{background-color: var(--wp--preset--color--quaternary) !important;}.has-beige-background-color{background-color: var(--wp--preset--color--beige) !important;}.has-light-gray-background-color{background-color: var(--wp--preset--color--light-gray) !important;}.has-gray-background-color{background-color: var(--wp--preset--color--gray) !important;}.has-dark-gray-background-color{background-color: var(--wp--preset--color--dark-gray) !important;}.has-blue-primary-background-color{background-color: var(--wp--preset--color--blue-primary) !important;}.has-blue-primary-shade-background-color{background-color: var(--wp--preset--color--blue-primary-shade) !important;}.has-button-font-color-background-color{background-color: var(--wp--preset--color--button-font-color) !important;}.has-blue-primary-tint-background-color{background-color: var(--wp--preset--color--blue-primary-tint) !important;}.has-teal-secondary-background-color{background-color: var(--wp--preset--color--teal-secondary) !important;}.has-teal-secondary-shade-background-color{background-color: var(--wp--preset--color--teal-secondary-shade) !important;}.has-teal-secondary-tint-background-color{background-color: var(--wp--preset--color--teal-secondary-tint) !important;}.has-purple-tertiary-background-color{background-color: var(--wp--preset--color--purple-tertiary) !important;}.has-purple-tertiary-shade-background-color{background-color: var(--wp--preset--color--purple-tertiary-shade) !important;}.has-purple-tertiary-tint-background-color{background-color: var(--wp--preset--color--purple-tertiary-tint) !important;}.has-body-font-color-background-color{background-color: var(--wp--preset--color--body-font-color) !important;}.has-header-font-color-background-color{background-color: var(--wp--preset--color--header-font-color) !important;}.has-gray-color-background-color{background-color: var(--wp--preset--color--gray-color) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-alert-color-background-color{background-color: var(--wp--preset--color--alert-color) !important;}.has-base-border-color{border-color: var(--wp--preset--color--base) !important;}.has-contrast-border-color{border-color: var(--wp--preset--color--contrast) !important;}.has-primary-border-color{border-color: var(--wp--preset--color--primary) !important;}.has-secondary-border-color{border-color: var(--wp--preset--color--secondary) !important;}.has-tertiary-border-color{border-color: var(--wp--preset--color--tertiary) !important;}.has-quaternary-border-color{border-color: var(--wp--preset--color--quaternary) !important;}.has-beige-border-color{border-color: var(--wp--preset--color--beige) !important;}.has-light-gray-border-color{border-color: var(--wp--preset--color--light-gray) !important;}.has-gray-border-color{border-color: var(--wp--preset--color--gray) !important;}.has-dark-gray-border-color{border-color: var(--wp--preset--color--dark-gray) !important;}.has-blue-primary-border-color{border-color: var(--wp--preset--color--blue-primary) !important;}.has-blue-primary-shade-border-color{border-color: var(--wp--preset--color--blue-primary-shade) !important;}.has-button-font-color-border-color{border-color: var(--wp--preset--color--button-font-color) !important;}.has-blue-primary-tint-border-color{border-color: var(--wp--preset--color--blue-primary-tint) !important;}.has-teal-secondary-border-color{border-color: var(--wp--preset--color--teal-secondary) !important;}.has-teal-secondary-shade-border-color{border-color: var(--wp--preset--color--teal-secondary-shade) !important;}.has-teal-secondary-tint-border-color{border-color: var(--wp--preset--color--teal-secondary-tint) !important;}.has-purple-tertiary-border-color{border-color: var(--wp--preset--color--purple-tertiary) !important;}.has-purple-tertiary-shade-border-color{border-color: var(--wp--preset--color--purple-tertiary-shade) !important;}.has-purple-tertiary-tint-border-color{border-color: var(--wp--preset--color--purple-tertiary-tint) !important;}.has-body-font-color-border-color{border-color: var(--wp--preset--color--body-font-color) !important;}.has-header-font-color-border-color{border-color: var(--wp--preset--color--header-font-color) !important;}.has-gray-color-border-color{border-color: var(--wp--preset--color--gray-color) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-alert-color-border-color{border-color: var(--wp--preset--color--alert-color) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-light-orange-to-vivid-orange-gradient-background{background: var(--wp--preset--gradient--light-orange-to-vivid-orange) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-x-small-font-size{font-size: var(--wp--preset--font-size--x-small) !important;}.has-open-sans-300-font-family{font-family: var(--wp--preset--font-family--open-sans-300) !important;}.has-open-sans-400-font-family{font-family: var(--wp--preset--font-family--open-sans-400) !important;}.has-open-sans-600-font-family{font-family: var(--wp--preset--font-family--open-sans-600) !important;}.has-open-sans-700-font-family{font-family: var(--wp--preset--font-family--open-sans-700) !important;}.has-open-sans-800-font-family{font-family: var(--wp--preset--font-family--open-sans-800) !important;}.has-space-grotesk-font-family{font-family: var(--wp--preset--font-family--space-grotesk) !important;}
+:root :where(p){color: var(--wp--preset--color--body-font-color);font-size: var(--wp--preset--font-size--x-small);}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='css-base-css' href='https://www.corporatetools.com/wp-content/themes/corptools/dist/assets/styles-BNzZWx2y.css' media='all' />
+<link rel='stylesheet' id='css-vue-forms-css' href='https://www.corporatetools.com/wp-content/themes/corptools/dist/assets/formStyles-4mokQAUa.css' media='all' />
+<link rel='stylesheet' id='frontend-global-navigation-scripts-css' href='https://www.corporatetools.com/wp-content/plugins/frontend-global-navigation-plugin/assets/css/main.css?id=8af1411e734978206e78646f7213050c' media='all' />
+<link rel='stylesheet' id='frontend-toolbox-scripts-css' href='https://www.corporatetools.com/wp-content/plugins/frontend-toolbox-plugin/assets/css/main.css?id=1d69d1c5da768b61848fcf2b49490597' media='all' />
+<script type="module" src="https://www.corporatetools.com/wp-content/themes/corptools/dist/scripts.D0DNV3tU.js" id="general-js"></script><link rel="https://api.w.org/" href="https://www.corporatetools.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.corporatetools.com/wp-json/wp/v2/pages/209" /><style id="bec-color-style" type="text/css">
+		/* Block Editor Colors generated css */
+		:root {
+--wp--preset--color--primary: #00cdc8;
+--wp--preset--color--blue-primary: #00065d;
+--wp--preset--color--blue-primary-shade: #00032a;
+--wp--preset--color--button-font-color: #fff;
+--wp--preset--color--blue-primary-tint: #000990;
+--wp--preset--color--teal-secondary: #00cdc8;
+--wp--preset--color--teal-secondary-shade: #009a96;
+--wp--preset--color--teal-secondary-tint: #01fff9;
+--wp--preset--color--purple-tertiary: #8080b0;
+--wp--preset--color--purple-tertiary-shade: #61619c;
+--wp--preset--color--purple-tertiary-tint: #bfbfd7;
+--wp--preset--color--body-font-color: #4a4a4a;
+--wp--preset--color--header-font-color: #232f3b;
+--wp--preset--color--gray: #EBEBEB;
+--wp--preset--color--gray-color: #f8f9ff;
+--wp--preset--color--white: #ffffff;
+--wp--preset--color--black: #000000;
+--wp--preset--color--alert-color: #d73e0f;
+--wp--preset--color--primary: #00cdc8;
+--wp--preset--color--blue-primary: #00065d;
+--wp--preset--color--blue-primary-shade: #00032a;
+--wp--preset--color--button-font-color: #ffffff;
+--wp--preset--color--blue-primary-tint: #000990;
+--wp--preset--color--teal-secondary: #00cdc8;
+--wp--preset--color--teal-secondary-shade: #009a96;
+--wp--preset--color--teal-secondary-tint: #01fff9;
+--wp--preset--color--purple-tertiary: #8080b0;
+--wp--preset--color--purple-tertiary-shade: #61619c;
+--wp--preset--color--purple-tertiary-tint: #bfbfd7;
+--wp--preset--color--body-font-color: #4a4a4a;
+--wp--preset--color--header-font-color: #232f3b;
+--wp--preset--color--gray: #ebebeb;
+--wp--preset--color--gray-color: #f8f9ff;
+--wp--preset--color--white: #ffffff;
+--wp--preset--color--black: #000000;
+--wp--preset--color--alert-color: #d73e0f;
+}
+
+:root .has-primary-color {
+	color: var(--wp--preset--color--primary, #00cdc8) !important;
+}
+:root .has-primary-background-color {
+	background-color: var(--wp--preset--color--primary, #00cdc8) !important;
+}
+:root .has-primary-border-color {
+	border-color: var(--wp--preset--color--primary, #00cdc8) !important;
+}
+
+:root .has-blue-primary-color {
+	color: var(--wp--preset--color--blue-primary, #00065d) !important;
+}
+:root .has-blue-primary-background-color {
+	background-color: var(--wp--preset--color--blue-primary, #00065d) !important;
+}
+:root .has-blue-primary-border-color {
+	border-color: var(--wp--preset--color--blue-primary, #00065d) !important;
+}
+
+:root .has-blue-primary-shade-color {
+	color: var(--wp--preset--color--blue-primary-shade, #00032a) !important;
+}
+:root .has-blue-primary-shade-background-color {
+	background-color: var(--wp--preset--color--blue-primary-shade, #00032a) !important;
+}
+:root .has-blue-primary-shade-border-color {
+	border-color: var(--wp--preset--color--blue-primary-shade, #00032a) !important;
+}
+
+:root .has-button-font-color-color {
+	color: var(--wp--preset--color--button-font-color, #fff) !important;
+}
+:root .has-button-font-color-background-color {
+	background-color: var(--wp--preset--color--button-font-color, #fff) !important;
+}
+:root .has-button-font-color-border-color {
+	border-color: var(--wp--preset--color--button-font-color, #fff) !important;
+}
+
+:root .has-blue-primary-tint-color {
+	color: var(--wp--preset--color--blue-primary-tint, #000990) !important;
+}
+:root .has-blue-primary-tint-background-color {
+	background-color: var(--wp--preset--color--blue-primary-tint, #000990) !important;
+}
+:root .has-blue-primary-tint-border-color {
+	border-color: var(--wp--preset--color--blue-primary-tint, #000990) !important;
+}
+
+:root .has-teal-secondary-color {
+	color: var(--wp--preset--color--teal-secondary, #00cdc8) !important;
+}
+:root .has-teal-secondary-background-color {
+	background-color: var(--wp--preset--color--teal-secondary, #00cdc8) !important;
+}
+:root .has-teal-secondary-border-color {
+	border-color: var(--wp--preset--color--teal-secondary, #00cdc8) !important;
+}
+
+:root .has-teal-secondary-shade-color {
+	color: var(--wp--preset--color--teal-secondary-shade, #009a96) !important;
+}
+:root .has-teal-secondary-shade-background-color {
+	background-color: var(--wp--preset--color--teal-secondary-shade, #009a96) !important;
+}
+:root .has-teal-secondary-shade-border-color {
+	border-color: var(--wp--preset--color--teal-secondary-shade, #009a96) !important;
+}
+
+:root .has-teal-secondary-tint-color {
+	color: var(--wp--preset--color--teal-secondary-tint, #01fff9) !important;
+}
+:root .has-teal-secondary-tint-background-color {
+	background-color: var(--wp--preset--color--teal-secondary-tint, #01fff9) !important;
+}
+:root .has-teal-secondary-tint-border-color {
+	border-color: var(--wp--preset--color--teal-secondary-tint, #01fff9) !important;
+}
+
+:root .has-purple-tertiary-color {
+	color: var(--wp--preset--color--purple-tertiary, #8080b0) !important;
+}
+:root .has-purple-tertiary-background-color {
+	background-color: var(--wp--preset--color--purple-tertiary, #8080b0) !important;
+}
+:root .has-purple-tertiary-border-color {
+	border-color: var(--wp--preset--color--purple-tertiary, #8080b0) !important;
+}
+
+:root .has-purple-tertiary-shade-color {
+	color: var(--wp--preset--color--purple-tertiary-shade, #61619c) !important;
+}
+:root .has-purple-tertiary-shade-background-color {
+	background-color: var(--wp--preset--color--purple-tertiary-shade, #61619c) !important;
+}
+:root .has-purple-tertiary-shade-border-color {
+	border-color: var(--wp--preset--color--purple-tertiary-shade, #61619c) !important;
+}
+
+:root .has-purple-tertiary-tint-color {
+	color: var(--wp--preset--color--purple-tertiary-tint, #bfbfd7) !important;
+}
+:root .has-purple-tertiary-tint-background-color {
+	background-color: var(--wp--preset--color--purple-tertiary-tint, #bfbfd7) !important;
+}
+:root .has-purple-tertiary-tint-border-color {
+	border-color: var(--wp--preset--color--purple-tertiary-tint, #bfbfd7) !important;
+}
+
+:root .has-body-font-color-color {
+	color: var(--wp--preset--color--body-font-color, #4a4a4a) !important;
+}
+:root .has-body-font-color-background-color {
+	background-color: var(--wp--preset--color--body-font-color, #4a4a4a) !important;
+}
+:root .has-body-font-color-border-color {
+	border-color: var(--wp--preset--color--body-font-color, #4a4a4a) !important;
+}
+
+:root .has-header-font-color-color {
+	color: var(--wp--preset--color--header-font-color, #232f3b) !important;
+}
+:root .has-header-font-color-background-color {
+	background-color: var(--wp--preset--color--header-font-color, #232f3b) !important;
+}
+:root .has-header-font-color-border-color {
+	border-color: var(--wp--preset--color--header-font-color, #232f3b) !important;
+}
+
+:root .has-gray-color {
+	color: var(--wp--preset--color--gray, #EBEBEB) !important;
+}
+:root .has-gray-background-color {
+	background-color: var(--wp--preset--color--gray, #EBEBEB) !important;
+}
+:root .has-gray-border-color {
+	border-color: var(--wp--preset--color--gray, #EBEBEB) !important;
+}
+
+:root .has-gray-color-color {
+	color: var(--wp--preset--color--gray-color, #f8f9ff) !important;
+}
+:root .has-gray-color-background-color {
+	background-color: var(--wp--preset--color--gray-color, #f8f9ff) !important;
+}
+:root .has-gray-color-border-color {
+	border-color: var(--wp--preset--color--gray-color, #f8f9ff) !important;
+}
+
+:root .has-white-color {
+	color: var(--wp--preset--color--white, #ffffff) !important;
+}
+:root .has-white-background-color {
+	background-color: var(--wp--preset--color--white, #ffffff) !important;
+}
+:root .has-white-border-color {
+	border-color: var(--wp--preset--color--white, #ffffff) !important;
+}
+
+:root .has-black-color {
+	color: var(--wp--preset--color--black, #000000) !important;
+}
+:root .has-black-background-color {
+	background-color: var(--wp--preset--color--black, #000000) !important;
+}
+:root .has-black-border-color {
+	border-color: var(--wp--preset--color--black, #000000) !important;
+}
+
+:root .has-alert-color-color {
+	color: var(--wp--preset--color--alert-color, #d73e0f) !important;
+}
+:root .has-alert-color-background-color {
+	background-color: var(--wp--preset--color--alert-color, #d73e0f) !important;
+}
+:root .has-alert-color-border-color {
+	border-color: var(--wp--preset--color--alert-color, #d73e0f) !important;
+}
+
+:root .has-primary-color {
+	color: var(--wp--preset--color--primary, #00cdc8) !important;
+}
+:root .has-primary-background-color {
+	background-color: var(--wp--preset--color--primary, #00cdc8) !important;
+}
+:root .has-primary-border-color {
+	border-color: var(--wp--preset--color--primary, #00cdc8) !important;
+}
+
+:root .has-blue-primary-color {
+	color: var(--wp--preset--color--blue-primary, #00065d) !important;
+}
+:root .has-blue-primary-background-color {
+	background-color: var(--wp--preset--color--blue-primary, #00065d) !important;
+}
+:root .has-blue-primary-border-color {
+	border-color: var(--wp--preset--color--blue-primary, #00065d) !important;
+}
+
+:root .has-blue-primary-shade-color {
+	color: var(--wp--preset--color--blue-primary-shade, #00032a) !important;
+}
+:root .has-blue-primary-shade-background-color {
+	background-color: var(--wp--preset--color--blue-primary-shade, #00032a) !important;
+}
+:root .has-blue-primary-shade-border-color {
+	border-color: var(--wp--preset--color--blue-primary-shade, #00032a) !important;
+}
+
+:root .has-button-font-color-color {
+	color: var(--wp--preset--color--button-font-color, #ffffff) !important;
+}
+:root .has-button-font-color-background-color {
+	background-color: var(--wp--preset--color--button-font-color, #ffffff) !important;
+}
+:root .has-button-font-color-border-color {
+	border-color: var(--wp--preset--color--button-font-color, #ffffff) !important;
+}
+
+:root .has-blue-primary-tint-color {
+	color: var(--wp--preset--color--blue-primary-tint, #000990) !important;
+}
+:root .has-blue-primary-tint-background-color {
+	background-color: var(--wp--preset--color--blue-primary-tint, #000990) !important;
+}
+:root .has-blue-primary-tint-border-color {
+	border-color: var(--wp--preset--color--blue-primary-tint, #000990) !important;
+}
+
+:root .has-teal-secondary-color {
+	color: var(--wp--preset--color--teal-secondary, #00cdc8) !important;
+}
+:root .has-teal-secondary-background-color {
+	background-color: var(--wp--preset--color--teal-secondary, #00cdc8) !important;
+}
+:root .has-teal-secondary-border-color {
+	border-color: var(--wp--preset--color--teal-secondary, #00cdc8) !important;
+}
+
+:root .has-teal-secondary-shade-color {
+	color: var(--wp--preset--color--teal-secondary-shade, #009a96) !important;
+}
+:root .has-teal-secondary-shade-background-color {
+	background-color: var(--wp--preset--color--teal-secondary-shade, #009a96) !important;
+}
+:root .has-teal-secondary-shade-border-color {
+	border-color: var(--wp--preset--color--teal-secondary-shade, #009a96) !important;
+}
+
+:root .has-teal-secondary-tint-color {
+	color: var(--wp--preset--color--teal-secondary-tint, #01fff9) !important;
+}
+:root .has-teal-secondary-tint-background-color {
+	background-color: var(--wp--preset--color--teal-secondary-tint, #01fff9) !important;
+}
+:root .has-teal-secondary-tint-border-color {
+	border-color: var(--wp--preset--color--teal-secondary-tint, #01fff9) !important;
+}
+
+:root .has-purple-tertiary-color {
+	color: var(--wp--preset--color--purple-tertiary, #8080b0) !important;
+}
+:root .has-purple-tertiary-background-color {
+	background-color: var(--wp--preset--color--purple-tertiary, #8080b0) !important;
+}
+:root .has-purple-tertiary-border-color {
+	border-color: var(--wp--preset--color--purple-tertiary, #8080b0) !important;
+}
+
+:root .has-purple-tertiary-shade-color {
+	color: var(--wp--preset--color--purple-tertiary-shade, #61619c) !important;
+}
+:root .has-purple-tertiary-shade-background-color {
+	background-color: var(--wp--preset--color--purple-tertiary-shade, #61619c) !important;
+}
+:root .has-purple-tertiary-shade-border-color {
+	border-color: var(--wp--preset--color--purple-tertiary-shade, #61619c) !important;
+}
+
+:root .has-purple-tertiary-tint-color {
+	color: var(--wp--preset--color--purple-tertiary-tint, #bfbfd7) !important;
+}
+:root .has-purple-tertiary-tint-background-color {
+	background-color: var(--wp--preset--color--purple-tertiary-tint, #bfbfd7) !important;
+}
+:root .has-purple-tertiary-tint-border-color {
+	border-color: var(--wp--preset--color--purple-tertiary-tint, #bfbfd7) !important;
+}
+
+:root .has-body-font-color-color {
+	color: var(--wp--preset--color--body-font-color, #4a4a4a) !important;
+}
+:root .has-body-font-color-background-color {
+	background-color: var(--wp--preset--color--body-font-color, #4a4a4a) !important;
+}
+:root .has-body-font-color-border-color {
+	border-color: var(--wp--preset--color--body-font-color, #4a4a4a) !important;
+}
+
+:root .has-header-font-color-color {
+	color: var(--wp--preset--color--header-font-color, #232f3b) !important;
+}
+:root .has-header-font-color-background-color {
+	background-color: var(--wp--preset--color--header-font-color, #232f3b) !important;
+}
+:root .has-header-font-color-border-color {
+	border-color: var(--wp--preset--color--header-font-color, #232f3b) !important;
+}
+
+:root .has-gray-color {
+	color: var(--wp--preset--color--gray, #ebebeb) !important;
+}
+:root .has-gray-background-color {
+	background-color: var(--wp--preset--color--gray, #ebebeb) !important;
+}
+:root .has-gray-border-color {
+	border-color: var(--wp--preset--color--gray, #ebebeb) !important;
+}
+
+:root .has-gray-color-color {
+	color: var(--wp--preset--color--gray-color, #f8f9ff) !important;
+}
+:root .has-gray-color-background-color {
+	background-color: var(--wp--preset--color--gray-color, #f8f9ff) !important;
+}
+:root .has-gray-color-border-color {
+	border-color: var(--wp--preset--color--gray-color, #f8f9ff) !important;
+}
+
+:root .has-white-color {
+	color: var(--wp--preset--color--white, #ffffff) !important;
+}
+:root .has-white-background-color {
+	background-color: var(--wp--preset--color--white, #ffffff) !important;
+}
+:root .has-white-border-color {
+	border-color: var(--wp--preset--color--white, #ffffff) !important;
+}
+
+:root .has-black-color {
+	color: var(--wp--preset--color--black, #000000) !important;
+}
+:root .has-black-background-color {
+	background-color: var(--wp--preset--color--black, #000000) !important;
+}
+:root .has-black-border-color {
+	border-color: var(--wp--preset--color--black, #000000) !important;
+}
+
+:root .has-alert-color-color {
+	color: var(--wp--preset--color--alert-color, #d73e0f) !important;
+}
+:root .has-alert-color-background-color {
+	background-color: var(--wp--preset--color--alert-color, #d73e0f) !important;
+}
+:root .has-alert-color-border-color {
+	border-color: var(--wp--preset--color--alert-color, #d73e0f) !important;
+}
+		</style><style class='wp-fonts-local' type='text/css'>
+@font-face{font-family:"Open Sans Light";font-style:normal;font-weight:300;font-display:fallback;src:url('https://www.corporatetools.com/wp-content/themes/corptools/dist/assets/open-sans-latin-300-normal-BuA4N9V4.woff2') format('woff2'), url('https://www.corporatetools.com/wp-content/themes/corptools/dist/assets/open-sans-latin-300-normal-B9VvyOsd.woff') format('woff');}
+@font-face{font-family:"Open Sans Regular";font-style:normal;font-weight:400;font-display:fallback;src:url('https://www.corporatetools.com/wp-content/themes/corptools/dist/assets/open-sans-latin-400-normal-D-erVzNr.woff2') format('woff2'), url('https://www.corporatetools.com/wp-content/themes/corptools/dist/assets/open-sans-latin-400-normal-CvJMf42F.woff') format('woff');}
+@font-face{font-family:"Open Sans SemiBold";font-style:normal;font-weight:600;font-display:fallback;src:url('https://www.corporatetools.com/wp-content/themes/corptools/dist/assets/open-sans-latin-600-normal-B_B0eGjx.woff2') format('woff2'), url('https://www.corporatetools.com/wp-content/themes/corptools/dist/assets/open-sans-latin-600-normal-Bd29oOVF.woff') format('woff');}
+@font-face{font-family:"Open Sans Bold";font-style:normal;font-weight:700;font-display:fallback;src:url('https://www.corporatetools.com/wp-content/themes/corptools/dist/assets/open-sans-latin-700-normal-BH5mO96r.woff2') format('woff2'), url('https://www.corporatetools.com/wp-content/themes/corptools/dist/assets/open-sans-latin-700-normal-B2w-tFIc.woff') format('woff');}
+@font-face{font-family:"Open Sans ExtraBold";font-style:normal;font-weight:800;font-display:fallback;src:url('https://www.corporatetools.com/wp-content/themes/corptools/dist/assets/open-sans-latin-800-normal-BoiSTvTz.woff2') format('woff2'), url('https://www.corporatetools.com/wp-content/themes/corptools/dist/assets/open-sans-latin-800-normal-CGOJDrzj.woff') format('woff');}
+</style>
+<link rel="icon" href="https://www.corporatetools.com/wp-content/uploads/2025/09/android-chrome-512x512-1-120x120.png" sizes="32x32" />
+<link rel="icon" href="https://www.corporatetools.com/wp-content/uploads/2025/09/android-chrome-512x512-1-250x250.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.corporatetools.com/wp-content/uploads/2025/09/android-chrome-512x512-1-250x250.png" />
+<meta name="msapplication-TileImage" content="https://www.corporatetools.com/wp-content/uploads/2025/09/android-chrome-512x512-1-400x400.png" />
+    <!-- Matomo Tag Manager -->
+    <script>
+      var _mtm = window._mtm = window._mtm || [];
+      _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+      (function () {
+        var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+        g.async = true;
+        g.src = 'https://matomo.corporatetools.com/js/container_2njIAYdk.js';
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+    <!-- End Matomo Tag Manager -->
+     
+        <!-- Google Tag Manager -->
+        <script>
+          (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+            var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+          })(window, document, 'script', 'dataLayer', 'GTM-NP4734H');
+        </script>
+        <!-- End Google Tag Manager -->	<link rel='stylesheet' id='corptools-style-css' href='https://www.corporatetools.com/wp-content/plugins/frontend-wp-corptools-plugin/dist/style.css?ver=2.105.1' media='all' />
+
+</head>
+	<body class="wp-singular page-template page-template-vue-page-templates page-template-vue-job-form page-template-vue-page-templatesvue-job-form-php page page-id-209 page-child parent-pageid-89 wp-theme-corptools apply-now cookie-banner-not-visible">
+
+		    <!-- Matomo Image Tracker -->
+      <noscript>
+        <img src="https://matomo.corporatetools.com/matomo.php?idsite=1&amp;rec=1" height="0" width="0" style="border:0;display:none;visibility:hidden" alt=""/>
+      </noscript>
+    <!-- End Matomo -->
+     <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NP4734H"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->		<!-- wrapper -->
+		<div class="wrapper">
+						
+			<header id="toolbox-theme-navigation" class="xlarge fixed toolbox-theme-navigation-header " role="banner">
+                    <div class="nav-wrapper">
+                        <div class="logo-link-wrapper">
+                        <a class="logo-link" aria-label="Link to Homepage" href="https://www.corporatetools.com"><img src="https://www.corporatetools.com/wp-content/uploads/2025/09/CT-2019-logo-final.png" alt="Logo Image" class="logo-img logo-img-mobile"></a>
+                        </div>
+                        <nav class="main-nav" role="navigation">
+                            <button class="mobile-nav-toggle" type="button" aria-label="Toggle Expand Navigation Menu" aria-expanded="false"><div class="mobile-nav-toggle-icon"></div></button><ul class="toolbox-theme-navigation-primary"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-8483"><a href="#">Our Services</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8458"><a href="https://www.corporatetools.com/services/">Services</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8459"><a href="https://www.corporatetools.com/credit-card-processing/">Credit Card</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-8484"><a href="#">Who We Are</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9234"><a href="https://www.corporatetools.com/company-principles/">Company Principles</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8463"><a href="https://www.corporatetools.com/leadership-principles/">Leadership Principles</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8993"><a href="https://www.corporatetools.com/our-team/">Meet Our Team</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8977"><a href="https://www.corporatetools.com/spotlight/">Spotlight</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9123"><a href="https://www.corporatetools.com/blog/">Blog</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-8482"><a href="#">Work Here</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8467"><a href="https://www.corporatetools.com/jobs/why-work-here/">Why Work Here</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8839"><a href="https://www.corporatetools.com/internship-program/">Internships</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-8466"><a href="https://www.corporatetools.com/jobs/">Careers</a></li>
+<li class="nav-wrapper-nested"><ul class="toolbox-theme-navigation-secondary"><li class="nav-btn-alt menu-item menu-item-type-post_type menu-item-object-page menu-item-8469"><a href="https://www.corporatetools.com/login/">Login</a></li>
+<li class="nav-btn menu-item menu-item-type-post_type menu-item-object-page menu-item-8470"><a href="https://www.corporatetools.com/create-account/">Get Started</a></li>
+<li class="social-link-facebook menu-item menu-item-type-custom menu-item-object-custom menu-item-8473"><a href="https://www.facebook.com/CorporateToolsLLC/">Facebook</a></li>
+<li class="social-link-instagram menu-item menu-item-type-custom menu-item-object-custom menu-item-8474"><a href="https://www.instagram.com/corporatetools/">Instagram</a></li>
+<li class="social-link-linkedin menu-item menu-item-type-custom menu-item-object-custom menu-item-8475"><a href="https://www.linkedin.com/company/corporatetools">LinkedIn</a></li>
+</ul></li></ul><button class="toolbox-search-btn-trigger " aria-label="Toggle Search Form"><div class="toolbox-search-btn-trigger-icon"></div>
+                                </button></nav>
+                    </div></header><div id="toolbox-search-form-wrapper" class="toolbox-search-form-wrapper">
+                                    <form id="toolbox-search-form" class="toolbox-search-form" autocomplete="off" method="get" action="https://www.corporatetools.com" role="search">
+                                        <button type="submit" class="toolbox-search-form-submit-btn" aria-controls="toolbox-search-form-input" aria-label="Submit Search">
+                                            <div class="toolbox-search-form-submit-btn-text">Submit</div>
+                                            <div class="toolbox-search-form-submit-btn-icon"></div>
+                                        </button>
+                                        <input id="toolbox-search-form-input" class="toolbox-search-form-input" required type="search" name="s" value="" placeholder="Search">
+                                        <button class="toolbox-search-form-close-btn" type="button" role="button" aria-label="Close Search Form">
+                                            <div class="toolbox-search-form-close-btn-text">Close</div>
+                                            <div class="toolbox-search-form-close-btn-icon"></div>
+                                        </button>
+                                    </form>
+                                </div>			
+
+<main role="main" class="vue-page job-application-form">
+    <section class="jobs-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Apply Now</h1>
+                                            <div class="content">
+                            
+<p class="wp-block-paragraph">We love a good cover letter! It&#8217;s not an accident that we don&#8217;t ask for a resume. Why do you want to work here? What kind of problems do you want to solve? Tell us who you are.</p>
+
+
+
+<p class="wp-block-paragraph"></p>
+                        </div>
+                                    </div>
+            </div>
+        </div>
+    </section>
+    <section class="jobs-apply-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-7">
+                    <script>window.corptoolsConfig = {"formType":"JobApplicationApp.js","pageID":209,"formTrackingName":"job-application-form-jobs-apply-now","pluginVersion":"2.105.1","pluginRoot":"https:\/\/www.corporatetools.com\/wp-content\/plugins\/frontend-wp-corptools-plugin\/","marketingApiRoot":"https:\/\/marketing-api.at.corporatetools.com\/api\/","ajaxUrl":"https:\/\/www.corporatetools.com\/wp-admin\/admin-ajax.php?j=Flutter-App-Developer","renderViaAjax":false,"websiteId":"81cb6c28-b104-44e8-9dd3-59ce8fac2ad1","websiteUrl":"www.corporatetools.com","productDefinitions":{"BUSINESS_FORMATION":"businessFormation","BUSINESS_FORMATION_FREE":"businessFormationFree","BUSINESS_FORMATION_VEHICLE":"businessFormationVehicle","FOREIGN_REGISTRATION":"foreignRegistration","DOMESTICATION":"domestication","REGISTERED_AGENT":"registeredAgent","CHANGE_OF_AGENT":"changeOfAgent","CORPORATE_SUPPLIES_PARENT":"corporateSuppliesParent","BOOK_AND_SEAL_PARENT":"bookAndSealParent","SEAL":"seal","BOOK":"book","BOOK_AND_SEAL":"bookAndSeal","GO_BOOK":"goBook","GO_BOOK_AND_SEAL":"goBookAndSeal","NOTARY_STAMP":"notaryStamp","CERTIFICATES":"certificates","OVERSEAS_SHIPPING":"generalOverseasShipping","RENEWAL":"renewalService","COMPLIANCE_FILING":"complianceFiling","APOSTILLE":"apostille","S_CORP":"sCorporation","TAX_ID_PARENT":"taxIdParent","TAX_ID_SSN":"taxIdSsn","TAX_ID_NO_SSN":"taxIdNoSsn","TAX_ID_FREE":"taxIdFree","COG":"cog","CERTIFIED_COPY":"certifiedCopy","CALL_FORWARDING":"callForwarding","LAW_ON_CALL":"lawOnCall","LOCAL_DC_AGENT":"localDCAgent","PROCESS_AGENT":"processAgent","FREE_CC_PROCESSING":"freeCCProcessing","PHONE_SERVICE":"phoneService","TRUIC":"truic","TRUIC_CHECKING":"truicChecking","TRUIC_INSURANCE":"truicInsurance","NY_PUBLICATION":"nyPublication","TRADEMARK":"trademark","TRADEMARK_MONITORING":"trademarkMonitoring","NAME_RESERVATION":"nameReservation","TRADE_NAME":"tradeName","TRADE_NAME_PUBLICATION":"tradeNamePublication","BOI_COMPLIANCE":"boiCompliance","FREE_INITIAL_REPORT":"freeInitialReport","MF_PARENT":"mfParent","EXPEDITED_SERVICE_TIER_1":"expeditedServiceTier1","EXPEDITED_SERVICE_TIER_2":"expeditedServiceTier2","CERTIFICATE_OF_INCUMBENCY":"certificateOfIncumbency","OPERATING_AGREEMENT":"operatingAgreement","VEHICLE_PARENT":"vehicleParent","VEHICLE_REGISTRATION_CAR_TRUCK":"vehicleRegistrationCarTruck","VEHICLE_REGISTRATION_CARGO_TRAILER":"vehicleRegistrationCargoTrailer","VEHICLE_REGISTRATION_TRAVEL_TRAILER":"vehicleRegistrationTravelTrailer","VEHICLE_REGISTRATION_RV_MOTORHOME":"vehicleRegistrationRvMotorhome","VEHICLE_REGISTRATION_ATV_MOTORCYCLE":"vehicleRegistrationAtvMotorcycle","VEHICLE_REGISTRATION_BOAT":"vehicleRegistrationBoat","VEHICLE_TAX_LUXURY_CAR_TRUCK":"vehicleTaxLuxuryCarTruck","VEHICLE_TAX_LUXURY_MOTOR_HOME":"vehicleTaxLuxuryMotorHome","VEHICLE_TAX_IMPORT":"vehicleTaxImport","VEHICLE_ELECTRIC_CLASS_1":"vehicleElectricClass1","VEHICLE_ELECTRIC_CLASS_2":"vehicleElectricClass2","VEHICLE_HYBRID_CLASS_1":"vehicleHybridClass1","VEHICLE_PLATES_ORGANIZATIONAL_CUSTOM":"vehiclePlatesOrganizationalCustom","VEHICLE_PLATES_ORGANIZATIONAL_DEFAULT":"vehiclePlatesOrganizationalDefault","VEHICLE_PLATES_ORGANIZATIONAL_STANDARD":"vehiclePlatesOrganizationalStandard","VEHICLE_PLATE_LETTERING_STANDARD":"vehiclePlateLetteringStandard","VEHICLE_PLATE_LETTERING_CUSTOM":"vehiclePlateLetteringCustom","DOMAIN":"domain","WEB_HOSTING":"webHosting","WEB_HOSTING_MANAGED_1":"webHostingManaged1","BUSINESS_EMAIL":"businessEmail","TLS":"tls","BUSINESS_LICENSE_FILING":"businessLicense","BUSINESS_LICENSE_RESEARCH":"businessLicenseResearch","HOSTING_EMAIL_TIER_1":"hostingEmailTier1","HOSTING_EMAIL_TIER_2":"hostingEmailTier2","HOSTING_EMAIL_TIER_3_NO_TRIAL":"hostingEmailTier3NoTrial","HOSTING_EMAIL_TIER_3":"hostingEmailTier3","HOSTING_EMAIL_TIER_4":"hostingEmailTier4","HOSTING_WEBSITE_TIER_1_NO_TRIAL":"hostingWebsiteTier1NoTrial","HOSTING_WEBSITE_TIER_1":"hostingWebsiteTier1","HOSTING_WEBSITE_TIER_2":"hostingWebsiteTier2","HOSTING_WEBSITE_TIER_3":"hostingWebsiteTier3"},"filingProductDefinitions":["businessFormation","businessFormationFree","businessFormationVehicle","vehicleRegistrationCarTruck","vehicleRegistrationAtvMotorcycle","vehicleRegistrationBoat","vehicleRegistrationRvMotorhome","vehicleRegistrationCargoTrailer","vehicleRegistrationTravelTrailer","foreignRegistration","changeOfAgent","complianceFiling","apostille","sCorporation","taxIdSsn","taxIdNoSsn","taxIdFree","cog","certifiedCopy","trademark","nyPublication","domestication","boiCompliance","tradeName","tradeNamePublication","freeInitialReport","businessLicense"],"optionalEnhancedLayoutAllowList":["mfParent","webHosting","businessEmail","phoneService"],"links":{"redirectLink":"","priorityJobRedirectLink":""},"domainSearchBaseURI":false,"optionalItemsLayout":null,"corporateSuppliesLayout":null,"domainConfig":null,"preselectedDomain":null,"preselectedTLD":null,"domainSelectionLimit":"0","domainAvailableTLDsDefaults":[{"tld":"com"},{"tld":"net"},{"tld":"org"},{"tld":"pro"},{"tld":"info"},{"tld":"group"},{"tld":"agency"},{"tld":"solutions"},{"tld":"ltd"},{"tld":"llc"}],"customContent":{"domainSearchForm":{"preSearchContent":{"single":null,"bulk":null}}},"enableAddressSuggestions":false,"enableOptionalItemCustomPricingText":false,"hideOptionalItemDefaultPricing":false,"siteBreakpoints":{"tablet":768,"desktop":1024},"freeIdentityServices":{"enabled":false,"complimentaryPriceLabel":"$0.00","domains":{"enabled":false,"maxPrice":0,"cartTableDurationLabel":"Life of Your Account","cartTableFreeCostLabel":"Free"}},"sentry":{"enabled":true,"dsn":"https:\/\/c0dbbca8909a7ed9904c387115105fcc@o209361.ingest.us.sentry.io\/4511338869817344","environment":"production","release":"2.105.1","websiteId":"81cb6c28-b104-44e8-9dd3-59ce8fac2ad1","websiteName":"Corporate Tools","rules":{"fieldKeyBlocklist":["signupData","applicationData","loginData","resetPasswordData","contactData","newsletterData","payment","token","card","cvv","password","email_address","email","first_name","last_name","company_name","trade_name","address","line1","line2","zip","phone_number","phone","ssn","dob","reason","client_ip"],"fieldPathBlocklist":["company.name"],"maxMessageLength":200,"redactedPlaceholder":"[redacted]","truncatedSuffix":"\u2026[truncated]"}},"websitePhone":"(208) 618-2766","addressSelectorOptions":{"ra":"Our Registered Agent Address","mailing":"Your Mailing Address","specify":"Specify Address"},"gaEnabled":true,"gaEcommerceEnabled":true,"gaFreeAccountEventAction":null,"gaFreeAccountEventCategory":null,"gaFreeAccountEventLabel":null,"gtmStepNavigationEventEnabled":null,"awEnabled":false,"awPropertyTrackingId":null,"awConversionEventId":null,"bingEnabled":false,"bingEcommerceEnabled":false,"bingPropertyTrackingId":null,"shareasaleTrackingEnabled":null,"shareasaleTrackingID":null,"awinTrackingEnabled":null,"awinTrackingID":null,"everflowTrackingEnabled":null,"everflowTrackingID":null,"matomoEcommerce":{"enabled":true,"events":{"trackEcommerceOrder":true,"ecommerceCart":true,"stepNavigation":true}},"uspsAddressCheck":false,"uspsAPIKey":null,"enablePasswordGenerator":true,"enablePasswordVisibilityToggle":true,"enableLoginPasswordVisibilityToggle":true,"stepMode":false,"showStepNav":false,"entityOptions":{"Unregistered Business Entities":{"GP":"General Partnership","Sole Proprietorship":"Sole Proprietorship","Individual":"Individual"},"Registered Business Entities":{"LLC":"LLC","Corp":"Corporation","NP Corp":"Non-Profit Corporation","NP LLC":"Non-Profit LLC","PLLC":"Professional LLC","PC":"Professional Corp","DAO LLC":"DAO LLC","Series LLC":"Series Limited Liability Company","LP":"Limited Partnership","LLP":"LLP","LLLP":"LLLP","Trust":"Trust","Attorney for Bar":"Attorney For Bar","DBA":"Doing Business as Name","Close LLC":"Close Limited Liability Company","Close Corp":"Close Corporation","Telehealthcare":"Telehealthcare"}},"showCCBadgesInPaymentInfo":true,"showSSLBadgeInPaymentInfo":true,"showSubmitButtonInMainColumn":false,"flatCorporateSupplies":true,"useButtonElementsForRemoveActionInOfficialEntries":false,"orderSummaryFreeLineItemLabel":"","allowCloseEntityType":"","persistFormData":false,"cancelServices":false,"clearFormDataSensitiveInformation":true,"clearFormDataOnSuccessfulSubmit":true,"redirectEnabled":true,"flags":[],"messages":null,"productStateRestrictions":null,"allowSpecifyingCompanyPrincipalAddress":false,"allowSpecifyingCompanyMailingAddress":false,"allowRegularBundles":false,"loadedBundles":[],"showFaqSection":"0","faqEntries":null,"activeCoupons":"","commissionEnabled":false,"xtypeOverride":null,"accountNote":"","allowSubscriptionBundles":false,"subscriptionBundleConfig":null,"pages":{"freeAccount":"\/create-account\/","contactUs":"\/contact\/","login":"\/login\/","resetPassword":"\/password-reset\/","terms":"\/terms-policy\/","thankYou":"\/thank-you\/","jobThankYou":"\/jobs-thank-you\/","priorityThankYou":"\/priority-jobs-thank-you\/","affiliateThankYou":null},"state":null,"preselectedState":null,"preselectedEntityType":null,"preselectedMFVOProductID":null,"preselectedMFVOServiceType":null,"preselectedJob":"Flutter-App-Developer","preselectedRADuration":null,"preselectedAreaCode":null,"preselectedVehicleType":null,"preselectedStepKey":null,"signupFormUrlParamPrefill":{"enabled":false},"jurisdictions":{"states":{"AL":"Alabama","AK":"Alaska","AZ":"Arizona","AR":"Arkansas","CA":"California","CO":"Colorado","CT":"Connecticut","DE":"Delaware","DC":"District of Columbia","FL":"Florida","GA":"Georgia","HI":"Hawaii","ID":"Idaho","IL":"Illinois","IN":"Indiana","IA":"Iowa","KS":"Kansas","KY":"Kentucky","LA":"Louisiana","ME":"Maine","MD":"Maryland","MA":"Massachusetts","MI":"Michigan","MN":"Minnesota","MS":"Mississippi","MO":"Missouri","MT":"Montana","NE":"Nebraska","NV":"Nevada","NH":"New Hampshire","NJ":"New Jersey","NM":"New Mexico","NY":"New York","NC":"North Carolina","ND":"North Dakota","OH":"Ohio","OK":"Oklahoma","OR":"Oregon","PA":"Pennsylvania","RI":"Rhode Island","SC":"South Carolina","SD":"South Dakota","TN":"Tennessee","TX":"Texas","UT":"Utah","VT":"Vermont","VA":"Virginia","WA":"Washington","WV":"West Virginia","WI":"Wisconsin","WY":"Wyoming"},"usTerritories":{"AS":"American Samoa","GU":"Guam","MP":"Northern Mariana Islands","PR":"Puerto Rico","VI":"US Virgin Islands"},"usMilitary":{"AA":"Armed Forces Americas","AE":"Armed Forces Europe","AP":"Armed Forces Pacific"},"outsideUS":{"Outside of the US":"Outside of the US"}},"jurisdictionSets":{"statesAndPR":["AL","AK","AZ","AR","CA","CO","CT","DE","DC","FL","GA","HI","ID","IL","IN","IA","KS","KY","LA","ME","MD","MA","MI","MN","MS","MO","MT","NE","NV","NH","NJ","NM","NY","NC","ND","OH","OK","OR","PA","PR","RI","SC","SD","TN","TX","UT","VT","VA","WA","WV","WI","WY"],"statesAndPRAndOutsideUS":["AL","AK","AZ","AR","CA","CO","CT","DE","DC","FL","GA","HI","ID","IL","IN","IA","KS","KY","LA","ME","MD","MA","MI","MN","MS","MO","MT","NE","NV","NH","NJ","NM","NY","NC","ND","OH","OK","OR","PA","PR","RI","SC","SD","TN","TX","UT","VT","VA","WA","WV","WI","WY","Outside of the US"],"statesTerritoriesAndUSMilitary":["AL","AK","AS","AZ","AR","CA","CO","CT","DE","DC","FL","GA","GU","HI","ID","IL","IN","IA","KS","KY","LA","ME","MD","MA","MI","MN","MS","MO","MT","NE","NV","NH","NJ","NM","NY","NC","ND","MP","OH","OK","OR","PA","PR","RI","SC","SD","TN","TX","UT","VT","VA","VI","WA","WV","WI","WY","AA","AE","AP"],"statesTerritoriesUSMilitaryAndOutsideUS":["AL","AK","AS","AZ","AR","CA","CO","CT","DE","DC","FL","GA","GU","HI","ID","IL","IN","IA","KS","KY","LA","ME","MD","MA","MI","MN","MS","MO","MT","NE","NV","NH","NJ","NM","NY","NC","ND","MP","OH","OK","OR","PA","PR","RI","SC","SD","TN","TX","UT","VT","VA","VI","WA","WV","WI","WY","AA","AE","AP","Outside of the US"]},"clientIP":"2402:a00:163:93a:dd26:af95:19c:9810","recaptchaSiteKey":"6Ld8qSIlAAAAAGAUYxtK0KbpCUZBotlUnIctANJd","skipCaptchaVerification":false,"overrides":{"fields":{"contactInformation":{"firstName":{"labelText":"","tooltipText":""},"lastName":{"labelText":"","tooltipText":""},"email":{"labelText":"Email Address","tooltipText":""},"phone":{"labelText":"","tooltipText":""},"city":{"labelText":"","tooltipText":""},"state":{"labelText":"Where are you located?","tooltipText":""}},"jobInformation":{"position":{"labelText":"Position Applying For","tooltipText":""},"customPosition":{"labelText":"","tooltipText":""},"positionAlternativeInput":{"labelText":"","tooltipText":""},"resume":{"labelText":"","tooltipText":""},"coverLetter":{"labelText":"","tooltipText":""},"reasonForApplying":{"labelText":"Why do you want to work here?","tooltipText":""},"githubLink":{"labelText":"","tooltipText":""},"codepenLink":{"labelText":"","tooltipText":""},"linkedinLink":{"labelText":"LinkedIn Profile Link (optional)","tooltipText":""},"additionalApplicantInformation":{"labelText":"","tooltipText":""},"howApplicantHeardAboutUs":{"labelText":"How did you hear about us?","tooltipText":""},"howApplicantHeardAboutUsOther":{"labelText":"Please specify how you heard about Corporate Tools:","tooltipText":""},"projectSectionTitle":{"labelText":"","tooltipText":""},"projectUpload":{"labelText":"","tooltipText":""},"projectURL":{"labelText":"","tooltipText":""},"projectContribution":{"labelText":"","tooltipText":""},"supplementalQuestions":[{"labelText":"If hired, would you be able to perform the essential functions of the job, either with or without accommodation?","tooltipText":""},{"labelText":"This position requires you to work, 8 hours a day, 5 days a week. If hired, would you be able to meet the work schedule as described?","tooltipText":""}]}},"optional":null},"abTestValues":[],"layout":{"variant":"default","overrideMobileOrderSummaryLocation":false,"mobileOrderSummaryLocationOverride":"default","enableNonEmbeddedMobileOrderSummaryCollapse":false,"always_show_password_requirements":true,"animatedValidationToggle":true,"phoneNumberGroup":{"toggle":false,"phoneNumber":"(208) 618-2766","text":""},"continue_button_text":"","skip_continue_validation":false,"back_button_text":"","submit_button_text":"Submit Your Application","submissionInProgressMessage":"","addExtraInnerWrapperAroundStepContentToggle":false,"termsToggle":false,"terms_text":"By clicking \"{{submit_button_text}}\", you accept the {{terms_link:terms of service}}.","freeIdentityServices":{"enabled":false}},"orderSummary":"","validation":{"classes":null},"passwordMinChars":8,"passwordGenNumChars":12,"formBuilder":{"steps":[{"key":"job-form","label":"Job Form","title":"","tooltipText":"","topContent":"","wrapperClass":"job-form","sections":[{"title":"","tooltipText":"","modules":[{"component":"JobFormContactInformation"}],"topContentType":"wysiwyg","topContent":"","topContentListItems":false}],"topContentType":"wysiwyg","topContentListItems":false,"vueAccordions":false},{"key":"job-information-details","label":"What Do You Want To Do?","title":"What Do You Want To Do?","tooltipText":"","topContent":"","wrapperClass":"section-job-information","sections":[{"title":"","tooltipText":"","modules":[{"component":"JobSelectGroup"},{"component":"JobHomeStateSelectGroup"},{"component":"ApplicationReasonTextAreaGroup"},{"component":"HowApplicantHeardAboutUs"},{"component":"CoverLetterUploadGroup"},{"component":"GitHubInputGroup"},{"component":"CodePenInputGroup"},{"component":"LinkedInInputGroup"},{"component":"JobProjectSelection","props":{"showProjectSelectionSection":true,"shouldShowProjectUploadField":false}},{"component":"SupplementalApplicantQuestion","props":{"useSelect":true,"required":true}},{"component":"SupplementalApplicantQuestion","props":{"useSelect":true,"required":true}},{"component":"ClosingStatement"}],"topContentType":"wysiwyg","topContent":"","topContentListItems":false}],"topContentType":"wysiwyg","topContentListItems":false,"vueAccordions":false}]},"filingMethodWhitelist":null,"mfvoConfig":{"propDefinitions":{"state":{"defaultLabelText":"Receive Your Mail In","validationLabel":"State","type":"select","allOptions":{"AL":"Alabama","AK":"Alaska","AZ":"Arizona","AR":"Arkansas","CA":"California","CO":"Colorado","CT":"Connecticut","DE":"Delaware","DC":"District of Columbia","FL":"Florida","GA":"Georgia","HI":"Hawaii","ID":"Idaho","IL":"Illinois","IN":"Indiana","IA":"Iowa","KS":"Kansas","KY":"Kentucky","LA":"Louisiana","ME":"Maine","MD":"Maryland","MA":"Massachusetts","MI":"Michigan","MN":"Minnesota","MS":"Mississippi","MO":"Missouri","MT":"Montana","NE":"Nebraska","NV":"Nevada","NH":"New Hampshire","NJ":"New Jersey","NM":"New Mexico","NY":"New York","NC":"North Carolina","ND":"North Dakota","OH":"Ohio","OK":"Oklahoma","OR":"Oregon","PA":"Pennsylvania","RI":"Rhode Island","SC":"South Carolina","SD":"South Dakota","TN":"Tennessee","TX":"Texas","UT":"Utah","VT":"Vermont","VA":"Virginia","WA":"Washington","WV":"West Virginia","WI":"Wisconsin","WY":"Wyoming","AS":"American Samoa","GU":"Guam","MP":"Northern Mariana Islands","PR":"Puerto Rico","VI":"US Virgin Islands","AA":"Armed Forces Americas","AE":"Armed Forces Europe","AP":"Armed Forces Pacific","Outside of the US":"Outside of the US"},"default":null},"serviceType":{"defaultLabelText":"Service Type","validationLabel":"Service Type","type":"radio","allOptions":{"mf":"Mail Forwarding","vo":"Virtual Office"},"default":"mf"},"deliveryMethod":{"defaultLabelText":"Delivery Method","validationLabel":"Delivery Method","type":"radio","allOptions":{"scan":"Digital Scan","forward":"Physical Forward"},"default":"scan"},"billingType":{"defaultLabelText":"Billing Type","validationLabel":"Billing Type","type":"radio","allOptions":{"monthly":"Monthly","yearly":"Yearly"},"default":"monthly"},"limit":{"defaultLabelText":"Mail Piece Limit","validationLabel":"Mail Piece Limit","type":"text"},"uniqueSuite":{"defaultLabelText":"Includes Unique Suite","validationLabel":"Unique Suite Option","type":"true_false","default":1}}},"affiliateTypes":null,"addressValidation":null,"businessPurposeSettings":null,"tokenizerApiRoot":"https:\/\/tokenizer.onlineaccount.net\/api\/v1\/","jobApplicationFormConfig":{"parent_page":"89","hiringStatusControlsJobInclusionInApplication":true,"preselectedJob":"","lockPreselectedJob":false,"showCustomJobOption":true,"minNumberOfProjectRows":"0","maxNumberOfProjectRows":"3","projectRowLabelText":"","maxUploadSize":"3","closing_statement":"<p><strong>We are interested in every qualified candidate who is eligible to work in the United States. However, we are not able to sponsor visas.<\/strong><\/p>\n"},"jobData":{"Engineering and Development":{"label":"Engineering and Development","link":"https:\/\/www.corporatetools.com\/job-postings\/engineering-and-development","children":[{"id":9616,"label":"Flutter App Developer","priority":true,"link":"https:\/\/www.corporatetools.com\/job-postings\/engineering-and-development\/flutter-app-developer\/"},{"id":9613,"label":"Director of Software Engineering","priority":true,"link":"https:\/\/www.corporatetools.com\/job-postings\/engineering-and-development\/director-of-software-engineering-dallas-tx\/"},{"id":9612,"label":"Software Engineering Manager - Dallas, TX","priority":true,"link":"https:\/\/www.corporatetools.com\/job-postings\/engineering-and-development\/software-engineering-manager-dallas-tx\/"},{"id":9611,"label":"Senior Software Engineer - Dallas, TX","priority":true,"link":"https:\/\/www.corporatetools.com\/job-postings\/engineering-and-development\/senior-software-engineer-dallas-tx\/"},{"id":9610,"label":"Software Engineer - Dallas, TX","priority":true,"link":"https:\/\/www.corporatetools.com\/job-postings\/engineering-and-development\/software-engineer-dallas-tx\/"},{"id":8599,"label":"Junior Automation Engineer","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/engineering-and-development\/junior-automation-engineer-2\/"},{"id":8592,"label":"Senior Android App Developer","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/engineering-and-development\/senior-android-app-developer\/"},{"id":8588,"label":"Senior DevOps Engineer - On-Prem Infrastructure","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/engineering-and-development\/senior-devops-engineer-on-prem-infrastructure\/"},{"id":8589,"label":"Senior Quality Assurance Engineer","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/engineering-and-development\/senior-quality-assurance-engineer\/"},{"id":8590,"label":"Software Engineering Manager","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/engineering-and-development\/software-engineering-manager\/"},{"id":8591,"label":"Site Reliability Engineer","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/engineering-and-development\/site-reliability-engineer\/"},{"id":8585,"label":"Front-End Web Developer","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/engineering-and-development\/front-end-web-developer\/"},{"id":8575,"label":"Senior Front-End Vue Developer","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/engineering-and-development\/senior-front-end-vue-developer\/"},{"id":8566,"label":"iOS App Developer","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/engineering-and-development\/ios-app-developer\/"},{"id":8567,"label":"Senior DevOps Engineer","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/engineering-and-development\/senior-devops-engineer\/"},{"id":8564,"label":"Senior Data Engineer","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/engineering-and-development\/senior-data-engineer\/"},{"id":8563,"label":"Application Security Engineer","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/engineering-and-development\/application-security-engineer\/"},{"id":8557,"label":"Sr. iOS App Developer","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/engineering-and-development\/sr-ios-app-developer\/"},{"id":8556,"label":"Android App Developer","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/engineering-and-development\/android-app-developer\/"},{"id":8559,"label":"Software Engineer","priority":true,"link":"https:\/\/www.corporatetools.com\/job-postings\/engineering-and-development\/software-engineer\/"},{"id":8552,"label":"UI\/UX Designer","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/engineering-and-development\/ui-ux-designer\/"},{"id":8553,"label":"Junior Software Engineer","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/engineering-and-development\/junior-software-engineer\/"},{"id":8544,"label":"UX Engineer","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/engineering-and-development\/ux-engineer\/"},{"id":8548,"label":"Senior Software Engineer (Ruby on Rails)","priority":true,"link":"https:\/\/www.corporatetools.com\/job-postings\/engineering-and-development\/senior-software-engineer-ruby-on-rails\/"},{"id":8543,"label":"Senior UX Conversion Specialist","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/engineering-and-development\/senior-ux-conversion-specialist\/"},{"id":8542,"label":"Security Engineering Manager","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/engineering-and-development\/security-engineering-manager\/"},{"id":8539,"label":"Front-End Engineering Manager","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/engineering-and-development\/front-end-engineering-manager\/"}]},"Sales":{"label":"Sales","link":"https:\/\/www.corporatetools.com\/job-postings\/sales","children":[{"id":9596,"label":"Collections Specialist","priority":true,"link":"https:\/\/www.corporatetools.com\/job-postings\/sales\/collections-specialist\/"},{"id":9198,"label":"Sales Director","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/sales\/sales-director-2\/"},{"id":8623,"label":"Merchant Services Representative","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/sales\/merchant-services-representative\/"},{"id":8619,"label":"Sales Representative - Utah","priority":true,"link":"https:\/\/www.corporatetools.com\/job-postings\/sales\/sales-representative-utah\/"},{"id":8611,"label":"Sales Representative","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/sales\/sales-development-representative\/"}]},"People":{"label":"People","link":"https:\/\/www.corporatetools.com\/job-postings\/people","children":[{"id":9465,"label":"Benefits Coordinator","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/people\/benefits-coordinator\/"},{"id":8651,"label":"Recruiter","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/people\/recruiter\/"},{"id":8639,"label":"Training and Development Manager","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/people\/training-development-manager\/"},{"id":8633,"label":"Human Resources Business Partner","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/people\/human-resources-business-partner\/"},{"id":8628,"label":"In-House Therapist","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/people\/in-house-therapist\/"},{"id":8630,"label":"Administrative Support Specialist","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/people\/administrative-support-specialist\/"},{"id":8614,"label":"Corporate Trainer","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/people\/corporate-trainer\/"},{"id":8605,"label":"Human Resources Coordinator","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/people\/human-resources-coordinator\/"}]},"Finance":{"label":"Finance","link":"https:\/\/www.corporatetools.com\/job-postings\/finance","children":[{"id":9435,"label":"Finance Director - Accounting","priority":true,"link":"https:\/\/www.corporatetools.com\/job-postings\/finance\/finance-director-accounting\/"},{"id":9067,"label":"Collections Manager","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/finance\/collections-manager-2\/"},{"id":9065,"label":"Accounts Receivables Manager","priority":true,"link":"https:\/\/www.corporatetools.com\/job-postings\/finance\/accounts-receivables-manager\/"},{"id":9057,"label":"Finance - Tax","priority":true,"link":"https:\/\/www.corporatetools.com\/job-postings\/finance\/tax-manager\/"},{"id":8647,"label":"Senior Corporate Accountant","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/finance\/senior-corporate-accountant\/"},{"id":8607,"label":"Finance Director","priority":true,"link":"https:\/\/www.corporatetools.com\/job-postings\/finance\/finance-director\/"},{"id":8538,"label":"Corporate Accountant","priority":true,"link":"https:\/\/www.corporatetools.com\/job-postings\/finance\/corporate-accountant\/"}]},"Marketing":{"label":"Marketing","link":"https:\/\/www.corporatetools.com\/job-postings\/marketing","children":[{"id":9038,"label":"Content Creator- YouTube","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/marketing\/content-creator\/"},{"id":9026,"label":"YouTube Channel Manager","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/marketing\/youtube-channel-manager\/"},{"id":8661,"label":"Legal Researcher - Technical Writer","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/marketing\/legal-researcher-technical-writer\/"},{"id":8608,"label":"Director of Public Relations","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/marketing\/director-of-public-relations\/"},{"id":8593,"label":"Senior PPC Specialist","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/marketing\/senior-ppc-specialist\/"},{"id":8587,"label":"Direct Mail Specialist","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/marketing\/direct-mail-specialist\/"},{"id":8578,"label":"Social Media Associate - Instagram","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/marketing\/social-media-associate-instagram\/"},{"id":8579,"label":"Social Media Associate - LinkedIn","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/marketing\/social-media-associate-linkedin\/"},{"id":8580,"label":"Social Media Associate - X","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/marketing\/social-media-associate-x\/"},{"id":8581,"label":"Social Media Associate - Forums","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/marketing\/social-media-associate-forums\/"},{"id":8573,"label":"Marketing Manager","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/marketing\/marketing-manager\/"},{"id":8574,"label":"Marketing Associate","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/marketing\/marketing-associate\/"},{"id":8576,"label":"Social Media Associate - Facebook","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/marketing\/social-media-associate-facebook\/"},{"id":8577,"label":"Ad Buyer - Facebook","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/marketing\/ad-buyer-facebook\/"},{"id":8569,"label":"Communications and PR Specialist - Social Forums","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/marketing\/communications-and-pr-specialist-social-forums\/"},{"id":8571,"label":"Motion Graphic Designer","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/marketing\/motion-graphic-designer\/"},{"id":8572,"label":"Senior Graphic Designer","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/marketing\/senior-graphic-designer\/"},{"id":8560,"label":"Senior Referral Affiliate Manager","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/marketing\/senior-referral-affiliate-manager\/"},{"id":8562,"label":"Landing Page Designer\/Developer","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/marketing\/landing-page-designer-developer\/"},{"id":8558,"label":"Videographer","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/marketing\/videographer\/"},{"id":8551,"label":"Social Media Specialist","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/marketing\/social-media-specialist\/"},{"id":8554,"label":"Graphic Designer","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/marketing\/graphic-designer\/"},{"id":8549,"label":"Marketing Content Writer","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/marketing\/marketing-content-writer\/"},{"id":8534,"label":"SEO Strategist","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/marketing\/seo-strategist\/"},{"id":8535,"label":"SEO Analyst","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/marketing\/seo-analyst\/"}]},"Customer Experience":{"label":"Customer Experience","link":"https:\/\/www.corporatetools.com\/job-postings\/customer-experience","children":[{"id":8676,"label":"Digital Mail Associate","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/customer-experience\/digital-mail-associate\/"},{"id":8669,"label":"Corporate Support Representative","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/customer-experience\/corporate-support-representative\/"},{"id":8668,"label":"Loyalty Operations Specialist","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/customer-experience\/outbound-customer-service\/"},{"id":8670,"label":"Document Specialist","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/customer-experience\/document-specialist\/"},{"id":8672,"label":"Bilingual Customer Service Representative","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/customer-experience\/bilingual-customer-service-representative\/"},{"id":8665,"label":"Corporate Filing Specialist","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/customer-experience\/corporate-filing-specialist\/"},{"id":8656,"label":"Client Experience Director","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/customer-experience\/client-experience-director\/"},{"id":8652,"label":"Corporate Filing Support","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/customer-experience\/corporate-filing-support\/"},{"id":8617,"label":"Technical Support Representative","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/customer-experience\/technical-support-representative\/"}]},"Business Operations":{"label":"Business Operations","link":"https:\/\/www.corporatetools.com\/job-postings\/business-operations","children":[{"id":8660,"label":"Commercial Property Manager","priority":true,"link":"https:\/\/www.corporatetools.com\/job-postings\/business-operations\/commercial-property-manager\/"},{"id":8664,"label":"Corporation Supplies Maker","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/business-operations\/corporation-supplies-maker\/"},{"id":8658,"label":"The Lawyer","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/business-operations\/the-lawyer\/"},{"id":8648,"label":"Merchant Service Operations Manager","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/business-operations\/merchant-service-operations-manager\/"},{"id":8634,"label":"Legal Director","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/business-operations\/legal-director\/"},{"id":8632,"label":"Business Analyst","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/business-operations\/business-analyst\/"},{"id":8620,"label":"Operations Manager - Domain Name Registrar","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/business-operations\/operations-manager-domain-name-registrar\/"},{"id":8621,"label":"Commercial Real Estate Asset Manager","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/business-operations\/commercial-real-estate-asset-manager\/"},{"id":8610,"label":"Government Relations Director","priority":true,"link":"https:\/\/www.corporatetools.com\/job-postings\/business-operations\/government-relations-director\/"},{"id":8613,"label":"Director of Real Estate","priority":true,"link":"https:\/\/www.corporatetools.com\/job-postings\/business-operations\/director-of-real-estate\/"},{"id":8540,"label":"Government Relations Specialist","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/business-operations\/government-relations-specialist\/"}]},"Information Technology":{"label":"Information Technology","link":"https:\/\/www.corporatetools.com\/job-postings\/information-technology","children":[{"id":8663,"label":"Desktop Support","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/information-technology\/desktop-support-2\/"},{"id":8586,"label":"IT Infrastructure Manager","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/information-technology\/it-infrastructure-manager\/"},{"id":8584,"label":"Sr. Network Data Center Engineer","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/information-technology\/sr-network-data-center-engineer\/"},{"id":8583,"label":"Senior Infrastructure Engineer - Hosting","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/information-technology\/senior-infrastructure-engineer-hosting\/"},{"id":8582,"label":"Senior Data Center Linux Engineer","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/information-technology\/senior-data-center-linux-engineer\/"},{"id":8570,"label":"Internal Applications Developer","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/information-technology\/internal-applications-developer\/"},{"id":8541,"label":"Security and Compliance Lead","priority":false,"link":"https:\/\/www.corporatetools.com\/job-postings\/information-technology\/security-and-compliance-lead\/"}]},"Not Listed":{"label":"Other","id":"Other","children":[{"label":"Other","id":"Other","priority":false,"link":""}]}},"jobFormStepMode":false,"jobFormShowStepNav":false,"devToolbox":{"data_filler":{"data":{"public":{"contactInformation":{"country":{"key":"US","value":"United States"},"firstName":"Test","lastName":"Twobarrels","phone":"1234567890","city":"Test City","state":{"key":"AK","value":"Alaska","$isDisabled":false}},"jobInformation":{"projects":[{"projectUpload":"","projectURL":"https:\/\/google.com\/","projectContribution":"My contribution to this project"}],"reasonForApplying":"Sample of why I want to work here.","codepenLink":"https:\/\/codepen.io\/","githubLink":"https:\/\/github.com\/","linkedinLink":"https:\/\/linkedin.com\/","positionAlternativeInput":"Sample position","howApplicantHeardAboutUs":{"key":"Glassdoor","value":"Glassdoor","$isDisabled":false},"additionalApplicantInformation":"Additional information about me","supplementalQuestions":[{"key":true,"value":"Yes"},{"key":false,"value":"No"}]},"captchaResponse":null,"formType":"JobApplicationForm"}}}},"showDevToolbox":false,"showSkipCaptchaVerification":false,"sentryPreviewInConsole":false,"gtmID":"GTM-NP4734H"};</script><div id="mount">
+                <div class="spinner-wrap">
+                    <svg
+                        class="spinner"
+                        viewBox="0 0 50 50"
+                    >
+                        <circle
+                            class="path"
+                            cx="25"
+                            cy="25"
+                            r="20"
+                            fill="none"
+                            stroke-width="5"
+                        ></circle>
+                    </svg>
+                </div>
+            </div>                </div>
+                <div class="col-12 col-md-1"></div>
+                <div class="col-12 col-md-4 details-side">
+                    <div class="sect">
+                        <span class="h">Address</span>
+                        
+                                                    <p>Corporate Tools - Post Falls </p>
+                                                            <p>784 S. Clearwater Loop</p>
+                                                        <p>
+                                Post Falls, ID 83854                            </p>
+                                                        <a href="https://www.google.com/maps/dir/?api=1&destination=Corporate%2BTools%2B-%2BPost%2BFalls%2B%2BPost%2BFalls%2BID&travelmode=driving"
+                                target="_blank" class="plus-btn"><i class="far fa-plus"></i>Get Directions</a>
+                            <hr>
+                                                    <p>Corporate Tools - Spokane </p>
+                                                            <p>522 W Riverside Ave</p>
+                                                        <p>
+                                Spokane, WA 99201                            </p>
+                                                        <a href="https://www.google.com/maps/dir/?api=1&destination=Corporate%2BTools%2B-%2BSpokane%2B%2BSpokane%2BWA&travelmode=driving"
+                                target="_blank" class="plus-btn"><i class="far fa-plus"></i>Get Directions</a>
+                            <hr>
+                                                    <p>Satellite Office </p>
+                                                            <p>5900 Balcones Drive</p>
+                                                        <p>
+                                Austin, TX 78731                            </p>
+                                                        <a href="https://www.google.com/maps/dir/?api=1&destination=Satellite%2BOffice%2B%2BAustin%2BTX&travelmode=driving"
+                                target="_blank" class="plus-btn"><i class="far fa-plus"></i>Get Directions</a>
+                            <hr>
+                                                    <p>Satellite Office</p>
+                                                            <p>7533 S Center View CT</p>
+                                                        <p>
+                                West Jordan, UT 84084                            </p>
+                                                        <a href="https://www.google.com/maps/dir/?api=1&destination=Satellite%2BOffice%2BWest%2BJordan%2BUT&travelmode=driving"
+                                target="_blank" class="plus-btn"><i class="far fa-plus"></i>Get Directions</a>
+                            <hr>
+                                            </div>
+                    <div class="sect">
+                        <span class="h">Phone</span>
+                        <p>(208) 618-2766</p>
+                    </div>
+
+                    <div class="sect">
+                        <span class="h">Connect</span>
+                        <div class="social-media-styles">
+                                                            <div class="toolbox-social-media-links-wrapper">
+                            <div class="social-media-icon">
+                <a
+                    href="https://www.facebook.com/CorporateToolsLLC/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    aria-label="Corporate Tools Facebook"
+                    title="Corporate Tools Facebook"
+                    class="social-media-icon-link basic-facebook-f"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg>                </a>
+            </div>
+                        <div class="social-media-icon">
+                <a
+                    href="https://www.instagram.com/corporatetools/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    aria-label="Corporate Tools Instagram"
+                    title="Corporate Tools Instagram"
+                    class="social-media-icon-link basic-instagram"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>                </a>
+            </div>
+                        <div class="social-media-icon">
+                <a
+                    href="https://www.linkedin.com/company/corporatetools"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    aria-label="Corporate Tools LinkedIn"
+                    title="Corporate Tools LinkedIn"
+                    class="social-media-icon-link basic-linkedin-in"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg>                </a>
+            </div>
+            
+            </div>                                                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer-graphic-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img src="https://www.corporatetools.com/wp-content/themes/corptools/dist/img/ct-graphic-13.svg" />
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+            <footer class="footer" role="contentinfo">
+            <div class="container-md">
+                <div class="row footer-logo-social-container justify-content-between">
+                    <div class="col-12 col-md-4">
+                        <a href="https://www.corporatetools.com/">
+                            <img src="https://www.corporatetools.com/wp-content/themes/corptools/dist/img/CT-2019-logo-final-white.png"
+                                 alt="Corporate Tools Logo"
+                                 class="footer-logo"
+                            />
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-8">
+                                                    <div class="toolbox-social-media-links-wrapper">
+                            <div class="social-media-icon">
+                <a
+                    href="https://www.facebook.com/CorporateToolsLLC/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    aria-label="Corporate Tools Facebook"
+                    title="Corporate Tools Facebook"
+                    class="social-media-icon-link basic-facebook-f"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg>                </a>
+            </div>
+                        <div class="social-media-icon">
+                <a
+                    href="https://www.instagram.com/corporatetools/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    aria-label="Corporate Tools Instagram"
+                    title="Corporate Tools Instagram"
+                    class="social-media-icon-link basic-instagram"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>                </a>
+            </div>
+                        <div class="social-media-icon">
+                <a
+                    href="https://www.linkedin.com/company/corporatetools"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    aria-label="Corporate Tools LinkedIn"
+                    title="Corporate Tools LinkedIn"
+                    class="social-media-icon-link basic-linkedin-in"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg>                </a>
+            </div>
+            
+            </div>                                            </div>
+                </div>
+                <div class="legal-copyright-container">
+                    <div class="col-12 justify-content-center">
+                        <p class="copyright">
+                            2026 Copyright &copy; Corporate Tools. <br class="d-md-none">All Rights Reserved.
+                        </p>
+                    </div>
+                    <div class="col-12 justify-content-center">
+                                                    <!-- Legal Links Menu -->
+                            <div class="footer-legal-menu">
+                                <ul id="menu-footer-menu" class="menu"><li id="menu-item-2480" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2480"><a href="https://www.corporatetools.com/terms-policy/">Terms &#038; Policy Agreement</a></li>
+<li id="menu-item-2481" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2481"><a href="https://www.corporatetools.com/privacy-policy/">Privacy Policy</a></li>
+<li id="menu-item-9490" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9490"><a href="https://www.corporatetools.com/contact/">Contact Us</a></li>
+</ul>                            </div>
+                                            </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+<!-- /wrapper -->
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/corptools/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="text/javascript" src="https://www.corporatetools.com/wp-content/plugins/frontend-global-navigation-plugin/assets/js/main.js?id=87ea53d7f9bab434a9da1df24cce52d9" id="frontend-global-navigation-scripts-js"></script>
+<script type="text/javascript" id="frontend-toolbox-scripts-js-before">
+/* <![CDATA[ */
+const frontendToolboxData = {"liveChat":null}
+//# sourceURL=frontend-toolbox-scripts-js-before
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.corporatetools.com/wp-content/plugins/frontend-toolbox-plugin/assets/js/main.js?id=ec8d2923424932863964625e0f32e37a" id="frontend-toolbox-scripts-js"></script>
+<script type="module" src="https://www.corporatetools.com/wp-content/plugins/frontend-wp-corptools-plugin/dist/JobApplicationApp.js" id="JobApplicationApp-js"></script><script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://www.corporatetools.com/wp-includes/js/wp-emoji-release.min.js?ver=6.9.4"}}
+</script>
+<script type="module">
+/* <![CDATA[ */
+/*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=https://www.corporatetools.com/wp-includes/js/wp-emoji-loader.min.js
+/* ]]> */
+</script>
+</body>
+</html>
